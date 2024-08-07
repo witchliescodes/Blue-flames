@@ -1,15 +1,15 @@
-
 /* MADE BY wWITCH CODES */
 
 :root {
   --acento1: #415A77;
-  --acento2: #778DA9; 
+  --acento2: #4784cf; 
   --acento3: #E0E1DD;
   --acento4: #4D6DA8; 
   --fondo1: #0D1B2A; 
-  --fondo2: #1B263B; 
+  --fondo2: #02040a; 
   --color1: #f8f7ff; 
   --color2: #F5F5F4;
+  --tfondo1: #010308d1;
   --tam1: 8px; 
   --tam2: 10px;
   --tam3: 13px;
@@ -27,7 +27,7 @@ body {
     font-style: normal;
     font-size: 0.7vw;
     overflow-x: hidden;
-    background-image: url(https://images2.imgbox.com/46/a2/8CGJgIlr_o.jpg);
+    background-image: url(https://images2.imgbox.com/a1/6f/2BZtLW9K_o.png);
     background-attachment: fixed;
     background-size: cover;
 }
@@ -49,7 +49,7 @@ body {
     height: 100vh;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
-    background: var(--fondo2);
+    background: var(--tfondo1);
     padding: 0;
     margin: 0;
     outline: 1px solid var(--acento2);
