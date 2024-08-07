@@ -1,21 +1,20 @@
 /* MADE BY wWITCH CODES */
 
 :root {
-  --acento1: #415A77;
-  --acento2: #4784cf; 
-  --acento3: #E0E1DD;
-  --acento4: #4D6DA8; 
-  --fondo1: #0D1B2A; 
-  --fondo2: #02040a; 
-  --color1: #f8f7ff; 
-  --color2: #F5F5F4;
-  --tfondo1: #010308d1;
-  --tam1: 8px; 
-  --tam2: 10px;
-  --tam3: 13px;
-  --tam4: 15px;
-  --tam5: 30px; 
-  --titulo: 'Rosie Brown'; 
+    --acento1: #212C4C;
+    --acento2: #4784cf;
+    --acento3: #2A79DD;
+    --fondo1: #040410;
+    --fondo2: #02040a;
+    --color1: #f8f7ff;
+    --color2: #F5F5F4;
+    --tfondo1: #010308d1;
+    --tam1: 8px;
+    --tam2: 10px;
+    --tam3: 13px;
+    --tam4: 15px;
+    --tam5: 30px;
+    --titulo: 'Rosie Brown';
 }
 
 body {
@@ -199,56 +198,44 @@ display: none;}
     display: flex;
     align-items: center;
     margin: 10px;
-    justify-content: space-between;
+    justify-content: flex-start;
     overflow: hidden;
+    border-bottom: 1px solid var(--acento2);
+    padding: 0 0 10px 0;
 }
 
-.bftacon {
-    width: 50px;
-    height: 50px;
-    overflow: hidden;
-}
 
-.bftacon img {
-    width: 50px;
-    height: 50px;
-    object-fit: cover;
-    object-position: center;
-    border-radius: 0px;
-    width: 50px;
-}
-
-.bftabien {
-    margin: 0 0 0 10px;
-    height: 50px;
-    display: flex;
-    justify-content: space-between;
-    flex-flow: column;
-}
-
-.bftabien h1 {
+.bfpa1 h1 {
     font-family: var(--titulo);
-    letter-spacing: 3px;
+    letter-spacing: 0px;
     text-transform: lowercase;
     text-align: end;
+    font-size: var(--tam4);
 }
 
-.bftabien p {
+.bfpa1 p {
     padding: 5px;
-    text-align: end;
     font-family: Times;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     text-transform: uppercase;
     min-width: 100px;
     font-size: var(--tam2);
-    border-bottom: 1px solid var(--acento1);
+    background: var(--acento1);
+    margin: 5px;
+    border-radius: 5px;
+    width: -webkit-fill-available;
 }
 
 .bfresum {
     margin: 10px;
     padding: 10px;
-    background: var(--acento1);
+    background: var(--tfondo1);
     height: 60%;
+    border: 1px solid var(--acento1);
+    color: var(--color1);
+    font-family: Times;
+    letter-spacing: 1px;
+    font-size: var(--tam2);
 }
 
 .bfclima {
