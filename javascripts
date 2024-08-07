@@ -1,0 +1,49 @@
+Astucias > todas las paginas 
+
+$(document).ready(function(){
+// Estas dos líneas borrarán las frases de fecha y hora actual y tu última visita en todas las páginas.
+  $('#main-content > p:contains("Fecha y hora actual")').remove();
+  $('#main-content > p:contains("Tu última visita fue")').remove();
+// Esta línea le dará una clase al body cuando haya un nuevo mensaje privado.
+  $('.new-message').parents('body').addClass('nuevomp');
+// Esta línea borrará el link de calendario que nadie usa.
+  $('a.mainmenu[href*="/calendar"]').parent().remove();
+   $('a.mainmenu[href*="/images"]').parent().remove();
+   $('a.mainmenu[href*="/faq"]').parent().remove();
+// Esta función le dará títulos a los links de la navegación de forma automática.
+  $('a.mainmenu').each(function() {
+    var texto = $(this).text();
+    $(this).attr('title', texto);
+  });
+// Esta línea le dará una clase al body cuando el que lo visita sea un invitado.
+$('a.mainmenu[href*="/register"]').parents('body').addClass('bodyinvi');
+// Estas líneas modifican los links de vigilar tema/foro, citar, borrar, ver ip, perfil, mp y links de usuario.
+$('a[href*="?watch=topic"]').attr('title', 'Vigilar tema').html('<em class="fas fa-eye"></em>');
+$('a[href*="?unwatch=topic"]').attr('title', 'Dejar de vigilar tema').html('<em class="fas fa-eye-slash"></em>');
+$('a[href*="?watch=forum"]').attr('title', 'Vigilar subforo').html('<em class="fas fa-eye"></em>');
+$('a[href*="?unwatch=forum"]').attr('title', 'Dejar de vigilar subforo').html('<em class="fas fa-eye-slash"></em>');
+$('a[href*="&mode=quote"]').attr('title', 'Citar mensaje').html('<em class="fas fa-quote-left"></em>');
+$('a[href*="&mode=edit"]:not("p.copyright a")').attr('title', 'Editar mensaje').html('<em class="fas fa-cogs"></em>');
+$('a[href*="&mode=delete"]').attr('title', 'Borrar mensaje').html('<em class="fas fa-times"></em>');
+$('a[href*="?mode=ip"]').attr('title', 'Ver IP').html('<em class="fas fa-exclamation-triangle"></em>');
+$('img[src*="user_profile"]').parent().attr('title', 'Perfil de Usuario').html('<em class="fas fa-user"></em>');
+$('img[src*="contact_pm"]').parent().attr('title', 'Mensaje Privado').html('<em class="fas fa-envelope"></em>');
+$('img[src*="contact_www"]').parent().attr('title', 'Expediente de Personaje').html('<em class="fas fa-id-badge"></em>');
+// Estos tres tendrás que modificarlos, añadiendo o borrando de acuerdo a tus necesidades.
+$('img[src*="placehold.it/1/111.png"]').parent().attr('title', 'Baúl').html('<em class="fas fa-briefcase"></em>');
+});
+// Esta función borrará algunas partes de la toolbar que no necesitamos.
+$(window).load(function () { 
+  $('#fa_left, #fa_search, #fa_share').remove();   
+});
+
+$(document).ready(function(){
+  $('.moverconectados').appendTo('.conectar');
+  });
+
+mover cajas > todas las paginas
+
+$(document).ready(function(){
+  $('.bflinkuno').appendTo('.gflink');
+
+});
