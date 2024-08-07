@@ -1,1 +1,267 @@
 
+/* MADE BY wWITCH CODES */
+
+:root {
+  --acento1: #415A77;
+  --acento2: #778DA9; 
+  --acento3: #E0E1DD;
+  --acento4: #4D6DA8; 
+  --fondo1: #0D1B2A; 
+  --fondo2: #1B263B; 
+  --color1: #f8f7ff; 
+  --color2: #F5F5F4;
+  --tam1: 8px; 
+  --tam2: 10px;
+  --tam3: 13px;
+  --tam4: 15px;
+  --tam5: 30px; 
+  --titulo: 'Rosie Brown'; 
+}
+
+body {
+  margin: 0!important; 
+  padding: 0!important;
+  background: var(--fondo1);
+  display: flex;
+  color: var(--color1);
+  font-style: normal;
+    font-size: 0.7vw;
+  overflow-x: hidden;
+}
+
+.conteneur_minwidth_IE {
+    width: 81%;
+    position: absolute;
+    right: 0;
+}
+
+#wrap {
+    width: 100%;
+    min-width: 1134px;
+}
+
+#bftab {
+    width: 18%;
+    position: fixed;
+    height: 100vh;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background: var(--fondo2);
+    padding: 0;
+    margin: 0;
+    outline: 1px solid var(--acento2);
+}
+
+.gfpestab {
+    width: auto;
+    margin: 0px;
+    display: flex;
+    flex-flow: column;
+    flex-direction: column-reverse;
+}
+
+.gfpestab p {
+    background: var(--acento2);
+    padding: 7px;
+    border-radius: 10px;
+    margin: 10px;
+    color: var(--color2);
+    font-size: var(--tam1);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.bfpesti {
+  margin: 10px;
+  display: flex; 
+  align-items: center; 
+  justify-content: space-between;
+ 
+}
+
+.bfpesti label {
+  background: var(--acento2);
+  padding: 10px;
+  border-radius: 15px;
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
+}
+
+linea {
+  width: auto; 
+  height: 1px; 
+  margin: 10px; 
+  background: var(--acento2);
+  display: block;
+}
+
+.tolti {
+   position: relative;
+  display: inline-block;
+}
+.tolti .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  transition: 300ms;
+}
+
+.tolti:hover .tooltiptext {
+  visibility: visible;
+}
+
+.gflink {
+ margin: 10px; 
+  border-bottom: 1px solid var(--acento2);
+  padding-bottom: 10px;
+  display: flex;
+  align-items: center; 
+    justify-content: flex-start;
+}
+
+.gflink linea {
+    width: 1px;
+    height: 25px;
+}
+
+.gflink h1 {
+    font-size: var(--tam4);
+    text-transform: uppercase;
+    font-family: var(--titulo);
+    letter-spacing: 1px;
+      font-weight: bold;
+}
+
+.gflink h1::first-letter {
+font-size: 30px; 
+  color: var(--acento2);
+}
+
+.bflinkuno {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: -webkit-fill-available;
+}
+
+.bflinkuno a {
+    border-radius: 5px;
+    color: var(--color1);
+    background: var(--acento2);
+    padding: 5px;
+}
+
+/*PESTAÑAS*/
+.bftabstab {
+      overflow: hidden;
+}
+
+.bftabstab input {
+display: none;}
+
+.bftabstab [id*="tc"] {
+    position: absolute;
+    opacity: 0;
+    transition: all 300ms;
+    overflow: hidden;
+    height: -webkit-fill-available;
+    width: -webkit-fill-available;
+    margin: -11px 0 0 0;
+    padding: 0px;
+    display: flex;
+    align-items: normal;
+    justify-content: space-between;
+    flex-flow: column;
+}
+
+#inicio:checked ~ #tc1, 
+#Tramas:checked ~ #tc2, 
+#Staff:checked ~ #tc3, 
+#Busquedas:checked ~ #tc4 {
+    z-index: 3 !important;
+    opacity: 1;
+}
+/*fin de pestañas*/
+
+.bfpa1 {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.bftacon {
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+}
+
+.bftacon img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 0px;
+    width: 50px;
+}
+
+.bftabien {
+    margin: 0 0 0 10px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: column;
+}
+
+.bftabien h1 {
+    font-family: var(--titulo);
+    letter-spacing: 3px;
+    text-transform: lowercase;
+    text-align: end;
+}
+
+.bftabien p {
+    padding: 5px;
+    text-align: end;
+    font-family: Times;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    min-width: 100px;
+    font-size: var(--tam2);
+    border-bottom: 1px solid var(--acento1);
+}
+
+.bfresum {
+    margin: 10px;
+    padding: 10px;
+    background: var(--acento1);
+    height: 60%;
+}
+
+.bfclima {
+    margin: 10px;
+    background: var(--acento1);
+    height: 15%;
+}
+
+@font-face { font-family: 'Rosie Brown'; font-style: normal; src: url('https://dl.dropbox.com/scl/fi/mxzpejuoh7u5f3untc0tr/Rosie-Brown-Serif-Demo.otf?rlkey=inwmth5b002lne9whgth7nk60&st=8lj78tm7&dl=0'); format('truetype'); }
+
+/*SCROLLBAR*/
+
+::-webkit-scrollbar {
+    background: var(--fondo1);
+    width: 7px;
+}
+::-webkit-scrollbar-thumb {
+    background: var(--acento1);
+}
