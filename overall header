@@ -309,11 +309,9 @@
   <div class="bftabstab">
     <input type="radio" id="inicio" name="tablon" checked />
           <div id="tc1">
-<div class="bfpa1">
-              <div class="bftabien">
+	<div class="bfpa1">
                 <h1>Saludos,</h1>
-                <p><script>document.write(_userdata.username);</script></p>
-                </div>
+                <p><script>document.write(_userdata.username);</script></p>  
             </div>
             <div class="bfresum">history</div>
 <div class="bfclima">clima </div>           
@@ -481,6 +479,19 @@ a.mainmenu[href*="/register"]:before { content:"\ec14"; font-size: 13px; font-fa
   color: var(--acento2);
   }  
    
+.bftacon {
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+}   
+   
+.bftacon img {
+    max-width: 260px;
+    max-height: 350px;
+    object-fit: cover;
+    width: 50px;
+}   
+   
 #Portada {
     margin: 40px 0 0 0;
     background: url(https://images2.imgbox.com/13/0b/WKe6EIw2_o.png);
@@ -496,8 +507,8 @@ a.mainmenu[href*="/register"]:before { content:"\ec14"; font-size: 13px; font-fa
 #Portada h1 {
     font-size: 75px;
     font-family: var(--titulo);
-    color: var(--acento3);
-    filter: drop-shadow(2px 4px 6px var(--fondo1));
+    color: var(--color2);
+    filter: drop-shadow(0px 0px 20px var(--acento2));
     margin: 0 30px 0 0;
 }
    
@@ -514,4 +525,6 @@ a.mainmenu[href*="/register"]:before { content:"\ec14"; font-size: 13px; font-fa
     line-height: 9px;
     letter-spacing: 1px;
 }
+   
+   
 </style>                                                                                         
