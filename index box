@@ -1,4 +1,4 @@
-<meta charset="UTF-8">
+<meta charset="UTF-8" />
 <ul class="bflinkuno">
 	<!-- BEGIN switch_user_logged_in -->
 	<a href="{U_SEARCH_NEW}" title="Ver mensajes desde la última visita"><i class="cp cp-snowflake"></i></a>
