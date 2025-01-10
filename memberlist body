@@ -1,0 +1,325 @@
+<div id="memberlist-BF">
+  <div class="Title-member-BF">
+    <div class="Title-member-BF2">
+         <center><i class="cp cp-group"></i></center>
+      <div class="part1member">
+        <span1>{PAGE_TITLE}</span1>
+   <span2>Nuestra Familia</span2>
+    <div class="pagination" style="float:none;">
+	<!-- BEGIN switch_pagination -->
+	{PAGINATION}<br /><br />
+	<!-- END switch_pagination -->
+</div>
+      </div>
+    </div>
+   <form action="{S_MODE_ACTION}" method="get">
+<div class="panel">
+	<div class="inner"><span class="corners-top"><span></span></span>
+	<h2 class="h3">{L_ORDER_OR_SELECT}</h2>
+	<p style="text-align:right; margin: 0; padding: 0;">
+		{L_USER_SELECT}&nbsp;<input type="text" class="inputbox tiny" name="username" maxlength="25" size="20" value="{L_USER_SELECT_VALUE}" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		{L_SELECT_SORT_METHOD}&nbsp;{S_MODE_SELECT}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		{L_ORDER}&nbsp;{S_ORDER_SELECT}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		{S_HIDDEN_SID}
+		<input class="button2" type="submit" name="submit" value="{L_SUBMIT}" />
+	</p>
+	<span class="corners-bottom"><span></span></span></div>
+</div>
+</form>
+  </div>
+  <div class="miembros-BF">
+    <!-- BEGIN memberrow -->
+	<div class="{memberrow.ROW_CLASS}">
+          <table><tr>
+		<td class="avatar-mini">
+                  <div class="number-bf">&nbsp;{memberrow.ROW_NUMBER}&nbsp;</div>
+                  <a href="{memberrow.U_VIEWPROFILE}">
+                    <div class="avatar-bf-member">
+                      {memberrow.AVATAR_IMG}</div>
+                    <span1>&nbsp;{memberrow.USERNAME}</span1></a>
+            </td>
+            <td class="infomember">
+    <!-- Mostrar grupos -->
+    <!-- BEGIN switch_td_group -->
+        <div class="member-groups">{memberrow.GROUPS}</div>
+    <!-- END switch_td_group -->
+    
+    <!-- Intereses -->
+    <dat>{memberrow.INTERESTS}</dat>
+    
+    <!-- Información adicional -->
+    <div class="member-info">
+        <span class="joined">Registro: {memberrow.JOINED}</span>
+        <span class="last-visit">Última visita: {memberrow.LASTVISIT}</span>
+        <span class="posts">Mensajes: {memberrow.POSTS}</span>
+      <span class="ranks">{memberrow.RANK}</span>
+    </div>
+    
+    <!-- Opciones de contacto -->
+    <div class="member-contact">
+        <!-- Mostrar icono de mensaje privado si está disponible -->
+        <!-- BEGIN switch_td_pm -->
+            <span class="pm-icon">&nbsp;{memberrow.PM_IMG}&nbsp;</span>
+        <!-- END switch_td_pm -->
+        
+        <!-- Mostrar icono de página web -->
+        <span class="www-icon">&nbsp;{memberrow.WWW_IMG}&nbsp;</span>
+    </div>
+</td>
+
+            </tr></table>
+	</div>
+	<!-- END memberrow -->
+  </div>
+</div>
+<style>
+.Title-member-BF2 {
+    display: flex;
+}
+#memberlist-BF {
+    padding: 10px;
+    height: auto;
+    background: var(--n8);
+    border-radius: 10px;
+    border: 1px solid var(--n5);
+    margin-top: -110px;
+    z-index: 1;
+    position: relative;
+}
+.miembros-BF {
+    width: 99%;
+    height: 100%;
+    background: var(--n8);
+    border-radius: 10px;
+    border: 1px solid var(--n5);
+}
+.Title-member-BF {
+    width: 99%;
+    background: var(--pr1);
+    border-radius: 10px;
+    border: 1px solid var(--n5);
+    text-align: center;
+    display: flex;
+    margin-bottom: 10px;
+}
+.Title-member-BF .cp {
+    font-size: 80px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid var(--n5);
+    display: block;
+    margin-left: 10px;
+    margin-top: 10px;
+    color: var(--pr2);
+}
+.Title-member-BF span1 {
+    display: block;
+    font-family: var(--f5);
+    padding: 10px;
+    font-size: 40px;
+    color: var(--pr4);
+    margin-top: 10px;
+}
+.Title-member-BF span2 {
+    display: block;
+    font-family: var(--f4);
+    text-transform: uppercase;
+    font-size: 10px;
+    letter-spacing: 8px;
+    color: var(--n4);
+    margin-top: -10px;
+}
+.miembros-BF .row1, .miembros-BF .row2 {
+    width: calc(95% / 4);
+    height: 200px;
+    display: inline-block;
+    margin: 5px;
+    overflow: hidden;
+    background-image: var(--fd9);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.avatar-mini {
+    padding: 10px;
+    width: 100px;
+    margin: 10px;
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    height: 100px;
+}
+.avatar-bf-member {
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+    margin-left: 10px;
+    border: 1px solid var(--n5);
+}
+.avatar-bf-member img {
+    width: 100% !important;
+    height: auto !important;
+}
+.number-bf {
+    color: var(--n5);
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background: var(--pr4);
+    font-family: var(--f3);
+    font-size: 10px;
+    line-height: 1.8em;
+    margin-top: -3px;
+    border-radius: 5px;
+    border: 1px solid var(--n5);
+    animation: pulsacion 1.5s infinite;
+}
+/* Animación de pulsación */
+@keyframes pulsacion {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+.avatar-mini span1 {
+    font-family: var(--f5);
+    display: block;
+    font-size: 10px;
+    background: var(--n8);
+    width: 82px;
+  height:45px;
+    margin-left: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid var(--n5);
+    border-top: 0px;
+}
+.member-info {
+    position: relative;
+    left: -25px;
+    top: 17px;
+    border: 1px solid var(--n5);
+    padding: 10px;
+    color: var(--n6);
+    font-size: 8px;
+    text-transform: uppercase;
+    background: var(--n7);
+    height: 60px;
+}
+.member-info span {
+    display: flex;
+}
+.member-contact {
+    position: relative;
+    left: -25px;
+    top: 19px;
+    background: var(--n5);
+    padding: 10px;
+    display: flex;
+}
+.Title-member-BF form {
+    font-size: 8px;
+    font-family: var(--f4);
+    width: 75%;
+    border-radius: 10px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 100px;
+    background: var(--pr2);
+    color: var(--n4);
+    text-align: left;
+}
+.Title-member-BF form .h3 {
+    display: block;
+    text-align: center;
+    letter-spacing: 2px;
+    padding: 10px;
+    font-family: var(--f4);
+    color: var(--pr4);
+}
+.Title-member-BF form p {
+    text-align: left !important;
+    margin-left: 10px !important;
+}
+.Title-member-BF form .inputbox {
+  padding:10px;
+    border-radius: 10px;
+    font-size: 10px;
+    background: transparent;
+    border: 1px solid var(--n5);
+    color: var(--pr4);
+    font-family: var(--f4);
+    width: 30%;
+    margin-left: 10px;
+}
+.Title-member-BF form select {
+    font-size: 10px;
+    border-radius: 10px;
+    background: var(--n8);
+    border: 1px solid var(--pr2);
+    color: var(--pr4);
+    padding: 10px;
+    margin-left: -2px;
+}
+.Title-member-BF .button2 {
+    background: var(--pr4);
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid var(--pr2);
+    font-family: var(--f3);
+    text-transform: uppercase;
+}
+.pagination {
+    text-align: center;
+    padding: 5px;
+    font-size: 8px;
+    text-transform: uppercase;
+}
+.pagination a {
+    color: var(--pr4);
+}
+.pagination span {
+    font-size: 8px;
+    display: inline-block;
+}
+.pagination span strong {
+    border: none !important;
+    display: inline-block;
+    color: var(--pr4) !important;
+    padding: 5px;
+    border-radius: 10px;
+    margin: 0 !important;
+}
+.pagination span a {
+    padding: 5px !important;
+    margin: 0 !important;
+    border-radius: 10px !important;
+    border: none !important;
+    margin-left: 10px !important;
+    color: var(--n4) !important;
+}
+.member-info .rank {
+    display: flex;
+    padding: 5px;
+    width: 100%;
+    border: 1px solid var(--n5);
+    border-radius: 5px;
+    margin-top: 3px;
+    box-sizing: border-box;
+    background: var(--n1);
+  color:var(--n4);
+  letter-spacing:1px;
+}
+.member-info .rank .cp {
+    margin-right: 10px;
+    color: var(--n5);
+    font-size: 10px;
+}
+</style>
