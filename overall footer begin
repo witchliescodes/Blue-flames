@@ -30,10 +30,9 @@
   <div class="sisbros">
     <div class="bftitbros">
     <h1>Bros and Sis </h1>
-    <div class="bros cont">0 de 4</div>
     </div>
     <div class="brosis">
-      <a href="/" class="" title="Nombre del foro"><img src="https://placehold.co/180x150" /></a>
+      <a href="https://nextlifeonline.foroactivo.com" class="" title="Next Life Online"><img src="https://i.imgur.com/O4Nu8vz.png" /></a>
       <a href="/" class="" title="Nombre del foro"><img src="https://placehold.co/180x150" /></a>
       <a href="/" class="" title="Nombre del foro"><img src="https://placehold.co/180x150" /></a>
       <a href="/" class="" title="Nombre del foro"><img src="https://placehold.co/180x150" /></a>
@@ -51,7 +50,7 @@
     <div class="bf-elit">
       <div class="bftit">
         <h1>Elite</h1>
-        <div class="elitcont"> 1 de 48</div>
+        <div class="elitcont"> 0 de 48</div>
       </div>
       <div class="contelit">
       <a href="/" class="" title="Nombre del foro"><img src="https://placehold.co/50x50" /></a>
@@ -126,7 +125,7 @@
   <div class="lampazu"><img src="https://images2.imgbox.com/75/2c/sCMRetZt_o.png" /></div>
   <div class="creditos1">Blue flames es propiedad de su webmaster <a href="https://blueflames.foroactivo.com/u1">Mephisto Pheles</a>, quien tomó inspiración de la obra Ao no exorcist creado por Kazue Katō para la base del mundo, complementando las ideas de la ambientación e historia de manera original con un contexto más maduro y de mundo oscuro, tomando un trasfondo de juego RPG de mundo abierto.. 
 
-Las imágenes que se presentan a lo largo y ancho de este sitio web fueron tomadas de artistas como <a href="https://www.artstation.com/alekzanderzagorulko">Alekzander Zagorullo</a> en Artstation, otras de <b>las imágenes que son de uso libre</b> fueron tomados de pinterest, zerochan, deviant art, danbooru, safebooru, tumblr y el buscador de google en general. Para las imágenes de Ao no exorcist se us[o especialmente la pagina <a href="https://flower-of-assiah.tumblr.com/">flower of assiah</a>, un tumblr dedicado a Ao no exorcist exclusivamente. 
+Las imágenes que se presentan a lo largo y ancho de este sitio web fueron tomadas de artistas como <a href="https://www.artstation.com/alekzanderzagorulko">Alekzander Zagorullo</a> en Artstation, otras de <b>las imágenes que son de uso libre</b> fueron tomados de pinterest, zerochan, deviant art, danbooru, safebooru, tumblr y el buscador de google en general. Para las imágenes de Ao no exorcist se usó especialmente la pagina <a href="https://flower-of-assiah.tumblr.com/">flower of assiah</a>, un tumblr dedicado a Ao no exorcist exclusivamente. 
 Se agradece que, si se detecta alguna imagen que no esté autorizada para su uso libre sin lucro, se nos notifique para poder cambiarla a la brevedad. 
 </div>
   <div class="centrocred">
@@ -143,7 +142,7 @@ Se agradece que, si se detecta alguna imagen que no esté autorizada para su uso
       <h3>Pumpkin codes</h3>
     </div>
   </div>
-  <div class="creditos2">La skin de este foro es una colaboración de las coders <a href="https://gummies-dynamite.tumblr.com/">Gummies Dynamite</a> y<a href="https://thewitchlies.tumblr.com/">Pumpkin codes</a> exclusivamente para el foro de Blue flames, todos los códigos y diseños que aquí se presentan fueron realizados por ambas en concordancia. 
+  <div class="creditos2">La skin de este foro es una colaboración de las coders <a href="https://gummies-dynamite.tumblr.com/">Gummies Dynamite</a> y <a href="https://thewitchlies.tumblr.com/">Pumpkin codes</a> exclusivamente para el foro de Blue flames, todos los códigos y diseños que aquí se presentan fueron realizados por ambas en concordancia. 
 Las tablillas fueron creadas exclusivamente para Blue flames por <a href="https://thewitchlies.tumblr.com/">Pumpkin codes</a>. 
 
 Agradecimientos especiales a <a href="https://necromancercoding.tumblr.com/">Necromancer codes</a>, por sus tutoriales que ayudaron a que este skin se completara. 
@@ -190,18 +189,23 @@ La copia total o parcial de lo que en este foro se encuentra será considerado c
     overflow: hidden;
     z-index: 9;
     margin: 20px 0 0 20px;
-} 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+}
     
 .bftitbros {
     width: 100%;
-    height: 26%;
+    height: auto;
 }
     
 .bftitbros h1 {
     color: var(--n4) !important;
     letter-spacing: 10px !important;
-    line-height: 70px !important;
-    font: 600 5em var(--f5);
+    line-height: 50px !important;
+    font: 600 3em var(--f5);
+    text-align: center;
 }
     
 .bftitbros h1:first-letter {
@@ -226,14 +230,13 @@ color: var(--pr3);
     
 .brosis {
     width: 100%;
-    height: 67%;
+    height: auto;
     position: relative;
-    top: -9%;
-    display: flex;
+    display: grid;
     align-items: center;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}  
+    grid-template-columns: 50% 50%;
+    justify-items: center;
+}
     
 .brosis a {
     width: 180px;
@@ -242,7 +245,8 @@ color: var(--pr3);
     border-radius: 15px;
     overflow: hidden;
     border: 1px solid var(--n1);
-}  
+    margin: 0.7em;
+}
     
 .centroafi {
     grid-column: 2;
@@ -306,28 +310,28 @@ color: var(--pr3);
     grid-row: 1;
     background: transparent;
     overflow: hidden;
-    width: 106%;
+    width: 100%;
     position: relative;
     z-index: 9;
-    margin: 0px 0 0 -30px;
 }
     
 .bf-elit {
     display: flex;
-    width: 104%;
-}
+    width: 100%;
+    height: 80%;
+}  
+    
     
 .bftit {
-    height: 337px;
-    width: 13%;
-    margin: 10px 0 0 0;
+    height: 100%;
+    width: 10%;
     display: flex;
     flex-flow: column-reverse;
     justify-content: space-around;
     align-items: center;
-    text-orientation: mixed;
 }
-
+    
+    
 .bftit h1 {
     transform: rotate(270deg);
     color: var(--n4);
@@ -353,28 +357,28 @@ color: var(--pr3);
 } 
     
 .contelit {
-    height: 60%;
+    height: 91%;
     position: relative;
-    margin: 15px 0px 0 3px;
-    width: 90%;
-    display: flex;
-    flex-wrap: wrap;
+    width: 85%;
+    display: grid;
+    padding: 19px;
+    grid-template-columns: 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5%;
+    justify-items: center;
 }
     
 .contelit a {
     width: 50px;
     height: 50px;
     background: var(--n1);
-    margin: 3px;
     border-radius: 10px;
     overflow: hidden;
-} 
+    margin: 5px;
+}
     
  .bf-direct {
     width: 100%;
     background: transparent;
-    height: 28%;
-    margin: 10px 0 0 0;
+    height: 20%;
 }
     
 .namerecu {
@@ -382,8 +386,9 @@ color: var(--pr3);
     align-items: center;
     justify-content: space-between;
     flex-flow: row-reverse;
-    margin: 0 0 5px 0;
-}   
+    margin: 0 0 10px 0;
+    width: 95%;
+}
     
 .namerecu h1 {
     color: var(--n4);
@@ -411,12 +416,12 @@ color: var(--pr3);
 }   
 
 .director {
-    width: 94%;
+    width: 75%;
     height: 60px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 0 0 0 19px;
+    margin: 0 0 0 102px;
 }
     
 .director a {
@@ -429,18 +434,42 @@ color: var(--pr3);
 }    
     
 .actuali {
-    width: 94%;
-    height: 20%;
-    background: var(--n2);
-    margin: 5px 0 0 20px;
+    width: auto;
+    height: auto;
+    background: transparent;
     border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     color: var(--n4);
-    border: 1px solid var(--n1);
+    position: absolute;
+    margin-top: -500px;
+    flex-flow: column;
 }
+   
+.actuali span {
+    z-index: 999;
+    background: var(--n2);
+    height: 26px;
+    width: 53%;
+    border: 1px solid var(--n1);
+    border-radius: 10px;
+    font: 10px var(--f4);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 0 0 10px;
+    margin: 0 0 10px 0px;
+}  
+    
+.actuali span b{
+    background: var(--pr3);
+    padding: 8px;
+    border-radius: 10px;
+}    
     
     
 #bfcredits {
@@ -476,10 +505,10 @@ color: var(--pr3);
 .creditos1 {
     grid-column: 2;
     grid-row: 1;
-    padding: 25px;
+    padding: 20px;
     text-align: justify;
     color: var(--n4);
-    font: 12px var(--f4);
+    font: 0.8em var(--f4);
     line-height: 1.4em;
     height: 350px;
     overflow: auto;
@@ -551,7 +580,7 @@ color: var(--pr3);
     padding: 25px;
     text-align: justify;
     color: var(--n4);
-    font: 12px var(--f4);
+    font: 0.8em var(--f4);
     line-height: 1.4em;
 }
     
