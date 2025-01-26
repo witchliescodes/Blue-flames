@@ -1,0 +1,221 @@
+<div class="headertopics"><h1 class="page-title forumbf"><a href="{U_VIEW_FORUM}">{FORUM_NAME}</a>
+  <div class="pagination">
+	<!-- BEGIN show_plus_menu -->
+	<br />
+	<a href="{U_MARK_READ}">{L_MARK_TOPICS_READ}</a>&nbsp;&bull;&nbsp;
+	<script type="text/javascript">//<![CDATA[
+		var url_newposts = '{U_NEWPOSTS_JS_PLUS_MENU}';
+		var url_egosearch = '{U_EGOSEARCH_JS_PLUS_MENU}';
+		var url_unanswered = '{U_UNANSWERED_JS_PLUS_MENU}';
+		var url_watchsearch = '{U_WATCHSEARCH_JS_PLUS_MENU}';
+		insert_plus_menu_new('f{FORUM_ID}&amp;f={FORUM_ID}','{JS_SESSION_ID}', {JS_AUTH_FAVOURITES});
+	//]]>
+	</script>
+	<!-- END show_plus_menu -->
+	{PAGINATION}
+</div>
+</h1>
+  <div class="topic-actions">
+<!-- BEGIN switch_user_authpost -->
+	<div class="buttons">
+		<div class="post-icon"><a href="{U_POST_NEW_TOPIC}" accesskey="n" rel="nofollow"><img src="{POST_IMG}" class="{POST_IMG_ID}" alt="{L_POST_NEW_TOPIC}" /></a></div>
+	</div>
+<!-- END switch_user_authpost -->
+	<div class="search-box">
+		<form method="get" id="forum-search" action="{S_SEARCHBOX_ACTION}">
+		<fieldset>
+			<input class="inputbox search tiny" type="text" name="search_keywords" id="search_keywords" size="20" value="{L_SEARCH}" onclick="if (this.value == '{L_SEARCH}') this.value = '';" onblur="if (this.value == '') this.value = '{L_SEARCH}';" />
+			&nbsp;<input class="button2" type="submit" value="{L_SEARCH}" />
+			<input type="hidden" value="{SEARCH_WHERE}" name="search_where" />
+		</fieldset>
+		</form>
+	</div>
+</div>
+</div>
+<div class="forum2-cat">{BOARD_INDEX}</div>
+<div class="list-topic-bf">{TOPICS_LIST_BOX}</div>
+
+<div class="topic-actions">
+	<!-- BEGIN switch_user_authpost -->
+	<div class="buttons">
+		<div class="post-icon"><a href="{U_POST_NEW_TOPIC}" accesskey="n" rel="nofollow"><img src="{POST_IMG}" class="{POST_IMG_ID}" alt="{L_POST_NEW_TOPIC}" /></a></div>
+	</div>
+	<!-- END switch_user_authpost -->
+
+	<div class="pagination">
+		{PAGINATION}<br />
+		<a href="{U_MARK_READ}">{L_MARK_TOPICS_READ}</a>&nbsp;&bull;&nbsp;{S_WATCH_FORUM}&nbsp;&bull;&nbsp;<a href="#top">{L_BACK_TO_TOP}</a><br /><br />
+	</div>
+</div>
+
+<div class="clear"></div>
+
+<div class="action-box">
+	<!-- BEGIN switch_sort_options -->
+	<div id="sort-box">
+		<form method="post" class="sort-form">
+			<fieldset>
+				<label>{switch_sort_options.L_SORT_BY}:&nbsp;</label>
+				<select name="sort_method">
+					{switch_sort_options.S_OPTIONS}
+				</select>&nbsp;
+				<input class="button2" type="submit" value="{switch_sort_options.L_SORT}" />
+			</fieldset>
+		</form>
+	</div>
+	<!-- END switch_sort_options -->
+
+	<form action="{S_JUMPBOX_ACTION}" method="get" name="jumpbox" onsubmit="if(document.jumpbox.f.value == -1){return false;}">
+		<fieldset class="vf_jumpbox">
+			<label>{L_JUMP_TO}:&nbsp;</label>
+			{S_JUMPBOX_SELECT}&nbsp;
+			<input class="button2" type="submit" value="{L_GO}" />
+		</fieldset>
+	</form>
+</div>
+
+{LOGGED_IN_USER_LIST}
+
+<div id="info_open" style="display:block;clear:both">
+<div class="h3">{L_MODERATOR}</div>
+<p>{MODERATORS}</p>
+
+<div class="h3">{L_TABS_PERMISSIONS}</div>
+<p>{S_AUTH_LIST}</p>
+
+</div>
+<!-- BEGIN switch_legend -->
+<div class="h3">{L_LEGEND}</div>
+	<div class="clearfix">
+		<ul class="ul-icons">
+			<li><img src="{FOLDER_NEW_IMG}" alt="{L_FOLDER_NEW_IMG}" loading="lazy" />&nbsp;{L_FOLDER_NEW_IMG}</li>
+			<li><img src="{FOLDER_HOT_NEW_IMG}" alt="{L_FOLDER_HOT_NEW_IMG}" loading="lazy" />&nbsp;{L_FOLDER_HOT_NEW_IMG}</li>
+			<li><img src="{FOLDER_LOCKED_NEW_IMG}" alt="{L_FOLDER_LOCKED_NEW_IMG}" loading="lazy" />&nbsp;{L_FOLDER_LOCKED_NEW_IMG}</li>
+		</ul>
+		<ul class="ul-icons">
+			<li><img src="{FOLDER_IMG}" alt="{L_FOLDER_IMG}" loading="lazy" />&nbsp;{L_FOLDER_IMG}</li>
+			<li><img src="{FOLDER_HOT_IMG}" alt="{L_FOLDER_HOT_IMG}" loading="lazy" />&nbsp;{L_FOLDER_HOT_IMG}</li>
+			<li><img src="{FOLDER_LOCKED_IMG}" alt="{L_FOLDER_LOCKED_IMG}" loading="lazy" />&nbsp;{L_FOLDER_LOCKED_IMG}</li>
+		</ul>
+		<ul class="ul-icons">
+			<li><img src="{FOLDER_ANNOUNCE_IMG}" alt="{L_FOLDER_ANNOUNCE_IMG}" loading="lazy" />&nbsp;{L_FOLDER_ANNOUNCE_IMG}</li>
+			<li><img src="{FOLDER_STICKY_IMG}" alt="{L_FOLDER_STICKY_IMG}" loading="lazy" />&nbsp;{L_FOLDER_STICKY_IMG}</li>
+			<li><img src="{FOLDER_GLOBAL_ANNOUNCE_IMG}" alt="{L_FOLDER_GLOBAL_ANNOUNCE_IMG}" loading="lazy" />&nbsp;{L_FOLDER_GLOBAL_ANNOUNCE_IMG}</li>
+		</ul>
+	</div>
+<!-- END switch_legend -->
+<style>
+.forumbf {
+    border: 1px solid var(--n5);
+    background: #00000099;
+    padding: 50px;
+    border-radius: 10px;
+    font-size: 35px !important;
+    font-family: var(--f5) !important;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    width: 100%;
+    position: relative;
+}
+.forumbf .cp {
+    padding: 10px;
+    background: var(--pr3);
+    color: var(--n4);
+    border-radius: 10px;
+    margin: 10px;
+}
+.forumbf .pagination {
+    font-size: 10px;
+    position: absolute;
+    right: 0;
+    padding: 10px;
+    background: var(--n5);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 3%;
+    border: 1px solid var(--pr1);
+}
+.forumbf .pagination a {
+    margin-right: 5px;
+    color: var(--pr4);
+}
+.headertopics .topic-actions {
+    width: 96.5%;
+    padding: 10px;
+    text-align: left;
+    font-size: 10px;
+    background: #1a194cd6;
+    border-radius: 10px;
+    border: 1px solid var(--n5);
+    border-top: 0px;
+    color: var(--pr4);
+    font-family: var(--f3);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+    margin-left: 8px;
+    top: -10px;
+    left: 4px;
+    position: relative;
+    display: flex;
+}
+.forum2-cat .categoria {
+    border-radius: 10px;
+}
+.forum2-cat h2 {
+    font-size: 20px;
+    background: var(--pr2);
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    margin: 10px;
+}
+.forum2-cat .cp {
+    background: var(--pr3);
+    color: var(--n4);
+    padding: 5px;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+.forum2-cat  .Titulocategoria-BF {
+    border-radius: 10px;
+}
+.forumbg.announcement {
+    padding: 10px;
+    background: #00000099;
+    border-radius: 10px;
+    border: 1px solid var(--n1);
+    font-size: 10px;
+}
+.forum2-cat .foro {
+    width: calc(89% / 3);
+    padding: 10px;
+    background: var(--pr1);
+    margin: 10px;
+    border-radius: 20px;
+    height: 200px;
+    overflow: hidden;
+    border: 1px solid var(--pr2);
+    display: inline-flex;
+    align-items: center;
+}
+.list-topic-bf dt {
+    padding: 10px !important;
+    font-size: 20px !important;
+    display: block;
+    font-family: var(--f5) !important;
+    color: var(--pr4);
+    background: var(--n2);
+    border-radius: 10px;
+    text-align: center;
+    letter-spacing: 10px;
+}
+</style>
