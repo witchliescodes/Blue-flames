@@ -3,31 +3,21 @@
 <html xmlns="http://www.w3.org/1999/xhtml" dir="{S_CONTENT_DIRECTION}" id="min-width" lang="{L_LANG_HTML}"
 	  xml:lang="{L_LANG_HTML}" {NAMESPACE_FB_LIKE} {NAMESPACE_FB} {NAMESPACE_BBCODE}>
 <head>
-    <meta charset="UTF-8" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <link href="https://dl.dropbox.com/scl/fi/xtccw1mn8rbqlrruszsw8/star-gg.css?rlkey=rjklonvcqyk1xl0x94k4kus7y" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Yuji+Boku&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&display=swap" rel="stylesheet"/>
   <script src="//pull.cappuccicons.com/cpf.js"></script>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"/>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/3de2e96a1c.js" crossorigin="anonymous"></script>
+  <link href="https://solar-icons.gitlab.io/i/icons.css" rel="stylesheet" crossorigin>
+  <link href="https://dl.dropbox.com/s/qm6x16r9jjlbgd4/game-icons.css" rel="stylesheet">
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-bold-rounded/css/uicons-bold-rounded.css' /> 
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-solid-straight/css/uicons-solid-straight.css'><!-- Iconos flaticon -->
+  <!-- Jquery-->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-<script src="https://static.tumblr.com/zd7jnbb/TDPpnlgj3/jquery.style-my-tooltips.js"></script>
-<link href="https://static.tumblr.com/zd7jnbb/nzwpnlgii/style-my-tooltips.css" rel="stylesheet" />
-<link href="style-my-tooltips.css" rel="stylesheet" type="text/css" />
-<script src="jquery.style-my-tooltips.js"></script>
- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
-<script src="http://static.tumblr.com/iuw14ew/VSQma1786/jquery.style-my-tooltips.js"></script>    
-<script>
-(function($){
-$(document).ready(function(){
-$("a[title]").style_my_tooltips({
-tip_follows_cursor:true,
-tip_delay_time:0,
-tip_fade_speed:400,
-attribute:"title"
-});
-});
-})(jQuery);
-</script>
     <script>
         function selectCode(e) {
                 var doc = document
@@ -47,7 +37,10 @@ attribute:"title"
                 }
             };
             $(function(){$("dl.codebox:not(.spoiler,.hidecode)  > dd.code, dl.codebox:not(.spoiler,.hidecode)  > dd > code").closest("dl").find('dt').append('<span onClick="selectCode(this)" class="selectCode" title="Seleccionar todo"><em class="th th-check-mark"></em></span>')});
-    </script>
+    </script> 
+ <!-- Fin del toolip --> 
+  
+  
 	<title>{SITENAME_TITLE}{PAGE_TITLE}</title>
 	<meta http-equiv="content-type" content="text/html; charset={S_CONTENT_ENCODING}"/>
 	<meta http-equiv="content-script-type" content="text/javascript"/>
@@ -251,11 +244,114 @@ attribute:"title"
 		<!-- END google_analytics_code_bis -->
 	</script>
 	<!-- END google_analytics_code -->
-<script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>  
 </head>
 
-<body id="phpbb" class="light-mode">
+<body id="phpbb">
+  <a id="top" name="top" accesskey="t"></a>
 
+ <div id="Navup-BF">
+      <div class="navup-1">
+        <div class="Titulo-BF"><a href="/">Blue <i class="cp cp-fire-o"></i> Flames <span>エクソシスト</span></a></div>
+  <div class="Navlinks">
+    <a href="/" title="Indice" class="navbara"><i class="cp cp-home-o"></i>Home</a>
+       <!-- BEGIN switch_user_logged_out -->
+    <a href="/register" title="Unete a nosotros" class="navbara"><i class="cp cp-plus"></i>Registrarse</a>
+    <a href="/login" title="Iniciar Seccion" class="navbara"><i class="cp cp-enter"></i>Conectarse</a>
+    <!-- END switch_user_logged_out -->
+    <!-- BEGIN switch_user_logged_in -->
+     <a href="/login?logout=1" title="Cerrar Seccion" class="navbara"><i class="cp cp-power"></i>Desconectarse</a>
+     <a href="/memberlist" title="Nuestra Familia" class="navbara"><i class="cp cp-group"></i>Miembros</a>
+    <a href="/groups" title="Nuestros grupos" class="navbara"><i class="cp cp-lotus"></i>Grupos</a>
+    <a href="/privmsg?folder=inbox" title="Bandeja de mensaje" class="msj navbara"><i class="cp cp-envelope-o"></i>Buzón</a>
+    <!-- END switch_user_logged_in -->
+  </div>
+      </div>
+      
+  <div class="nav-down">
+<div class="left-nav">
+      <a href="#top" class="bf-top" onclick="$('html,body').animate({scrollTop: $('#top').offset().top},2000);" title="Ir Arriba"><i class="fi fi-br-angle-up"></i></a>
+      <a href="#bottom" class="bf-bot"><i class="fi fi-br-angle-down" title="Ir abajo"></i></a>
+        <a href="javascript:void(0);" onclick="toggleDropdown()" class="navbara bf-noti">
+    <i class="cp cp-bell-o"></i></a>
+<div class="dropdownBF" id="dropdownBF">
+<div class="noti-tab-sc">
+       <script>
+    jQuery(document).ready(function(){
+    jQuery(".noti-tab-sc").replaceWith(jQuery("#fa_toolbar #fa_right ul#notif_list"));
+    });
+    </script> 
+     </div>
+</div>
+<a href="#" id="toggle-mode"><em class="cp cp-sun"></em></a>
+      <button id="openModal"><i class="fi fi-br-user-add" title="Menú de usuario y cambio de cuentas"></i></button>
+    </div>
+    <div class="right-nav">
+      <a class="nav" href="{U_INDEX}">Indice</a>
+{NAV_CAT_DESC}
+    </div>
+    <img class="downn-img" src="https://images2.imgbox.com/54/e6/Zdwt2DET_o.png" style="max-width:100%; height: 30px;" />
+    
+   <div id="modal" class="modal">
+    <div class="modal-content">
+         <button id="closeModal" class="close-btn">X</button>
+        <div class="card-ava">
+            <div class="card-img">
+                <script>document.write(_userdata.avatar);</script>
+            </div>
+        </div>
+        <div class="card-butt">
+            <a href="/profile?mode=editprofile" title="Editar Perfil"><i class="fi fi-br-user"></i></a>
+            <a href="/profile?mode=editprofile&page_profil=avatars" title="Cambiar avatar"><i class="fi fi-br-camera"></i></a>
+            <a href="/profile?mode=editprofile&page_profil=signature" title="Cambiar firma"><i class="fi fi-br-pencil"></i></a>
+            <a href="{U_SEARCH_SELF}" title="Tus temas"><i class="fi fi-br-bookmark"></i></a>
+            <a href="search?search_id=watchsearch" title="Temas supervisados"><i class="fi fi-br-star"></i></a>
+            <button id="toggleTab"><i class="fi fi-br-plus"></i></button>
+        </div>
+      <p><script>document.write(_userdata.username);</script></p>
+		<h1>Welcome</h1>
+    </div>
+        <div id="tabm" class="tabm">
+          <div class="monomer"></div>
+          <h1>Cambiar Cuentas</h1>
+        <button id="closeTab" class="close-btn1">Cerrar Pestaña</button>
+        </div>
+    
+</div>
+</div>
+  </div>  
+  
+  
+  <div id="Cabecera-BF">
+    <center>
+ <div id="gg" class="ggb bg-cover bg-cc">
+			
+				<!-- STAR ANIMATION -->
+				<div class="bg-animation">
+					<div id='stars'></div>
+					<div id='stars2'></div>
+					<div id='stars3'></div>
+					<div id='stars4'></div>
+				</div><!-- / STAR ANIMATION -->
+  </div>
+      </center>
+</div>
+  <div id="Tablon-BF">
+    <div class="HIS"></div>
+<div class="Contenedortablon-BF">
+  <div class="caja-button-BF">
+       <button id="prev-slide-button" onclick="prevSlide()">&#10094;</button>
+    <button id="next-slide-button" onclick="nextSlide()">&#10095;</button>
+    <div class="cajamusic-BF"></div>
+    <div class="cajaredes"></div>
+  </div>
+  <div class="slider">
+    <div class="slide"><div class="Nov"></div></div>
+    <div class="slide"><div class="Staff-BF"></div></div>
+    <div class="slide"><div class="Eve-BF"></div></div>
+    <div class="slide"><div class="Busq-BF"></div></div>
+  </div>
+    </div>
+  </div>
 <!-- BEGIN hitskin_preview -->
 <div id="hitskin_preview" style="display: block;">
 	<h1><img src="https://2img.net/i/fa/hitskin/hitskin_logo.png" alt=""/> <em>Hit</em>skin.com</h1>
@@ -337,72 +433,91 @@ attribute:"title"
 </div>
 <!-- END switch_like_popup -->
 
-  <banner>
-<div class="navb">
-  <div class="navi1">
-   <div class="bftacon"><script>document.write(_userdata.avatar);</script></div>
-<a href="#openModal"><i class="cp cp-controls"></i></a>
-
-     <div class="navnoti"></div>
- <button id="theme-toggler" type="button" name="dark_light"  title="Cambia los colores del tema"></button>
-</div>
-
-  <div class="navi">
-    {GENERATED_NAV_BAR}
-  </div>  
-</div>
-
-<div id="openModal" class="modalDialog">
-	<div>
-		<a href="#close" title="Close" class="close">X</a>
-		<h2>Tablon de anuncios</h2>
-		<p>voy a romper el foro, ayuda.</p>
-	</div>
-</div>
-         
-                  
-                  <div id="Portada">
-                    <h1>Blue Flames</h1>                  
-                    <div class="pfrase">
-Un lugar donde la vida cotidiana se entrelaza con la fantasía, los exorcistas y estudiantes enfrentan lo sobrenatural proveniente de un mundo que los mortales no pueden ver.                                                                       
-				</div>
-                  </div>  
-    <div class="bf-lininicio">
-      <div class="bfnporta">
-        <div class="intam">
-      <h1>Bienvenido</h1>
-      <p><script>document.write(_userdata.username);</script></p>
-        </div>
-         <linea></linea> 
-      <div class="gflink"></div>
-      </div>
-      <iframe src="https://foromephisto.foroactivo.com/h1-busquedas" class="bfbusq"></iframe>
-      </div>
-    <div class="bftram">
-      <div class="tram1">presentación</div>
-      <div class="tram2">Evento 1</div>
-      <div class="tram3">Evento 2</div>
-      <div class="tram4">Evento 3</div>
-    </div>
-  </banner> 
-  
- <div id="fbpabajo">
-   <div class="bajasubi">
-     <a href="/#top"><i class="cp cp-chevron-up"></i></a>
-     <a href="/#bottom"><i class="cp cp-chevron-down"></i></a>
-   </div>
-            <a class="navajo" href="{U_INDEX}"><span>{L_INDEX}</span></a>
-            <!--{NAV_SEP}<a class="nav" href="{U_ALBUM}"><span>{L_ALBUM}</span></a>-->
-            {NAV_CAT_DESC}
-        </div> 
-                  
-                  
-			<div id="wrap">
-				<a id="top" name="top" accesskey="t"></a>
+<div class="conteneur_minwidth_IE">
+	<div class="conteneur_layout_IE">
+		<div class="conteneur_container_IE">
+			<div id="wrap">			
 				{JAVASCRIPT}
 
 				<div id="page-header">
-					
+					<div class="headerbar">
+						<div class="inner"><span class="corners-top"><span></span></span>
+
+							<div id="logo-desc">
+								<a href="{U_INDEX}" id="logo"><img loading="lazy" src="{LOGO}" alt="{L_INDEX}"/></a>
+								<!-- BEGIN switch_h1 -->
+								<div id="site-title">{switch_h1.MAIN_SITENAME}</div>
+								<!-- END switch_h1 -->
+								<!-- BEGIN switch_desc -->
+								<p>{switch_desc.SITE_DESCRIPTION}</p>
+								<!-- END switch_desc -->
+							</div>
+
+							<span class="corners-bottom"><span></span></span></div>
+					</div>
+
+					<div class="navbar">
+						<div class="inner"><span class="corners-top"><span></span></span>
+
+							<ul class="linklist navlinks{NAVBAR_BORDERLESS}">
+								<li>{GENERATED_NAV_BAR}</li>
+							</ul>
+
+							<!-- BEGIN switch_search_box -->
+							<div id="search-box">
+								<form method="get" action="{ACTION_SEARCH}" id="search">
+									<p class="nomargin"><input type="text" name="search_keywords" id="keywords"
+															   maxlength="128" class="inputbox search"
+															   value="{L_SEARCH}..."
+															   onclick="if (this.value == '{L_SEARCH}...') this.value = '';"
+															   onblur="if (this.value == '') this.value = '{L_SEARCH}...';"/>
+										{JS_SESSION_ID_INPUT}
+										<input class="button2" type="submit" value="{L_SEARCH}"/></p>
+								</form>
+							</div>
+							<!-- END switch_search_box -->
+
+							<span class="corners-bottom"><span></span></span></div>
+					</div>
+
+					<!-- BEGIN switch_ticker_new -->
+					<div id="fa_ticker_blockD" style="margin-top:4px;">
+						<div class="module">
+							<div class="inner">
+								<span class="corners-top"><span></span></span>
+								<div id="fa_ticker_container">
+									<ul id="fa_ticker_content" class="jcarousel-skin-tango" style="display:none">
+										<!-- BEGIN ticker_row -->
+										<li>{switch_ticker.ticker_row.ELEMENT}</li>
+										<!-- END ticker_row -->
+									</ul>
+								</div>
+								<span class="corners-bottom"><span></span></span>
+							</div>
+						</div>
+					</div>
+					<!-- END switch_ticker_new -->
+
+					<!-- BEGIN switch_ticker -->
+					<div id="fa_ticker_block" style="margin-top:4px;">
+						<div class="module">
+							<div class="inner">
+								<span class="corners-top"><span></span></span>
+								<div id="fa_ticker_container">
+									<div id="fa_ticker" style="height:{switch_ticker.HEIGHT}px;">
+										<div class="fa_ticker_content">
+											<!-- BEGIN ticker_row -->
+											<div>{switch_ticker.ticker_row.ELEMENT}</div>
+											<!-- END ticker_row -->
+										</div>
+									</div>
+								</div>
+								<span class="corners-bottom"><span></span></span>
+							</div>
+						</div>
+					</div>
+					<!-- END switch_ticker -->
+				</div>
 
 				<div id="page-body">
 
@@ -423,62 +538,464 @@ Un lugar donde la vida cotidiana se entrelaza con la fantasía, los exorcistas y
 
 										<div id="main">
 											<div id="main-content">
-                                                                                          
- <style>
-button#theme-toggler {  width: 30px;
+<style>
+#Navup-BF {
+    width: 100%;
+    height: 80px;
+    background: var(--n2);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    border-bottom-left-radius: 13px;
+    border-bottom-right-radius: 10px;
+}
+  
+.Titulo-BF {
+    font-family: var(--f5);
+    font-size: 30px;
+    color: var(--n4);
+    line-height:1.8em;
+    margin-left:10px;
+}
+  
+.Titulo-BF a {
+    color: var(--n4);
+    margin: 0px 0 0px 10px;
+}
+  
+.Titulo-BF .cp {
+    color: var(--pr4);
+}
+.Titulo-BF span {
+    color: var(--PR4);
+    background-color:var(--n5);
+    padding:5px;
+    font-size:12px;
+    font-family:var(--f1);
+    border-radius:10px;
+    letter-spacing:2px;
+    position:Relative;
+    top:-4px;
+}
+
+.Navlinks a.navbara {
+    font-family: var(--f4);
+    text-transform: uppercase;
+    font-size: 7px;
+    text-decoration: none;
+    color: var(--n6);
+    letter-spacing:1px;
+    margin-right:10px;
+    margin-left:10px;
+}
+.Navlinks .cp {
+    color: var(--n4);
+    margin-right: 5px;
+    background: var(--pr5);
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 10px;
+    transition:0.5s linear;
+}
+.Navlinks a:hover .cp {
+    background: var(--pr3);
+}
+  
+.navup-1 {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--n1);
+}
+  
+.nav-down {
+    width: 100%;
     height: 30px;
-    border-radius: 6px;
-    border: none;
-    background: var(--acento1);
-    cursor: pointer; }
-button#theme-toggler:before { font: 13px 'cappuccicons'; color: white; }
-.dark-mode button#theme-toggler:before {content: "\eb96";}
-.light-mode button#theme-toggler:before {content: "\eca7"; color:var(--accent1); }
+    background: var(--n3);
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+.downn-img {
+  mix-blend-mode: color-dodge;
+    opacity: 0.6;
+}
+  
+.left-nav {
+      z-index: 999;
+  display: flex;
+  }  
   
 
-body.light-mode {
-     --acento1: #3e9eb0;
-    --acento2: #00a7b6;
-    --acento3: #3e9eb0;
-    --acento4: #60f2ff;
-    --acento5: #e1e9ea;
-    --fondo1: #f4f5f6;
-    --fondo2: #ebf0f4;
-    --color1: #ffffff;
-    --color2: #0e0e0e;
-    --tfondo1: #00000abd;
-    --tfondo2: #b1d4dbad;
-    --borde: #8bc8ed;
-    --imafondo1: url('https://images2.imgbox.com/a1/6f/2BZtLW9K_o.png');
-    --tam1: 8px;
-    --tam2: 10px;
-    --tam3: 13px;
-    --tam4: 15px;
-    --tam5: 30px;
-    --titulo: 'Rosie Brown';
-    --cuerpo: 'Open Sans';
+.left-nav a, .left-nav button {
+  color: var(--pr4);
+  font-size: calc(2.2em / 2);
+  padding: 10px;
+  border-right: 1px solid var(--n1)!important;
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
+  background: transparent; 
+  }
+
+.left-nav #openModal {
+  border: none;
+} 
+  
+.right-nav {
+    position: absolute;
+    right: 0;
+    z-index: 999;
+    margin: 10px;
+    font-size: 0;
+    text-transform: uppercase;
+}
+
+.right-nav a{
+    font-size: 10px;
+    background: var(--n2);
+    padding: 5px;
+    border-radius: 7px;
+    color: var(--n6);
+    letter-spacing: 2px;
+      margin: 6px;
+}  
+  
+/*Card*/
+/*inicio modal*/
+button { cursor: pointer;}
+.close-btn {
+    background-color: var(--pr3);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 14px;
+  z-index: 999;
+  position: relative; 
+  margin-right: 100%;
+}
+
+.modal {
+    display: none; /* Modal está oculto inicialmente */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.modal.open {
+    display: flex; /* Muestra el modal cuando tiene la clase 'open' */
+}
+
+.modal-content {
+   width: 300px;
+    height: auto;
+  min-height: 200px;
+  max-height: 400px;
+    overflow: hidden;
+    position: relative;
+    opacity: 0; /* Comienza oculto */
+    z-index: 10; /* Modal se coloca encima */
+   padding: 5px 20px 13px;
+    border-radius: 10px;
+    background: var(--n2);
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    color: var(--n4);
+    box-shadow: -1px -3px 11px var(--n5);
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.modal-content.show {
+    opacity: 1; /* Fade in del contenido */
+}
+
+/**Contenido**/
+.card-ava {
+    width: 130px;
+    height: 130px;
+    overflow: hidden;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-ava:before {
+    content: " ";
+    background: url(https://images2.imgbox.com/79/09/Fk3dqZxU_o.png);
+    width: 207px;
+    height: 188px;
+    position: absolute;
+    top: -1px;
+}
+
+.card-img {
+    width: 130px;
+    height: 130px;
+    object-fit: contain;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.card-img img {
+    max-width: 300px;
+    max-height: 500px;
+    object-fit: contain;
+    width: 171px;
+    height: 219px;
+    margin: -14px 0 0 -26px;
+}
+  
+.card-butt {
+    width: 100%;
+    padding: 15px 0 25px 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+  
+.card-butt a, .card-butt button {
+    margin: 20px;
+    font-size: clamp(12px, 2vw, 18px);
+    color: var(--pr4);
+    padding: 10px;
+    border: 1px solid var(--n1);
+    border-radius: 5px;
+  }
+.card-butt button {
+  background: none;
+}
+  
+.modal-content p {
+    font-size: clamp(9px, 2vw, 12px);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: var(--f3);
+    font-weight: 600;
+    margin: 10px;
+    top: -28px;
+    position: relative;
+}
+ 
+.modal-content h1 {
+    top: 87%;
+    left: -2px;
+    position: absolute;
+    font-size: 64px;
+    text-align: center;
+    margin-top: 15px !important;
+    font-family: var(--f5);
+    color: var(--pr4);
+    opacity: 0.5;
+} 
+
+ /*PESTAÑA CUENTAS*/
+  
+.tabm {
+    position: absolute;
+    top: 50%;  /* Centramos la pestaña verticalmente en la pantalla */
+    left: 50%;  /* Centramos la pestaña horizontalmente */
+    width: 300px;
+    height: 350px;
+    min-height: 200px;
+    max-height: 400px;
+    background-color: var(--n2);
+  color: var(--n4);
+    padding: 20px;
+    border-radius: 10px;
+    transition: left 0.5s ease; /* Animación de deslizamiento */
+    transform: translate(-50%, -50%); /* Ajuste para centrar vertical y horizontalmente */
+    z-index: 5; /* Pestaña detrás del modal */
+    visibility: hidden; /* Comienza oculta */
+}
+
+.tabm.open {
+    visibility: visible; /* Muestra la pestaña cuando tiene la clase 'open' */
+    left: calc(52% + 300px); /* Desliza la pestaña 300px hacia la derecha desde el centro */
 }
    
-body.dark-mode {  
-    --acento1: #0d4766;
-    --acento2: #156b9a;
-    --acento3: #0d4766;
-    --acento4: #2ab1c3;
-    --acento5: #b1d4db;
-    --fondo1: #131314;
-    --fondo2: #181819;
-    --color1: #0e0e0e;
-    --color2: #f5f5f5;
-    --tfondo1: #00000abd;
-    --tfondo2: #b1d4dbad;
-    --borde: #303131;
-    --tam1: 8px;
-    --tam2: 10px;
-    --tam3: 13px;
-    --tam4: 15px;
-    --tam5: 30px;
-    --titulo: 'Rosie Brown';
-    --cuerpo: 'Open Sans';   
-   }   
-</style>                             
-                                                                                          
+/*Card*/  
+  
+  /*CABECERA*/
+#Cabecera-BF {
+    width: 100%;
+    height: 600px;
+    background-image: var(--cb1);
+    background-size: cover;
+    margin-top: 70px;
+    overflow: hidden;
+    background-position: top center;
+}
+.bg-animation {
+    position: relative!important;
+    top: 0;
+    width: 100%;
+    z-index: 0;
+    height: 100%;
+}
+  /*NOTIFICACIONES*/
+.dropdownBF {
+    display: none;
+    position: absolute;
+    background-color: var(--n5);
+    width: 180px;
+    padding: 10px;
+    margin-top: 19px;
+    z-index: 1;
+    left: 1%;
+    border-radius: 6px;
+}
+  
+  div#dropdownBF a {
+    color: var(--n4);
+}
+.contentText.ellipsis {
+    color: var(--pr4);
+}
+ul#notif_list {
+    font-size: clamp(11px, 2vw, 12px)!important;
+    padding: 10px;
+    background: var(--n2);
+  border-radius: 4px;
+}
+li.see_all {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    background: var(--pr2);
+    border-radius: 5px;
+    margin-top: 10px;
+}
+  /*Tablon*/
+#Tablon-BF {
+    width: 100%;
+    background: var(--n5);
+    box-sizing: border-box;
+    padding: 30px;
+}
+  /*CONTENEDOR TABLON*/
+.Contenedortablon-BF {
+    padding: 20px;
+    background: var(--n3);
+    border: 1px solid var(--n7);
+    border-top: 0;
+    box-sizing: border-box;
+  position:relative;
+}
+.caja-button-BF {
+    box-sizing: border-box;
+    padding: 10px;
+    background: var(--pr6);
+    margin-top: -20px;
+    margin-left: -20px;
+    margin-right: -20px;
+  margin-bottom:20px;
+    height: 60px;
+    border-bottom: 1px solid var(--n7);
+    display: flex;
+    align-items: center;
+}
+.slider {
+    color: var(--n7);
+    position: relative;
+    height: 440px;
+    overflow: hidden;
+    border: 1px solid;
+    border-radius: 10px;
+    background: var(--n8);
+}
+.slide {
+    display: none; /* Ocultar todas las slides por defecto */
+}
+
+.slide:first-child {
+    display: block; /* Mostrar la primera slide por defecto */
+}
+#prev-slide-button,#next-slide-button {
+    background-color: var(--pr2);
+    color: var(--pr4);
+    border: 0;
+    cursor: pointer;
+    font-size: 1rem;
+    line-height: 1em;
+    width: 100px;
+    margin-right: 10px;
+    padding: 4px;
+    border-radius: 10px;
+}
+#prev-slide-button {
+  left: 0;
+}
+#prev-slide-button::before {
+    content: 'Regresar';
+    font-size: 7px;
+    text-transform: uppercase;
+    display: block;
+    color: var(--n6);
+    letter-spacing: 1px;
+}
+#next-slide-button {
+    left: 75px;
+}
+#next-slide-button::before {
+    content: 'Siguiente';
+    font-size: 7px;
+    text-transform: uppercase;
+    display: block;
+    color: var(--n6);
+    letter-spacing: 1px;
+}
+  /*NAV FORUM*/
+  .right-nav span1, .right-nav .cp,.right-nav #Cat1, .right-nav #Cat2 , .right-nav #Cat3 ,.right-nav  #Cat4,.right-nav #Cat5,.right-nav #Cat6 {
+    display: none;
+}
+  /*FOOTER*/
+div#page-footer .navbar {
+    padding: 10px;
+    background: var(--n2);
+    font-size: 6px;
+    font-family: var(--f3);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+#page-footer .navbar a {
+    color: var(--pr4) !important;
+}
+p.copyright {
+    background: var(--n1);
+    text-align: center;
+    padding: 0px;
+    font-family: var(--f3);
+    text-transform: uppercase;
+    font-size: 8px;
+}
+p.copyright a {
+    margin: 5px;
+    position: relative;
+    top: 3px;
+    color: var(--n5);
+    letter-spacing: 1px;
+    font-size: 10px;
+}
+ </style>
