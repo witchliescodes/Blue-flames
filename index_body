@@ -501,7 +501,7 @@
 
 .grstaff em:after {
   content: ''; 
-  background-image: url('https://images2.imgbox.com/4f/8a/2Pk7H01D_o.png'); 
+  background-image: var(--istaf); 
   background-size: cover;
   width: 30px; 
   height: 30px;
@@ -509,7 +509,7 @@
   
 .grexorcistas em:after {
     content: '';
-    background-image: url('https://images2.imgbox.com/d9/b7/H2AGo2Ef_o.png');
+  background-image: var(--iexor);
     background-size: cover;
     width: 30px;
     height: 30px;
@@ -517,7 +517,7 @@
   
 .graprendiz em:after {
   content: '';
-  background-image: url('https://images2.imgbox.com/b3/c1/yrTJdk4a_o.png'); 
+  background-image: var(--iapre); 
   background-size: cover;
   width: 30px; 
   height: 30px;
@@ -525,7 +525,7 @@
   
 .grakuhei em:after {
     content: '';
-    background-image: url(https://images2.imgbox.com/03/6b/SmITBaB0_o.png);
+    background-image: var(--iaku);
     background-size: cover;
     width: 30px;
     height: 30px;
@@ -533,7 +533,7 @@
  
 .grusuarios em:after {
   content: ''; 
-  background-image: url('https://images2.imgbox.com/75/1e/ncbS4Lgn_o.png'); 
+  background-image: var(--ius); 
   background-size: cover; 
   width: 30px; 
   height: 30px;
