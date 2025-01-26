@@ -1,3 +1,9 @@
+body {
+  visibility: hidden;
+}
+body.js-enabled {
+  visibility: visible;
+}
 :root {
   /* Star */
   --star: #fff;
@@ -14,6 +20,7 @@
   --pr3: #fd1905;
   --pr4: #08C2FF;
   --pr5: #024CAA;
+  --pr7: #538347;
   /* Colores neutrales */
   --n1: #202020;
   --n2: #181818;
@@ -23,6 +30,7 @@
   --n6: #a7a7a7;
   --n7: #fff2;
   --n8:#0005;
+  --n9: #292929;
   /*Transparencias*/
   --t1: #181818c7;
   --pr6: #1a194cbd;
@@ -36,11 +44,11 @@
   /* Fonts */
   --f1: 'Yuji Boku';
   --f2: 'Cherry Bomb One';
-  --f3: 'Arial Black';
+  --f3: 'Arial', bold;
   --f4: 'Arial';
   --f5: 'Rosie Brown';
   /*Fondo categorias*/
-    --fd1:url(https://i.ibb.co/6JW6vHJ/backgroundblue.png);
+    --fd1:url(https://i.ibb.co/Fg2VzgH/backgroundblue.png);
     /*CATEGORIAS*/
   --fd2:url(https://i.ibb.co/D9gFY2b/categoriageneral.png);
   --fd5:url(https://i.ibb.co/L8dn75m/Categoria-Staff.png);
@@ -49,6 +57,8 @@
   --fd3:url(https://i.ibb.co/GkZfWCp/frame.png);
   --fd7:url(https://i.ibb.co/34wpQcQ/flower.png);
   --flo1:url(https://images2.imgbox.com/54/e6/Zdwt2DET_o.png);
+  --flo2: url(https://images2.imgbox.com/22/27/2J7GLd3K_o.png);
+  --msc: url(https://images2.imgbox.com/c0/b7/ekrxZnrq_o.png);
   /*Decoracion perfil avanzado*/
    --fd8:url(https://i.ibb.co/9sqJDgs/frameperfil.png);
   --fd9:url(https://i.ibb.co/c1DNwQk/frameperfil2.png);
@@ -56,7 +66,7 @@
   /*FOROS TABS NORTE*/
   --fr1:url(https://cdna.artstation.com/p/assets/images/images/023/939/822/large/liu-qing-01-s.jpg?1580823109);
   --img1:url();
-  --fr2:url(https://i.postimg.cc/zBTyC28C/liu-qing-llian1.jpg);
+  --fr2:url(https://cdnb.artstation.com/p/assets/images/images/012/413/093/large/zp-zhang-seaport.jpg?1534686487);
   --img2:url();
   --fr3:url(https://cdnb.artstation.com/p/assets/images/images/024/048/285/large/liu-qing-03-03-s.jpg?1581153481);
   --img3:url();
@@ -79,10 +89,39 @@
   --gapr: url('https://images2.imgbox.com/73/af/M02LAQMq_o.png'); 
   --gaku: url('https://images2.imgbox.com/7a/28/6LKLVCJc_o.png');
   --gus: url('https://images2.imgbox.com/4e/8c/sms1HL5J_o.png');
+  /*Iconos de grupos*/
+  --istaf: url('https://images2.imgbox.com/4f/8a/2Pk7H01D_o.png');
+  --iexor: url('https://images2.imgbox.com/d9/b7/H2AGo2Ef_o.png');
+  --iaku: url('https://images2.imgbox.com/03/6b/SmITBaB0_o.png');
+  --iapre: url('https://images2.imgbox.com/b3/c1/yrTJdk4a_o.png');
+  --ius: url('https://images2.imgbox.com/75/1e/ncbS4Lgn_o.png');
   /*avisos de post*/
-  --cerado: url('https://i.imgur.com/NXb9dsf.png');
-  --nuevo: url('https://i.imgur.com/WZvh64N.png');
-  --sinpost: url('https://i.imgur.com/2xP32eV.png');
+  --cerado: url('https://i.ibb.co/S7nFGXM/cerrado.png');
+  --nuevo: url('https://i.ibb.co/WpnNZH8/MSJ-nuevo.png');
+  --sinpost: url('https://i.ibb.co/sbjrxCL/No-hay-msj.png');
+  /*FONDO POSTS*/
+  --fpg: url('https://images2.imgbox.com/ef/1a/exTuDHmO_o.png');
+  /*Imagenes de flores por grupo*/
+  --pstaff: url('https://images2.imgbox.com/85/da/kmIkh9nn_o.png');
+  --pexors: url('https://images2.imgbox.com/9f/eb/l5eH5Lif_o.png');
+  --papren: url('https://images2.imgbox.com/97/1d/JdHyhqml_o.png');
+  --pakuhe: url('https://images2.imgbox.com/06/82/hOkXH1zT_o.png');
+  /*Marcos por grupo*/
+  --mcstaff: url('https://images2.imgbox.com/3f/15/QIb2KkjE_o.png');
+  --mcexor: url('https://images2.imgbox.com/68/06/yRNPfDj6_o.png');
+  --mcaku: url('https://images2.imgbox.com/45/a0/IGfHKrvg_o.png');
+  --mcapr: url('https://images2.imgbox.com/c5/2e/28HFNAbq_o.png');
+  /*Header por grupo*/
+  --cstaff: url('https://images2.imgbox.com/2d/30/KqJJFIjX_o.png');
+  --cexo: url('https://images2.imgbox.com/e9/43/RguQmb7w_o.png');
+  --caku: url('https://images2.imgbox.com/ff/af/xRkdrhnU_o.png');
+  --capre: url('https://images2.imgbox.com/57/48/xNP4TJGt_o.png');
+  /*Separadores por grupo*/
+  --pssta: url('https://images2.imgbox.com/7a/d2/7fQqWLBR_o.png');
+  --psexor: url('https://images2.imgbox.com/5d/4c/fRi19wkI_o.png');
+  --psaku: url('https://images2.imgbox.com/60/42/nyY0mQPD_o.png');
+  --psapre: url('https://images2.imgbox.com/d1/f1/x9H8Zr7m_o.png');
+  --psnuev: url('https://images2.imgbox.com/2b/fc/04k7k4Wh_o.png');
 }
 
 *::selection{
@@ -159,48 +198,6 @@ span.new-message {
 }
 
 
-/** Mephis estuvo aquí**/
-.postbody .topic-title {
-   display: block;
-    font-size: 20px;
-    font-family: var(--f5);
-    color: var(--pr4);
-    padding: 10px;
-    background: #;
-    border-radius: 10px;
-    text-align: center;
-}
-.pathname-box {
-    margin-top: 3px;
-    margin-left: 15px;
-    float: left;
-    display: flex;
-}
-
-.post {  
-    padding: 10px;
-    background: #000000cf;
-    border: 1px solid var(--n5);
-    border-radius: 10px;
-    height: auto;
-    margin-top: -10px;
-  
-}
-
-.postbody .content {
-    word-wrap: break-word;
-    font-size: 1.3em;
-    color: #fcfaf9;
-    font-family: sans-serif;
-}
- 
-.postprofile {
-    overflow: hidden;
-    width: 300px;
-    margin: 0;
-    height: auto;
-    padding: 10px;
-}
 
 /* Codebox Mephis */
 
@@ -235,8 +232,195 @@ height: auto;
 max-height: 200px;
 white-space: normal;
 padding-top: 5px;
-font: 1.2em 'arial';
+font: 1.2em Courier,Courier New;
 line-height: 2.3em;
 color: #10b3e9;
 margin: 2px 0;
+}
+
+/* Rueda de colores */
+
+
+.colorpicker {
+   width: 356px;
+   height: 176px;
+   overflow: hidden;
+   position: absolute;
+   background: url(https://i.servimg.com/u/f83/17/45/19/77/light11.png) !important;
+   font-family: Arial, Helvetica, sans-serif;
+   display: none;
+   padding: 0 !important;    
+}
+.colorpicker.dark{
+ background: url(https://i.servimg.com/u/f83/17/45/19/77/dark11.png) !important;
+}
+.colorpicker_color {
+   width: 150px;
+   height: 150px;
+   left: 14px;
+   top: 13px;
+   position: absolute;
+   background: #f00;
+   overflow: hidden;
+   cursor: crosshair;
+}
+.colorpicker_color div {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 150px;
+   height: 150px;
+   background: url(https://i.servimg.com/u/f83/17/45/19/77/colorp10.png);
+}
+.colorpicker_color div div {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 11px;
+   height: 11px;
+   overflow: hidden;
+   background: url(https://i.servimg.com/u/f83/17/45/19/77/colorp10.gif);
+   margin: -5px 0 0 -5px;
+}
+.colorpicker_hue {
+   position: absolute;
+   top: 13px;
+   left: 171px;
+   width: 35px;
+   height: 150px;
+   cursor: n-resize;
+}
+.colorpicker_hue div {
+   position: absolute;
+   width: 35px;
+   height: 9px;
+   overflow: hidden;
+   background: url(https://i.servimg.com/u/f83/17/45/19/77/colorp11.gif) left top;
+   margin: -4px 0 0 0;
+   left: 0px;
+}
+.colorpicker_new_color {
+   position: absolute;
+   width: 60px;
+   height: 30px;
+   left: 213px;
+   top: 13px;
+   background: #f00;
+}
+.colorpicker_current_color {
+   position: absolute;
+   width: 60px;
+   height: 30px;
+   left: 283px;
+   top: 13px;
+   background: #f00;
+}
+.colorpicker input {
+   background-color: transparent;
+   border: 1px solid transparent;
+   position: absolute;
+   font-size: 10px;
+   font-family: Arial, Helvetica, sans-serif;
+   color: #898989;
+   top: 4px;
+   right: 11px;
+   text-align: right;
+   margin: 0;
+   padding: 0 !important;
+   height: 11px;
+}
+.colorpicker_hex {
+   position: absolute;
+   width: 72px;
+   height: 22px;
+   background: url(https://i.servimg.com/u/f83/17/45/19/77/custom11.png) top;
+   left: 212px;
+   top: 142px;
+}
+.colorpicker.dark .colorpicker_hex {
+   background: url(https://i.servimg.com/u/f83/17/45/19/77/colorp11.png) top;
+}
+.colorpicker_hex input {
+   right: 6px;
+}
+.colorpicker_field {
+   height: 22px;
+   width: 62px;
+   background-position: top;
+   position: absolute;
+}
+.colorpicker_field span {
+   position: absolute;
+   width: 12px;
+   height: 22px;
+   overflow: hidden;
+   top: 0;
+   right: 0;
+   cursor: n-resize;
+}
+.colorpicker_rgb_r {
+   background-image: url(https://i.servimg.com/u/f83/17/45/19/77/custom12.png);
+   top: 52px;
+   left: 212px;
+}
+.colorpicker.dark .colorpicker_rgb_r{
+ background-image: url(https://i.servimg.com/u/f83/17/45/19/77/colorp12.png);
+}
+.colorpicker_rgb_g {
+   background-image: url(https://i.servimg.com/u/f83/17/45/19/77/custom13.png);
+   top: 82px;
+   left: 212px;
+}
+.colorpicker.dark .colorpicker_rgb_g {
+ background-image: url(https://i.servimg.com/u/f83/17/45/19/77/colorp13.png);
+}
+.colorpicker_rgb_b {
+   background-image: url(https://i.servimg.com/u/f83/17/45/19/77/custom14.png);
+   top: 112px;
+   left: 212px;
+}
+.colorpicker.dark .colorpicker_rgb_b {
+ background-image: url(https://i.servimg.com/u/f83/17/45/19/77/colorp14.png);
+}
+.colorpicker_hsb_h, .colorpicker_hsb_s, .colorpicker_hsb_b {
+ display: none;
+}
+.colorpicker_submit {
+ position: absolute;
+    background: url("https://i.servimg.com/u/f83/17/45/19/77/accept10.png") no-repeat;
+    cursor: pointer;
+    right: 10px;
+ width: 48px;
+ height: 50px;
+    top: 118px;  
+ overflow: hidden;
+}
+.colorpicker_focus {
+   background-position: center;
+}
+.colorpicker_hex.colorpicker_focus {
+   background-position: bottom;
+}
+.colorpicker_submit.colorpicker_focus {
+   background-position: bottom;
+}
+.colorpicker_slider {
+   background-position: bottom;
+}
+.colorpicker { z-index: 3; }
+
+/*Tooltip */
+
+.tooltip {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.8); /* Fondo oscuro */
+  color: white; /* Texto blanco */
+  padding: 5px 8px;
+  border-radius: 5px;
+  font-size: 12px;
+  white-space: nowrap; /* Evita que el texto se divida en líneas */
+  pointer-events: none; /* Evita que interfiera con el cursor */
+  opacity: 0; /* Por defecto, está oculto */
+  transition: opacity 0.2s ease-in-out;
+  z-index: 999; /* Asegura que esté sobre otros elementos */
 }
