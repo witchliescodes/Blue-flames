@@ -16,7 +16,8 @@
   <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
   <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-solid-straight/css/uicons-solid-straight.css'><!-- Iconos flaticon -->
   <!-- Jquery-->
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+ <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+ <script src="script.js"></script>
 
     <script>
         function selectCode(e) {
@@ -586,7 +587,7 @@
 .Navlinks a.navbara {
     font-family: var(--f4);
     text-transform: uppercase;
-    font-size: 7px;
+    font-size: 0.6rem;
     text-decoration: none;
     color: var(--n6);
     letter-spacing:1px;
@@ -637,14 +638,14 @@
   
 
 .left-nav a, .left-nav button {
-  color: var(--pr4);
-  font-size: calc(2.2em / 2);
-  padding: 10px;
-  border-right: 1px solid var(--n1)!important;
-  display: flex; 
-  align-items: center; 
-  justify-content: center;
-  background: transparent; 
+    color: var(--pr4);
+    font-size: calc(1.5em / 2);
+    padding: 10px;
+    border-right: 1px solid var(--n1) !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
   }
 
 .left-nav #openModal {
@@ -661,7 +662,7 @@
 }
 
 .right-nav a{
-    font-size: 10px;
+    font-size: 8px;
     background: var(--n2);
     padding: 5px;
     border-radius: 7px;
