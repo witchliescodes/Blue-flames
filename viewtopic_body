@@ -998,15 +998,15 @@ $(resize_images({ 'selector' : '.postbody .content', 'max_width' : {switch_image
 
 .paviav {
   width: 300px;
-  height: 500px;
+  height: 530px;
 
 }
   
 .paviav img {
     max-width: 300px !important;
-    max-height: 500px !important;
+    max-height: 530px !important;
     width: 300px;
-    height: 500px;
+    height: 530px;
     border-radius: 7px;
 }
    
