@@ -1152,16 +1152,13 @@ color: var(--n4);
 
     $(".hpestadis").hide();
 
-
     $(".hpest").click(function () {
         $(".hpestadis").fadeIn(); 
     });
 
-
     $(".hcerr").click(function () {
         $(".hpestadis").fadeOut(); 
     });
-
 
     $(".hpestadis").click(function (e) {
         if ($(e.target).is(".hpestadis")) {
