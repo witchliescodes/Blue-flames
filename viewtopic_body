@@ -155,7 +155,7 @@ showHiddenMessage = function(id)
       </div>
     </div>  
 <div class="bfpostito">
-      <div class="postprofile" id="profile{postrow.displayed.U_POST_ID}">    
+      <div class="postprofile psticky" id="profile{postrow.displayed.U_POST_ID}">    
           <div class="bfpperfil">
              <div class="bfpava">
                <div class="paviav">{postrow.displayed.POSTER_AVATAR}
@@ -210,11 +210,12 @@ showHiddenMessage = function(id)
           </div>
         <div class="bfpli">
         <div class="bfeditp">
-          <a>a</a>
-           <a>a</a>
-            <a>a</a>
-           <a>a</a>
-            <a>a</a>
+         <div>{postrow.displayed.THANK_IMG}</div>
+	 <div>{postrow.displayed.QUOTE_IMG}</div>
+	 <div>{postrow.displayed.EDIT_IMG}</div>
+	 <div>{postrow.displayed.DELETE_IMG}</div>
+	 <div>{postrow.displayed.IP_IMG}</div>
+	 <div>{postrow.displayed.REPORT_IMG_NEW}</div>
         </div>
       </div>
       </div>
@@ -365,9 +366,10 @@ $(resize_images({ 'selector' : '.postbody .content', 'max_width' : {switch_image
 /*Acomodar post*/
 .post {  
     background: transparent;
-    height: auto;
     padding: 0!important;
   margin-bottom: 0!important;
+  position: relative;
+   width: 100%;
 }
 
 .postbody .content {
@@ -376,11 +378,11 @@ $(resize_images({ 'selector' : '.postbody .content', 'max_width' : {switch_image
     color: #fcfaf9;
     font-family: sans-serif;
 }  
+    
   
 /**Inicio, botones**/  
 #bfpost {
     background: var(--n5);
-    overflow: hidden;
     border-radius: 15px;
     padding: 10px;
     border: 1px solid var(--n2);
@@ -951,27 +953,13 @@ $(resize_images({ 'selector' : '.postbody .content', 'max_width' : {switch_image
 }
   
 /*ZONA DEL POST */
-.post {  
-    background: transparent;
-    height: auto;
-    padding: 0!important;
-  margin-bottom: 0!important;
-}
-
-.postbody .content {
-    word-wrap: break-word;
-    font-size: 1.3em;
-    color: #fcfaf9;
-    font-family: sans-serif;
-}
 
 .bfpostito {
-    width: -webkit-fill-available;
     display: grid;
-    height: 100%;
-    position: relative;
-  grid-template-columns: 37% 63%;
-  margin: -5px 0px 0 1px;
+    margin: -5px 0px 0 1px;
+    height: auto;
+    grid-template-columns: 37% 63%;
+    align-items: start;
 }
 
  /*POSTPROFILE*/
@@ -982,22 +970,24 @@ $(resize_images({ 'selector' : '.postbody .content', 'max_width' : {switch_image
     grid-row: 1;
     background: var(--n2);
     outline: 1px solid var(--n1);
+    height: auto;
+    position: sticky;
+    top: 80px;
     display: grid;
-    grid-template-columns: 80% 20%;   
+    grid-template-columns: 80% 20%;
     border-top-right-radius: 20px;
-  top: 10px;
-  position: sticky;
 }
 
+
 .bfpperfil {
-    width: auto;
-    min-height: 590px;
-    height: auto;
+    width: 100%;
     display: flex;
     align-items: center;
     flex-flow: column;
     border-right: 1px solid var(--n1);
     border-top-right-radius: 20px;
+    z-index: 9999; 
+    background: var(--n2);
 }
 
   
@@ -1005,9 +995,8 @@ $(resize_images({ 'selector' : '.postbody .content', 'max_width' : {switch_image
   width: 300px;
   height: 530px;
   background: var(--pr1);
-  margin: 30px 0 0 0;
+  margin: 30px 0 30px 0;
   border-radius: 10px;
-  overflow: hidden;
 }
   
 .bfpava:before {
@@ -1019,7 +1008,7 @@ $(resize_images({ 'selector' : '.postbody .content', 'max_width' : {switch_image
     margin: -17px 0 0 -20px;
     position: absolute;
     background-size: cover;
-      z-index: 999999999;
+    z-index: 999999999;
 }
 
 .paviav {
@@ -1172,9 +1161,8 @@ $(resize_images({ 'selector' : '.postbody .content', 'max_width' : {switch_image
 
 .hpestadis.show {
     visibility: visible;
-    opacity: 1;
-}  
-
+}
+  
 /* Contenido del Modal */
 .contenido {
     background-color: var(--n2);
@@ -1238,48 +1226,13 @@ $(resize_images({ 'selector' : '.postbody .content', 'max_width' : {switch_image
 .bfposti {
     grid-column: 2 / 2;
     grid-row: 1;
-    margin: 20px 20px;
+    margin: 10px 0px 0 10px;
     text-align: justify;
     font: 400 1em var(--f4);
     line-height: 1.3em;
+    padding: 10px;
     color: var(--n4);
-}  
-  
+} 
   
    
 </style> 
-
-<script>
-$(document).ready(function () {
-
-    $(".hpestadis").removeClass("show"); 
-
-
-    $(".hpest").each(function(index) {
-        $(this).attr("id", "hpest" + (index + 1)); 
-        $(".hpestadis").eq(index).attr("id", "hpestadis" + (index + 1)); 
-    });
-
-
-    $(".hpest").click(function () {
-
-        $(".hpestadis").removeClass("show");
-
-
-        var modalId = "#hpestadis" + $(this).attr("id").replace("hpest", "");
-        $(modalId).addClass("show");
-    });
-
-
-    $(".hcerr").click(function () {
-        $(this).closest(".hpestadis").removeClass("show"); 
-    });
-
-
-    $(".hpestadis").click(function (e) {
-        if ($(e.target).is(".hpestadis")) {
-            $(this).removeClass("show"); 
-        }
-    });
-});
-</script>
