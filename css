@@ -4,6 +4,12 @@ body {
 body.js-enabled {
   visibility: visible;
 }
+
+#content-container div#main {
+    margin-bottom: 1em;
+    overflow: unset!important;
+}
+
 :root {
   /* Star */
   --star: #fff;
@@ -45,12 +51,12 @@ body.js-enabled {
   --f1: 'Yuji Boku';
   --f2: 'Cherry Bomb One';
   --f3: 'Arial', bold;
-  --f4: 'Arial';
+  --f4: 'calibri';
   --f5: 'Rosie Brown';
   /*Fondo categorias*/
     --fd1:url(https://i.ibb.co/Fg2VzgH/backgroundblue.png);
     /*CATEGORIAS*/
-  --fd2:url(https://i.ibb.co/D9gFY2b/categoriageneral.png);
+  --fd2:url(https://i.ibb.co/2hwwSP3/fd2.png);
   --fd5:url(https://i.ibb.co/L8dn75m/Categoria-Staff.png);
   --fd6:url(https://i.ibb.co/NZbMS3S/categoria3.png);
   /*Decoración de flores y marcos*/
@@ -62,24 +68,24 @@ body.js-enabled {
   /*Decoracion perfil avanzado*/
    --fd8:url(https://i.ibb.co/9sqJDgs/frameperfil.png);
   --fd9:url(https://i.ibb.co/c1DNwQk/frameperfil2.png);
-  --fd10:url(https://i.ibb.co/JyT3JFQ/dividerperfil.png);
+  --fd10:url(https://i.ibb.co/dJPjmrF9/floral.png);
   /*FOROS TABS NORTE*/
-  --fr1:url(https://cdna.artstation.com/p/assets/images/images/023/939/822/large/liu-qing-01-s.jpg?1580823109);
+  --fr1:url(https://i.ibb.co/cBVs68k/puerto.png);
   --img1:url();
-  --fr2:url(https://cdnb.artstation.com/p/assets/images/images/012/413/093/large/zp-zhang-seaport.jpg?1534686487);
+  --fr2:url(https://i.ibb.co/cK2JCfWy/capital.png);
   --img2:url();
-  --fr3:url(https://cdnb.artstation.com/p/assets/images/images/024/048/285/large/liu-qing-03-03-s.jpg?1581153481);
+  --fr3:url(https://i.ibb.co/svRqVNsg/academia.png);
   --img3:url();
-  --fr4:url(https://cdna.artstation.com/p/assets/images/images/007/373/988/large/g-liulian-2.jpg?1505705899);
+  --fr4:url(https://cdnb.artstation.com/p/assets/images/images/070/145/677/large/angel-angelov-sewercity.jpg?1701861094);
   --img4:url();
   /*FOROS TABS SUR*/
-  --fr5:url(https://cdnb.artstation.com/p/assets/images/images/024/985/855/large/liu-qing-5-1.jpg?1584198673);
+  --fr5:url(https://game.gtimg.cn/images/yxzj/zlkdatasys/images/image/20240103/17042524251926.jpg);
   --img5:url();
-  --fr6:url(https://cdna.artstation.com/p/assets/images/images/019/780/328/large/liu-qing-color-po-4-s-c.jpg?1565004219);
+  --fr6:url(https://game.gtimg.cn/images/yxzj/zlkdatasys/images/image/20231228/17037600428268.jpg);
   --img6:url();
-  --fr7:url(https://cdna.artstation.com/p/assets/images/images/051/370/296/large/jason-scheier-desert-rider.jpg?1657122571);
+  --fr7:url(https://game.gtimg.cn/images/yxzj/zlkdatasys/images/image/20231228/17037595201112.jpg);
   --img7:url();
-  --fr8:url(https://cdna.artstation.com/p/assets/images/images/077/898/734/large/terraform-studios-project-falcon-unreleased-05.jpg?1720637250);
+  --fr8:url(https://cdna.artstation.com/p/assets/images/images/046/457/346/large/pengzhen-zhang-002.jpg?1645154965);
   --img8:url();
   /*Fondos estadisticas y afiliaciones*/
   --estf: url(https://images2.imgbox.com/3c/62/FnAbiOe7_o.png);
@@ -132,16 +138,9 @@ body.js-enabled {
 a { color: var(--pr3); text-decoration: none; }
 a:hover { leter-spaccing: 2px; text-decoration: none;}
 
-/**TOOLTIP**/
-#s-m-t-tooltip{ /* basic */ max-width:300px; z-index: 9999999!important; margin: 24px 14px 7px 12px; /* style and design */ padding: 7px; background: var(--t1);  border: 1px solid var(--pr3); /* font */ font-family: var(--f4); font-size: 10px; text-transform: uppercase; line-height: 11px; color: var(--n7);}
-#chatbox_ret_cont{z-index: 9999!important; background-color: transparent; position: fixed; bottom: 0;}
-#chatbox_ret_cont.chatbox_derecha{ right: 0;}
-#chatbox_ret_cont.chatbox_izquierda{ left: 0;}
-#chatbox_ret_cont div{ cursor: pointer;}
-#chatbox_ret_cont iframe#chatbox_ret{ background-color: white; display: none; height: 450px; margin-bottom: 0; width: 900px;}
-
 /*FONTS*/
 @font-face { font-family: 'Rosie Brown'; font-style: normal; src: url('https://dl.dropbox.com/scl/fi/fn60t5ww5364b5fa4g29l/Rosie-Brown-Serif-Demo.otf?rlkey=osjayjivgrimei8hyjfrkiu6p&st=iqctfxvd&dl=0'); format('truetype'); }
+
 /*GENERAL*/
 ::-webkit-scrollbar {
     width: 8px;
@@ -199,44 +198,6 @@ span.new-message {
 
 
 
-/* Codebox Mephis */
-
-
-dl.codebox {
-padding: 3px;
-background-color: #ffffff3d;
-border: 1px solid #c9d2d800;
-font-size: 1em;
-border-radius: 3px;
-color: #ffffff;
-}
-
-dl.codebox dt {
-text-transform: uppercase;
-border-bottom: 1px solid #ffffff00;
-margin-bottom: 4px;
-font-size: 1.3em;
-font-weight: bold;
-display: block;
-font-family: 'Rosie Brown';
-}
-
-blockquote dl.codebox {
-margin-left: 0;
-}
-
-dl.codebox code {
-overflow: auto;
-display: block;
-height: auto;
-max-height: 200px;
-white-space: normal;
-padding-top: 5px;
-font: 1.2em Courier,Courier New;
-line-height: 2.3em;
-color: #10b3e9;
-margin: 2px 0;
-}
 
 /* Rueda de colores */
 
@@ -409,18 +370,3 @@ margin: 2px 0;
 }
 .colorpicker { z-index: 3; }
 
-/*Tooltip */
-
-.tooltip {
-  position: absolute;
-  background: rgba(0, 0, 0, 0.8); /* Fondo oscuro */
-  color: white; /* Texto blanco */
-  padding: 5px 8px;
-  border-radius: 5px;
-  font-size: 12px;
-  white-space: nowrap; /* Evita que el texto se divida en líneas */
-  pointer-events: none; /* Evita que interfiera con el cursor */
-  opacity: 0; /* Por defecto, está oculto */
-  transition: opacity 0.2s ease-in-out;
-  z-index: 999; /* Asegura que esté sobre otros elementos */
-}
