@@ -158,16 +158,29 @@ showHiddenMessage = function(id)
       <div class="postprofile" id="profile{postrow.displayed.U_POST_ID}">    
           <div class="bfpperfil">
              <div class="bfpava">
-               <div class="paviav">Imagen del avatar
+               <div class="paviav">{postrow.displayed.POSTER_AVATAR}
    <div class="bfpavahover">
     <div class="hminnv">
-        <div class="hmin">mini imagen</div>
-        <div class="hnnv">nivel</div>
+        <div class="hmin">
+          <!-- BEGIN profile_field -->
+        <div class="bfpcampo">
+        <div class="bfplabel">{postrow.displayed.profile_field.LABEL}</div>
+        <div class="bfpconte">{postrow.displayed.profile_field.CONTENT}</div>
+        </div>
+        <!-- END profile_field -->
+      </div>
+           <div class="hfras">
+      <!-- BEGIN profile_field -->
+        <div class="bfpcampo">
+        <div class="bfplabel">{postrow.displayed.profile_field.LABEL}</div>
+        <div class="bfpconte">{postrow.displayed.profile_field.CONTENT}</div>
+        </div>
+        <!-- END profile_field -->
+      </div>
     </div>
     <button class="hpest">
       <i class="solar-icons" stroke="1.5" icon-name="info-square"></i> <h1>Estadisticas</h1>
     </button>
-    <div class="hfras">frase</div>
     <div class="hmy">Mensajes y yenes</div>
 </div>
 
@@ -194,7 +207,7 @@ showHiddenMessage = function(id)
       </div>
       </div>
       <div class="bfposti">
-       EL  POST 
+       {postrow.displayed.MESSAGE}
         <div class="pedited">post editado</div>
         <div class="pldike">like o deslike</div>
       </div>
@@ -946,6 +959,7 @@ $(resize_images({ 'selector' : '.postbody .content', 'max_width' : {switch_image
     height: 100%;
     position: relative;
   grid-template-columns: 37% 63%;
+  margin: -5px 0px 0 1px;
 }
 
  /*POSTPROFILE*/
@@ -999,8 +1013,9 @@ $(resize_images({ 'selector' : '.postbody .content', 'max_width' : {switch_image
 .paviav {
   width: 300px;
   height: 530px;
-
 }
+  
+.paviav a { position: absolute;}
   
 .paviav img {
     max-width: 300px !important;
@@ -1013,55 +1028,89 @@ $(resize_images({ 'selector' : '.postbody .content', 'max_width' : {switch_image
   
 .bfpavahover {
     width: 280px;
-    height: 532px;
+    height: 512px;
     transition: all 800ms ease-in-out;
-  padding: 10px;
+    padding: 10px;
     z-index: 99999;
-   top: 600px;
-    background: var(--n3);
-    border-bottom-right-radius: 7px;
-    border-top-right-radius: 10px;
-  position: relative;
+    top: 600px;
+    background: var(--n8);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
 }
   
 .bfpava:hover .bfpavahover {
-  top: -20px;
+  top: 0px;
   transition: all 600ms;
 }
   
 
 .hminnv {
-  display: flex;
-  height: 100px;
-  width: 280px;
-  align-items: center;
-  justify-content: space-between;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .hmin {
-  width: 100px;
-  height: 100px;
-  background: var(--n2);
+  height: auto;
   border-radius: 10px;
-  border: 1px solid var(--n1)
 }
+  
+.hmin div.bfpcampo.mini .bfplabel { display: none; }
+  
+.hmin div.bfpcampo:not(:nth-child(3)) { display: none; }  
+  
+.hmin .mini img {
+    width: 100px;
+    height: 100px;
+    margin: 30px;
+}
+  
+.hfras div.bfpcampo:not(:nth-child(9)) { display: none; }    
  
+.hfras div.bfpcampo.frase .bfplabel { display: none;} 
+.hfras div.bfpcampo.frase .bfpconte {
+    padding: 30px;
+    text-align: center;
+    color: var(--n4);
+    font: 400 1em var(--f4);
+  }
+  
+.hfras div.bfpcampo.frase .bfpconte:before {
+    content: '\ec2b';
+    font-family: 'cappuccicons' !important;
+    color: var(--n3);
+    font: 400 2em var(--f4);
+    position: absolute;
+    z-index: -1;
+    margin: -29px 0 0 -27px;
+    -webkit-text-stroke: 1px var(--n4);
+  }  
+  
 /**MODAL DE ESTADISTICAS**/
 .hpest {
-  margin: 10px;
-color: var(--n4);
+    margin: 10px;
+    color: var(--n4);
     padding: 10px;
-  background: var(--n1);
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
+    background: var(--n1);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    filter: drop-shadow(0px 0px 10px var(--n5));
 }
 
 .hpest h1 {
-  font: 800 1em var(--f3);
-  margin: 10px;
+    font: 800 0.8em var(--f3);
+    margin: 0 10px 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .hpestadis {
