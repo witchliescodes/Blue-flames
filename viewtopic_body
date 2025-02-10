@@ -181,7 +181,14 @@ showHiddenMessage = function(id)
     <button class="hpest">
       <i class="solar-icons" stroke="1.5" icon-name="info-square"></i> <h1>Estadisticas</h1>
     </button>
-    <div class="hmy">Mensajes y yenes</div>
+    <div class="hmy">
+      <!-- BEGIN profile_field -->
+        <div class="bfpcampo">
+        <div class="bfplabel">{postrow.displayed.profile_field.LABEL}</div>
+        <div class="bfpconte">{postrow.displayed.profile_field.CONTENT}</div>
+        </div>
+        <!-- END profile_field -->
+     </div>
 </div>
 
 <!-- MODAL DE ESTADISTICAS -->
@@ -1032,7 +1039,6 @@ $(resize_images({ 'selector' : '.postbody .content', 'max_width' : {switch_image
     transition: all 800ms ease-in-out;
     padding: 10px;
     z-index: 99999;
-    top: 600px;
     background: var(--n8);
     backdrop-filter: blur(10px);
     border-radius: 10px;
@@ -1041,10 +1047,11 @@ $(resize_images({ 'selector' : '.postbody .content', 'max_width' : {switch_image
     flex-flow: column;
     align-items: center;
     justify-content: center;
+  opacity: 0;
 }
   
 .bfpava:hover .bfpavahover {
-  top: 0px;
+  opacity: 1;
   transition: all 600ms;
 }
   
@@ -1091,6 +1098,35 @@ $(resize_images({ 'selector' : '.postbody .content', 'max_width' : {switch_image
     margin: -29px 0 0 -27px;
     -webkit-text-stroke: 1px var(--n4);
   }  
+  
+.hmy div.bfpcampo:not(:nth-child(8)):not(:nth-child(19)) {
+    display: none;
+}  
+  
+.hmy { display: flex;
+    margin: 30px;
+  }  
+  
+  
+.hmy div.bfpcampo.mensajes .bfplabel, .hmy div.bfpcampo.yenes .bfplabel   { 
+    font: 400 0.8em var(--f4);
+    text-transform: uppercase;  
+  }
+  
+.hmy div.bfpcampo.mensajes, .hmy div.bfpcampo.yenes {
+    margin: 10px;
+    width: 100px;
+    max-width: 120px;
+    background: var(--n1);
+    padding: 5px;
+    border-radius: 10px;
+    color: var(--n4);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}  
+  
+.hmy div.bfpcampo.mensajes .bfpconte, .hmy div.bfpcampo.yenes .bfpconte {  font: 400 0.8em var(--f4); }
   
 /**MODAL DE ESTADISTICAS**/
 .hpest {
