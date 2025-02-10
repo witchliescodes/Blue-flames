@@ -192,11 +192,16 @@ showHiddenMessage = function(id)
 </div>
 
 <!-- MODAL DE ESTADISTICAS -->
-<div class="hpestadis">
+<div class="hpestadis" id="modal">
     <div class="contenido">
         <button class="hcerr">X</button>
         <h2>Estadísticas</h2>
-        <p>Aquí van las estadísticas del usuario.</p>
+         <!-- BEGIN profile_field -->
+        <div class="bfpcampo">
+        <div class="bfplabel">{postrow.displayed.profile_field.LABEL}</div>
+        <div class="bfpconte">{postrow.displayed.profile_field.CONTENT}</div>
+        </div>
+        <!-- END profile_field -->
     </div>
 </div>
 <!-- FIN DEL MODAL DE ESTADISTICAS -->                
@@ -1014,7 +1019,7 @@ $(resize_images({ 'selector' : '.postbody .content', 'max_width' : {switch_image
     margin: -17px 0 0 -20px;
     position: absolute;
     background-size: cover;
-      z-index: 99999;
+      z-index: 999999999;
 }
 
 .paviav {
@@ -1038,7 +1043,7 @@ $(resize_images({ 'selector' : '.postbody .content', 'max_width' : {switch_image
     height: 512px;
     transition: all 800ms ease-in-out;
     padding: 10px;
-    z-index: 99999;
+    z-index: 999999999999;
     background: var(--n8);
     backdrop-filter: blur(10px);
     border-radius: 10px;
@@ -1149,19 +1154,26 @@ $(resize_images({ 'selector' : '.postbody .content', 'max_width' : {switch_image
     letter-spacing: 1px;
 }
 
+  
 .hpestadis {
-    display: none;
-    position: fixed; 
+    visibility: hidden;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: var(--n8); 
-    display: flex; 
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
     justify-content: center;
-    align-items: center; 
-    z-index: 9999; 
+    align-items: center;
+    z-index: 9999;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
 }
+
+.hpestadis.show {
+    visibility: visible;
+    opacity: 1;
+}  
 
 /* Contenido del Modal */
 .contenido {
@@ -1174,6 +1186,8 @@ $(resize_images({ 'selector' : '.postbody .content', 'max_width' : {switch_image
     position: relative;
   color:var(--n4);
 }
+  
+.contenido img {height: 20px;}  
 
 /* Botón de Cerrar */
 .hcerr {
@@ -1199,6 +1213,9 @@ $(resize_images({ 'selector' : '.postbody .content', 'max_width' : {switch_image
     color: var(--n4);
   background: var(--pr3);
 }
+  
+.hpestadis div.bfpcampo:not(:nth-child(6)):not(:nth-child(8)):not(:nth-child(16)):not(:nth-child(17)) { display: none;}  
+  
 
 /**ICONOS DE EDICION**/
 
@@ -1233,22 +1250,36 @@ $(resize_images({ 'selector' : '.postbody .content', 'max_width' : {switch_image
 </style> 
 
 <script>
- $(document).ready(function () {
+$(document).ready(function () {
 
-    $(".hpestadis").hide();
+    $(".hpestadis").removeClass("show"); 
+
+
+    $(".hpest").each(function(index) {
+        $(this).attr("id", "hpest" + (index + 1)); 
+        $(".hpestadis").eq(index).attr("id", "hpestadis" + (index + 1)); 
+    });
+
 
     $(".hpest").click(function () {
-        $(".hpestadis").fadeIn(); 
+
+        $(".hpestadis").removeClass("show");
+
+
+        var modalId = "#hpestadis" + $(this).attr("id").replace("hpest", "");
+        $(modalId).addClass("show");
     });
 
+
     $(".hcerr").click(function () {
-        $(".hpestadis").fadeOut(); 
+        $(this).closest(".hpestadis").removeClass("show"); 
     });
+
 
     $(".hpestadis").click(function (e) {
         if ($(e.target).is(".hpestadis")) {
-            $(".hpestadis").fadeOut(); 
+            $(this).removeClass("show"); 
         }
     });
-});  
+});
 </script>
