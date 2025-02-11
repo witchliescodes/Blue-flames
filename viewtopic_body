@@ -195,7 +195,7 @@ showHiddenMessage = function(id)
 <div class="hpestadis" id="modal">
     <div class="contenido">
         <button class="hcerr">X</button>
-        <h2>Estadísticas</h2>
+        <h2><i class="cp cp-pirate-swords"></i> Estadísticas</h2>
       <div class="bariis">
         <!-- BEGIN profile_field -->
         <div class="bfpcampo">
@@ -985,7 +985,7 @@ $(resize_images({ 'selector' : '.postbody .content', 'max_width' : {switch_image
     top: 80px;
     display: grid;
     grid-template-columns: 80% 20%;
-    border-top-right-radius: 20px;
+    border-top-right-radius: 15px;
 }
 
 
@@ -996,8 +996,8 @@ $(resize_images({ 'selector' : '.postbody .content', 'max_width' : {switch_image
     flex-flow: column;
     border-right: 1px solid var(--n1);
     border-top-right-radius: 20px;
-    z-index: 9999; 
-    background: var(--n2);
+    z-index: 9999;
+    background: var(--n3);
 }
 
   
@@ -1228,6 +1228,73 @@ $(resize_images({ 'selector' : '.postbody .content', 'max_width' : {switch_image
     text-transform: uppercase;
 }  
   
+.natribus div.bfpcampo.nivel:before {
+    content: 'Atributos';
+    color: var(--n4);
+    font: 400 1.5em var(--f5);
+    letter-spacing: 1px;
+}
+  
+.natribus div.bfpcampo.nivel {
+    display: flex;
+    width: 96%;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid var(--n1);
+    border-top: 1px solid var(--n1);
+    align-items: center;
+}  
+  
+.natribus div.bfpcampo.nivel .bfplabel { display: none;}  
+.natribus div.bfpcampo.nivel .bfpconte:before {
+    content: 'Nivel';
+    font-family: arial;
+    color: var(--n4);
+    margin: 10px;
+}
+.natribus div.bfpcampo.nivel .bfpconte {
+    font: 400 1em var(--f4);
+    margin: 0;
+} 
+  
+.natribus div.bfpcampo.atributos {
+    width: 100%;
+    margin: 10px 0 0 0;
+} 
+  
+.natribus div.bfpcampo.atributos .bfplabel { display: none;}    
+  
+.natribus div.bfpcampo.atributos .bfpconte strong {
+    display: flex;
+    margin: 10px;
+    align-items: center;
+    justify-content: space-between;
+}  
+  
+.natribus div.bfpcampo.atributos .bfpconte strong i {
+    background: var(--n1);
+    padding: 5px;
+    font: 400 0.8em var(--f4);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 10px;
+  min-width: 150px;
+}  
+  
+.natribus div.bfpcampo.atributos .bfpconte strong hr {
+    height: 0.6px;
+    background: var(--n1);
+    width: 368px;
+}  
+  
+.natribus div.bfpcampo.atributos .bfpconte strong u{
+    padding: 5px;
+    background: var(--n1);
+    font: 400 0.8em var(--f4);
+    border-radius: 10px;
+    text-decoration: none;
+}  
+  
 /* Botón de Cerrar */
 .hcerr {
     position: absolute;
@@ -1258,9 +1325,11 @@ $(resize_images({ 'selector' : '.postbody .content', 'max_width' : {switch_image
 /**ICONOS DE EDICION**/
 
 .bfpli { 
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    background: var(--n5);
+    margin: 0 0 0 -15px;
 }
 
 .bfeditp {
@@ -1278,8 +1347,8 @@ $(resize_images({ 'selector' : '.postbody .content', 'max_width' : {switch_image
     grid-row: 1;
     margin: 10px 0px 0 10px;
     text-align: justify;
-    font: 400 1em var(--f4);
-    line-height: 1.3em;
+    font: 400 1.1em var(--f4);
+    line-height: 1.5em;
     padding: 10px;
     color: var(--n4);
 } 
