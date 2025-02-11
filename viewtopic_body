@@ -97,7 +97,7 @@ showHiddenMessage = function(id)
         <!-- END profile_field -->
        	      </div>
               <div class="BFpon">
-        <b>{postrow.displayed.ONLINE_IMG_NEW}</b>
+        <div class="tnolin">{postrow.displayed.ONLINE_IMG_NEW}</div>
         <b>Written by</b>
         <b>{postrow.displayed.POSTER_NAME}</b>
         </div>
@@ -561,7 +561,7 @@ $(resize_images({ 'selector' : '.postbody .content', 'max_width' : {switch_image
     margin: 0 10px;
 }
   
-.BFpon b {
+.BFpon b, .tnolin {
     color: var(--n4);
     font: 800 0.7em var(--f4);
     text-align: center;
