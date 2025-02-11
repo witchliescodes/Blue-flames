@@ -196,12 +196,22 @@ showHiddenMessage = function(id)
     <div class="contenido">
         <button class="hcerr">X</button>
         <h2>Estadísticas</h2>
+      <div class="bariis">
+        <!-- BEGIN profile_field -->
+        <div class="bfpcampo">
+        <div class="bfplabel">{postrow.displayed.profile_field.LABEL}</div>
+        <div class="bfpconte">{postrow.displayed.profile_field.CONTENT}</div>
+        </div>
+        <!-- END profile_field -->
+      </div>
+      <div class="natribus">
          <!-- BEGIN profile_field -->
         <div class="bfpcampo">
         <div class="bfplabel">{postrow.displayed.profile_field.LABEL}</div>
         <div class="bfpconte">{postrow.displayed.profile_field.CONTENT}</div>
         </div>
         <!-- END profile_field -->
+      </div>
     </div>
 </div>
 <!-- FIN DEL MODAL DE ESTADISTICAS -->                
@@ -1189,7 +1199,7 @@ $(resize_images({ 'selector' : '.postbody .content', 'max_width' : {switch_image
     color: var(--n4);
 }  
 
-.hpestadis div.bfpcampo:not(:nth-child(6)):not(:nth-child(8)):not(:nth-child(16)):not(:nth-child(17)) { display: none;}    
+  /*.hpestadis div.bfpcampo:not(:nth-child(6)):not(:nth-child(8)):not(:nth-child(16)):not(:nth-child(17)) { display: none;}*/
 .hpestadis div.bfpcampo.nivel {   order: 1; }   
 .hpestadis div.bfpcampo.atributos {   order: 2; }  
 /* Botón de Cerrar */
