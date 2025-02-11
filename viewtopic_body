@@ -1199,9 +1199,35 @@ $(resize_images({ 'selector' : '.postbody .content', 'max_width' : {switch_image
     color: var(--n4);
 }  
 
-  /*.hpestadis div.bfpcampo:not(:nth-child(6)):not(:nth-child(8)):not(:nth-child(16)):not(:nth-child(17)) { display: none;}*/
-.hpestadis div.bfpcampo.nivel {   order: 1; }   
-.hpestadis div.bfpcampo.atributos {   order: 2; }  
+.bariis div.bfpcampo:not(:nth-child(14)):not(:nth-child(15)) { display: none;}
+.natribus div.bfpcampo:not(:nth-child(4)):not(:nth-child(6)) { display: none;}  
+
+.bariis {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 50% 50%;
+}  
+
+.bariis div.bfpcampo.pp img{ display: none}  
+.bariis div.bfpcampo.pv img{ display: none}    
+.bariis div.bfpcampo.pp .bfplabel { display: none;}  
+.bariis div.bfpcampo.pv .bfplabel { display: none;} 
+  
+.bariis div.bfpcampo.pv, .bariis div.bfpcampo.pp {
+    background: var(--n1);
+    padding: 5px 0 5px 0px;
+    border-radius: 10px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+.bariis div.bfpcampo.pv .bfpconte strong, .bariis div.bfpcampo.pp .bfpconte strong{
+    font: 400 0.8em var(--f4);
+    text-transform: uppercase;
+}  
+  
 /* Botón de Cerrar */
 .hcerr {
     position: absolute;
