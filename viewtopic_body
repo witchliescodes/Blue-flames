@@ -1080,6 +1080,7 @@ $(resize_images({ 'selector' : '.postbody .content', 'max_width' : {switch_image
     text-align: center;
     color: var(--n4);
     font: 400 1em var(--f4);
+    width: 240px;
   }
   
 .hfras div.bfpcampo.frase .bfpconte:before {
@@ -1165,17 +1166,32 @@ $(resize_images({ 'selector' : '.postbody .content', 'max_width' : {switch_image
 /* Contenido del Modal */
 .contenido {
     background-color: var(--n2);
-    padding: 20px;
     border-radius: 10px;
-    width: 70%; 
+    width: 70%;
     max-width: 500px;
     text-align: center;
     position: relative;
-  color:var(--n4);
+    color: var(--n4);
+    display: flex;
+    flex-flow: column;
 }
   
 .contenido img {height: 20px;}  
+  
+.contenido h2 {
+    text-align: left;
+    font: 800 2em var(--f5);
+    margin: 0px;
+    letter-spacing: 2px;
+    border-bottom: 1px solid var(--n1);
+    padding: 10px 0px 10px 10px;
+    width: auto;
+    color: var(--n4);
+}  
 
+.hpestadis div.bfpcampo:not(:nth-child(6)):not(:nth-child(8)):not(:nth-child(16)):not(:nth-child(17)) { display: none;}    
+.hpestadis div.bfpcampo.nivel {   order: 1; }   
+.hpestadis div.bfpcampo.atributos {   order: 2; }  
 /* Botón de Cerrar */
 .hcerr {
     position: absolute;
@@ -1200,8 +1216,7 @@ $(resize_images({ 'selector' : '.postbody .content', 'max_width' : {switch_image
     color: var(--n4);
   background: var(--pr3);
 }
-  
-.hpestadis div.bfpcampo:not(:nth-child(6)):not(:nth-child(8)):not(:nth-child(16)):not(:nth-child(17)) { display: none;}  
+
   
 
 /**ICONOS DE EDICION**/
