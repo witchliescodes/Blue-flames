@@ -220,12 +220,10 @@ showHiddenMessage = function(id)
           </div>
         <div class="bfpli">
         <div class="bfeditp">
-         <div>{postrow.displayed.THANK_IMG}</div>
 	 <div>{postrow.displayed.QUOTE_IMG}</div>
 	 <div>{postrow.displayed.EDIT_IMG}</div>
 	 <div>{postrow.displayed.DELETE_IMG}</div>
 	 <div>{postrow.displayed.IP_IMG}</div>
-	 <div>{postrow.displayed.REPORT_IMG_NEW}</div>
         </div>
       </div>
       </div>
@@ -1339,6 +1337,21 @@ $(resize_images({ 'selector' : '.postbody .content', 'max_width' : {switch_image
   margin: 15px 0 0;
   align-items: center;
 }
+  
+.bfeditp a {
+    color: var(--n4);
+    background: var(--n3);
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    width: 20px;
+    justify-content: center;
+    height: 20px;
+    padding: 7px;
+    text-decoration: none;
+    filter: drop-shadow(0px 0px 8px var(--pr1));
+    margin: 10px;
+}  
 
 
 /**POST**/
