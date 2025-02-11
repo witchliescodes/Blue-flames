@@ -8,33 +8,19 @@
   <link href="https://dl.dropbox.com/scl/fi/xtccw1mn8rbqlrruszsw8/star-gg.css?rlkey=rjklonvcqyk1xl0x94k4kus7y" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Yuji+Boku&display=swap" rel="stylesheet"/>
   <link href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&display=swap" rel="stylesheet"/>
+  <!--ICONOS -->
   <script src="//pull.cappuccicons.com/cpf.js"></script>
   <script src="https://kit.fontawesome.com/3de2e96a1c.js" crossorigin="anonymous"></script>
+  <link href="https://solar-icons.gitlab.io/i/icons.css" rel="stylesheet" crossorigin>
   <link href="https://dl.dropbox.com/s/qm6x16r9jjlbgd4/game-icons.css" rel="stylesheet">
   <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-bold-rounded/css/uicons-bold-rounded.css' /> 
   <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
-  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-solid-straight/css/uicons-solid-straight.css'><!-- Iconos flaticon -->
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-solid-straight/css/uicons-solid-straight.css'>
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-thin-chubby/css/uicons-thin-chubby.css'>  
   <!-- Jquery-->
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
- <!-- Tooltip-->
- <script src="https://static.tumblr.com/zd7jnbb/TDPpnlgj3/jquery.style-my-tooltips.js"></script>
-<link href="https://static.tumblr.com/zd7jnbb/nzwpnlgii/style-my-tooltips.css" rel="stylesheet" />
-<link href="style-my-tooltips.css" rel="stylesheet" type="text/css" />
-<script src="jquery.style-my-tooltips.js"></script>
- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
-<script src="http://static.tumblr.com/iuw14ew/VSQma1786/jquery.style-my-tooltips.js"></script>    
-<script>
-(function($){
-$(document).ready(function(){
-$("a[title]").style_my_tooltips({
-tip_follows_cursor:true,
-tip_delay_time:0,
-tip_fade_speed:400,
-attribute:"title"
-});
-});
-})(jQuery);
-</script>
+ <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+ <script src="script.js"></script>
+
     <script>
         function selectCode(e) {
                 var doc = document
@@ -299,8 +285,7 @@ attribute:"title"
     </script> 
      </div>
 </div>
-      <a href="javascript:void(0);" class="navbara bf-them" onclick="toggleNightMode()">
-             <i class="cp cp-moon-o"></i></a>
+<a href="#" id="toggle-mode"><em class="cp cp-sun"></em></a>
       <button id="openModal"><i class="fi fi-br-user-add" title="Menú de usuario y cambio de cuentas"></i></button>
     </div>
     <div class="right-nav">
@@ -356,14 +341,17 @@ attribute:"title"
   <div id="Tablon-BF">
     <div class="HIS"></div>
 <div class="Contenedortablon-BF">
+  <div class="caja-button-BF">
+       <button id="prev-slide-button" onclick="prevSlide()">&#10094;</button>
+    <button id="next-slide-button" onclick="nextSlide()">&#10095;</button>
+    <div class="cajamusic-BF"></div>
+    <div class="cajaredes"></div>
+  </div>
   <div class="slider">
     <div class="slide"><div class="Nov"></div></div>
-    <div class="slide"><div class="guide"></div></div>
     <div class="slide"><div class="Staff-BF"></div></div>
     <div class="slide"><div class="Eve-BF"></div></div>
     <div class="slide"><div class="Busq-BF"></div></div>
-   <button class="prev sliders" onclick="prevSlide()">&#10094;</button>
-    <button class="next sliders" onclick="nextSlide()">&#10095;</button>
   </div>
     </div>
   </div>
@@ -561,7 +549,7 @@ attribute:"title"
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 999;
+    z-index: 9999999;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -601,7 +589,7 @@ attribute:"title"
 .Navlinks a.navbara {
     font-family: var(--f4);
     text-transform: uppercase;
-    font-size: 7px;
+    font-size: 0.6rem;
     text-decoration: none;
     color: var(--n6);
     letter-spacing:1px;
@@ -652,14 +640,14 @@ attribute:"title"
   
 
 .left-nav a, .left-nav button {
-  color: var(--pr4);
-  font-size: calc(2.2em / 2);
-  padding: 10px;
-  border-right: 1px solid var(--n1)!important;
-  display: flex; 
-  align-items: center; 
-  justify-content: center;
-  background: transparent; 
+    color: var(--pr4);
+    font-size: calc(1.5em / 2);
+    padding: 10px;
+    border-right: 1px solid var(--n1) !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
   }
 
 .left-nav #openModal {
@@ -676,7 +664,7 @@ attribute:"title"
 }
 
 .right-nav a{
-    font-size: 10px;
+    font-size: 8px;
     background: var(--n2);
     padding: 5px;
     border-radius: 7px;
@@ -903,23 +891,42 @@ li.see_all {
     margin-top: 10px;
 }
   /*Tablon*/
-  #Tablon-BF {
+#Tablon-BF {
     width: 100%;
-    height: 600px;
-    overflow: hidden;
-    background:var(--n5);
+    background: var(--n5);
+    box-sizing: border-box;
+    padding: 30px;
 }
   /*CONTENEDOR TABLON*/
 .Contenedortablon-BF {
+    padding: 20px;
+    background: var(--n3);
+    border: 1px solid var(--n7);
+    border-top: 0;
+    box-sizing: border-box;
+  position:relative;
+}
+.caja-button-BF {
+    box-sizing: border-box;
     padding: 10px;
+    background: var(--pr6);
+    margin-top: -20px;
+    margin-left: -20px;
+    margin-right: -20px;
+  margin-bottom:20px;
+    height: 60px;
+    border-bottom: 1px solid var(--n7);
+    display: flex;
+    align-items: center;
 }
 .slider {
-    color:var(--n7);
+    color: var(--n7);
     position: relative;
     height: 440px;
     overflow: hidden;
     border: 1px solid;
     border-radius: 10px;
+    background: var(--n8);
 }
 .slide {
     display: none; /* Ocultar todas las slides por defecto */
@@ -928,25 +935,22 @@ li.see_all {
 .slide:first-child {
     display: block; /* Mostrar la primera slide por defecto */
 }
-button.sliders {
-    position: absolute;
-    top: 40px;
-    transform: translateY(-50%);
-    background-color: var(--n5);
-    color: var(--pr3);
-    border: 1px solid var(--n7);
+#prev-slide-button,#next-slide-button {
+    background-color: var(--pr2);
+    color: var(--pr4);
+    border: 0;
     cursor: pointer;
-    padding: 10px;
-    font-size: 12px;
-    z-index: 1;
+    font-size: 1rem;
     line-height: 1em;
-    margin-left: 20px;
+    width: 100px;
+    margin-right: 10px;
+    padding: 4px;
     border-radius: 10px;
 }
-button.prev {
+#prev-slide-button {
   left: 0;
 }
-button.prev::before {
+#prev-slide-button::before {
     content: 'Regresar';
     font-size: 7px;
     text-transform: uppercase;
@@ -954,10 +958,10 @@ button.prev::before {
     color: var(--n6);
     letter-spacing: 1px;
 }
-button.next {
+#next-slide-button {
     left: 75px;
 }
-button.next::before {
+#next-slide-button::before {
     content: 'Siguiente';
     font-size: 7px;
     text-transform: uppercase;
