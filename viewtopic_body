@@ -228,13 +228,41 @@ showHiddenMessage = function(id)
       </div>
       </div>
       <div class="bfposti">
-       {postrow.displayed.MESSAGE}
-        <div class="pedited">post editado</div>
-        <div class="pldike">like o deslike</div>
-      </div>
+        <div class="postit">{postrow.displayed.MESSAGE}</div>
+      <div class="unnes">  
+        <div class="pedited">{postrow.displayed.EDITED_MESSAGE}</div>
+        			<!-- BEGIN switch_likes_active -->
+        <div class="pldike">
+          <div class="uneb">
+ <button class="rep-button {postrow.displayed.switch_likes_active.C_VOTE_LIKE}"  data-href="{postrow.displayed.switch_likes_active.U_VOTE_LIKE}" data-href-rm="{postrow.displayed.switch_likes_active.U_VOTE_RM_LIKE}">
+				<i class="solar-icons" stroke="1.5" icon-name="moon-stars"></i>
+                                  <span>{postrow.displayed.switch_likes_active.L_LIKE}</span><b>{postrow.displayed.switch_likes_active.COUNT_VOTE_LIKE}</b>
+				</button>
+          
+				<!-- BEGIN switch_dislike_button -->
+				<button class="rep-button {postrow.displayed.switch_likes_active.switch_dislike_button.C_VOTE_DISLIKE}" data-href="{postrow.displayed.switch_likes_active.switch_dislike_button.U_VOTE_DISLIKE}" data-href-rm="{postrow.displayed.switch_likes_active.switch_dislike_button.U_VOTE_RM_LIKE}">
+				<i class="solar-icons" stroke="1.5" icon-name="moon-stars"></i>	
+                                  <span>{postrow.displayed.switch_likes_active.switch_dislike_button.L_DISLIKE}</span><b>{postrow.displayed.switch_likes_active.switch_dislike_button.COUNT_VOTE_DISLIKE}</b>
+				</button>
+				<!-- END switch_dislike_button -->
+          </div>
+                  <div class="listslike">
+        <!-- BEGIN switch_like_list -->
+				{postrow.displayed.switch_likes_active.switch_like_list.D_LIKE_LIST}
+				<!-- END switch_like_list -->
+          
+				<!-- BEGIN switch_dislike_list -->
+				{postrow.displayed.switch_likes_active.switch_dislike_list.D_DISLIKE_LIST}
+				<!-- END switch_dislike_list -->
+        </div>		
+        </div>
+        <!-- END switch_likes_active -->
+        </div>
+        
+  </div>
     </div>  
+      <div class="downtown">a ver aqui es</div>
     </div>
-</div>
   	<!-- END displayed -->
 <!-- END postrow -->   
 </div>  
@@ -246,14 +274,6 @@ showHiddenMessage = function(id)
 <p class="pagination">{PAGINATION}</p>
 <!-- END topicpagination -->
 
-<p class="left-box">
-    <!-- BEGIN switch_isconnect -->
-    <a href="{U_VIEW_OLDER_TOPIC}">{L_VIEW_PREVIOUS_TOPIC}</a>&nbsp;<a href="{U_VIEW_NEWER_TOPIC}">{L_VIEW_NEXT_TOPIC}</a>&nbsp;
-    <!-- END switch_isconnect -->
-    <a href="#top">{L_BACK_TO_TOP}</a>
-</p>
-
-<div class="clear"></div>
 
 <div class="noprint">
 <!-- BEGIN switch_user_logged_in -->
@@ -263,47 +283,6 @@ showHiddenMessage = function(id)
 <!-- END switch_user_logged_in -->
 </div>
 
-<!-- BEGIN promot_trafic -->
-<div class="post row2" id="ptrafic_close" style="display:none;font-size:1.3em;line-height:1.4em">
-	<span class="corners-top"><span></span></span>
-	<span class="gensmall"><a href="javascript:ShowHideLayer('ptrafic_open','ptrafic_close');"><img src="{TABS_MORE_IMG}" alt="+" align="" border="0" /></a></span>
-	<span class="ptrafic">&nbsp;{PROMOT_TRAFIC_TITLE}</span>
-	<span class="corners-bottom"><span></span></span>
-</div>
-<div class="post row2" id="ptrafic_open" style="display:'';font-size:1.3em;line-height:1.4em">
-	<span class="corners-top"><span></span></span>
-	<span class="gensmall"><a href="javascript:ShowHideLayer('ptrafic_open','ptrafic_close');"><img src="{TABS_LESS_IMG}" alt="-" align="" border="0" /></a></span>
-	<span class="ptrafic">&nbsp;{PROMOT_TRAFIC_TITLE}</span>
-	<div class="clear"></div>
-	<div>
-		<!-- BEGIN link -->
-		&raquo;&nbsp;<a href="{promot_trafic.link.U_HREF}" title="{promot_trafic.link.TITLE}" >{promot_trafic.link.TITLE}</a><br />
-		<!-- END link -->
-	</div>
-	<span class="corners-bottom"><span></span></span>
-</div>
-<!-- END promot_trafic -->
-
-<!-- BEGIN switch_forum_rules -->
-<div class="post row1" id="forum_rules">
-	<span class="corners-top"><span></span></span>
-	<div class="h3">&nbsp;{L_FORUM_RULES}</div>
-	<div class="clear"></div>
-	<table class="postbody">
-		<tr>
-			<!-- BEGIN switch_forum_rule_image -->
-			<td class="logo">
-				<img src="{RULE_IMG_URL}" alt="" />
-			</td>
-			<!-- END switch_forum_rule_image -->
-			<td class="rules content">
-				{RULE_MSG}
-			</td>
-		</tr>
-	</table>
-	<span class="corners-bottom"><span></span></span>
-</div>
-<!-- END switch_forum_rules -->
 
 <!-- BEGIN switch_user_logged_in -->
 <a name="quickreply"></a>
@@ -323,9 +302,6 @@ showHiddenMessage = function(id)
 		<!-- END switch_user_authreply -->
 	</div>
 
-	<div class="pathname-box">
-		<p><a class="nav" href="{U_INDEX}">{L_INDEX}</a>{NAV_SEP}<a class="nav" href="{U_ALBUM}">{L_ALBUM}</a>{NAV_CAT_DESC}</p>
-	</div>
 
 	<div class="pagination">
 		{PAGE_NUMBER}
@@ -964,10 +940,12 @@ $(resize_images({ 'selector' : '.postbody .content', 'max_width' : {switch_image
 
 .bfpostito {
     display: grid;
-    margin: -5px 0px 0 1px;
+    margin: 0;
     height: auto;
     grid-template-columns: 37% 63%;
     align-items: start;
+    border: 1px solid var(--n1);
+    background: transparent;
 }
 
  /*POSTPROFILE*/
@@ -976,14 +954,13 @@ $(resize_images({ 'selector' : '.postbody .content', 'max_width' : {switch_image
     width: 450px;
     grid-column: 1;
     grid-row: 1;
-    background: var(--n2);
-    outline: 1px solid var(--n1);
-    height: auto;
+    height: revert-layer;
+    border-right: 1px solid var(--n1);
     position: sticky;
     top: 80px;
+    margin: 0;
     display: grid;
     grid-template-columns: 80% 20%;
-    border-top-right-radius: 15px;
 }
 
 
@@ -993,9 +970,7 @@ $(resize_images({ 'selector' : '.postbody .content', 'max_width' : {switch_image
     align-items: center;
     flex-flow: column;
     border-right: 1px solid var(--n1);
-    border-top-right-radius: 20px;
     z-index: 9999;
-    background: var(--n3);
 }
 
   
@@ -1327,15 +1302,15 @@ $(resize_images({ 'selector' : '.postbody .content', 'max_width' : {switch_image
     align-items: flex-start;
     justify-content: center;
     background: var(--n5);
-    margin: 0 0 0 -15px;
 }
 
 .bfeditp {
-  width: 60px; 
-  display: flex; 
-  flex-flow: column; 
-  margin: 15px 0 0;
-  align-items: center;
+    width: 60px;
+    display: flex;
+    height: -webkit-fill-available;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-evenly;
 }
   
 .bfeditp a {
@@ -1356,15 +1331,90 @@ $(resize_images({ 'selector' : '.postbody .content', 'max_width' : {switch_image
 
 /**POST**/
 .bfposti {
-    grid-column: 2 / 2;
+grid-column: 2 / 2;
     grid-row: 1;
-    margin: 10px 0px 0 10px;
     text-align: justify;
     font: 400 1.1em var(--f4);
     line-height: 1.5em;
-    padding: 10px;
     color: var(--n4);
+    height: -webkit-fill-available;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
 } 
   
+.postit {
+    text-align: justify;
+    font: 400 1.1em var(--f4);
+    line-height: 1.5em;
+    color: var(--n4);
+    padding: 20px;
+}  
+ 
+.pedited br { display: none;}  
+.pedited {
+    color: var(--n4);
+    font: 400 0.6em var(--f4);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 10px;
+    width: -webkit-fill-available;
+    border-bottom: 1px solid var(--n1);
+    text-align: center;
+}
+  
+.unnes {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid var(--n1);
+    color: var(--n4);
+    align-items: center;
+      flex-flow: column;
+  }  
+
+.pldike {
+    width: -webkit-fill-available;
+    padding: 10px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}  
+  
+.rep-button, .rep-button:focus, .rep-button:active {
+    cursor: pointer;
+    margin: 0;
+    outline: none;
+    position: relative;
+    transition: color .4s;
+    float: left;
+    border: none;
+    background: var(--n2);
+    color: var(--n4);
+    padding: 5px;
+    border-radius: 4px;
+    margin-right: 11px;
+    text-transform: uppercase;
+    font: 400 0.6em var(--f4);
+    box-shadow: none;
+}
+  
+ .rep-button i {
+    font-size: 1em;
+    text-shadow: none;
+    display: contents;
+    float: none;
+}
    
+ .rep-button span  {
+    margin: 0 0 0 5px;
+}  
+  
+.fa_like_list, .fa_dislike_list, .option_voters_list {
+    font: 400 0.6em var(--f4);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 10px;
+    margin: 0;
+}  
 </style> 
