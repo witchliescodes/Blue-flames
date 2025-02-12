@@ -261,7 +261,29 @@ showHiddenMessage = function(id)
         
   </div>
     </div>  
-      <div class="downtown">a ver aqui es</div>
+      <div class="downtown">
+      <div class="bfpinven">
+        <!-- BEGIN profile_field -->
+        <div class="bfpcampo">
+        <div class="bfplabel">{postrow.displayed.profile_field.LABEL}</div>
+        <div class="bfpconte">{postrow.displayed.profile_field.CONTENT}</div>
+        </div>
+        <!-- END profile_field -->
+        </div>
+        <div class="pnmedl">
+        <div {postrow.displayed.AWARDS_SHOW} class="dd_award {postrow.displayed.PROFILE_POSITION}">
+         {postrow.displayed.AWARDS}
+	</div>
+        </div>
+        <div class="bfpfirm">
+         <!-- BEGIN profile_field -->
+        <div class="bfpcampo">
+        <div class="bfplabel">{postrow.displayed.profile_field.LABEL}</div>
+        <div class="bfpconte">{postrow.displayed.profile_field.CONTENT}</div>
+        </div>
+        <!-- END profile_field -->
+        </div>
+      </div>
     </div>
   	<!-- END displayed -->
 <!-- END postrow -->   
@@ -1417,4 +1439,65 @@ grid-column: 2 / 2;
     padding: 10px;
     margin: 0;
 }  
+  
+.downtown {
+      width: -webkit-fill-available;
+    border-right: 1px solid var(--n1);
+    border-left: 1px solid var(--n1);
+    padding: 10px;
+    background: var(--n2);
+    height: 200px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }  
+  
+.bfpinven div.bfpcampo:not(:nth-child(16)) { display: none;}  
+.bfpfirm div.bfpcampo:not(:nth-child(18)) { display: none;}    
+  
+.bfpinven div.bfpcampo .inventario {
+  display: flex;
+    align-items: flex-start;
+    height: 200px;
+    flex-flow: column;
+    overflow: auto;
+    padding: 0 10px 0 0px;
+    box-sizing: border-box;
+  } 
+  
+.bfpinven div.bfpcampo.inventario .bfplabel{
+    background: var(--n1);
+    width: 80px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 10px 0px 0px;
+}  
+  
+.bfpinven div.bfpcampo.inventario .bfpconte {
+    width: 338px;
+    box-sizing: border-box;
+    position: relative;
+    overflow: auto;
+    height: 145px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+    
+.bfpinven div.bfpcampo.inventario .bfpconte img{
+    margin: 10px;
+    border-radius: 7px;
+}  
+  
+.bfpinven div.bfpcampo.inventario .bfpconte i {
+    margin: 46px 0 0 -23px;
+    background: var(--pr2);
+    font: 400 0.8em var(--f4);
+    color: var(--n4);
+    padding: 3px;
+    letter-spacing: 1px;
+    border-radius: 50%;
+}
 </style> 
