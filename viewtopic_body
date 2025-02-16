@@ -235,13 +235,13 @@ showHiddenMessage = function(id)
         <div class="pldike">
           <div class="uneb">
  <button class="rep-button {postrow.displayed.switch_likes_active.C_VOTE_LIKE}"  data-href="{postrow.displayed.switch_likes_active.U_VOTE_LIKE}" data-href-rm="{postrow.displayed.switch_likes_active.U_VOTE_RM_LIKE}">
-				<i class="solar-icons" stroke="1.5" icon-name="moon-stars"></i>
+				<i class="solar-icons" stroke="1.5" icon-name="heart-1"></i>
                                   <span>{postrow.displayed.switch_likes_active.L_LIKE}</span><b>{postrow.displayed.switch_likes_active.COUNT_VOTE_LIKE}</b>
 				</button>
           
 				<!-- BEGIN switch_dislike_button -->
 				<button class="rep-button {postrow.displayed.switch_likes_active.switch_dislike_button.C_VOTE_DISLIKE}" data-href="{postrow.displayed.switch_likes_active.switch_dislike_button.U_VOTE_DISLIKE}" data-href-rm="{postrow.displayed.switch_likes_active.switch_dislike_button.U_VOTE_RM_LIKE}">
-				<i class="solar-icons" stroke="1.5" icon-name="moon-stars"></i>	
+				<i class="solar-icons" stroke="1.5" icon-name="heart-broken"></i>	
                                   <span>{postrow.displayed.switch_likes_active.switch_dislike_button.L_DISLIKE}</span><b>{postrow.displayed.switch_likes_active.switch_dislike_button.COUNT_VOTE_DISLIKE}</b>
 				</button>
 				<!-- END switch_dislike_button -->
@@ -294,54 +294,49 @@ showHiddenMessage = function(id)
 
 <!-- POST FIN -->
 
-
-<!-- BEGIN topicpagination -->
+  <div class="endtopic">
+    <div class="endpagi">
+    <!-- BEGIN topicpagination -->
 <p class="pagination">{PAGINATION}</p>
 <!-- END topicpagination -->
-
-
-<div class="noprint">
-<!-- BEGIN switch_user_logged_in -->
+    </div>
+    <div class="endvigil">
+    <!-- BEGIN switch_user_logged_in -->
 <!-- BEGIN watchtopic -->
-<p class="right">{S_WATCH_TOPIC}</p>
+{S_WATCH_TOPIC}
 <!-- END watchtopic -->
 <!-- END switch_user_logged_in -->
-</div>
+    </div>   
+  </div>
 
-
-<!-- BEGIN switch_user_logged_in -->
-<a name="quickreply"></a>
+  <div class="quickyty">
+ <!-- BEGIN switch_user_logged_in -->
 {QUICK_REPLY_FORM}
-<!-- END switch_user_logged_in -->
+<!-- END switch_user_logged_in --> 
+  </div>
 
-<hr />
 
-<div class="topic-actions">
-	<div class="buttons">
-		<!-- BEGIN switch_user_authpost -->
-		<a href="{U_POST_NEW_TOPIC}" rel="nofollow"><img src="{POST_IMG}" class="{POST_IMG_CLASS}" alt="{L_POST_NEW_TOPIC}" /></a>&nbsp;&nbsp;&nbsp;
+<div class="configpost">
+  <div class="respond">
+  <!-- BEGIN switch_user_authpost -->
+		<a href="{U_POST_NEW_TOPIC}" rel="nofollow">Nuevo tema</a>
 		<!-- END switch_user_authpost -->
 
 		<!-- BEGIN switch_user_authreply -->
-		<a href="{U_POST_REPLY_TOPIC}"><img src="{REPLY_IMG}" class="i_reply" alt="{L_POST_REPLY_TOPIC}" /></a>
+		<a href="{U_POST_REPLY_TOPIC}">Responder tema</a>
 		<!-- END switch_user_authreply -->
-	</div>
-
-
-	<div class="pagination">
-		{PAGE_NUMBER}
-	</div>
-</div>
-<div class="clear"></div>
-
-<form action="{S_JUMPBOX_ACTION}" method="get" onsubmit="if(document.jumpbox.f.value == -1){return false;}">
+  </div>
+  
+  <div class="changes">
+ <form action="{S_JUMPBOX_ACTION}" method="get" onsubmit="if(document.jumpbox.f.value == -1){return false;}">
 <fieldset class="jumpbox">
-	<label>{L_JUMP_TO}:&nbsp;</label>
+	<label>Mover tema a</label>
 	{S_JUMPBOX_SELECT}&nbsp;
 	<input class="button2" type="submit" value="{L_GO}" />
 </fieldset>
-</form>
-
+</form> 
+  </div>
+<div class="moderaci">
 <!-- BEGIN viewtopic_bottom -->
 <form method="get" action="{S_FORM_MOD_ACTION}">
 <fieldset class="quickmod">
@@ -349,14 +344,19 @@ showHiddenMessage = function(id)
 
 	<!-- <input type="hidden" name="sid" value="{S_SID}" /> -->
 	<input type="hidden" name="{SECURE_ID_NAME}" value="{SECURE_ID_VALUE}" />
-	<label>{L_MOD_TOOLS}:&nbsp;</label>
+	<label>Herramientas de moderaci[on</label>
 	{S_SELECT_MOD}&nbsp;
 	<input class="button2" type="submit" value="{L_GO}" />
 </fieldset>
 </form>
-<div class="clear"></div>
 <p class="right">{S_TOPIC_ADMIN}</p>
 <!-- END viewtopic_bottom -->
+
+  </div>
+  
+  </div>  
+  
+
 
 <!-- BEGIN show_permissions -->
 	<div class="h3">{L_TABS_PERMISSIONS}</div>
@@ -538,6 +538,7 @@ $(resize_images({ 'selector' : '.postbody .content', 'max_width' : {switch_image
     align-content: center;
     justify-content: space-between;
     grid-template-columns: 35% 65%;
+      margin-top: 10px;
 }
   
 .bfpnd { 
@@ -1375,6 +1376,18 @@ grid-column: 2 / 2;
     color: var(--n4);
     padding: 20px;
 }  
+  
+strong.recuerdame {
+    width: -webkit-fill-available;
+    display: block;
+    padding: 10px;
+    background: var(--n2);
+    font: 400 1em var(--f4);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+    border-radius: 5px;
+}  
  
 .pedited br { display: none;}  
 .pedited {
@@ -1455,7 +1468,11 @@ grid-column: 2 / 2;
 } 
   
 .bfpinven div.bfpcampo:not(:nth-child(16)) { display: none;}  
-.bfpfirm div.bfpcampo:not(:nth-child(18)) { display: none;}    
+.bfpfirm div.bfpcampo:not(:nth-child(18)) { display: none;}   
+  
+.bfpinven {
+    border-right: 1px solid var(--n1);
+}  
   
 .bfpinven div.bfpcampo .inventario {
   display: flex;
@@ -1493,24 +1510,24 @@ grid-column: 2 / 2;
   }
   
 .bfpinven div.bfpcampo.inventario .bfpconte {
-    width: 338px;
+    width: 390px;
     box-sizing: border-box;
     position: relative;
     overflow: auto;
     height: 145px;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
 }
     
 .bfpinven div.bfpcampo.inventario .bfpconte img{
-    margin: 8px;
+    margin: 8px 25px 0px 0;
     border-radius: 7px;
 }  
   
 .bfpinven div.bfpcampo.inventario .bfpconte i {
-    margin: 46px 0 0 -23px;
+    margin: 46px 0 0 -30px;
     background: var(--pr2);
     font: 400 0.8em var(--f4);
     color: var(--n4);
@@ -1518,4 +1535,128 @@ grid-column: 2 / 2;
     letter-spacing: 1px;
     border-radius: 50%;
 }
+
+.pnmedl {
+    height: 200px;
+    width: -webkit-fill-available;
+    border-right: 1px solid var(--n1);
+    margin: 0 10px 0 0px;
+}  
+  
+.medattit {
+    background: transparent;
+    width: auto;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 10px 0px 0px;
+    text-transform: uppercase;
+    color: var(--n4);
+    font: 800 2em var(--f3);
+    text-align: center;
+    letter-spacing: 1px;
+}  
+  
+.medattit i { margin: 0 10px; }
+.medattit p { margin: 0px;}  
+  
+.dd_award {
+    background-color: transparent;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 379px;
+    max-height: 130px;
+    overflow: auto;
+    justify-content: center;
+    border-radius: 0;
+    border: 1px solid var(--awards_color);
+    scroll-snap-type: y mandatory;
+    transition: max-heightease .5s;
+    float: none;
+    padding: 10px;
+}
+  
+div.award {
+    display: inline-block;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border: 2px solid var(--awards_color);
+    background-image: var(--award-image);
+    background-color: var(--n2);
+    border-radius: 5px;
+    background-position: center;
+    margin: 8px;
+    background-size: cover;
+    flex-shrink: 0;
+    scroll-snap-align: center;
+}  
+  
+.bfpfirm {
+    width: 500px;
+    height: 200px;
+    overflow: hidden;
+}    
+  
+.bfpfirm div.bfpcampo.firma .bfplabel { display: none;} 
+  
+.bfpfirm div.bfpcampo.firma .bfpconte img {
+    width: 500px;
+    height: 200px;
+    object-fit: cover;
+}  
+  
+.endtopic {
+    border: 1px solid var(--n1);
+    padding: 10px;
+    margin: 0px;
+    color: var(--n4);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}  
+  
+.endvigil {
+    padding: 7px;
+    background: var(--n2);
+    border-radius: 4px;
+}  
+  
+.endvigil a  {
+    font: 400 0.7em var(--f4);
+    text-transform: uppercase;
+}  
+  
+.endpagi .pagination{
+    font: 400 0.7em var(--f4);
+    text-transform: uppercase;
+}  
+  
+.pagination span a, .pagination span a:link, .pagination span a:visited, .pagination span a:active {
+    font-weight: 400;
+    text-decoration: none;
+    color: var(--n4);
+    background-color: var(--n2);
+    margin: 4px;
+    line-height: 1.5em;
+    padding: 7px;
+    border-radius: 5px;
+      border: 0px;
+      font-family: var(--f4);
+}  
+  
+.pagination span strong {
+    padding: 7px;
+    margin: 0px;
+    background-color: var(--pr5);
+    border: 0px;
+    color: var(--n4);
+    font-size: .9em;
+    border-radius: 5px;
+    font-family: var(--f4);
+}  
+.pag-img { display: none;}  
+  
+
 </style> 
