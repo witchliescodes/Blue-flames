@@ -414,7 +414,7 @@ $(resize_images({ 'selector' : '.postbody .content', 'max_width' : {switch_image
   }  
   
   
-.bfbutp a {
+.bfbutp a{
     color: var(--n4);
     background: var(--n1);
     padding: 10px;
