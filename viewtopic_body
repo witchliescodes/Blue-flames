@@ -63,8 +63,8 @@ showHiddenMessage = function(id)
 <div id="bfpost">
     <div class="bfrepo">
       <div class="bfbutp">
-	<a href="{U_POST_NEW_TOPIC}">Nuevo tema</a>
-	<a href="{U_POST_REPLY_TOPIC}">Responder</a>
+	<a href="{U_POST_NEW_TOPIC}">Nuevo tema <i class="solar-icons" stroke="1.5" icon-name="edit-1"></i></a>
+	<a href="{U_POST_REPLY_TOPIC}">Responder <i class="solar-icons" stroke="1.5" icon-name="reply-1"></i></a>
     </div>
     <div class="bfpyp">
       <div class="bfpatip">{POSTERS_LIST}</div>
@@ -319,11 +319,11 @@ showHiddenMessage = function(id)
 <div class="configpost">
   <div class="respond">
   <!-- BEGIN switch_user_authpost -->
-		<a href="{U_POST_NEW_TOPIC}" rel="nofollow">Nuevo tema</a>
+		<a href="{U_POST_NEW_TOPIC}" rel="nofollow">Nuevo tema <i class="solar-icons" stroke="1.5" icon-name="edit-1"></i></a>
 		<!-- END switch_user_authpost -->
 
 		<!-- BEGIN switch_user_authreply -->
-		<a href="{U_POST_REPLY_TOPIC}">Responder tema</a>
+		<a href="{U_POST_REPLY_TOPIC}">Responder tema <i class="solar-icons" stroke="1.5" icon-name="reply-1"></i></a>
 		<!-- END switch_user_authreply -->
   </div>
   
@@ -331,7 +331,7 @@ showHiddenMessage = function(id)
  <form action="{S_JUMPBOX_ACTION}" method="get" onsubmit="if(document.jumpbox.f.value == -1){return false;}">
 <fieldset class="jumpbox">
 	<label>Mover tema a</label>
-	{S_JUMPBOX_SELECT}&nbsp;
+	{S_JUMPBOX_SELECT}
 	<input class="button2" type="submit" value="{L_GO}" />
 </fieldset>
 </form> 
@@ -344,8 +344,8 @@ showHiddenMessage = function(id)
 
 	<!-- <input type="hidden" name="sid" value="{S_SID}" /> -->
 	<input type="hidden" name="{SECURE_ID_NAME}" value="{SECURE_ID_VALUE}" />
-	<label>Herramientas de moderaci[on</label>
-	{S_SELECT_MOD}&nbsp;
+	<label>Herramientas de moderación</label>
+	{S_SELECT_MOD}
 	<input class="button2" type="submit" value="{L_GO}" />
 </fieldset>
 </form>
@@ -455,11 +455,8 @@ $(resize_images({ 'selector' : '.postbody .content', 'max_width' : {switch_image
 
 .pbfpagin, .bfpatip {
     display: block;
-    background: var(--n1);
-    padding: 10px;
     margin: 10px;
     border-radius: 5px;
-    border: 1px solid var(--n9);
     color: var(--n4);
 }
   
