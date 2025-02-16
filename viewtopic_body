@@ -271,6 +271,9 @@ showHiddenMessage = function(id)
         <!-- END profile_field -->
         </div>
         <div class="pnmedl">
+          <div class="medattit">
+            <i class="solar-icons" stroke="1.5" icon-name="moon-stars"></i> <p>Medallero</p>
+          </div>
         <div {postrow.displayed.AWARDS_SHOW} class="dd_award {postrow.displayed.PROFILE_POSITION}">
          {postrow.displayed.AWARDS}
 	</div>
@@ -962,7 +965,7 @@ $(resize_images({ 'selector' : '.postbody .content', 'max_width' : {switch_image
 
 .bfpostito {
     display: grid;
-    margin: 0;
+    margin: 10px 0;
     height: auto;
     grid-template-columns: 37% 63%;
     align-items: start;
@@ -1441,15 +1444,15 @@ grid-column: 2 / 2;
 }  
   
 .downtown {
-      width: -webkit-fill-available;
-    border-right: 1px solid var(--n1);
-    border-left: 1px solid var(--n1);
+    width: -webkit-fill-available;
+    border: 1px solid var(--n1);
     padding: 10px;
-    background: var(--n2);
+    background: var(--n5);
     height: 200px;
     display: grid;
+    margin: 10px 0;
     grid-template-columns: repeat(3, 1fr);
-  }  
+} 
   
 .bfpinven div.bfpcampo:not(:nth-child(16)) { display: none;}  
 .bfpfirm div.bfpcampo:not(:nth-child(18)) { display: none;}    
@@ -1464,15 +1467,30 @@ grid-column: 2 / 2;
     box-sizing: border-box;
   } 
   
-.bfpinven div.bfpcampo.inventario .bfplabel{
-    background: var(--n1);
-    width: 80px;
+.bfpinven div.bfpcampo.inventario .bfplabel {
+    background: transparent;
+    width: auto;
     height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 0px 10px 0px 0px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+  
+.bfpinven div.bfpcampo.inventario .bfplabel .label{
+    color: var(--n4);
+    font: 800 2em var(--f3);
+    letter-spacing: 1px;
 }  
+  
+.bfpinven div.bfpcampo.inventario .bfplabel .label:before {
+  content:'\ecad';
+  font-family:'cappuccicons';
+  color: var(--n4);
+  margin: 0 10px 0 0;
+  }
   
 .bfpinven div.bfpcampo.inventario .bfpconte {
     width: 338px;
@@ -1487,7 +1505,7 @@ grid-column: 2 / 2;
 }
     
 .bfpinven div.bfpcampo.inventario .bfpconte img{
-    margin: 10px;
+    margin: 8px;
     border-radius: 7px;
 }  
   
