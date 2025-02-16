@@ -59,7 +59,6 @@ showHiddenMessage = function(id)
 <!-- END switch_push_direct_send -->
 
 <!-- POST INICIO -->
-
 <div id="bfpost">
     <div class="bfrepo">
       <div class="bfbutp">
@@ -73,7 +72,6 @@ showHiddenMessage = function(id)
     </div>
     </div>
   </div>
-  
     <!-- BEGIN postrow -->
 	<!-- BEGIN displayed --> 
   <div id="p{postrow.displayed.U_POST_ID}" class="post {postrow.displayed.ROW_COUNT}{postrow.displayed.ONLINE_IMG_NEW} post--{postrow.displayed.U_POST_ID}"{postrow.displayed.THANK_BGCOLOR} style="{postrow.displayed.DISPLAYABLE_STATE}">
@@ -190,7 +188,6 @@ showHiddenMessage = function(id)
         <!-- END profile_field -->
      </div>
 </div>
-
 <!-- MODAL DE ESTADISTICAS -->
 <div class="hpestadis" id="modal">
     <div class="contenido">
@@ -257,8 +254,7 @@ showHiddenMessage = function(id)
         </div>		
         </div>
         <!-- END switch_likes_active -->
-        </div>
-        
+        </div>        
   </div>
     </div>  
       <div class="downtown">
@@ -291,9 +287,7 @@ showHiddenMessage = function(id)
   	<!-- END displayed -->
 <!-- END postrow -->   
 </div>  
-
 <!-- POST FIN -->
-
   <div class="endtopic">
     <div class="endpagi">
     <!-- BEGIN topicpagination -->
@@ -308,14 +302,11 @@ showHiddenMessage = function(id)
 <!-- END switch_user_logged_in -->
     </div>   
   </div>
-
   <div class="quickyty">
  <!-- BEGIN switch_user_logged_in -->
 {QUICK_REPLY_FORM}
 <!-- END switch_user_logged_in --> 
   </div>
-
-
 <div class="configpost">
   <div class="respond">
   <!-- BEGIN switch_user_authpost -->
@@ -326,7 +317,6 @@ showHiddenMessage = function(id)
 		<a href="{U_POST_REPLY_TOPIC}">Responder tema <i class="solar-icons" stroke="1.5" icon-name="reply-1"></i></a>
 		<!-- END switch_user_authreply -->
   </div>
-  
   <div class="changes">
  <form action="{S_JUMPBOX_ACTION}" method="get" onsubmit="if(document.jumpbox.f.value == -1){return false;}">
 <fieldset class="jumpbox">
@@ -341,7 +331,6 @@ showHiddenMessage = function(id)
 <form method="get" action="{S_FORM_MOD_ACTION}">
 <fieldset class="quickmod">
 	<input type="hidden" name="t" value="{TOPIC_ID}" />
-
 	<!-- <input type="hidden" name="sid" value="{S_SID}" /> -->
 	<input type="hidden" name="{SECURE_ID_NAME}" value="{SECURE_ID_VALUE}" />
 	<label>Herramientas de moderación</label>
@@ -351,18 +340,13 @@ showHiddenMessage = function(id)
 </form>
 <p class="right">{S_TOPIC_ADMIN}</p>
 <!-- END viewtopic_bottom -->
-
   </div>
-  
   </div>  
-  
-
-
+<div class="permiss">
 <!-- BEGIN show_permissions -->
-	<div class="h3">{L_TABS_PERMISSIONS}</div>
-	{S_AUTH_LIST}
+  <div class="pmis">{S_AUTH_LIST}</div>
 <!-- END show_permissions -->
-
+  </div>
 <!-- BEGIN switch_image_resize -->
 <script type="text/javascript">
 //<![CDATA[
@@ -373,159 +357,28 @@ $(resize_images({ 'selector' : '.postbody .content', 'max_width' : {switch_image
 
 <style>
 /*Acomodar post*/
-.post {  
-    background: transparent;
-    padding: 0!important;
-  margin-bottom: 0!important;
-  position: relative;
-   width: 100%;
-}
-
-.postbody .content {
-    word-wrap: break-word;
-    font-size: 1.3em;
-    color: #fcfaf9;
-    font-family: sans-serif;
-}  
-    
-  
+.post { background: transparent; padding: 0!important;margin-bottom: 0!important; position: relative; width: 100%;}
+.postbody .content { word-wrap: break-word; font-size: 1.3em; color: #fcfaf9; font-family: sans-serif; }    
 /**Inicio, botones**/  
-#bfpost {
-    background: var(--n5);
-    border-radius: 15px;
-    padding: 10px;
-    border: 1px solid var(--n2);
-}
-  
-.bfrepo {
-    display: flex;
-    background: var(--n2);
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-}
-
-
-.bfbutp {
-      display: flex;
-    align-items: center;
-  }  
-  
-  
-.bfbutp a{
-    color: var(--n4);
-    background: var(--n1);
-    padding: 10px;
-    margin: 10px 0 10px 10px;
-    border-radius: 7px;
-    border: 1px solid var(--n9);
-    font: 400 0.7em var(--f4);
-    text-transform: uppercase;
-    letter-spacing: 1px;
-} 
-  
-  
-  
-.poster-list {
-    align-items: center;
-}  
-  
-.poster-list .poster-count {
-    margin-left: 5px;
-    line-height: 30px;
-    background: var(--n1);
-    font-size: 10px;
-    padding: 0px 7px 0 7px;
-    border-radius: 7px;
-    border: 1px solid var(--n9);
-    color: var(--n4);
-    text-transform: uppercase;
-}  
-  
-.bfpatip a {
-    font-size: 12px;
-    display: flex;
-}  
-  
-.bfpatip a span {
-    display: flex;
-}  
-
-.pbfpagin, .bfpatip {
-    display: block;
-    margin: 10px;
-    border-radius: 5px;
-    color: var(--n4);
-}
-  
-.pbfpagin a {
-    color: var(--n4);
-    text-transform: uppercase;
-    font: 400 0.7em var(--f4);
-}
-
-.bfpyp {
-  display: flex;
-  align-items: center; 
-  justify-content: center;
-}
-  
+#bfpost { background: var(--n5); border-radius: 15px;  padding: 10px;  border: 1px solid var(--n2);}
+.bfrepo { display: flex; background: var(--n2); align-items: center; justify-content: space-between; flex-wrap: wrap; border-top-left-radius: 10px; border-top-right-radius: 10px;}
+.bfbutp { display: flex; align-items: center; }  
+.bfbutp a{ color: var(--n4); background: var(--n1); padding: 10px; margin: 10px 0 10px 10px; border-radius: 7px; border: 1px solid var(--n9); font: 400 0.7em var(--f4); text-transform: uppercase; letter-spacing: 1px; } 
+.poster-list { align-items: center;}    
+.poster-list .poster-count { margin-left: 5px; line-height: 30px; background: var(--n1); font-size: 10px; padding: 0px 7px 0 7px; border-radius: 7px; border: 1px solid var(--n9);color: var(--n4); text-transform: uppercase;}  
+.bfpatip a { font-size: 12px; display: flex;}   
+.bfpatip a span {  display: flex;}  
+.pbfpagin, .bfpatip { display: block;  margin: 10px; border-radius: 5px; color: var(--n4);} 
+.pbfpagin a { color: var(--n4); text-transform: uppercase;  font: 400 0.7em var(--f4);}
+.bfpyp { display: flex; align-items: center;  justify-content: center;}  
  /**Titulo del tema y permalink**/  
-.bfpermatit {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: var(--n1);
-    background-image: var(--flo2);
-    background-size: cover;
-    background-position: bottom;
-      flex-flow: row-reverse;
-}
-  
-
-.ppermabf {
-    background: var(--n2);
-    padding: 10px;
-    margin: 10px;
-    border-radius: 7px;
-    border: 1px solid var(--n9);
-    max-width: 200px;
-    width: 150px;
-    text-align: end;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}  
-  
-.ppermabf a{
-    color: var(--n4);
-    font: 400 0.7em var(--f4);
-    text-transform: uppercase;
-    letter-spacing: 2px;
-}  
-  
-.pbftitt {
-  margin: 10px;
-  }  
-  
-.pbftitt a {
-    font: 2em var(--f3);
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    text-align: end;
-    line-height: 35px;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    color: var(--n4);
-} 
-  
+.bfpermatit { display: flex; align-items: center;  justify-content: space-between; background: var(--n1); background-image: var(--flo2); background-size: cover; background-position: bottom;  flex-flow: row-reverse; }
+.ppermabf { background: var(--n2);  padding: 10px; margin: 10px; border-radius: 7px;  border: 1px solid var(--n9); max-width: 200px; width: 150px; text-align: end; display: flex; align-items: center;  justify-content: center;}  
+.ppermabf a{ color: var(--n4); font: 400 0.7em var(--f4); text-transform: uppercase; letter-spacing: 2px;}   
+.pbftitt { margin: 10px; }   
+.pbftitt a { font: 1.4em var(--f3); display: flex; align-items: center;justify-content: flex-end; text-align: end; line-height: 1em; text-transform: uppercase; letter-spacing: 1px; color: var(--n4);} 
 /**Header por grupo**/  
-
-.bfhead {
-    background: var(--n5);
+.bfhead { background: var(--n5);
     height: 235px;
     background-image: var(--fpg);
     background-position: center;
@@ -1489,170 +1342,27 @@ strong.recuerdame {
     align-items: center;
     justify-content: center;
     margin: 0px 10px 0px 0px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-  
-.bfpinven div.bfpcampo.inventario .bfplabel .label{
-    color: var(--n4);
-    font: 800 2em var(--f3);
-    letter-spacing: 1px;
-}  
-  
-.bfpinven div.bfpcampo.inventario .bfplabel .label:before {
-  content:'\ecad';
-  font-family:'cappuccicons';
-  color: var(--n4);
-  margin: 0 10px 0 0;
-  }
-  
-.bfpinven div.bfpcampo.inventario .bfpconte {
-    width: 390px;
-    box-sizing: border-box;
-    position: relative;
-    overflow: auto;
-    height: 145px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-    
-.bfpinven div.bfpcampo.inventario .bfpconte img{
-    margin: 8px 25px 0px 0;
-    border-radius: 7px;
-}  
-  
-.bfpinven div.bfpcampo.inventario .bfpconte i {
-    margin: 46px 0 0 -30px;
-    background: var(--pr2);
-    font: 400 0.8em var(--f4);
-    color: var(--n4);
-    padding: 3px;
-    letter-spacing: 1px;
-    border-radius: 50%;
-}
-
-.pnmedl {
-    height: 200px;
-    width: -webkit-fill-available;
-    border-right: 1px solid var(--n1);
-    margin: 0 10px 0 0px;
-}  
-  
-.medattit {
-    background: transparent;
-    width: auto;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0px 10px 0px 0px;
-    text-transform: uppercase;
-    color: var(--n4);
-    font: 800 2em var(--f3);
-    text-align: center;
-    letter-spacing: 1px;
-}  
-  
+    text-transform: uppercase; letter-spacing: 1px; }  
+.bfpinven div.bfpcampo.inventario .bfplabel .label{ color: var(--n4); font: 800 2em var(--f3); letter-spacing: 1px; }   
+.bfpinven div.bfpcampo.inventario .bfplabel .label:before { content:'\ecad'; font-family:'cappuccicons'; color: var(--n4); margin: 0 10px 0 0; }
+.bfpinven div.bfpcampo.inventario .bfpconte { width: 390px; box-sizing: border-box; position: relative; overflow: auto; height: 145px; display: flex; align-items: center; justify-content: center; flex-wrap: wrap; }    
+.bfpinven div.bfpcampo.inventario .bfpconte img{ margin: 8px 25px 0px 0; border-radius: 7px; }    
+.bfpinven div.bfpcampo.inventario .bfpconte i { margin: 46px 0 0 -30px; background: var(--pr2); font: 400 0.8em var(--f4); color: var(--n4); padding: 3px; letter-spacing: 1px; border-radius: 50%; }
+.pnmedl { height: 200px; width: -webkit-fill-available; border-right: 1px solid var(--n1); margin: 0 10px 0 0px; }    
+.medattit { background: transparent; width: auto; height: 50px; display: flex; align-items: center; justify-content: center; margin: 0px 10px 0px 0px; text-transform: uppercase; color: var(--n4); font: 800 2em var(--f3); text-align: center; letter-spacing: 1px; }    
 .medattit i { margin: 0 10px; }
 .medattit p { margin: 0px;}  
-  
-.dd_award {
-    background-color: transparent;
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 379px;
-    max-height: 130px;
-    overflow: auto;
-    justify-content: center;
-    border-radius: 0;
-    border: 1px solid var(--awards_color);
-    scroll-snap-type: y mandatory;
-    transition: max-heightease .5s;
-    float: none;
-    padding: 10px;
-}
-  
-div.award {
-    display: inline-block;
-    position: relative;
-    width: 50px;
-    height: 50px;
-    border: 2px solid var(--awards_color);
-    background-image: var(--award-image);
-    background-color: var(--n2);
-    border-radius: 5px;
-    background-position: center;
-    margin: 8px;
-    background-size: cover;
-    flex-shrink: 0;
-    scroll-snap-align: center;
-}  
-  
-.bfpfirm {
-    width: 500px;
-    height: 200px;
-    overflow: hidden;
-}    
-  
-.bfpfirm div.bfpcampo.firma .bfplabel { display: none;} 
-  
-.bfpfirm div.bfpcampo.firma .bfpconte img {
-    width: 500px;
-    height: 200px;
-    object-fit: cover;
-}  
-  
-.endtopic {
-    border: 1px solid var(--n1);
-    padding: 10px;
-    margin: 0px;
-    color: var(--n4);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}  
-  
-.endvigil {
-    padding: 7px;
-    background: var(--n2);
-    border-radius: 4px;
-}  
-  
-.endvigil a  {
-    font: 400 0.7em var(--f4);
-    text-transform: uppercase;
-}  
-  
-.endpagi .pagination{
-    font: 400 0.7em var(--f4);
-    text-transform: uppercase;
-}  
-  
-.pagination span a, .pagination span a:link, .pagination span a:visited, .pagination span a:active {
-    font-weight: 400;
-    text-decoration: none;
-    color: var(--n4);
-    background-color: var(--n2);
-    margin: 4px;
-    line-height: 1.5em;
-    padding: 7px;
-    border-radius: 5px;
-      border: 0px;
-      font-family: var(--f4);
-}  
-  
-.pagination span strong {
-    padding: 7px;
-    margin: 0px;
-    background-color: var(--pr5);
-    border: 0px;
-    color: var(--n4);
-    font-size: .9em;
-    border-radius: 5px;
-    font-family: var(--f4);
-}  
+.dd_award { background-color: transparent; display: flex; flex-wrap: wrap; max-width: 379px; max-height: 130px; overflow: auto; justify-content: center; border-radius: 0; border: 1px solid var(--awards_color); scroll-snap-type: y mandatory; transition: max-heightease .5s; float: none; padding: 10px; }  
+div.award { display: inline-block; position: relative; width: 50px; height: 50px; border: 2px solid var(--awards_color); background-image: var(--award-image); background-color: var(--n2); border-radius: 5px; background-position: center; margin: 8px; background-size: cover; flex-shrink: 0; scroll-snap-align: center; }    
+.bfpfirm { width: 500px; height: 200px; overflow: hidden; }      
+.bfpfirm div.bfpcampo.firma .bfplabel { display: none;}   
+.bfpfirm div.bfpcampo.firma .bfpconte img { width: 500px; height: 200px; object-fit: cover; }  
+.endtopic { border: 1px solid var(--n1); padding: 10px; margin: 0px; color: var(--n4); display: flex; align-items: center; justify-content: space-between; }  
+.endvigil { padding: 7px; background: var(--n2); border-radius: 4px;}  
+.endvigil a  { font: 400 0.7em var(--f4); text-transform: uppercase; }  
+.endpagi .pagination { font: 400 0.7em var(--f4); text-transform: uppercase}  
+.pagination span a, .pagination span a:link, .pagination span a:visited, .pagination span a:active { font-weight: 400; text-decoration: none; color: var(--n4); background-color: var(--n2); margin: 4px; line-height: 1.5em; padding: 7px; border-radius: 5px; border: 0px;  font-family: var(--f4);}   
+.pagination span strong { padding: 7px; margin: 0px; background-color: var(--pr5); border: 0px; color: var(--n4); font-size: .9em; border-radius: 5px; font-family: var(--f4); }  
 .pag-img { display: none;}  
   
 
