@@ -581,4 +581,56 @@ div.award { display: inline-block; position: relative; width: 50px; height: 50px
 .exor .bfpinven div.bfpcampo.inventario .bfplabel .label  { color: var(--exor);}  
 .exor .bfpinven div.bfpcampo.inventario .bfpconte i { background: var(--exor); }  
 .exor .medattit { color: var(--exor); }   
+/**COLORES POR GRUPO AKUHEI**/   
+.akuhei .bfpermatit { background-image: var(--pakuhe); }  
+.akuhei .bfhead { background-image: var(--caku); }  
+.akuhei .tnolin { background: var(--aku); }  
+.akuhei .bndportada { outline: 1px solid var(--aku); box-shadow: -10px 0px 0px var(--aku); }  
+.akuhei .rank span { color: var(--aku);}
+.akuhei .rank i { color: var(--aku); }  
+.akuhei .bfpcp1 { border-right: 1px solid var(--aku);}  
+.akuhei .cp1dats { border-left: 1px solid var(--aku); }  
+.akuhei .cp1dats div.bfpcampo.datos .bfpconte i:before { background: var(--aku); }  
+.akuhei .bfpcp2 { border-right: 1px solid var(--aku); }  
+.akuhei .bfpcp3 .bfconta { border-bottom: 1px solid var(--aku);}  
+.akuhei .bfpcp3 .bfconta a { background: var(--aku);}  
+.akuhei .bfpcp2 div.bfpcampo.afinidad {  background: var(--aku); }  
+.akuhei .bfeditp a { filter: drop-shadow(0px 0px 8px var(--aku)); }  
+.akuhei .bfpavahover { background: var(--taku); } 
+.akuhei .hfras div.bfpcampo.frase .bfpconte:before {color: var(--aku); }  
+.akuhei .hpest i { color: var(--aku); font-weight: bolder;}
+.akuhei .contenido h2 { color: var(--aku); filter: drop-shadow(0px 0px 6px var(--n5)); }  
+.akuhei .natribus div.bfpcampo.nivel .bfpconte { background: var(--aku); }  
+.akuhei .bfpest:hover{ animation: none; background-color: var(--aku); }  
+.akuhei .rep-button, .rep-button:focus, .akuhei  .rep-button:active { background: var(--taku);}  
+.akuhei .bfpinven div.bfpcampo.inventario .bfplabel .label:before  { color: var(--aku);}
+.akuhei .bfpinven div.bfpcampo.inventario .bfplabel .label  { color: var(--aku);}  
+.akuhei .bfpinven div.bfpcampo.inventario .bfpconte i { background: var(--aku); }  
+.akuhei .medattit { color: var(--aku); }   
+/**COLORES POR GRUPO APRENDIZ**/  
+.aprendiz .bfpermatit { background-image: var(--papren); }  
+.aprendiz .bfhead { background-image: var(--capre); }  
+.aprendiz .tnolin { background: var(--apren); }  
+.aprendiz .bndportada { outline: 1px solid var(--apren); box-shadow: -10px 0px 0px var(--apren); }  
+.aprendiz .rank span { color: var(--apren);}
+.aprendiz .rank i { color: var(--apren); }  
+.aprendiz .bfpcp1 { border-right: 1px solid var(--apren);}  
+.aprendiz .cp1dats { border-left: 1px solid var(--apren); }  
+.aprendiz .cp1dats div.bfpcampo.datos .bfpconte i:before { background: var(--apren); }  
+.aprendiz .bfpcp2 { border-right: 1px solid var(--apren); }  
+.aprendiz .bfpcp3 .bfconta { border-bottom: 1px solid var(--apren);}  
+.aprendiz .bfpcp3 .bfconta a { background: var(--apren);}  
+.aprendiz .bfpcp2 div.bfpcampo.afinidad {  background: var(--apren); }  
+.aprendiz .bfeditp a { filter: drop-shadow(0px 0px 8px var(--apren)); }  
+.aprendiz .bfpavahover { background: var(--tapren); } 
+.aprendiz .hfras div.bfpcampo.frase .bfpconte:before {color: var(--apren); }  
+.aprendiz .hpest i { color: var(--apren); font-weight: bolder;}
+.aprendiz .contenido h2 { color: var(--apren); filter: drop-shadow(0px 0px 6px var(--n5)); }  
+.aprendiz .natribus div.bfpcampo.nivel .bfpconte { background: var(--apren); }  
+.aprendiz .bfpest:hover{ animation: none; background-color: var(--apren); }  
+.aprendiz .rep-button, .rep-button:focus, .aprendiz  .rep-button:active { background: var(--tapren);}  
+.aprendiz .bfpinven div.bfpcampo.inventario .bfplabel .label:before  { color: var(--apren);}
+.aprendiz .bfpinven div.bfpcampo.inventario .bfplabel .label  { color: var(--apren);}  
+.aprendiz .bfpinven div.bfpcampo.inventario .bfpconte i { background: var(--apren); }  
+.aprendiz .medattit { color: var(--apren); }    
 </style>  
