@@ -268,7 +268,7 @@ showHiddenMessage = function(id)
         </div>
         <div class="pnmedl">
           <div class="medattit">
-            <i class="solar-icons" stroke="1.5" icon-name="moon-stars"></i> <p>Medallero</p>
+            <i class="solar-icons" stroke="1.5" icon-name="medal-3"></i> <p>Medallero</p>
           </div>
         <div {postrow.displayed.AWARDS_SHOW} class="dd_award {postrow.displayed.PROFILE_POSITION}">
          {postrow.displayed.AWARDS}
@@ -387,7 +387,8 @@ $(resize_images({ 'selector' : '.postbody .content', 'max_width' : {switch_image
 .bfpname div.bfpcampo.nombre .bfplabel { display: none;} .bfpname  div.bfpcampo:not(:nth-child(2)) { display: none; }
 .author { background: var(--n2); border: 1px solid var(--n1); border-radius: 7px; margin: 10px 20px 0; padding: 6px 6px 6px 0px; color: var(--n4); font: 400 0.7em var(--f4); letter-spacing: 1px; text-transform: uppercase; overflow: hidden; }
 .author i { padding: 8px; background: transparent; font-size: 12px; margin: 0px 5px 0px 0px; border-right: 1px solid var(--n1); }
-/*PORTADA Y PESTAÑA*/ .bndportada { background: var(--n2); height: 235px; border-top-left-radius: 20px; border-bottom-left-radius: 20px; overflow: hidden; outline: 1px solid var(--n1); box-shadow: -10px 0px 0px var(--nuev); position: relative; outline-offset: -10px; }
+/*PORTADA Y PESTAÑA*/
+.bndportada { background: var(--n2); height: 235px; border-top-left-radius: 20px; border-bottom-left-radius: 20px; overflow: hidden; outline: 1px solid var(--n1); box-shadow: -10px 0px 0px var(--nuev); position: relative; outline-offset: -10px; }
 .bfpest, .bfcerco { cursor: pointer; padding: 10px; background: var(--n2); color: white; text-align: center; border-bottom-left-radius: 15px; align-self: flex-start; justify-content: flex-end; border-top-right-radius: 10px; display: flex; margin: 0; position: absolute; transition: all 1s ease-in-out; animation: pulse 2s infinite ease-in-out; }
 .bfpest i, .bfcerco i { font-size: 14px; color: var(--n6); animation: none; }
 .bfporti div.bfpcampo:nth-child(n+2) { display: none;}
@@ -409,7 +410,7 @@ $(resize_images({ 'selector' : '.postbody .content', 'max_width' : {switch_image
 .cp1dats div.bfpcampo:not(:nth-child(10)) { display: none; }
 .cp1dats div.bfpcampo.datos{ width: -webkit-fill-available; height: 214px; display: flex; align-items: center; }
 .cp1dats div.bfpcampo.datos .bfplabel { font-size: 0px; } .cp1dats div.bfpcampo.datos .bfpconte  { display: inline-block; width: -webkit-fill-available; }
-.cp1dats div.bfpcampo.datos .bfpconte i { display: flex; align-items: flex-start; justify-content: flex-start; flex-flow: column; margin: 3px 0px 0 10px; font: 800 0.6em var(--f3); text-transform: uppercase; letter-spacing: 1px; color: var(--n4); }
+.cp1dats div.bfpcampo.datos .bfpconte i { display: flex; align-items: flex-start; justify-content: flex-start; flex-flow: column; margin: 3px 0px 0 10px; font: 800 0.6em var(--f3); text-transform: uppercase; letter-spacing: 1px; color: var(--n6); }
 .cp1dats div.bfpcampo.datos .bfpconte i:before { content: ' '; width: 10px; height: 10px; background: var(--n5); display: block; border-radius: 50%; margin: 1px 0px 0 -15px; position: absolute; }
 .cp1dats div.bfpcampo.datos .bfpconte strong { font-size: 01em; font-family: var(--f4); text-transform: lowercase; text-align: end; width: -webkit-fill-available; margin: 0 10px 0 0px; }
 .cp1dats div.bfpcampo i:nth-child(9) { display: none!important;}
@@ -429,7 +430,7 @@ $(resize_images({ 'selector' : '.postbody .content', 'max_width' : {switch_image
 .bfpcp3 { width: 208px; height: 205px; }
 .bfpcp3 .bfconta { width: 205px; height: 35px; margin: 0 0 5px 0; border-bottom: 1px solid var(--n1); display: flex; align-items: center; }
 .bfpcp3 .bfconta p{ font: 800 1em var(--f4); margin: 0 10px 0 0px; color: var(--n4); font-style: italic; letter-spacing: 1px; }
-.bfpcp3 .bfconta a{ font-size: 12px; margin: 10px; }
+.bfpcp3 .bfconta a { font-size: 0.8em; margin: 10px; color: var(--n4); background: var(--n1); width: 20px; height: 20px; display: flex; align-items: center; justify-content: center; border-radius: 5px; }
 .bfpcp3 div.bfpcampo:not(:nth-child(18)) { display: none; } .bfpcp3 div.bfpcampo .bfplabel { display: none; }
 .bfpcp3 div.bfpcampo.descripción { color: var(--n4); font: 400 0.8em var(--f4); line-height: 1.5em; text-align: justify; width: 202px; height: 165px; overflow: auto; padding: 0 6px 0 0px; }
 .bfpcp3 div.bfpcampo .bfpconte:before { content: 'sobre mi'; font: 400 12px var(--f5); color: var(--n4); margin: 8px 10px 0px 0px; width: 60px; display: flex; float: left; background: var(--n1); padding: 5px; border-radius: 5px; }
@@ -473,13 +474,15 @@ $(resize_images({ 'selector' : '.postbody .content', 'max_width' : {switch_image
 .bariis div.bfpcampo.pv .bfpconte strong, .bariis div.bfpcampo.pp .bfpconte strong{ font: 400 0.8em var(--f4); text-transform: uppercase; }
 .natribus div.bfpcampo.nivel:before { content: 'Atributos'; color: var(--n4); font: 400 1.5em var(--f5); letter-spacing: 1px; }
 .natribus div.bfpcampo.nivel { display: flex; width: 96%; justify-content: space-between; padding: 10px; border-bottom: 1px solid var(--n1); border-top: 1px solid var(--n1); align-items: center; }
-.natribus div.bfpcampo.nivel .bfplabel { display: none;} .natribus div.bfpcampo.nivel .bfpconte:before { content: 'Nivel'; font-family: arial; color: var(--n4); margin: 10px; } .natribus div.bfpcampo.nivel .bfpconte { font: 400 1em var(--f4); margin: 0; }
+.natribus div.bfpcampo.nivel .bfplabel { display: none;} 
+.natribus div.bfpcampo.nivel .bfpconte:before { content: 'Nivel'; font-family: arial; color: var(--n4); margin: 0 10px 0 0px; }
+.natribus div.bfpcampo.nivel .bfpconte { font: 400 1em var(--f4); margin: 0; background: var(--n1); display: flex; align-items: center; justify-content: center; text-transform: uppercase; padding: 5px; width: 100px; border-radius: 6px; letter-spacing: 1px; }
 .natribus div.bfpcampo.atributos { width: 100%; margin: 10px 0 0 0; }
 .natribus div.bfpcampo.atributos .bfplabel { display: none;}
 .natribus div.bfpcampo.atributos .bfpconte strong { display: flex; margin: 10px; align-items: center; justify-content: space-between; }
 .natribus div.bfpcampo.atributos .bfpconte strong i { background: var(--n1); padding: 5px; font: 400 0.8em var(--f4); text-transform: uppercase; letter-spacing: 1px; border-radius: 10px; min-width: 150px; }
 .natribus div.bfpcampo.atributos .bfpconte strong hr { height: 0.6px; background: var(--n1); width: 368px; }
-.natribus div.bfpcampo.atributos .bfpconte strong u{ padding: 5px; background: var(--n1); font: 400 0.8em var(--f4); border-radius: 10px; text-decoration: none; }
+.natribus div.bfpcampo.atributos .bfpconte strong u{ padding: 5px; background: var(--n1); font: 400 0.8em var(--f4); border-radius: 10px; text-decoration: none; min-width: 30px;}
 /* Botón de Cerrar */ 
 .hcerr { position: absolute; top: 10px; right: 10px; font-size: 1em; color: var(--pr3); cursor: pointer; background: var(--n3); border: none; border-radius: 10px; padding: 10px; width: auto; hiehgt: auto; display: flex; align-items: center; justify-content: center; transition: all 700ms; }
 .hcerr:hover { color: var(--n4); background: var(--pr3); }
@@ -506,8 +509,8 @@ strong.recuerdame { width: -webkit-fill-available; display: block; padding: 10px
 .bfpinven div.bfpcampo.inventario .bfplabel .label{ color: var(--n4); font: 800 2em var(--f3); letter-spacing: 1px; }   
 .bfpinven div.bfpcampo.inventario .bfplabel .label:before { content:'\ecad'; font-family:'cappuccicons'; color: var(--n4); margin: 0 10px 0 0; }
 .bfpinven div.bfpcampo.inventario .bfpconte { width: 390px; box-sizing: border-box; position: relative; overflow: auto; height: 145px; display: flex; align-items: center; justify-content: center; flex-wrap: wrap; }    
-.bfpinven div.bfpcampo.inventario .bfpconte img{ margin: 8px 25px 0px 0; border-radius: 7px; }    
-.bfpinven div.bfpcampo.inventario .bfpconte i { margin: 46px 0 0 -30px; background: var(--pr2); font: 400 0.8em var(--f4); color: var(--n4); padding: 3px; letter-spacing: 1px; border-radius: 50%; }
+.bfpinven div.bfpcampo.inventario .bfpconte img{ margin: 0 20px 0 0px; border-radius: 7px; }    
+.bfpinven div.bfpcampo.inventario .bfpconte i { margin: 46px 20px 0 -40px; background: var(--pr2); font: 400 0.8em var(--f4); color: var(--n4); padding: 3px; letter-spacing: 1px; border-radius: 50%; }
 .pnmedl { height: 200px; width: -webkit-fill-available; border-right: 1px solid var(--n1); margin: 0 10px 0 0px; }    
 .medattit { background: transparent; width: auto; height: 50px; display: flex; align-items: center; justify-content: center; margin: 0px 10px 0px 0px; text-transform: uppercase; color: var(--n4); font: 800 2em var(--f3); text-align: center; letter-spacing: 1px; }    
 .medattit i { margin: 0 10px; }
@@ -526,9 +529,56 @@ div.award { display: inline-block; position: relative; width: 50px; height: 50px
 .pag-img { display: none;}  
 </style>   
 <style>
-/**COLORES POR GRUPO**/
+/**COLORES POR GRUPO STAFF**/
 .admin .bfpermatit { background-image: var(--pstaff); }  
 .admin .bfhead { background-image: var(--cstaff); }  
 .admin .tnolin { background: var(--direc); }  
-
+.admin .bndportada { outline: 1px solid var(--direc); box-shadow: -10px 0px 0px var(--direc); }  
+.admin .rank span { color: var(--direc);}
+.admin .rank i { color: var(--direc); }  
+.admin .bfpcp1 { border-right: 1px solid var(--direc);}  
+.admin .cp1dats { border-left: 1px solid var(--direc); }  
+.admin .cp1dats div.bfpcampo.datos .bfpconte i:before { background: var(--direc); }  
+.admin .bfpcp2 { border-right: 1px solid var(--direc); }  
+.admin .bfpcp3 .bfconta { border-bottom: 1px solid var(--direc);}  
+.admin .bfpcp3 .bfconta a { background: var(--direc);}  
+.admin .bfpcp2 div.bfpcampo.afinidad {  background: var(--direc); }  
+.admin .bfeditp a { filter: drop-shadow(0px 0px 8px var(--direc)); }  
+.admin .bfpavahover { background: var(--tdirect); } 
+.admin .hfras div.bfpcampo.frase .bfpconte:before {color: var(--direc); }  
+.admin .hpest i { color: var(--direc); font-weight: bolder;}
+.admin .contenido h2 { color: var(--direc); filter: drop-shadow(0px 0px 6px var(--n5)); }  
+.admin .natribus div.bfpcampo.nivel .bfpconte { background: var(--direc); }  
+.admin .bfpest:hover{ animation: none; background-color: var(--direc); }  
+.admin .rep-button, .rep-button:focus, .admin  .rep-button:active { background: var(--tdirect);}  
+.admin .bfpinven div.bfpcampo.inventario .bfplabel .label:before  { color: var(--direc);}
+.admin .bfpinven div.bfpcampo.inventario .bfplabel .label  { color: var(--direc);}  
+.admin .bfpinven div.bfpcampo.inventario .bfpconte i { background: var(--direc); }  
+.admin .medattit { color: var(--direc); }  
+/**COLORES POR GRUPO EXORCISTAS**/  
+.exor .bfpermatit { background-image: var(--pexors); }  
+.exor .bfhead { background-image: var(--cexo); }  
+.exor .tnolin { background: var(--exor); }  
+.exor .bndportada { outline: 1px solid var(--exor); box-shadow: -10px 0px 0px var(--exor); }  
+.exor .rank span { color: var(--exor);}
+.exor .rank i { color: var(--exor); }  
+.exor .bfpcp1 { border-right: 1px solid var(--exor);}  
+.exor .cp1dats { border-left: 1px solid var(--exor); }  
+.exor .cp1dats div.bfpcampo.datos .bfpconte i:before { background: var(--exor); }  
+.exor .bfpcp2 { border-right: 1px solid var(--exor); }  
+.exor .bfpcp3 .bfconta { border-bottom: 1px solid var(--exor);}  
+.exor .bfpcp3 .bfconta a { background: var(--exor);}  
+.exor .bfpcp2 div.bfpcampo.afinidad {  background: var(--exor); }  
+.exor .bfeditp a { filter: drop-shadow(0px 0px 8px var(--exor)); }  
+.exor .bfpavahover { background: var(--texor); } 
+.exor .hfras div.bfpcampo.frase .bfpconte:before {color: var(--exor); }  
+.exor .hpest i { color: var(--exor); font-weight: bolder;}
+.exor .contenido h2 { color: var(--exor); filter: drop-shadow(0px 0px 6px var(--n5)); }  
+.exor .natribus div.bfpcampo.nivel .bfpconte { background: var(--exor); }  
+.exor .bfpest:hover{ animation: none; background-color: var(--exor); }  
+.exor .rep-button, .rep-button:focus, .admin  .rep-button:active { background: var(--texor);}  
+.exor .bfpinven div.bfpcampo.inventario .bfplabel .label:before  { color: var(--exor);}
+.exor .bfpinven div.bfpcampo.inventario .bfplabel .label  { color: var(--exor);}  
+.exor .bfpinven div.bfpcampo.inventario .bfpconte i { background: var(--exor); }  
+.exor .medattit { color: var(--exor); }   
 </style>  
