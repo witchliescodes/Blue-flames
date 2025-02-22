@@ -812,7 +812,7 @@ button { cursor: pointer;}
 }
  
 .modal-content h1 {
-    top: 87%;
+    top: 84%;
     left: -2px;
     position: absolute;
     font-size: 64px;
@@ -852,6 +852,13 @@ button { cursor: pointer;}
 .close-btn1 {
     position: absolute;
     right: 10px;
+    padding: 5px;
+    border: none;
+    background: var(--color-delete);
+    border-radius: 6px;
+    width: 25px;
+    margin: 0px -9px 0px 0px;
+    color: var(--n4);
 }
   
 .monomer {
@@ -1038,16 +1045,17 @@ p.copyright a {
 <style>
 .switcheroo {
   color: var(--color-text);
-  background-color: var(--color-bg);
+  background-color: transparent;
   font-size: 16px;
 }
 .switcheroo[position="static"] {
   position: relative;
 }
 .switcheroo[position="top"] {
-  position: unset;
-  display: flex; 
-  justify-content: center;
+    position: unset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .switcheroo[position="bottom"] {
   position: fixed;
@@ -1084,11 +1092,11 @@ p.copyright a {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--color-squircle);
+  background-color: var(--pr1);
 }
 .switcheroo[theme="discord"] .switcheroo__squircle {
-  width: 60px;
-  height: 60px;
+  width: 55px;
+  height: 55px;
   border-radius: 10%;
   cursor: pointer;
   transition: border-radius 128ms var(--ease);
