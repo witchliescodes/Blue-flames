@@ -11,12 +11,12 @@
   <!--ICONOS -->
   <script src="//pull.cappuccicons.com/cpf.js"></script>
   <script src="https://kit.fontawesome.com/3de2e96a1c.js" crossorigin="anonymous"></script>
-  <link href="https://solar-icons.gitlab.io/i/icons.css" rel="stylesheet" crossorigin>
-  <link href="https://dl.dropbox.com/s/qm6x16r9jjlbgd4/game-icons.css" rel="stylesheet">
+  <link href="https://solar-icons.gitlab.io/i/icons.css" rel="stylesheet" crossorigin />
+    <link href="https://dl.dropbox.com/s/qm6x16r9jjlbgd4/game-icons.css" rel="stylesheet" />
   <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-bold-rounded/css/uicons-bold-rounded.css' /> 
-  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
-  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-solid-straight/css/uicons-solid-straight.css'>
-  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-thin-chubby/css/uicons-thin-chubby.css'>  
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css' />
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-solid-straight/css/uicons-solid-straight.css' />
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-thin-chubby/css/uicons-thin-chubby.css' />  
   <!-- Jquery-->
  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
  <script src="script.js"></script>
@@ -268,8 +268,7 @@
     <a href="/privmsg?folder=inbox" title="Bandeja de mensaje" class="msj navbara"><i class="cp cp-envelope-o"></i>Buzón</a>
     <!-- END switch_user_logged_in -->
   </div>
-      </div>
-      
+      </div>  
   <div class="nav-down">
 <div class="left-nav">
       <a href="#top" class="bf-top" onclick="$('html,body').animate({scrollTop: $('#top').offset().top},2000);" title="Ir Arriba"><i class="fi fi-br-angle-up"></i></a>
@@ -293,7 +292,7 @@
 {NAV_CAT_DESC}
     </div>
     <img class="downn-img" src="https://images2.imgbox.com/54/e6/Zdwt2DET_o.png" style="max-width:100%; height: 30px;" />
-    
+<div style="display: none;">{GENERATED_NAV_BAR}</div>    
    <div id="modal" class="modal">
     <div class="modal-content">
          <button id="closeModal" class="close-btn">X</button>
@@ -314,9 +313,41 @@
 		<h1>Welcome</h1>
     </div>
         <div id="tabm" class="tabm">
-          <div class="monomer"></div>
+          <div class="monomer">
+<nav id="switcheroo" class="switcheroo" theme="discord" direction="vertical" position="top"></nav>
+
+<script src="https://cdn.jsdelivr.net/gh/caezd/switcheroo@master/monomer.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/caezd/switcheroo@master/switcheroo.js"></script>
+
+<script>
+(function() {
+    new Switcheroo('#switcheroo', {
+        enableReorder: true, 
+        updateAvatar: true, 
+        confirm: true, 
+        deleteIcon: '×', 
+        addIcon: '+', 
+    },
+    {
+        button: {
+            add: "Agregar un personaje",
+        },
+        msg: {
+            error: "Un error ha ocurrido en Switcheroo.",
+            confirm: "¿Quieres cambiar de personaje?",
+        },
+        modal: {
+            password_label: "Contraseña",
+            username_label: "Nombre del personaje",
+            login_button: "Iniciar sesión",
+        }
+    });
+})();
+</script>
+
+          </div>
           <h1>Cambiar Cuentas</h1>
-        <button id="closeTab" class="close-btn1">Cerrar Pestaña</button>
+        <button id="closeTab" class="close-btn1">x</button>
         </div>
     
 </div>
@@ -689,7 +720,7 @@ button { cursor: pointer;}
 }
 
 .modal {
-    display: none; /* Modal está oculto inicialmente */
+    display: none;
     position: fixed;
     top: 0;
     left: 0;
@@ -699,10 +730,12 @@ button { cursor: pointer;}
     justify-content: center;
     align-items: center;
     transition: all 0.3s ease;
+    z-index: 9!important;
 }
 
 .modal.open {
-    display: flex; /* Muestra el modal cuando tiene la clase 'open' */
+    display: flex; 
+  z-index: 9;
 }
 
 .modal-content {
@@ -712,8 +745,8 @@ button { cursor: pointer;}
   max-height: 400px;
     overflow: hidden;
     position: relative;
-    opacity: 0; /* Comienza oculto */
-    z-index: 10; /* Modal se coloca encima */
+    opacity: 0; 
+    z-index: 10; 
    padding: 5px 20px 13px;
     border-radius: 10px;
     background: var(--n2);
@@ -729,8 +762,9 @@ button { cursor: pointer;}
 }
 
 .modal-content.show {
-    opacity: 1; /* Fade in del contenido */
+    opacity: 1;
 }
+    
 
 /**Contenido**/
 .card-ava {
@@ -764,9 +798,9 @@ button { cursor: pointer;}
     max-width: 300px;
     max-height: 500px;
     object-fit: contain;
-    width: 171px;
-    height: 219px;
-    margin: -14px 0 0 -26px;
+    width: 300px;
+    height: 300px;
+    margin: -40px 0 0 -71px;
 }
   
 .card-butt {
@@ -802,7 +836,7 @@ button { cursor: pointer;}
 }
  
 .modal-content h1 {
-    top: 87%;
+    top: 84%;
     left: -2px;
     position: absolute;
     font-size: 64px;
@@ -817,26 +851,56 @@ button { cursor: pointer;}
   
 .tabm {
     position: absolute;
-    top: 50%;  /* Centramos la pestaña verticalmente en la pantalla */
-    left: 50%;  /* Centramos la pestaña horizontalmente */
-    width: 300px;
-    height: 350px;
+    top: 50%;
+    left: 50%;
+    width: 340px;
+    height: 380px;
     min-height: 200px;
     max-height: 400px;
     background-color: var(--n2);
-  color: var(--n4);
-    padding: 20px;
+    color: var(--n4);
     border-radius: 10px;
-    transition: left 0.5s ease; /* Animación de deslizamiento */
-    transform: translate(-50%, -50%); /* Ajuste para centrar vertical y horizontalmente */
-    z-index: 5; /* Pestaña detrás del modal */
-    visibility: hidden; /* Comienza oculta */
+    transition: left 0.5sease;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+    visibility: hidden;
+    display: grid;
+    grid-template-rows: 90% 10%;
 }
 
 .tabm.open {
-    visibility: visible; /* Muestra la pestaña cuando tiene la clase 'open' */
-    left: calc(52% + 300px); /* Desliza la pestaña 300px hacia la derecha desde el centro */
+    visibility: visible; 
+    left: calc(50% + 331px);
 }
+  
+.close-btn1 {
+    position: absolute;
+    right: 14px;
+    padding: 5px;
+    border: none;
+    background: var(--color-delete);
+    border-radius: 6px;
+    width: 25px;
+    margin: 5px -9px 0px 0px;
+    color: var(--n4);
+}
+  
+.monomer {
+    width: 320px;
+    margin: 10px;
+    height: 330px;
+} 
+  
+.tabm h1 {
+    font: 800 2.2em var(--f5);
+    align-items: flex-start;
+    justify-content: center;
+    color: var(--texor);
+    margin: 1px 0;
+    letter-spacing: -1px;
+    width: 340px;
+    display: flex;
+}  
    
 /*Card*/  
   
