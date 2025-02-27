@@ -284,6 +284,7 @@ showHiddenMessage = function(id)
         </div>
       </div>
     </div>
+</div>  
   	<!-- END displayed -->
 <!-- END postrow -->   
 </div>  
@@ -520,7 +521,7 @@ div.award { display: inline-block; position: relative; width: 50px; height: 50px
 .bfpfirm { width: 500px; height: 200px; overflow: hidden; }      
 .bfpfirm div.bfpcampo.firma .bfplabel { display: none;}   
 .bfpfirm div.bfpcampo.firma .bfpconte img { width: 500px; height: 200px; object-fit: cover; }  
-.endtopic { border: 1px solid var(--n1); padding: 10px; margin: 0px; color: var(--n4); display: flex; align-items: center; justify-content: space-between; }  
+.endtopic { border: 1px solid var(--n5); padding: 10px; margin: 15px 0; color: var(--n4); display: flex; align-items: center; justify-content: space-between; border-radius: 10px; background: var(--n2); }
 .endvigil { padding: 7px; background: var(--n2); border-radius: 4px;}  
 .endvigil a  { font: 400 0.7em var(--f4); text-transform: uppercase; }  
 .endpagi .pagination { font: 400 0.7em var(--f4); text-transform: uppercase}  
@@ -632,5 +633,114 @@ div.award { display: inline-block; position: relative; width: 50px; height: 50px
 .aprendiz .bfpinven div.bfpcampo.inventario .bfplabel .label:before  { color: var(--apren);}
 .aprendiz .bfpinven div.bfpcampo.inventario .bfplabel .label  { color: var(--apren);}  
 .aprendiz .bfpinven div.bfpcampo.inventario .bfpconte i { background: var(--apren); }  
-.aprendiz .medattit { color: var(--apren); }    
+.aprendiz .medattit { color: var(--apren); }   
+/**CAMBIO DE LADO EN POST**/
+.row1 .bfpostito {
+    display: grid;
+    margin: 10px 0;
+    height: auto;
+    grid-template-columns: 63% 37%;
+    align-items: start;
+    border: 1px solid var(--n1);
+    background: transparent;
+}
+.row1 .postprofile {
+    width: 454px;
+    grid-column: 2;
+    grid-row: inherit;
+    height: revert-layer;
+    border-left: 1px solid var(--n1);
+    position: sticky;
+    top: 80px;
+    margin: 0;
+    display: flex;
+    flex-flow: row-reverse;
+}
+  
+.row1 .bfpperfil {
+    width: 505px;
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    border-left: 1px solid var(--n1);
+    z-index: 9999;
+}  
+  
+.row1 .bfpli {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    background: var(--n5);
+    width: 126px;
+}  
+  
+.row1 .bfposti {
+    grid-column: 1;
+    grid-row: 1;
+    text-align: justify;
+    font: 400 1.1em var(--f4);
+    line-height: 1.5em;
+    color: var(--n4);
+    height: -webkit-fill-available;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}  
+.count-container {
+    padding: 10px;
+    font-size: 0.6rem;
+    font-family: var(--f3);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+}
+.count-container .cp {
+    font-size: 1rem !important;
+    color: var(--pr4);
+      margin-right: 10px;
+}
+</style>  
+<style>
+.bfpostito:has(.hideprofile) .bfpperfil {
+  display: none;
+}  
+  
+.bfpostito:has(.hideprofile) .bfposti{
+    grid-column: 1 / 3;
+}  
+  
+.bfpostito:has(.hideprofile) .postprofile {
+    width: 100%;
+    grid-column: 1 / 3;
+    grid-row: 1;
+    height: revert-layer;
+    position: sticky;
+    top: 80px;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 100%;
+}  
+  
+.bfpostito:has(.hideprofile) .bfpli {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    background: var(--n5);
+    height: 54px;
+    border-bottom: 1px solid var(--n1);
+}  
+  
+.bfpostito:has(.hideprofile) .bfeditp {
+    width: 100%;
+    display: flex;
+    height: -webkit-fill-available;
+    align-items: center;
+    justify-content: space-evenly;
+      flex-flow: nowrap;
+}
+  
+.hideprofile {
+  margin: 55px 0 0 0;
+  }  
 </style>  
