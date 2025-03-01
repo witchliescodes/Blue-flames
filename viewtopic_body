@@ -192,7 +192,7 @@ showHiddenMessage = function(id)
 <div class="hpestadis" id="modal">
     <div class="contenido">
         <button class="hcerr">X</button>
-        <h2><i class="cp cp-pirate-swords"></i> Estadísticas</h2>
+        <h2><i class="game-icon game-icon-crossed-swords"></i> Estadísticas</h2>
       <div class="bariis">
         <!-- BEGIN profile_field -->
         <div class="bfpcampo">
@@ -454,7 +454,7 @@ $(resize_images({ 'selector' : '.postbody .content', 'max_width' : {switch_image
 .hmin .mini img { width: 100px; height: 100px; margin: 30px; }
 .hfras div.bfpcampo:not(:nth-child(9)) { display: none; }
 .hfras div.bfpcampo.frase .bfplabel { display: none;} .hfras div.bfpcampo.frase .bfpconte { padding: 30px; text-align: center; color: var(--n4); font: 400 1em var(--f4); width: 240px; }
-.hfras div.bfpcampo.frase .bfpconte:before { font-family: 'Font Awesome 6 Free'!important; font-weight: 900!important; -webkit-font-smoothing: antialiased!important; content: '\f6e2'; color: var(--n3); font: 400 2em var(--f4); position: absolute; z-index: -1; margin: -29px 0 0 -27px; -webkit-text-stroke: 1px var(--n4); }
+.hfras div.bfpcampo.frase .bfpconte:before { font-family: 'Font Awesome 6 Free'!important; font-weight: 900!important; -webkit-font-smoothing: antialiased!important; content: '\f10d'; color: var(--n3); font: 400 2em var(--f4); position: absolute; z-index: -1; margin: -29px 0 0 -27px; -webkit-text-stroke: 1px var(--n4); }
 .hmy div.bfpcampo:not(:nth-child(8)):not(:nth-child(19)) { display: none; }
 .hmy { display: flex; margin: 30px; }
 .hmy div.bfpcampo.mensajes .bfplabel, .hmy div.bfpcampo.yenes .bfplabel   { font: 400 0.8em var(--f4); text-transform: uppercase; }
@@ -508,7 +508,7 @@ strong.recuerdame { width: -webkit-fill-available; display: block; padding: 10px
 .bfpinven div.bfpcampo .inventario { display: flex; align-items: flex-start; height: 200px; flex-flow: column; overflow: auto; padding: 0 10px 0 0px; box-sizing: border-box; }
 .bfpinven div.bfpcampo.inventario .bfplabel { background: transparent; width: auto; height: 50px; display: flex; align-items: center; justify-content: center; margin: 0px 10px 0px 0px; text-transform: uppercase; letter-spacing: 1px; }
 .bfpinven div.bfpcampo.inventario .bfplabel .label{ color: var(--n4); font: 800 2em var(--f3); letter-spacing: 1px; }   
-.bfpinven div.bfpcampo.inventario .bfplabel .label:before { font-family: 'Font Awesome 6 Free'!important; font-weight: 900!important; -webkit-font-smoothing: antialiased!important; content: '\f6e2'; color: var(--n4); margin: 0 10px 0 0; }
+.bfpinven div.bfpcampo.inventario .bfplabel .label:before { font-family: 'Font Awesome 6 Free'!important; font-weight: 900!important; -webkit-font-smoothing: antialiased!important; content: '\f3ed'; color: var(--n4); margin: 0 10px 0 0; }
 .bfpinven div.bfpcampo.inventario .bfpconte { width: 390px; box-sizing: border-box; position: relative; overflow: auto; height: 145px; display: flex; align-items: center; justify-content: center; flex-wrap: wrap; }    
 .bfpinven div.bfpcampo.inventario .bfpconte img{ margin: 0 20px 0 0px; border-radius: 7px; }    
 .bfpinven div.bfpcampo.inventario .bfpconte i { margin: 46px 20px 0 -40px; background: var(--pr2); font: 400 0.8em var(--f4); color: var(--n4); padding: 3px; letter-spacing: 1px; border-radius: 50%; }
