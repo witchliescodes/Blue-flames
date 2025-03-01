@@ -454,7 +454,7 @@ $(resize_images({ 'selector' : '.postbody .content', 'max_width' : {switch_image
 .hmin .mini img { width: 100px; height: 100px; margin: 30px; }
 .hfras div.bfpcampo:not(:nth-child(9)) { display: none; }
 .hfras div.bfpcampo.frase .bfplabel { display: none;} .hfras div.bfpcampo.frase .bfpconte { padding: 30px; text-align: center; color: var(--n4); font: 400 1em var(--f4); width: 240px; }
-.hfras div.bfpcampo.frase .bfpconte:before { content: '\ec2b'; font-family: 'cappuccicons' !important; color: var(--n3); font: 400 2em var(--f4); position: absolute; z-index: -1; margin: -29px 0 0 -27px; -webkit-text-stroke: 1px var(--n4); }
+.hfras div.bfpcampo.frase .bfpconte:before { font-family: 'Font Awesome 6 Free'!important; font-weight: 900!important; -webkit-font-smoothing: antialiased!important; content: '\f6e2'; color: var(--n3); font: 400 2em var(--f4); position: absolute; z-index: -1; margin: -29px 0 0 -27px; -webkit-text-stroke: 1px var(--n4); }
 .hmy div.bfpcampo:not(:nth-child(8)):not(:nth-child(19)) { display: none; }
 .hmy { display: flex; margin: 30px; }
 .hmy div.bfpcampo.mensajes .bfplabel, .hmy div.bfpcampo.yenes .bfplabel   { font: 400 0.8em var(--f4); text-transform: uppercase; }
@@ -736,7 +736,7 @@ div.award { display: inline-block; position: relative; width: 50px; height: 50px
     display: flex;
     height: -webkit-fill-available;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: flex-start;
       flex-flow: nowrap;
 }
   
