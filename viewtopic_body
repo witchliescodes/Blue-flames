@@ -508,7 +508,7 @@ strong.recuerdame { width: -webkit-fill-available; display: block; padding: 10px
 .bfpinven div.bfpcampo .inventario { display: flex; align-items: flex-start; height: 200px; flex-flow: column; overflow: auto; padding: 0 10px 0 0px; box-sizing: border-box; }
 .bfpinven div.bfpcampo.inventario .bfplabel { background: transparent; width: auto; height: 50px; display: flex; align-items: center; justify-content: center; margin: 0px 10px 0px 0px; text-transform: uppercase; letter-spacing: 1px; }
 .bfpinven div.bfpcampo.inventario .bfplabel .label{ color: var(--n4); font: 800 2em var(--f3); letter-spacing: 1px; }   
-.bfpinven div.bfpcampo.inventario .bfplabel .label:before { content:'\ecad'; font-family:'cappuccicons'; color: var(--n4); margin: 0 10px 0 0; }
+.bfpinven div.bfpcampo.inventario .bfplabel .label:before { font-family: 'Font Awesome 6 Free'!important; font-weight: 900!important; -webkit-font-smoothing: antialiased!important; content: '\f6e2'; color: var(--n4); margin: 0 10px 0 0; }
 .bfpinven div.bfpcampo.inventario .bfpconte { width: 390px; box-sizing: border-box; position: relative; overflow: auto; height: 145px; display: flex; align-items: center; justify-content: center; flex-wrap: wrap; }    
 .bfpinven div.bfpcampo.inventario .bfpconte img{ margin: 0 20px 0 0px; border-radius: 7px; }    
 .bfpinven div.bfpcampo.inventario .bfpconte i { margin: 46px 20px 0 -40px; background: var(--pr2); font: 400 0.8em var(--f4); color: var(--n4); padding: 3px; letter-spacing: 1px; border-radius: 50%; }
