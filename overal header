@@ -8,7 +8,6 @@
   <link href="https://dl.dropbox.com/scl/fi/xtccw1mn8rbqlrruszsw8/star-gg.css?rlkey=rjklonvcqyk1xl0x94k4kus7y" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Yuji+Boku&display=swap" rel="stylesheet"/>
   <link href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&display=swap" rel="stylesheet"/>
-  <!--ICONOS -->
   <script src="//pull.cappuccicons.com/cpf.js"></script>
   <script src="https://kit.fontawesome.com/3de2e96a1c.js" crossorigin="anonymous"></script>
   <link href="https://solar-icons.gitlab.io/i/icons.css" rel="stylesheet" crossorigin />
@@ -17,7 +16,6 @@
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css' />
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-solid-straight/css/uicons-solid-straight.css' />
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-thin-chubby/css/uicons-thin-chubby.css' />  
-  <!-- Jquery-->
  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
  <script src="script.js"></script>
 
@@ -254,18 +252,18 @@
 
  <div id="Navup-BF">
       <div class="navup-1">
-        <div class="Titulo-BF"><a href="/">Blue <i class="cp cp-fire-o"></i> Flames <span>エクソシスト</span></a></div>
+        <div class="Titulo-BF"><a href="/">Blue <i class="solar-icons" stroke="1.5" icon-name="fire-1"></i> Flames <span>エクソシスト</span></a></div>
   <div class="Navlinks">
-    <a href="/" title="Indice" class="navbara"><i class="cp cp-home-o"></i>Home</a>
+    <a href="/" title="Indice" class="navbara"><i class="solar-icons" stroke="1.5" icon-name="home-1"></i> Home</a>
        <!-- BEGIN switch_user_logged_out -->
-    <a href="/register" title="Unete a nosotros" class="navbara"><i class="cp cp-plus"></i>Registrarse</a>
-    <a href="/login" title="Iniciar Seccion" class="navbara"><i class="cp cp-enter"></i>Conectarse</a>
+    <a href="/login" title="Iniciar Seccion" class="navbara"><i class="solar-icons" stroke="1.5" icon-name="login-1"></i>Conectarse</a>
+        <a href="/register" title="Unete a nosotros" class="navbara"><i class="solar-icons" stroke="1.5" icon-name="add"></i>Registrarse</a>
     <!-- END switch_user_logged_out -->
     <!-- BEGIN switch_user_logged_in -->
-     <a href="/login?logout=1" title="Cerrar Seccion" class="navbara"><i class="cp cp-power"></i>Desconectarse</a>
-     <a href="/memberlist" title="Nuestra Familia" class="navbara"><i class="cp cp-group"></i>Miembros</a>
-    <a href="/groups" title="Nuestros grupos" class="navbara"><i class="cp cp-lotus"></i>Grupos</a>
-    <a href="/privmsg?folder=inbox" title="Bandeja de mensaje" class="msj navbara"><i class="cp cp-envelope-o"></i>Buzón</a>
+     <a href="/memberlist" title="Nuestra Familia" class="navbara"><i class="solar-icons" stroke="1.5" icon-name="shield-user"></i>Miembros</a>
+    <a href="/groups" title="Nuestros grupos" class="navbara"><i class="solar-icons" stroke="1.5" icon-name="users-group"></i>Grupos</a>
+    <a href="/privmsg?folder=inbox" title="Bandeja de mensaje" class="msj navbara"><i class="solar-icons" stroke="1.5" icon-name="chat-2"></i>Buzón</a>
+    <a href="/login?logout=1" title="Cerrar Seccion" class="navbara"><i class="solar-icons" stroke="1.5" icon-name="logout-1"></i>Desconectarse</a>
     <!-- END switch_user_logged_in -->
   </div>
       </div>  
@@ -274,7 +272,8 @@
       <a href="#top" class="bf-top" onclick="$('html,body').animate({scrollTop: $('#top').offset().top},2000);" title="Ir Arriba"><i class="fi fi-br-angle-up"></i></a>
       <a href="#bottom" class="bf-bot"><i class="fi fi-br-angle-down" title="Ir abajo"></i></a>
         <a href="javascript:void(0);" onclick="toggleDropdown()" class="navbara bf-noti">
-    <i class="cp cp-bell-o"></i></a>
+    <i class="solar-icons" stroke="1.5" icon-name="bell-1"></i>
+  </a>
 <div class="dropdownBF" id="dropdownBF">
 <div class="noti-tab-sc">
        <script>
@@ -284,8 +283,9 @@
     </script> 
      </div>
 </div>
-<a href="#" id="toggle-mode"><em class="cp cp-sun"></em></a>
+<a href="#" id="toggle-mode"><i class="solar-icons" stroke="1.5" icon-name="sun-2"></i></a>
       <button id="openModal"><i class="fi fi-br-user-add" title="Menú de usuario y cambio de cuentas"></i></button>
+    <div class="adminnav">  </div>
     </div>
     <div class="right-nav">
       <a class="nav" href="{U_INDEX}">Indice</a>
@@ -349,8 +349,8 @@
           <h1>Cambiar Cuentas</h1>
         <button id="closeTab" class="close-btn1">x</button>
         </div>
-    
 </div>
+   
 </div>
   </div>  
   
@@ -665,25 +665,49 @@
 }
   
 .left-nav {
-      z-index: 999;
-  display: flex;
+    max-width: 600px;
+    width: auto;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 0 0 10px;
   }  
   
-
 .left-nav a, .left-nav button {
-    color: var(--pr4);
-    font-size: calc(1.5em / 2);
-    padding: 10px;
-    border-right: 1px solid var(--n1) !important;
+    filter: drop-shadow(0px 0px 1px var(--pr6));
+    font-size: 8px;
+    background: var(--n2);
+    padding: 5px;
+    border-radius: 7px;
+    color: var(--n6);
+    letter-spacing: 2px;
+    margin: 6px;
+    width: 10px;
+}
+
+#toggle-mode i, a.navbara.bf-noti i, .bf-bot i, .bf-top i {
+    margin: 0 0 0 1px;
+}  
+
+#toggle-mode{
+    border: none;
+    padding: 5px;
+    width: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: transparent;
-  }
-
-.left-nav #openModal {
-  border: none;
 } 
+  
+#openModal {
+    width: 20px;
+    border: none;
+}    
+  
+.left-nav #openModal i {
+    margin: 0 0 0 2px;
+}  
+  
   
 .right-nav {
     position: absolute;
@@ -931,6 +955,7 @@ button { cursor: pointer;}
     margin-top: 19px;
     z-index: 1;
     left: 1%;
+    bottom: -253px;
     border-radius: 6px;
 }
   
