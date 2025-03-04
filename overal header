@@ -11,8 +11,9 @@
   <link href="https://dl.dropbox.com/s/qm6x16r9jjlbgd4/game-icons.css" rel="stylesheet" />
   <script src="https://kit.fontawesome.com/3de2e96a1c.js" crossorigin="anonymous"></script>
   <script src="https://kit.fontawesome.com/0687827dee.js" crossorigin="anonymous"></script>
-  <link href="https://solar-icons.gitlab.io/i/icons.css" rel="stylesheet" crossorigin />
-    <link href="https://dl.dropbox.com/s/qm6x16r9jjlbgd4/game-icons.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://nagoshiashumari.github.io/Rpg-Awesome/stylesheets/rpg-awesome.min.css"/>
+<link href="https://solar-icons.gitlab.io/i/icons.css" rel="stylesheet" crossorigin>  
+<link href="https://dl.dropbox.com/s/qm6x16r9jjlbgd4/game-icons.css" rel="stylesheet">
   <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-bold-rounded/css/uicons-bold-rounded.css' /> 
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css' />
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-solid-straight/css/uicons-solid-straight.css' />
@@ -263,8 +264,14 @@
     <!-- BEGIN switch_user_logged_in -->
      <a href="/memberlist" title="Nuestra Familia" class="navbara"><i class="solar-icons" stroke="1.5" icon-name="shield-user"></i>Miembros</a>
     <a href="/groups" title="Nuestros grupos" class="navbara"><i class="solar-icons" stroke="1.5" icon-name="users-group"></i>Grupos</a>
-    <a href="/privmsg?folder=inbox" title="Bandeja de mensaje" class="msj navbara"><i class="solar-icons" stroke="1.5" icon-name="chat-2"></i>Buzón</a>
+    <a href="/privmsg?folder=inbox" title="Bandeja de mensaje" class="msj navbara"><i class="solar-icons" stroke="1.5" icon-name="mail"></i>Buzón</a>
     <a href="/login?logout=1" title="Cerrar Seccion" class="navbara"><i class="solar-icons" stroke="1.5" icon-name="logout-1"></i>Desconectarse</a>
+<a href="#" class="chatbox-toggle navbara" title="Chatbox"><i class="solar-icons" stroke="1.5" icon-name="chat-heart-1"></i>Chatbox</a>
+    <div class="contenedorchatbox" id="chatbox2">
+       <button class="close-chatbox">X</button>
+        <div class="header">Chatbox</div>
+      <div class="content-chatbox"></div>
+    </div>
     <!-- END switch_user_logged_in -->
   </div>
       </div>  
@@ -603,7 +610,7 @@
     margin: 0px 0 0px 10px;
 }
   
-.Titulo-BF .cp {
+.Titulo-BF .solar-icons {
     color: var(--pr4);
 }
 .Titulo-BF span {
@@ -628,16 +635,16 @@
     margin-right:10px;
     margin-left:10px;
 }
-.Navlinks .cp {
+.Navlinks .solar-icons {
     color: var(--n4);
     margin-right: 5px;
     background: var(--pr5);
     padding: 5px;
     border-radius: 5px;
-    font-size: 10px;
+    font-size: 0.8rem;
     transition:0.5s linear;
 }
-.Navlinks a:hover .cp {
+.Navlinks a:hover .solar-icons{
     background: var(--pr3);
 }
   
@@ -677,7 +684,7 @@
   
 .left-nav a, .left-nav button {
     filter: drop-shadow(0px 0px 1px var(--pr6));
-    font-size: 8px;
+    font-size: 10px;
     background: var(--n2);
     padding: 5px;
     border-radius: 7px;
@@ -1060,7 +1067,7 @@ li.see_all {
     letter-spacing: 1px;
 }
   /*NAV FORUM*/
-  .right-nav span1, .right-nav .cp,.right-nav #Cat1, .right-nav #Cat2 , .right-nav #Cat3 ,.right-nav  #Cat4,.right-nav #Cat5,.right-nav #Cat6 {
+  .right-nav span1, .right-nav .solar-icons,.right-nav #Cat1, .right-nav #Cat2 , .right-nav #Cat3 ,.right-nav  #Cat4,.right-nav #Cat5,.right-nav #Cat6 {
     display: none;
 }
   /*FOOTER*/
