@@ -496,7 +496,7 @@ $(resize_images({ 'selector' : '.postbody .content', 'max_width' : {switch_image
 .postit { text-align: justify; font: 300 1.1em var(--f4); line-height: 1.5em; color: var(--n4); padding: 20px; }
 strong.recuerdame { width: -webkit-fill-available; display: block; padding: 10px; background: var(--n2); font: 400 1em var(--f4); text-transform: uppercase; letter-spacing: 1px; text-align: center; border-radius: 5px; }
 .pedited br { display: none;} .pedited { color: var(--n4); font: 400 0.6em var(--f4); text-transform: uppercase; letter-spacing: 1px; padding: 10px; width: -webkit-fill-available; border-bottom: 1px solid var(--n1); text-align: center; }
-.unnes { display: flex; justify-content: space-between; border-top: 1px solid var(--n1); color: var(--n4); align-items: center; flex-flow: column; }
+.unnes { display: flex; justify-content: space-between; border-top: 1px solid var(--n1); color: var(--n4); flex-flow: column; }
 .pldike { width: -webkit-fill-available; padding: 10px; height: auto; display: flex; align-items: center; justify-content: space-between; }
 .rep-button, .rep-button:focus, .rep-button:active { cursor: pointer; margin: 0; outline: none; position: relative; transition: color .4s; float: left; border: none; background: var(--n2); color: var(--n4); padding: 5px; border-radius: 4px; margin-right: 11px; text-transform: uppercase; font: 400 0.6em var(--f4); box-shadow: none; }
 .rep-button i { font-size: 1em; text-shadow: none; display: contents; float: none; }
@@ -655,7 +655,7 @@ div.award { display: inline-block; position: relative; width: 50px; height: 50px
 #bf-norm {
     background: transparent;
     color: var(--n6);
-    font: 400 1em Arial;
+    font: 400 0.8em Arial;
     font-weight: 400;
     line-height: 1.5em;
     border-top-left-radius: 10px;
