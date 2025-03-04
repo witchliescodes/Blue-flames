@@ -651,8 +651,8 @@ div.award { display: inline-block; position: relative; width: 50px; height: 50px
 .hideprofile { margin: 55px 0 0 0; }
 </style>  
 <style>
-#bf-norm br { display: none;}
-#bf-norm {
+.bf-norm br { display: none;}
+.bf-norm {
     background: transparent;
     color: var(--n6);
     font: 400 0.8em Arial;
@@ -665,8 +665,8 @@ div.award { display: inline-block; position: relative; width: 50px; height: 50px
 }
 
 
-#bf-norm p br { display: block;}
-#bf-norm p {
+.bf-norm p br { display: block;}
+.bf-norm p {
   text-align: justify;
   color: var(--n6);
   padding: 10px;
@@ -753,7 +753,7 @@ filter: drop-shadow(0px 0px 3px var(--n5));
 }
 
 
-#bf-norm [id*="bfnor1"], #bf-norm [id*="bfnor2"], #bf-norm [id*="bfnor3"], #bf-norm [id*="bfnor4"], #bf-norm [id*="bfnor5"] {
+.bf-norm [id*="bfnor1"], .bf-norm [id*="bfnor2"], .bf-norm [id*="bfnor3"], .bf-norm [id*="bfnor4"], .bf-norm [id*="bfnor5"] {
     width: 100%;
     max-height: 0;
     color: var(--title);
