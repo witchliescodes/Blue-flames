@@ -646,7 +646,7 @@ div.award { display: inline-block; position: relative; width: 50px; height: 50px
 .bfpostito:has(.hideprofile) .bfpperfil { display: none; }
 .bfpostito:has(.hideprofile) .bfposti{ grid-column: 1 / 3; }
 .bfpostito:has(.hideprofile) .postprofile { width: 100%; grid-column: 1 / 3; grid-row: 1; height: revert-layer; position: sticky; top: 80px; margin: 0; display: grid; grid-template-columns: 100%; z-index: 999!important;}
-.bfpostito:has(.hideprofile) .bfpli { display: flex; align-items: flex-start; justify-content: center; background: var(--n5); height: 54px; border-bottom: 1px solid var(--n1); }
+.bfpostito:has(.hideprofile) .bfpli { display: flex; align-items: flex-start; justify-content: center; background: var(--n5); height: 54px; border-bottom: 1px solid var(--n1); width: -webkit-fill-available; }
 .bfpostito:has(.hideprofile) .bfeditp { width: 100%; display: flex; height: -webkit-fill-available; align-items: center; justify-content: flex-start; flex-flow: nowrap; }
 .hideprofile { margin: 55px 0 0 0; }
 </style>  
@@ -788,5 +788,124 @@ filter: drop-shadow(0px 0px 3px var(--n5));
     float: left;
     background: var(--n3);
     border-radius: 7px;
+}  
+</style>  
+<style>
+.bfcrono br { display: none;}
+.bfcrono {
+  background: transparent;
+  color: var(--n4);
+  overflow: hidden;
+  background: var(--n3);
+  padding: 30px;
+  border-radius: 7px;
+  font: 400 1em arial;
+  line-height: 1.5em;
+}
+
+.bfcront {
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+  margin: 0 0 30px;
+}
+
+.cronotf {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: -webkit-fill-available;
+}
+
+.cronotf h1 {
+  font: 800 2.5em var(--f5);
+  margin: 0px;
+  color: var(--n4);
+  letter-spacing: 1px;
+}
+
+.cronotf h1 i {
+  background: var(--pr1);
+  padding: 20px;
+  border-radius: 5px;
+  transform: rotate(60deg);
+  margin: 0 20px 0 0;
+  color: var(--n4);
+}
+
+.cronotf b {
+  background: var(--n1);
+  padding: 10px;
+  border-radius: 6px;
+  text-transform: uppercase;
+  font: 400 0.6em Arial;
+
+}
+
+.cronotf b i {
+  color: var(--pr3);
+  font-style: normal;
+}
+
+.bfcront p br { display: block;}
+
+.bfcront p {
+  font: 400 1em Arial;
+  letter-spacing: 1px;
+  margin: 40px 0 30px 0;
+  text-align: justify;
+}
+
+.cronocont {
+    border-left: 1px solid var(--pr3);
+    padding: 0 0px 0 20px;
+    margin: 0px;
+}
+
+.crono1 {
+    position: relative;
+    top: 20px;
+  color: var(--n4);
+    margin: 0 0 60px 0;
+}
+
+.crono1:before {
+  content: ' • ';
+  font-size: 100px;
+  position: absolute;
+  margin: -20px 0px 0 -38px;
+  color: var(--pr3);
+}
+
+.titcron {
+margin: 0 0 -25px 0;
+    position: relative;
+    top: -23px;
+}
+
+
+.titcron h1 {
+  font: 600 2em var(--f5);
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+.titcron h3 {
+  background: var(--n1);
+  min-width: 100px;
+  width: 100px;
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font: 400 0.8em Calibri;
+  letter-spacing: 1px;
+  margin: 10px 10px 10px 0;
+}
+
+.aflex { display: flex;}
+.texcron br { display: block;}
+.texcron {
+  text-align: justify;
 }  
 </style>  
