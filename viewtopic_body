@@ -510,7 +510,7 @@ strong.recuerdame { width: -webkit-fill-available; display: block; padding: 10px
 .bfpinven div.bfpcampo.inventario .bfplabel .label{ color: var(--n4); font: 800 2em var(--f3); letter-spacing: 1px; }   
 .bfpinven div.bfpcampo.inventario .bfplabel .label:before { font-family: 'Font Awesome 6 Free'!important; font-weight: 900!important; -webkit-font-smoothing: antialiased!important; content: '\f3ed'; color: var(--n4); margin: 0 10px 0 0; }
 .bfpinven div.bfpcampo.inventario .bfpconte { width: 390px; box-sizing: border-box; position: relative; overflow: auto; height: 145px; display: flex; align-items: center; justify-content: center; flex-wrap: wrap; }    
-.bfpinven div.bfpcampo.inventario .bfpconte img{ margin: 0 20px 0 0px; border-radius: 7px; }    
+.bfpinven div.bfpcampo.inventario .bfpconte img{ margin: 0 20px 0 0px; border-radius: 7px; border: 4px solid var(--n1);}    
 .bfpinven div.bfpcampo.inventario .bfpconte i { margin: 46px 20px 0 -40px; background: var(--pr2); font: 400 0.8em var(--f4); color: var(--n4); padding: 3px; letter-spacing: 1px; border-radius: 50%; }
 .pnmedl { height: 200px; width: -webkit-fill-available; border-right: 1px solid var(--n1); margin: 0 10px 0 0px; }    
 .medattit { background: transparent; width: auto; height: 50px; display: flex; align-items: center; justify-content: center; margin: 0px 10px 0px 0px; text-transform: uppercase; color: var(--n4); font: 800 2em var(--f3); text-align: center; letter-spacing: 1px; }    
@@ -556,6 +556,7 @@ div.award { display: inline-block; position: relative; width: 50px; height: 50px
 .admin .bfpinven div.bfpcampo.inventario .bfplabel .label  { color: var(--direc);}  
 .admin .bfpinven div.bfpcampo.inventario .bfpconte i { background: var(--direc); }  
 .admin .medattit { color: var(--direc); }  
+.admin .bfpinven div.bfpcampo.inventario .bfpconte img{ border: 4px solid var(--direc);}     
 /**COLORES POR GRUPO EXORCISTAS**/  
 .exor .bfpermatit { background-image: var(--pexors); }  
 .exor .bfhead { background-image: var(--cexo); }  
@@ -582,6 +583,7 @@ div.award { display: inline-block; position: relative; width: 50px; height: 50px
 .exor .bfpinven div.bfpcampo.inventario .bfplabel .label  { color: var(--exor);}  
 .exor .bfpinven div.bfpcampo.inventario .bfpconte i { background: var(--exor); }  
 .exor .medattit { color: var(--exor); }   
+.exor .bfpinven div.bfpcampo.inventario .bfpconte img{ border: 4px solid var(--exor);}      
 /**COLORES POR GRUPO AKUHEI**/   
 .akuhei .bfpermatit { background-image: var(--pakuhe); }  
 .akuhei .bfhead { background-image: var(--caku); }  
@@ -608,6 +610,7 @@ div.award { display: inline-block; position: relative; width: 50px; height: 50px
 .akuhei .bfpinven div.bfpcampo.inventario .bfplabel .label  { color: var(--aku);}  
 .akuhei .bfpinven div.bfpcampo.inventario .bfpconte i { background: var(--aku); }  
 .akuhei .medattit { color: var(--aku); }   
+.akuhei .bfpinven div.bfpcampo.inventario .bfpconte img{ border: 4px solid var(--aku);}       
 /**COLORES POR GRUPO APRENDIZ**/  
 .aprendiz .bfpermatit { background-image: var(--papren); }  
 .aprendiz .bfhead { background-image: var(--capre); }  
@@ -634,6 +637,7 @@ div.award { display: inline-block; position: relative; width: 50px; height: 50px
 .aprendiz .bfpinven div.bfpcampo.inventario .bfplabel .label  { color: var(--apren);}  
 .aprendiz .bfpinven div.bfpcampo.inventario .bfpconte i { background: var(--apren); }  
 .aprendiz .medattit { color: var(--apren); }   
+.aprendiz .bfpinven div.bfpcampo.inventario .bfpconte img{ border: 4px solid var(--apren);}   
 /**CAMBIO DE LADO EN POST**/
 .row1 .bfpostito { display: grid; margin: 10px 0; height: auto; grid-template-columns: 63% 37%; align-items: start; border: 1px solid var(--n1); background: transparent; }
 .row1 .postprofile { width: 454px; grid-column: 2; grid-row: inherit; height: revert-layer; border-left: 1px solid var(--n1); position: sticky; top: 80px; margin: 0; display: flex; flex-flow: row-reverse; }
@@ -798,7 +802,7 @@ filter: drop-shadow(0px 0px 3px var(--n5));
   overflow: hidden;
   padding: 30px;
   border-radius: 7px;
-  font: 400 1em calibri;
+  font: 400 0.8em calibri;
   line-height: 1.5em;
 }
 
@@ -821,12 +825,13 @@ filter: drop-shadow(0px 0px 3px var(--n5));
 }
 
 .cronotf h1 i {
-  background: var(--pr1);
-  padding: 20px;
-  border-radius: 5px;
-  transform: rotate(60deg);
-  margin: 0 20px 0 0;
-  color: var(--n4);
+    background: var(--n2);
+    padding: 20px;
+    border-radius: 5px;
+    transform: rotate(60deg);
+    margin: 0 20px 0 0;
+    color: var(--n4);
+    border: 1px solid var(--n1);
 }
 
 .cronotf b {
@@ -846,10 +851,11 @@ filter: drop-shadow(0px 0px 3px var(--n5));
 .bfcront p br { display: block;}
 
 .bfcront p {
-  font: 400 1em Arial;
+  font: 400 0.8em Arial;
   letter-spacing: 1px;
   margin: 40px 0 30px 0;
   text-align: justify;
+  line-height: 1.5em;
 }
 
 .cronocont {
@@ -869,7 +875,7 @@ filter: drop-shadow(0px 0px 3px var(--n5));
   content: ' • ';
   font-size: 100px;
   position: absolute;
-  margin: -20px 0px 0 -38px;
+  margin: -20px 0px 0 -45px;
   color: var(--pr3);
 }
 
