@@ -325,6 +325,8 @@
     height: 427px;
     margin: -76px 25px 0px 0px;
     filter: drop-shadow(2px 4px 6px black);
+    position: relative;
+    right: 31px;
 }
   
   /*Contenedores*/
@@ -669,7 +671,6 @@
   
 .newestext strong {
   font: 600 15px var(--f5);
-    letter-spacing: -2px;
+    letter-spacing: -1px;
   }
-  
 </style>  
