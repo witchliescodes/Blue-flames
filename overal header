@@ -744,7 +744,8 @@ p.copyright a { margin: 5px; position: relative; top: 3px; color: var(--n5); let
 #bfpconst:checked ~ #bfnor3 { opacity: 1; z-index: 3 !important; opacity: 1; max-height: 100vmax; margin: 20px 0 0 0; }
 </style>  
 <style>
-.bfadte br { display: none;} .bfadte { min-width: 1000px; background: var(--n2); margin: 0 auto; width: auto; border-radius: 7px; padding: 20px; }
+.bfadte br { display: none;}
+.bfadte { min-width: auto; background: var(--n2); width: auto; border-radius: 7px; padding: 20px; }
 .bfadtex { display: flex; align-items: center; justify-content: space-between; width: auto; margin: 0 0 20px 0; }
 .bfadtex h1 { margin: 0; font: 800 2em var(--f5); letter-spaacing: 2px; }
 .bfadtex i { color: var(--direc); font-size: 3em; }
