@@ -707,141 +707,39 @@ p.copyright a { margin: 5px; position: relative; top: 3px; color: var(--n5); let
 </style>
 <style>
 #admintab1 br { display: none;}
-#admintab1 {
-  color: var(--n4);
-  background: transparent;
-  max-width: 500px;
-  margin: 0 auto;
-  display: flex;
-  align-items: flex-start;
-  flex-flow: column;
-  justify-content: center;
-  padding: 20px;
-  border: 1px solid var(--direc);
-  border-top-left-radius: 14px;
-  border-top-right-radius: 14px;
-}
-
-.imagadmin1 {
-  width: 500px;
-  height: 150px;
-  margin: 0 0 20px 0;
-  border-top-right-radius: 7px;
-  border-top-left-radius: 7px;
-  position: relative; 
-  overflow: hidden; 
-  background: none;
-}
-
-.imagadmin1::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: url('https://static.zerochan.net/Xayah.full.3890517.jpg');
-    background-position: 55% 5%;
-    background-size: cover;
-    filter: grayscale(1);
-}
-
-.colorcito {
-    width: 500px;
-    height: 150px;
-    background: var(--direc);
-    position: absolute;
-    mix-blend-mode: multiply;
-  filter: grayscale(0);
-}
-
-.titadmint {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: -webkit-fill-available;
-
-}
-
-.tet1adm {
-  background: var(--n1);
-  padding: 10px;
-  border-radius: 7px;
-  display: flex;
-  justify-content: space-between; 
-  align-items: center; 
-    z-index: 999999;
-}
-
-.titadmint:not(:has(label)) {
-    justify-content: center; 
-  width: auto;
-}
-.titadmint:not(:has(label)) .tet1adm{ 
- width: 480px;
-}
-
-.titadmint:not(:has(label)) .tet1adm i { 
- color: var(--pr7);
-}
-
-#admintab1:not(:has(label)) .colorcito { 
-background: var(--pr7);
-}
-
-#admintab1:not(:has(label))  { 
-border: 1px solid var(--pr7);
-}
-
-.tet1adm h1 {
-  margin: 0;
-  font: 400 1em var(--f3);
-  font-weight: 600;
-  margin: 0 0px 0 20px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-.tet1adm i {
-  color: var(--direc);
-  font-size: 2em;
-}
-
-.titadmint label {
-    background: var(--direc);
-  padding: 10px;
-  border-radius: 7px;
-  text-transform: uppercase;
-  font: 400 1em var(--f3);
-  font-weight: 600;
-  cursor: pointer;
-  isolation: isolate;
-  z-index: 999999;
-}
+#admintab1 { color: var(--n4); background: transparent; max-width: 500px; margin: 0 auto; display: flex; align-items: flex-start; flex-flow: column; justify-content: center; padding: 20px; border: 1px solid var(--direc); border-top-left-radius: 14px; border-top-right-radius: 14px; }
+.imagadmin1 { width: 500px; height: 150px; margin: 0 0 20px 0; border-top-right-radius: 7px; border-top-left-radius: 7px; position: relative; overflow: hidden; background: none; }
+.imagadmin1::before { content: ""; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: url('https://static.zerochan.net/Xayah.full.3890517.jpg'); background-position: 55% 5%; background-size: cover; filter: grayscale(1); }
+.colorcito { width: 500px; height: 150px; background: var(--direc); position: absolute; mix-blend-mode: multiply; filter: grayscale(0); }
+.titadmint { display: flex; align-items: center; justify-content: space-between; width: -webkit-fill-available;}
+.tet1adm { background: var(--n1); padding: 10px; border-radius: 7px; display: flex; justify-content: space-between; align-items: center; z-index: 999999; }
+.titadmint:not(:has(label)) { justify-content: center; width: auto; } .titadmint:not(:has(label)) .tet1adm{ width: 480px; }
+.titadmint:not(:has(label)) .tet1adm i { color: var(--pr7); }
+#admintab1:not(:has(label)) .colorcito { background: var(--pr7); }
+#admintab1:not(:has(label))  { border: 1px solid var(--pr7); }
+.tet1adm h1 { margin: 0; font: 400 1em var(--f3); font-weight: 600; margin: 0 0px 0 20px; text-transform: uppercase; letter-spacing: 1px; }
+.tet1adm i { color: var(--direc); font-size: 2em; }
+.titadmint label { background: var(--direc); padding: 10px; border-radius: 7px; text-transform: uppercase; font: 400 1em var(--f3); font-weight: 600; cursor: pointer; isolation: isolate; z-index: 999999; }
 #admintab1 input { display: none;}
 #admintab1 [id*="bfnor2"] br { display: block;}
-#admintab1 [id*="bfnor2"] {
-    background: var(--n3);
-    opacity: 0;
-    width: 460px;
-    padding: 20px;
-    position: relative;
-    transition: ease-in-out .8s;
-    overflow: hidden;
-    font: 400 1em var(--f3);
-    letter-spacing: 1px;
-    text-align: justify;
-  margin: -100px 0 0 0;
-  z-index: 9;
-  border-top-right-radius: 7px;
-  border-top-left-radius: 7px;
-}
-
-#construc:checked ~ #bfnor2 {
-opacity: 1;
-  z-index: 3 !important;
-  opacity: 1;
-  max-height: 100vmax;
-  margin: 20px 0 0 0;
-}
+#admintab1 [id*="bfnor2"] { background: var(--n3); opacity: 0; width: 460px; padding: 20px; position: relative; transition: ease-in-out .8s; overflow: hidden; font: 400 1em var(--f3); letter-spacing: 1px; text-align: justify; margin: -100px 0 0 0; z-index: 9; border-top-right-radius: 7px; border-top-left-radius: 7px; }
+#construc:checked ~ #bfnor2 { opacity: 1; z-index: 3 !important; opacity: 1; max-height: 100vmax; margin: 20px 0 0 0; }
+</style>  
+<style>
+#admintab2 br { display: none;}
+#admintab2 { color: var(--n4); background: transparent; max-width: 500px; margin: 0 auto; display: flex; align-items: flex-start; flex-flow: column; justify-content: center; padding: 20px; border: 1px solid var(--direc); border-top-left-radius: 14px; border-top-right-radius: 14px; }
+.imagadmin2 { width: 500px; height: 150px; margin: 0 0 20px 0; border-top-right-radius: 7px; border-top-left-radius: 7px; position: relative; overflow: hidden; background: none; }
+.imagadmin2::before { content: ""; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: url('https://i.pinimg.com/736x/e4/e5/10/e4e510b2be415259606a5b7d3c376452.jpg'); background-position: 55% 30%; background-size: cover; filter: grayscale(1); }
+.colorcito { width: 500px; height: 150px; background: var(--direc); position: absolute; mix-blend-mode: multiply; filter: grayscale(0); }
+.titadmint { display: flex; align-items: center; justify-content: space-between; width: -webkit-fill-available;}
+.tet1adm { background: var(--n1); padding: 10px; border-radius: 7px; display: flex; justify-content: space-between; align-items: center; z-index: 999999; }
+.titadmint:not(:has(label)) { justify-content: center; width: auto; } .titadmint:not(:has(label)) .tet1adm{ width: 480px; }
+.titadmint:not(:has(label)) .tet1adm i { color: var(--pr7); }
+#admintab2:not(:has(label)) .colorcito { background: var(--pr7); }
+#admintab2:not(:has(label))  { border: 1px solid var(--pr7); }
+.tet1adm h1 { margin: 0; font: 400 1em var(--f3); font-weight: 600; margin: 0 0px 0 20px; text-transform: uppercase; letter-spacing: 1px; }
+.tet1adm i { color: var(--direc); font-size: 2em; }
+.titadmint label { background: var(--direc); padding: 10px; border-radius: 7px; text-transform: uppercase; font: 400 1em var(--f3); font-weight: 600; cursor: pointer; isolation: isolate; z-index: 999999; }
+#admintab2 input { display: none;} #admintab2 [id*="bfnor3"] br { display: block;} #admintab2 [id*="bfnor3"] { background: var(--n3); opacity: 0; width: 460px; padding: 20px; position: relative; transition: ease-in-out .8s; overflow: hidden; font: 400 1em var(--f3); letter-spacing: 1px; text-align: justify; margin: -100px 0 0 0; z-index: 9; border-top-right-radius: 7px; border-top-left-radius: 7px; }
+#bfpconst:checked ~ #bfnor3 { opacity: 1; z-index: 3 !important; opacity: 1; max-height: 100vmax; margin: 20px 0 0 0; }
 </style>  
