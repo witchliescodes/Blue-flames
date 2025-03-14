@@ -435,6 +435,7 @@ $(resize_images({ 'selector' : '.postbody .content', 'max_width' : {switch_image
 .bfpcp3 div.bfpcampo:not(:nth-child(18)) { display: none; } .bfpcp3 div.bfpcampo .bfplabel { display: none; }
 .bfpcp3 div.bfpcampo.descripción { color: var(--n4); font: 400 0.8em var(--f4); line-height: 1.5em; text-align: justify; width: 202px; height: 165px; overflow: auto; padding: 0 6px 0 0px; }
 .bfpcp3 div.bfpcampo .bfpconte:before { content: 'sobre mi'; font: 400 12px var(--f5); color: var(--n4); margin: 8px 10px 10px 0px; width: 60px; display: flex; float: left; background: var(--n1); padding: 5px; border-radius: 5px; }
+.bfpcp3 div.bfpcampo.descripción .bfpconte img { max-width: 100%; }
 /*ZONA DEL POST */
 .bfpostito { display: grid; margin: 10px 0; height: auto; grid-template-columns: 37% 63%; align-items: start; border: 1px solid var(--n1); background: transparent; }
 /*POSTPROFILE*/
