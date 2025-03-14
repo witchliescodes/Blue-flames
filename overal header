@@ -640,13 +640,13 @@ p.copyright a { margin: 5px; position: relative; top: 3px; color: var(--n5); let
 .quotcog b{ background: var(--n1); padding: 6px; border-radius: 10px; letter-spacing: 1px; min-height: 30px; height: 30px; display: flex; align-items: center; justify-content: center; margin: 0 10px 0 0; font: 400 0.7em Arial; text-transform: uppercase; }
 .quotcog i { font: 400 1em arial; margin: 10px; }
 .guid1 input{ display: none;}
-.guid1 { width: auto; height: auto; margin: 10px 0 10px 0; }
+.guid1 { width: auto; height: auto;}
 .conlab label{ display: flex; align-items: center; justify-content: space-between; flex-flow: row-reverse; width: auto; cursor: pointer; isolation: isolate; background: transparent; padding: 0px; background: transprent; }
 .conlab i, .conlab em{ margin: 10px; font-size: 2em; color: var(--pr3); background: var(--n3); padding: 10px; border-radius: 7px; letter-spacing: 1px; font-weight: 400; transition: all 500ms ease-in-out; }
 .conlab em { padding: 10px 10px 0 10px; font: 400 2em var(--f5); }
 #bfnor1 br, #bfnor2 br, #bfnor3 br, #bfnor4 br, #bfnor5 br { display: block;} .bf-norm [id*="bfnor1"], .bf-norm [id*="bfnor2"], .bf-norm [id*="bfnor3"], .bf-norm [id*="bfnor4"], .bf-norm [id*="bfnor5"] { width: 100%; max-height: 0; color: var(--title); position: relative; opacity: 0; transition: ease-in-out .8s; overflow: hidden; font: 11px var(--f-body); letter-spacing: 1px; text-align: justify;}
 #bfcon:checked ~ #bfnor1, #bfon:checked ~ #bfnor2, #bfoff:checked ~ #bfnor3,  #bfgraf:checked ~ #bfnor4, #bfchat:checked ~ #bfnor5{ z-index: 3 !important; opacity: 1; margin: 10px 0 10px 0; max-height: 100vmax; }
-#bfnor1 b, #bfnor2 b, #bfnor3 b, #bfnor4 b, #bfnor5 b { font: 2em var(--f5); font-weight: 800; margin: 6px 10px 0px 0px; color: var(--pr3); width: 40px; height: 40px; display: flex; align-items: center; padding: 10px; justify-content: center; float: left; background: var(--n3); border-radius: 7px; }
+#bfnor1 b, #bfnor2 b, #bfnor3 b, #bfnor4 b, #bfnor5 b { font: 2em var(--f5); font-weight: 800; margin: 6px 10px 0px 0px; color: var(--pr3); width: 40px; display: flex; align-items: center; padding: 10px; justify-content: center; float: left; background: var(--n3); border-radius: 7px; }
 </style>  
 <style>
 .bfcrono br { display: none;}
