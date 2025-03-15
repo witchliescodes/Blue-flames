@@ -812,246 +812,31 @@ p.copyright a { margin: 5px; position: relative; top: 3px; color: var(--n5); let
 .listad1 dfn b { color: var(--direc); font-size: 1em; font-family: var(--f3); }
 </style>  
 <style>
-.bfrazis br { display: none;}
-.bfrazis {
-    padding: 20px;
-    background: transparent;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    overflow: hidden;
-    display: flex;
-    align-items: flex-start;
-    flex-flow: column;
-}
-
-.imarazista {
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  overflow: hidden;
-  margin: 0;
-  height: 250px;
-}
-
-.razitt {
-  background: var(--n3);
-  margin: 0 0 20px 0;
-  width: -webkit-fill-available;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 20px;
-}
-
-.razitt h1 {
-  margin: 0;
-  font: 800 2em var(--f5);
-  letter-spacing: 2px;
-  color: var(--pr5);
-}
-
-.razitt b {
-  background: var(--n1);
-  padding: 10px;
-  border-radius: 7px;
-  color: var(--pr5);
-  text-transform: uppercase;
-  font: 400 0.8em var(--f3);
-}
-.introraz br {display: block;}
-.introraz {
-  font: 400 1em var(--f3);
-  color: var(--n4);
-  line-height: 1.5em;
-  text-align: justify;
- margin: 0 0 20px 0;
-}
-
-.tbsrazi {
-  width: -webkit-fill-available;
-  background: url('https://images2.imgbox.com/3e/20/t6ZEvUgf_o.png');
-  display: block;
-  height: 150px;
-  background-size: cover;
-  background-position: 0% 45%;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: 0 0 20px 0;
-}
-
-.tbsrazi h1, .tbsrazi1 h1, .tbsrazi2 h1 {
-  margin: 20px;
-  font: 400 2em var(--f5);
-  letter-spacing: 10px;
-  filter: drop-shadow(0px 0px 3px black);
-}
-
-.tbsrazi i, .tbsrazi1 i, .tbsrazi2 i {
-  margin: 20px; 
-  background: var(--pr5);
-  padding: 10px;
-  border-radius: 7px;
-  
-}
-  
-.labelcont  {
-  width: -webkit-fill-available;
-  }
-  
-.bfrazis input { display: none;}
-.bfrazis [id*="assiah1"], .bfrazis [id*="amatsu"], .bfrazis [id*="gehenna"] {
-    width: 100%;
-    max-height: 0;
-    color: var(--n4);
-    position: relative;
-    opacity: 0;
-    transition: ease-in-out .8s;
-    overflow: hidden;
-    font: 11px var(--f-body);
-  letter-spacing: 1px;
-  text-align: justify;
-  
-}
-
-#tbs:checked ~ #assiah1, #ama:checked ~ #amatsu, #gehhe:checked ~ #gehenna {
-  z-index: 3 !important;
-  opacity: 1;
-  margin: 10px 0 10px 0;
-  max-height: 10000vh;
-}
-
-.raz1 {
-  display: flex;
-  margin: 0 0 20px 0;
-}
-
-.humano {
-  width: 600px;
-  height: 500px;
-  background: url('https://i.ibb.co/WpFc6yvX/3.png');
-  background-size: cover;
-}
-.ikiro {
-  width: 600px;
-  height: 500px;
-   background: url('https://i.ibb.co/kbyn1bt/1.jpg');
-    background-size: cover;
-}
-
-.kitsune {
-  width: 600px;
-  height: 500px;
-  background: url('https://i.ibb.co/21hJt5jc/2.png');
-  background-size: cover;
-}
-
-.therani {
-  width: 600px;
-  height: 500px;
-  background: url('https://i.ibb.co/h1yHrqwk/4.png');
-  background-size: cover;
-}
-
-.kigen {
-  width: 600px;
-  height: 500px;
-  background: url('https://i.ibb.co/vCWZTZF0/6.png');
-  background-size: cover;
-}
-
-.haten {
-  width: 600px;
-  height: 500px;
-  background: url('https://i.ibb.co/s9Gtwz05/8.jpg');
-  background-size: cover;
-}
-
-.nephis {
-  width: 600px;
-  height: 500px;
-  background: url('https://i.ibb.co/mFHn4fv6/9.jpg');
-  background-size: cover;
-}
-
-.opni {
-  width: 600px;
-  height: 500px;
-  background: url('https://i.ibb.co/WNgSzKv9/7.png');
-  background-size: cover;
-}
-
-.jibaku {
-  width: 600px;
-  height: 500px;
-  background: url('https://i.ibb.co/1tMGXnfH/5.png');
-  background-size: cover;
-}
-
-.part1t {
-  width: 500px;
-  background: var(--n3);
-  padding: 20px;
-}
-
-.razquien {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background: var(--n1);
-  padding: 10px;
-  margin: 0;
-  border-radius: 7px;
-}
-
-.razquien b {
-  font: 800 1.5em var(--f3);
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-.razquien i {
-  font-size: 2em;
-  color: var(--pr5);
-    filter: drop-shadow(0px 0px 3px black);
-  position: relative; 
-  top: 5px;
-}
-.textraz br { display: block;}
-.textraz {
-    font: 400 1em var(--f3);
-    line-height: 1.5em;
-    height: 375px;
-    overflow: auto;
-    padding: 0 10px 0 0;
-    margin: 20px 0 0 0;
-}
-
-.tbsrazi1 {
-  width: -webkit-fill-available;
-  background: url('https://images2.imgbox.com/7e/0d/zrMl3LcZ_o.png'); 
-   display: block;
-  height: 150px;
-  background-size: cover;
-  background-position: 0% 45%;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: 0 0 20px 0;
-}
-
-.tbsrazi2 {
-  width: -webkit-fill-available;
-  background: url('https://images2.imgbox.com/e2/cd/lAu2ibwH_o.png'); 
-   display: block;
-  height: 150px;
-  background-size: cover;
-  background-position: 0% 45%;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: 0 0 20px 0;
-}  
+.bfrazis br { display: none;} .bfrazis { padding: 20px; background: transparent; border-top-left-radius: 10px; border-top-right-radius: 10px; overflow: hidden; display: flex; align-items: flex-start; flex-flow: column; }
+.imarazista { border-top-left-radius: 10px; border-top-right-radius: 10px; overflow: hidden; margin: 0; height: 250px; }
+.razitt { background: var(--n3); margin: 0 0 20px 0; width: -webkit-fill-available; display: flex; align-items: center; justify-content: space-between; padding: 20px; }
+.razitt h1 { margin: 0; font: 800 2em var(--f5); letter-spacing: 2px; color: var(--pr5); }
+.razitt b { background: var(--n1); padding: 10px; border-radius: 7px; color: var(--pr5); text-transform: uppercase; font: 400 0.8em var(--f3); } .introraz br {display: block;} .introraz { font: 400 1em var(--f3); color: var(--n4); line-height: 1.5em; text-align: justify; margin: 0 0 20px 0; }
+.tbsrazi { width: -webkit-fill-available; background: url('https://images2.imgbox.com/3e/20/t6ZEvUgf_o.png'); display: block; height: 150px; background-size: cover; background-position: 0% 45%; cursor: pointer; display: flex; align-items: center; justify-content: space-between; margin: 0 0 20px 0; }
+.tbsrazi h1, .tbsrazi1 h1, .tbsrazi2 h1 { margin: 20px; font: 400 2em var(--f5); letter-spacing: 10px; filter: drop-shadow(0px 0px 3px black); }
+.tbsrazi i, .tbsrazi1 i, .tbsrazi2 i { margin: 20px; background: var(--pr5); padding: 10px; border-radius: 7px;}
+.labelcont  { width: -webkit-fill-available; }
+.bfrazis input { display: none;} .bfrazis [id*="assiah1"], .bfrazis [id*="amatsu"], .bfrazis [id*="gehenna"] { width: 100%; max-height: 0; color: var(--n4); position: relative; opacity: 0; transition: ease-in-out .8s; overflow: hidden; font: 11px var(--f-body); letter-spacing: 1px; text-align: justify;}
+#tbs:checked ~ #assiah1, #ama:checked ~ #amatsu, #gehhe:checked ~ #gehenna { z-index: 3 !important; opacity: 1; margin: 10px 0 10px 0; max-height: 10000vh; }
+.raz1 { display: flex; margin: 0 0 20px 0; }
+.humano { width: 600px; height: 500px; background: url('https://i.ibb.co/WpFc6yvX/3.png'); background-size: cover; }
+.ikiro { width: 600px; height: 500px; background: url('https://i.ibb.co/kbyn1bt/1.jpg'); background-size: cover; }
+.kitsune { width: 600px; height: 500px; background: url('https://i.ibb.co/21hJt5jc/2.png'); background-size: cover; }
+.therani { width: 600px; height: 500px; background: url('https://i.ibb.co/h1yHrqwk/4.png'); background-size: cover; }
+.kigen { width: 600px; height: 500px; background: url('https://i.ibb.co/vCWZTZF0/6.png'); background-size: cover; }
+.haten { width: 600px; height: 500px; background: url('https://i.ibb.co/s9Gtwz05/8.jpg'); background-size: cover; }
+.nephis { width: 600px; height: 500px; background: url('https://i.ibb.co/mFHn4fv6/9.jpg'); background-size: cover; }
+.opni { width: 600px; height: 500px; background: url('https://i.ibb.co/WNgSzKv9/7.png'); background-size: cover; }
+.jibaku { width: 600px; height: 500px; background: url('https://i.ibb.co/1tMGXnfH/5.png'); background-size: cover; }
+.part1t { width: 500px; background: var(--n3); padding: 20px; }
+.razquien { display: flex; align-items: center; justify-content: space-between; background: var(--n1); padding: 10px; margin: 0; border-radius: 7px; }
+.razquien b { font: 800 1.5em var(--f3); text-transform: uppercase; letter-spacing: 1px; }
+.razquien i { font-size: 2em; color: var(--pr5); filter: drop-shadow(0px 0px 3px black); position: relative; top: 5px; } .textraz br { display: block;} .textraz { font: 400 1em var(--f3); line-height: 1.5em; height: 375px; overflow: auto; padding: 0 10px 0 0; margin: 20px 0 0 0; }
+.tbsrazi1 { width: -webkit-fill-available; background: url('https://images2.imgbox.com/7e/0d/zrMl3LcZ_o.png'); display: block; height: 150px; background-size: cover; background-position: 0% 45%; cursor: pointer; display: flex; align-items: center; justify-content: space-between; margin: 0 0 20px 0; }
+.tbsrazi2 { width: -webkit-fill-available; background: url('https://images2.imgbox.com/e2/cd/lAu2ibwH_o.png'); display: block; height: 150px; background-size: cover; background-position: 0% 45%; cursor: pointer; display: flex; align-items: center; justify-content: space-between; margin: 0 0 20px 0; }
 </style>  
