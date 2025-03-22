@@ -62,7 +62,7 @@
 
 <div class="bftopuss">
 <h4>Miembros navegando este foro</h4>
-{LOGGED_IN_USER_LIST}
+  <div class="toplistus">{LOGGED_IN_USER_LIST}</div>
 </div>
 
 <style>
@@ -224,4 +224,8 @@ fieldset.vf_jumpbox {
     font-size: 12px;
     text-transform: uppercase;
 }  
+  
+.toplistus {
+  display: flex;
+  }  
 </style>
