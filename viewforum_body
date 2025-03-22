@@ -8,7 +8,9 @@
 </div>
 
 <div class="resppagb">
+<!-- BEGIN switch_user_authpost -->  
 <a href="{U_POST_NEW_TOPIC}" accesskey="n" rel="nofollow" class="topnewt"><i class="solar-icons" stroke="1.5" icon-name="edit-1"></i> Nuevo tema</a>
+<!-- END switch_user_authpost -->  
 <div class="lefpos">   
 	<div class="buscacaja">
 		<form method="get" id="forum-search" action="{S_SEARCHBOX_ACTION}">
@@ -21,6 +23,46 @@
 	</div>
  {PAGINATION}  
   </div>
+</div>
+
+{TOPICS_LIST_BOX}
+
+<div class="downpost">
+<!-- BEGIN switch_user_authpost -->
+<a href="{U_POST_NEW_TOPIC}" accesskey="n" rel="nofollow" class="topnewt"><i class="solar-icons" stroke="1.5" icon-name="edit-1"></i> Nuevo tema</a>
+<!-- END switch_user_authpost -->
+<div class="pagination">
+{PAGINATION}
+</div>
+</div>
+
+<div class="ordenbf">
+	<!-- BEGIN switch_sort_options -->
+	<div id="sort-box">
+		<form method="post" class="sort-form">
+			<fieldset>
+				<label>Ordenar por</label>
+				<select name="sort_method">
+					{switch_sort_options.S_OPTIONS}
+				</select>&nbsp;
+				<input class="button2" type="submit" value="{switch_sort_options.L_SORT}" />
+			</fieldset>
+		</form>
+	</div>
+	<!-- END switch_sort_options -->
+
+	<form action="{S_JUMPBOX_ACTION}" method="get" name="jumpbox" onsubmit="if(document.jumpbox.f.value == -1){return false;}">
+		<fieldset class="vf_jumpbox">
+			<label>Mover a</label>
+			{S_JUMPBOX_SELECT}&nbsp;
+			<input class="button2" type="submit" value="{L_GO}" />
+		</fieldset>
+	</form>
+</div>
+
+<div class="bftopuss">
+<h4>Miembros navegando este foro</h4>
+{LOGGED_IN_USER_LIST}
 </div>
 
 <style>
@@ -94,12 +136,12 @@
     color: var(--pr3);
 } 
   
-.resppagb {
+.resppagb, .downpost {
     background: var(--n3);
     position: relative;
     margin: 10px 0;
     border-radius: 10px;
-    padding: 10px;
+    padding: 5px;
     color: var(--n4);
     display: flex;
     align-items: center;
@@ -120,5 +162,66 @@
     color: var(--n4);
     text-transform: uppercase;
     font: 400 0.9em var(--f4);
+}  
+  
+.buscacaja {
+  z-index: 9;
+  }  
+  
+input.search {
+    background-position: 0 -701px;
+    padding-left: 17px;
+    background: var(--n2);
+    border: none;
+    margin: 0 10px 0;
+    font: 400 0.9em var(--f4);
+    padding: 5px;
+    border-radius: 7px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}  
+  
+.ordenbf {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--n3);
+    padding: 5px;
+    border-radius: 5px;
+    color: var(--n4);
+  }  
+  
+fieldset.vf_jumpbox {
+  min-height: 0;
+  }
+  
+.bftopuss {
+    margin: 10px 0;
+    background: var(--n3);
+    color: var(--n4);
+    font: 400 1em var(--f4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    border-radius: 5px;
+    font-size: 0px;
+    padding: 0 0 10px 0;
+}  
+  
+.bftopuss h4 {
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    border-bottom: 1px solid var(--n1);
+    width: -webkit-fill-available;
+    text-align: center;
+    padding: 10px;
+    margin: 0 0 10px 0;
+}  
+  
+.bftopuss a {
+    font-size: 12px;
+    text-transform: uppercase;
 }  
 </style>
