@@ -2,7 +2,7 @@
   <img src="https://images2.imgbox.com/43/62/PjngCiOV_o.png" class="deremb" />
   <div class="bftprb">
     <div class="bftlistit"><a href="{U_VIEW_FORUM}">{FORUM_NAME}</a></div>
-    <div class="topleidos"><a href="{U_MARK_READ}">{L_MARK_TOPICS_READ}</a></div>
+    <div class="topleidos"><a href="{U_MARK_READ}"><i class="solar-icons" stroke="1.5" icon-name="checklist"></i>{L_MARK_TOPICS_READ}</a></div>
   </div>
   <img src="https://images2.imgbox.com/7a/15/1zycLNLu_o.png" class="deremb" />
 </div>
@@ -14,17 +14,18 @@
     background: var(--n5);
     display: flex;
     align-items: center;
-    height: 150px;
+    height: 255px;
+    min-height: 150px;
     justify-content: center;
     border-radius: 10px;
     border: 1px solid var(--n1);
 }
   
 .deremb {
-    width: 300px;
+    width: 450px;
     position: relative;
     top: 55px;
-} 
+}
   
 .bftprb {
     display: flex;
@@ -33,8 +34,47 @@
     flex-flow: column;
 }  
 
+.bftlistit { text-align: center; }  
+  
 .bftlistit a {
-  font: 600 3em var(--f5);
+    font: 600 3em var(--f5);
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: var(--n4);
+    margin: 0 0 10px 0;
+}
+  
+.bftlistit a i { display: none;}  
+  
+.topleidos {
+    padding: 7px;
+    background: var(--n2);
+    border: 1px solid var(--n1);
+    border-radius: 7px;
+    margin: 10px 0 0 0;
+    transition: all 500ms;
+}  
+  
+.topleidos a {
+    color: var(--n4);
+    font: 400 0.9em var(--f4);
+    text-transform: uppercase;
+     transition: all 500ms;
+}  
+  
+.topleidos a i{
+    color: var(--n4);
+    margin: 10px;
+     transition: all 500ms;
+}  
+  
+.topleidos:hover {
+  background: var(--pr3);
   }  
+  
+.topleidos:hover a,  .topleidos:hover i {
+    color: var(--pr4);
+} 
 </style>
