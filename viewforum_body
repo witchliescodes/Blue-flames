@@ -7,6 +7,21 @@
   <img src="https://images2.imgbox.com/7a/15/1zycLNLu_o.png" class="deremb" />
 </div>
 
+<div class="resppagb">
+ <div class="lefpos"> 
+<a href="{U_POST_NEW_TOPIC}" accesskey="n" rel="nofollow" class="topnewt"><i class="solar-icons" stroke="1.5" icon-name="edit-1"></i> Nuevo tema</a>
+<div class="search-box">
+		<form method="get" id="forum-search" action="{S_SEARCHBOX_ACTION}">
+		<fieldset>
+			<input class="inputbox search tiny" type="text" name="search_keywords" id="search_keywords" size="20" value="{L_SEARCH}" onclick="if (this.value == '{L_SEARCH}') this.value = '';" onblur="if (this.value == '') this.value = '{L_SEARCH}';" />
+			&nbsp;<input class="button2" type="submit" value="{L_SEARCH}" />
+			<input type="hidden" value="{SEARCH_WHERE}" name="search_where" />
+		</fieldset>
+		</form>
+	</div>
+  </div>
+ {PAGINATION}
+</div>
 
 <style>
 .titprespues {
@@ -43,7 +58,7 @@
     align-items: center;
     justify-content: space-around;
     color: var(--n4);
-    margin: 0 0 10px 0;
+    line-height: 1.5em;
 }
   
 .bftlistit a i { display: none;}  
@@ -71,10 +86,35 @@
 }  
   
 .topleidos:hover {
-  background: var(--pr3);
+  background: var(--pr2);
   }  
   
 .topleidos:hover a,  .topleidos:hover i {
-    color: var(--pr2);
+    color: var(--pr3);
 } 
+  
+.resppagb {
+    background: var(--n3);
+    position: relative;
+    margin: 10px 0;
+    border-radius: 10px;
+    padding: 10px;
+    color: var(--n4);
+}  
+  
+.lefpos {
+      display: flex;
+    align-items: center;
+  }  
+  
+.topnewt {
+    background: var(--n2);
+    padding: 10px;
+    z-index: 99;
+    border-radius: 6px;
+    border: 1px solid var(--n1);
+    color: var(--n4);
+    text-transform: uppercase;
+    font: 400 0.9em var(--f4);
+}  
 </style>
