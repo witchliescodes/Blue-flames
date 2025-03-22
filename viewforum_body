@@ -8,8 +8,8 @@
 </div>
 
 <div class="resppagb">
- <div class="lefpos"> 
 <a href="{U_POST_NEW_TOPIC}" accesskey="n" rel="nofollow" class="topnewt"><i class="solar-icons" stroke="1.5" icon-name="edit-1"></i> Nuevo tema</a>
+<div class="lefpos">   
 <div class="search-box">
 		<form method="get" id="forum-search" action="{S_SEARCHBOX_ACTION}">
 		<fieldset>
@@ -19,8 +19,8 @@
 		</fieldset>
 		</form>
 	</div>
+ {PAGINATION}  
   </div>
- {PAGINATION}
 </div>
 
 <style>
@@ -40,6 +40,7 @@
     width: 450px;
     position: relative;
     top: 55px;
+    z-index: 9;
 }
   
 .bftprb {
@@ -100,7 +101,10 @@
     border-radius: 10px;
     padding: 10px;
     color: var(--n4);
-}  
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
   
 .lefpos {
       display: flex;
