@@ -75,6 +75,6 @@
   }  
   
 .topleidos:hover a,  .topleidos:hover i {
-    color: var(--pr4);
+    color: var(--pr2);
 } 
 </style>
