@@ -10,11 +10,11 @@
 <div class="resppagb">
 <a href="{U_POST_NEW_TOPIC}" accesskey="n" rel="nofollow" class="topnewt"><i class="solar-icons" stroke="1.5" icon-name="edit-1"></i> Nuevo tema</a>
 <div class="lefpos">   
-<div class="search-box">
+	<div class="buscacaja">
 		<form method="get" id="forum-search" action="{S_SEARCHBOX_ACTION}">
 		<fieldset>
 			<input class="inputbox search tiny" type="text" name="search_keywords" id="search_keywords" size="20" value="{L_SEARCH}" onclick="if (this.value == '{L_SEARCH}') this.value = '';" onblur="if (this.value == '') this.value = '{L_SEARCH}';" />
-			&nbsp;<input class="button2" type="submit" value="{L_SEARCH}" />
+			<input class="button2" type="submit" value="{L_SEARCH}" />
 			<input type="hidden" value="{SEARCH_WHERE}" name="search_where" />
 		</fieldset>
 		</form>
