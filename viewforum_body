@@ -1,7 +1,7 @@
 <div class="titprespues">
   <img src="https://images2.imgbox.com/43/62/PjngCiOV_o.png" class="deremb" />
   <div class="bftprb">
-    <div class="bftlistit"><h1 class="page-title"><a href="{U_VIEW_FORUM}">{FORUM_NAME}</a></h1></div>
+    <div class="bftlistit"><a href="{U_VIEW_FORUM}">{FORUM_NAME}</a></div>
     <div class="topleidos"><a href="{U_MARK_READ}">{L_MARK_TOPICS_READ}</a></div>
   </div>
   <img src="https://images2.imgbox.com/7a/15/1zycLNLu_o.png" class="deremb" />
@@ -25,4 +25,16 @@
     position: relative;
     top: 55px;
 } 
+  
+.bftprb {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+}  
+
+.bftlistit a {
+  font: 600 3em var(--f5);
+    text-align: center;
+  }  
 </style>
