@@ -7,6 +7,19 @@
   <img src="https://images2.imgbox.com/7a/15/1zycLNLu_o.png" class="deremb" />
 </div>
 
+{BOARD_INDEX}
+
+<style>
+.contenedor-categorias {
+padding: none;
+margin: 0px;  
+background: none;
+border: none;
+}
+.divider-BF { display: none;}  
+  
+</style>
+
 <div class="resppagb">
 <!-- BEGIN switch_user_authpost -->  
 <a href="{U_POST_NEW_TOPIC}" accesskey="n" rel="nofollow" class="topnewt"><i class="solar-icons" stroke="1.5" icon-name="edit-1"></i> Nuevo tema</a>
