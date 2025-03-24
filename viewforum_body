@@ -64,6 +64,22 @@
 <h4>Miembros navegando este foro</h4>
   <div class="toplistus">{LOGGED_IN_USER_LIST}</div>
 </div>
+<script>document.addEventListener("DOMContentLoaded", function () {
+    let container = document.querySelector(".toplistus");
+    if (!container) return;
+
+    let links = container.querySelectorAll("a");
+
+    links.forEach((link, index) => {
+        if (index > 0) {
+            let commaSpan = document.createElement("span");
+            commaSpan.textContent = ", ";
+            commaSpan.style.fontSize = "12px"; 
+            commaSpan.style.marginRight = "3px"; 
+            link.before(commaSpan);
+        }
+    });
+});</script>
 
 <style>
 .titprespues {
