@@ -11,13 +11,181 @@
 
 <style>
 .contenedor-categorias {
-padding: none;
-margin: 0px;  
-background: none;
-border: none;
+    padding: 0px;
+    margin: 20px 0px;
+    background: none;
+    border: 0px;
+    border-radius: 0px;
 }
-.divider-BF { display: none;}  
+.divider-BF, .Titulocategoria-BF  { display: none;}  
+.categoria {
+    background: transparent;
+    border: 0px;
+    margin: 0px;
+  }
+.contenedor-foros {
+    display: grid;
+     grid-template-columns: repeat(2, 1fr);
+    gap: 0px;
+    width: 100%;
+}
+.contenedortabs-bf {
+  display: none;
+  }  
   
+.foro {
+    background: var(--n5);
+    align-self: center;
+    text-align: center;
+    border-radius: 5px;
+    color: var(--n4);
+    margin: 10px;
+    max-height: 300px;
+    height: 300px;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-flow: row-reverse;
+    z-index: 99 !important;
+}
+ 
+.foro:first-child:nth-last-child(1) {
+    grid-column: span 2;
+}
+.foro .part3-foro .dterm{
+  display: flex;
+  }  
+  
+.bftopimg {
+    width: 250px;
+    height: 300px;
+    overflow: hidden;
+    position: absolute;
+    margin: 0 0 0px -600px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+  
+.bftopimg img {
+    width: 250px;
+}  
+  
+.topctext {
+    max-height: 200px;
+    overflow: auto;
+    text-align: justify;
+    margin: 60px 125px 0px -340px;
+    position: absolute;
+    height: 155px;
+    width: 320px;
+    padding: 0 10px 0 0px;
+    background: transparent;
+}
+
+.part1-foro {
+    position: absolute;
+    background: var(--n2);
+    padding: 10px;
+    margin: 10px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+  
+.part1-foro a {
+    color: var(--n4);
+    filter: drop-shadow(2px 4px 6px var(--n2));
+    text-transform: uppercase;
+    font: 800 1em var(--f3);
+} 
+  
+span.lastpost-avatar {
+    position: absolute;
+    align-self: center;
+    margin: 240px 0 0 -404px;
+    padding: 10px;
+    background: var(--n5);
+    border-top-left-radius: 30px;
+    overflow: hidden;
+    width: 40px;
+    height: 40px;
+    z-index: 99;
+}
+ 
+.lastpost-avatar img {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    margin: 0px 0px 0 5px;
+    border-top-left-radius: 20px;
+} 
+  
+span.title {
+    background: var(--n2);
+    padding: 10px;
+    position: absolute;
+    margin: 260px 0 0px -340px;
+    width: 315px;
+    display: flex !important;
+    border-radius: 5px;
+    font-size: 0.5em;
+    align-items: center;
+    text-transform: uppercase;
+    border: 1px solid var(--n1);
+    justify-content: center;
+}
+
+.infopost {
+    display: flex;
+    margin: 0 3px 0;
+}  
+  
+.infopost strong {
+    margin: 0 3px 0;
+}  
+  
+.staticpost {
+    position: absolute;
+    margin: 230px 0 0 -340px;
+    background: transparent;
+    width: 330px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+dd.posts dfn, dd.topics dfn, dd.views dfn {
+    margin: 0 0 0 10px;
+    font-style: normal;
+}
+  
+dd.posts, dd.topics, dd.views {
+    width: auto;
+    text-align: center;
+    line-height: 2.2em;
+    font-size: 0.8em;
+    font-family: 'Rosie Brown';
+    border: none;
+    display: flex;
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background: var(--n2);
+    padding: 0 5px 0 5px;
+    width: 150px;
+    text-align: center;
+    border: 1px solid var(--n1);
+    border-radius: 5px;
+    justify-content: center;
+}
+  
+.part3-foro {
+    position: absolute;
+}  
+  
+
+    
 </style>
 
 <div class="resppagb">
@@ -165,18 +333,6 @@ border: none;
     color: var(--pr3);
 } 
   
-.resppagb, .downpost {
-    background: var(--n3);
-    position: relative;
-    margin: 10px 0;
-    border-radius: 10px;
-    padding: 5px;
-    color: var(--n4);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-  
 .lefpos {
       display: flex;
     align-items: center;
@@ -184,7 +340,7 @@ border: none;
   
 .topnewt {
     background: var(--n2);
-    padding: 10px;
+    padding: 5px;
     z-index: 99;
     border-radius: 6px;
     border: 1px solid var(--n1);
