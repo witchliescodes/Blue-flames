@@ -36,18 +36,355 @@
 
 		</script>
 	<!-- END multi_selection -->
-<div class="forumbg announcement">	
-<div class="topicsname">{topics_list_box.row.L_TITLE}</div>
-<ul class="topiclist topics bg_none">
+<div class="topicsname"><dfn>{topics_list_box.row.L_TITLE}</dfn></div>
 <!-- END header_table -->
 
-<!-- BEGIN header_row -->
-		<strong>{topics_list_box.row.L_TITLE}</strong>
-<!-- END header_row -->
+<!-- BEGIN topic -->
+
+<!-- BEGIN table_sticky -->
+<div class="temtitle">{topics_list_box.row.topic.table_sticky.L_TITLE}</div>
+<!-- END table_sticky -->
+
+<div class="topicbf">
+
+<div class="topbf1">
+<div class="aahh">
+<div class="icaviso">
+<dl class="icon" style="background-image:url('{topics_list_box.row.TOPIC_FOLDER_IMG}');"></dl>
+<div class="bfavapost">
+<!-- BEGIN avatar -->
+{topics_list_box.row.topic.avatar.LAST_POST_AVATAR}
+<!-- END avatar -->				
+</div>
+</div>
+
+<div class="topbf2">
+<a class="bftoptitle" href="{topics_list_box.row.U_VIEW_TOPIC}">{topics_list_box.row.TOPIC_TITLE}</a>
+<linea></linea>  
+<div class="contenamebf">
+<div class="nomauth">{topics_list_box.row.L_BY} <strong>{topics_list_box.row.TOPIC_AUTHOR}</strong></div>
+<div class="paginatopi">{topics_list_box.row.GOTO_PAGE_NEW}</div>
+</div>
+<div class="topbflast"><b>Escrito el</b> {topics_list_box.row.LAST_POST_TIME}</div>  
+</div>
+
+<div class="topbf3">
+<div class="resputop">{topics_list_box.row.REPLIES} <i class="solar-icons" stroke="1.5" icon-name="send-3"></i></div>
+<div class="visttop">{topics_list_box.row.VIEWS} <i class="solar-icons" stroke="1.5" icon-name="eye"></i></div>  
+</div>
+</div>
+</div>
+
+
+<div class="bftdescrip">
+<!-- BEGIN switch_description -->
+{topics_list_box.row.topic.switch_description.TOPIC_DESCRIPTION}
+<!-- END switch_description -->
+
+</div>
+</div>
+			
+						
+<!-- BEGIN multi_selection -->
+<input onclick="javascript:check_uncheck_main_{topics_list_box.row.BOX_ID}();" type="checkbox" name="{topics_list_box.FIELDNAME}[]{topics_list_box.row.BOX_ID}" value="{topics_list_box.row.FID}" {topics_list_box.row.L_SELECT} />
+<!-- END multi_selection -->
+	
+	
+<!-- END topic -->
+
+<!-- BEGIN no_topics -->
+<li class="row row1">
+	<dl>
+		<dt><strong>{topics_list_box.row.L_NO_TOPICS}</strong></dt>
+	</dl>
+</li>
+<!-- END no_topics -->
 
 <!-- END row -->
 <!-- END topics_list_box -->
 
 <style>
+.resppagb, .downpost {
+    background: var(--n5);
+    position: relative;
+    margin: 10px 0;
+    border-radius: 10px;
+    padding: 5px;
+    color: var(--n4);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
+.topicsname {
+    background: var(--n5);
+    margin: 0 0 10px 0;
+    padding: 10px;
+    display: grid;
+    text-transform: uppercase;
+    grid-template-columns: 1fr 265px 1fr;
+    border-radius: 10px;
+    align-items: center;
+}
+
+.topicsname dfn {
+    width: -webkit-fill-available;
+    text-align: center;
+    font-style: normal;
+    letter-spacing: 1px;
+    font: 800 1.8em var(--f5);
+    align-items: center;
+    color: var(--n4);
+}
+  
+
+.topicsname:before {
+    content: ' ';
+    width: -webkit-fill-available;
+    height: 0.5px;
+    background: var(--pr5);
+}
+
+.topicsname:after {
+    content: ' ';
+    width: -webkit-fill-available;
+    height: 0.5px;
+    background: var(--pr5);
+}
+
+.topicbf {
+    background: var(--n5);
+    border-radius: 5px;
+    overflow: hidden;
+    max-height: -webkit-fill-available;
+    margin: 0 0 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-flow: column;
+    padding: 7px;
+    z-index: 999999;
+    position: relative;
+}
+
+.topbf1 {
+    display: flex;
+    width: -webkit-fill-available;
+    max-height: 80px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.aahh {
+    display: grid;
+    grid-template-columns: 164px 1fr 100px;
+    width: 100%;
+    height: -webkit-fill-available;
+}
+
+.icaviso {
+    display: flex;
+    grid-column: 1 / 2;
+    grid-row: 1;
+    height: 80px;
+    margin: 0 0px 0 0px;
+    align-items: center;
+    justify-content: space-between;
+    flex-flow: row-reverse;
+}
+
+dl.icon[style*="aglobal"], dl.icon[style*="tema"], dl.icon[style*="anuncio"], dl.icon[style*="nota"] {
+    width: 50px;
+    height: 80px;
+    margin: 0 14px 0px 0px;
+    background-image: var(--nuevo) !important;
+    background-size: contain;
+    background-position: revert-layer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+dl.icon[style*="popular"] {
+    width: 50px;
+    height: 80px;
+    margin: 0 14px 0px 0px;
+    background-image: var(--popular) !important;
+    background-size: contain;
+    background-position: revert-layer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+dl.icon[style*="popular"]:before  {
+    content: 'Popular';
+    font-family: var(--f5);
+    font-size: 1em;
+    color: var(--n4);
+    margin: 56px 0 0 0;
+}
+
+dl.icon[style*="aglobal"]:before {
+    content: 'Global';
+    font-family: var(--f5);
+    font-size: 1em;
+    color: var(--n4);
+    margin: 56px 0 0 0;
+}
+
+dl.icon[style*="anuncio"]:before {
+    content: 'Anuncio;
+    font-family: var(--f5);
+    font-size: 1em;
+    color: var(--n4);
+    margin: 56px 0 0 0;
+}
+
+dl.icon[style*="nota"]:before {
+    content: 'Nota;
+    font-family: var(--f5);
+    font-size: 1em;
+    color: var(--n4);
+    margin: 56px 0 0 0;
+}
+
+dl.icon[style*="tema"]:before {
+    content: 'Sin Mensaje';
+    font-family: var(--f5);
+    font-size: 1em;
+    color: var(--n4);
+    margin: 56px 0 0 0;
+}
+
+.bfavapost {
+    overflow: hidden;
+    width: 100px;
+    height: -webkit-fill-available;
+    clip-path: circle(69.4% at 25% 50%);
+}
+
+.bfavapost img {
+    max-width: 300px;
+    max-height: 500px;
+    width: 100px;
+    height: auto;
+}
+
+.topbf2 {
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
+    grid-column: 2 / 3;
+    grid-row: 1;
+}
+
+.topbf2 linea{
+    background: var(--pr3);
+    width: 100%;
+    height: 0.5px;
+    margin: 10px 0 10px 0;
+}
+
+.contenamebf {
+    position: absolute;
+    margin-left: calc(58%);
+    margin-top: calc(-5px);
+    width: 400px;
+    max-width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nomauth {
+    color: var(--n4);
+    font: 400 0.7em var(--f3);
+    text-transform: uppercase;
+    background: var(--n5);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.paginatopi .pagination {
+   width: auto;
+    text-align: right;
+    margin: 0 -5px 0 5px;
+    float: right;
+}
+
+.paginatopi .pagination span {
+    display: flex;
+    font-size: 0px;
+}
+
+.paginatopi .pagination span a, .paginatopi .pagination span a:link, .paginatopi .pagination span a:visited, .paginatopi .pagination span a:active {
+    font-weight: 400;
+    text-decoration: none;
+    color: var(--n6);
+    background-color: var(--pr3);
+    width: 10px;
+    height: 10px;
+    display: flex;
+    margin: 0px 0px 0 5px;
+    padding: 5px;
+    border: none;
+    font-size: 10px;
+    line-height: 1.5em;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.bftoptitle {
+    color: var(--n4);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: var(--f5);
+    font-size: 1em;
+}
+
+.topbflast {
+    background: var(--n2);
+    padding: 4px;
+    border-radius: 5px;
+    font: 400 0.7em var(--f4);
+    border: 1px solid var(--n1);
+    color: var(--n4);
+    text-transform: uppercase;
+}  
+
+.topbflast b {
+    color: var(--pr3);
+}
+
+.topbf3 {
+    grid-column: 3 / 3;
+    grid-row: 1;
+    padding: 0px;
+    display: flex;
+    color: var(--n4);
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+}
+
+.resputop, .visttop {
+    background: var(--n3);
+    padding: 5px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font: 400 1em var(--f5);
+    border: 1px solid var(--n1);
+    margin: 5px 0 5px 13px;
+    min-width: 65px;
+}
+
+.resputop i, .visttop i{
+    color: var(--pr3);
+}
 </style>
