@@ -1,10 +1,9 @@
-body {
+body{
   visibility: hidden;
 }
 body.js-enabled {
   visibility: visible;
 }
-
 #content-container div#main {
     margin-bottom: 50px;
     overflow: unset !important;
@@ -118,6 +117,7 @@ h1.page-title {
   --cerado: url('https://i.ibb.co/S7nFGXM/cerrado.png');
   --nuevo: url('https://i.ibb.co/WpnNZH8/MSJ-nuevo.png');
   --sinpost: url('https://i.ibb.co/sbjrxCL/No-hay-msj.png');
+  --popular: url('https://i.ibb.co/S7ZtWCSy/Lila.png');
   /*FONDO POSTS*/
   --fpg: url('https://images2.imgbox.com/ef/1a/exTuDHmO_o.png');
   /*Imagenes de flores por grupo en posts*/
@@ -149,7 +149,8 @@ h1.page-title {
  color: var(--n4);
 }
 
-a { color: var(--pr5); text-decoration: none; letter-spacing: 1px; transition: all 600ms;}
+a { color: var(--pr5); text-decoration: none; letter-spacing: 1px; transition: all 600ms;  overflow: hidden;     text-overflow: ellipsis; }
+
 a:hover { leter-spaccing: 2px; text-decoration: none; color: var(--pr4);}
 
 /*FONTS*/
@@ -192,13 +193,13 @@ color: var(--n7);
 }
 #page-header,#fa_toolbar,.Replis-BF .h3,div#left{
     display: none;
-}
-span.new-message, span.toread-message{
+}.Navlinks a.navbara{position:relative;}
+span.new-message, span.toread-message {
     display: inline-block;
-    position: relative;
+    position: absolute;
     width: 5px;
-    left: -60px;
     top: 10px;
+    left: -5px;
     height: 5px;
     overflow: hidden;
     font-size: 8px;
@@ -210,6 +211,52 @@ span.new-message, span.toread-message{
     border-radius: 100px;
 }
 
+/*CODEBOX*/
+dl.codebox br { display: block;}
+dl.codebox {
+    background-color: var(--n2);
+    border: none;
+    font-size: 1em;
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    flex-flow: column;
+    margin: 0 0 20px 0;
+}
+
+dl.codebox dt {
+    text-transform: uppercase;
+    border-bottom: 1px solid var(--n1);
+    margin-bottom: 3px;
+    font-size: .8em;
+    font-weight: 700;
+    display: block;
+}
+
+dl.codebox code {
+    overflow: auto;
+    display: block;
+    height: auto;
+    max-height: 200px;
+    white-space: normal;
+    padding-top: 5px;
+    font: .9em calibri;
+    line-height: 1.3em;
+    color: var(--n6);
+    margin: 2px 0;
+}
+
+.copyButton {
+    background: var(--n1);
+    border: none;
+    color: var(--pr5);
+    padding: 7px;
+    border-radius: 5px;
+    align-self: end;
+    margin: 10px 0 0 0;
+    text-transform: uppercase;
+    font: 400 0.6em var(--f4);
+}
 
 
 /* Rueda de colores */
@@ -383,6 +430,10 @@ span.new-message, span.toread-message{
 }
 .colorpicker { z-index: 3; }
 
+
+/* Cuadro de respuesta en Previsualización*/
+
+
 /**TEXT AREA DE LOS POSTS**/
 
 .quickyty {
@@ -497,8 +548,7 @@ a.button1, input.button1, a.button2, input.button2, button.button2, .external-mo
     background-image: none;
     overflow: visible;
     border-radius: 5px;
-    text-transform: uppercase;
-    font: 400 1em var(--f4);
+    font: 400 0.8em var(--f5);
     letter-spacing: 1px;
 }
 
@@ -619,7 +669,7 @@ input.post {
 .respond a{
     color: var(--n4);
     background: var(--n1);
-    padding: 10px;
+    padding: 6px;
     margin: 10px 10px 10px 0px;
     border-radius: 7px;
     border: 1px solid var(--n9);
@@ -653,6 +703,7 @@ select {
     background-color: var(--n2);
     margin: 0 6px 0 0px;
     color: var(--n4);
+  border-radius: 5px;
 }
 
 
@@ -1022,4 +1073,130 @@ transition: border-radius 128ms var(--ease);
 }
 .monomer-close:hover {
   opacity: 0.8;
+}
+/*Boton BBCODE*/
+.caja-modtext {
+    padding: 10px;
+    width: 120px;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    align-items: center;
+}
+.caja-modtext a {
+    color: var(--pr4);
+    background: var(--n5);
+    padding: 3px;
+    border-radius: 5px;
+}
+  /*Chatbox*/
+  .contenedorchatbox {
+            width: 700px;
+            height: 500px;
+            border: 1px solid var(--n5);
+            border-radius: 10px;
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: var(--n2);
+  z-index:999;
+        }
+.close-chatbox {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background: var(--pr3);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-family: var(--f3);
+    font-weight: 600;
+}
+#chatbox2 .header {
+    width: 100%;
+    text-align: center;
+    font-family: var(--f5);
+    color: var(--n6);
+    font-size: 2rem;
+    margin-top: 30px;
+    height: 30px;
+    border-bottom: 1px solid var(--n5);
+    letter-spacing: 10px;
+}
+#chatbox2 {
+    position: absolute;
+    top: 100px;
+    right: 10px;
+    bottom: 30px;
+    overflow: auto;
+    line-height: 10px;
+    z-index: 999;
+}
+#chatbox_bottom {
+    height: 300px !important;
+    overflow: hidden;
+    margin: 5px;
+    padding: 10px;
+    background: var(--n5);
+}
+body.chatbox {
+    visibility: visible!important;
+    font-size: 0.6rem;
+    padding: 0px !important;
+    margin: 0px !important;
+    background: var(--n5);
+    color: var(--n6);
+}
+#chatbox_footer {
+    height: 50px !important;
+    background: var(--pr1);
+    display: grid !important;
+    align-items: center;
+    justify-content: left !important;
+}
+div#chatbox {
+    height: 310px;
+    padding: 10px;
+    font-size: 0.7rem;
+    font-family: var(--f3);
+}
+#chatbox p {
+    border-bottom: 0px!important;
+    padding: 5px;
+    line-height: 0.8em;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    background: var(--n2);
+    border-radius: 5px;
+}
+#chatbox_header, ul#chatbox_main_options {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 10px;
+}
+#chatbox_footer .right-box {
+    margin-bottom: 5px;
+}
+object#frame_chatbox {
+    width: 680px !important;
+    height: 430px;
+}
+.mini-chatbox .inner > img{display:none;}
+body#sce_smilies_body {
+    visibility: visible!important;
+}
+
+/*PREVIEW EN MENSAJES*/
+#preview {
+    background: var(--n3);
+    width: -webkit-fill-available;
+    padding: 10px;
+    border-radius: 10px;
 }
