@@ -195,7 +195,7 @@
     flex-flow: row-reverse;
 }
 
-dl.icon[style*="aglobal"], dl.icon[style*="tema"], dl.icon[style*="anuncio"], dl.icon[style*="nota"] {
+dl.icon[style*="aglobal"], dl.icon[style*="tema"], dl.icon[style*="anuncio"], dl.icon[style*="nota"], dl.icon[style*="anunglobalnuevo"]{
     width: 50px;
     height: 80px;
     margin: 0 14px 0px 0px;
@@ -207,7 +207,7 @@ dl.icon[style*="aglobal"], dl.icon[style*="tema"], dl.icon[style*="anuncio"], dl
     justify-content: center;
 }
 
-dl.icon[style*="popular"] {
+dl.icon[style*="popular"], dl.icon[style*="popularnuevo"] {
     width: 50px;
     height: 80px;
     margin: 0 14px 0px 0px;
@@ -226,6 +226,51 @@ dl.icon[style*="popular"]:before  {
     color: var(--n4);
     margin: 56px 0 0 0;
 }
+
+dl.icon[style*="popularnuevo"]:before  {
+    content: 'Popular nuevo';
+    font-family: var(--f5);
+    font-size: 0.8em;
+    color: var(--n4);
+    margin: 56px 0 0 0;
+}
+
+dl.icon[style*="anuncio"]:before  {
+    content: 'Anuncio';
+    font-family: var(--f5);
+    font-size: 0.8em;
+    color: var(--n4);
+    margin: 56px 0 0 0;
+}
+
+dl.icon[style*="nota"]:before  {
+    content: 'Nota';
+    font-family: var(--f5);
+    font-size: 0.8em;
+    color: var(--n4);
+    margin: 56px 0 0 0;
+}
+
+dl.icon[style*="cerrado"] {
+    width: 50px;
+    height: 80px;
+    margin: 0 14px 0px 0px;
+    background-image: var(--cerado) !important;
+    background-size: contain;
+    background-position: revert-layer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+dl.icon[style*="cerrado"]:before {
+    content: 'Cerrado';
+    font-family: var(--f5);
+    font-size: 0.8em;
+    color: var(--n4);
+    margin: 56px 0 0 0;
+}
+
 
 dl.icon[style*="aglobal"]:before {
     content: 'Global';
