@@ -918,7 +918,7 @@ p.copyright a { margin: 5px; position: relative; top: 3px; color: var(--n5); let
 .icontitle { display: flex; flex-flow: column; } .icontitle div { display: flex; align-items: center; }
 .icontitle div i { background: var(--direc); padding: 10px; color: var(--n4); margin: 10px; border-radius: 10px; font-size: 20px; }
 .icontitle div h1 { margin: 0; font: 800 2em var(--f5); letter-spacing: 1px; }
-.icontitle b { padding: 5px; border: 1px solid var(--direc); font: 400 1em var(--f4); text-align: center; margin: 0px 0px 10px 10px; border-radius: 10px; }
+.icontitle b { padding: 5px; border: 1px solid var(--direc); font: 400 0.8em var(--f4); text-align: center; margin: 0px 0px 10px 10px; border-radius: 10px; }
 .imasmefphi { width: -webkit-fill-available; background-color: var(--n1); height: inherit; background-image: url('https://i.pinimg.com/736x/90/19/88/901988fa0d89b3ed24f7486f9149aada.jpg'); clip-path: circle(130.8% at 94% 220%); background-position: 40% 10%; background-size: cover; }
 .anunbf1 { margin: 20px 0 0 0; background: transparent; width: -webkit-fill-available; }
 .anunbf1 h4 { margin: 0; border-bottom-left-radius: 5px; border-bottom-right-radius: 5px;padding: 10px; background: var(--n1); text-transform: uppercase; letter-spacing: 1px; font: 600 1.2em var(--f4); display: flex; justify-content: space-between; align-items: center; }
