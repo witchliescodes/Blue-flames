@@ -925,4 +925,6 @@ p.copyright a { margin: 5px; position: relative; top: 3px; color: var(--n5); let
 .anunbf1 h4 i { background: var(--direc); padding: 7px; border-radius: 5px; }
 .ptextan br { display: block!important; }
 .ptextan { color: var(--n4); font: 400 1em var(--f4); line-height: 1.3em; text-align: justify; margin: 20px 0 0 0;}
+.imasxayah { width: -webkit-fill-available; background-color: var(--n1); height: inherit; background-image: url('https://static.zerochan.net/Xayah.full.3890517.jpg'); clip-path: circle(130.8% at 94% 225%); background-position: 40% 10%; background-size: cover; }
+.imasmadame { width: -webkit-fill-available; background-color: var(--n1); height: inherit; background-image: url('https://i.pinimg.com/736x/e4/e5/10/e4e510b2be415259606a5b7d3c376452.jpg'); clip-path: circle(130.8% at 94% 225%); background-position: 0 5%; background-size: cover; }
 </style>
