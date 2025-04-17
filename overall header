@@ -933,11 +933,12 @@ p.copyright a { margin: 5px; position: relative; top: 3px; color: var(--n5); let
 .genefb { max-width: 500px; display: flex; align-items: flex-start; flex-flow: column; justify-content: center; padding: 20px; margin: 0 auto; position: relative; color: var(--n4); border-radius: 10px; border: 1px solid var(--direc); }
 .gebft1 { width: -webkit-fill-available; }
 .gebft1 div { display: flex; align-items: center; justify-content: space-between; }
-.bft1ti { background: transparent; width: auto; max-width: 300px; border-radius: 10px; }
+.bft1ti { background: transparent; width: auto; max-width: 400px; border-radius: 10px; text-transform: uppercase; }
 .bft1ti h1 { margin: 0; font: 600 1.5em var(--f3); color: var(--n4); line-height: 1.3em; }
 .bft1ti h1 i { background: var(--direc); padding: 10px; margin: 0 10px 0 0px; border-radius: 5px; }
 .gebft1 .faql { background: var(--direc); padding: 10px; border-radius: 10px; color: var(--n4); font: 400 1em var(--f4); }
 .afq { background: var(--n2); padding: 10px; width: -webkit-fill-available; margin: 20px 0 20px 0; text-align: center; font: 400 0.7em var(--f4); letter-spacing: 1px; text-transform: uppercase; }
 .gebtext br { display: block; }
 .gebtext { color: var(--n4); font: 400 1em var(--f4); line-height: 1.3em; text-align: justify; }  
+.genefb ol{  margin: 20px;}  
 </style>
