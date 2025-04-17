@@ -923,6 +923,6 @@ p.copyright a { margin: 5px; position: relative; top: 3px; color: var(--n5); let
 .anunbf1 { margin: 20px 0 0 0; background: transparent; width: -webkit-fill-available; }
 .anunbf1 h4 { margin: 0; border-bottom-left-radius: 5px; border-bottom-right-radius: 5px;padding: 10px; background: var(--n1); text-transform: uppercase; letter-spacing: 1px; font: 600 1.2em var(--f4); display: flex; justify-content: space-between; align-items: center; }
 .anunbf1 h4 i { background: var(--direc); padding: 7px; border-radius: 5px; }
-.anunbf1 p br { display: block; }
-.anunbf1 p { color: var(--n4); font: 400 1em var(--f4); line-height: 1.3em; text-align: justify; margin: 20px 0 0 0;}
+.ptextan br { display: block!important; }
+.ptextan { color: var(--n4); font: 400 1em var(--f4); line-height: 1.3em; text-align: justify; margin: 20px 0 0 0;}
 </style>
