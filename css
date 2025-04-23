@@ -146,7 +146,7 @@ h1.page-title {
   --ease-bounce: cubic-bezier(0.43, 0.09, 0.38, 2.56);
 }
 
-.bftlistit a i {
+.bftlistit a em {
     margin: 0px 15px 16px 0px;
 }
 
