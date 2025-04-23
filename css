@@ -146,6 +146,10 @@ h1.page-title {
   --ease-bounce: cubic-bezier(0.43, 0.09, 0.38, 2.56);
 }
 
+.bftlistit a i {
+    margin: 0px 15px 16px 0px;
+}
+
 *::selection{
  background: var(--pr6);
  color: var(--n4);
@@ -1327,7 +1331,6 @@ body #simple-wrap {
     background-image: none!important;
     min-width: 1px !important;
 }
-
 .smiley-element {
     padding: 0px!important;
     display: flex!important;
