@@ -107,7 +107,7 @@
 	<!-- END switch_chatbox_activate -->
 <!-- END disable_viewonline -->
 
-{CHATBOX_BOTTOM}
+<div class="vahtiaba">{CHATBOX_BOTTOM}</div>
 
 <!-- BEGIN switch_user_login_form_footer -->
 <div class="panel">
