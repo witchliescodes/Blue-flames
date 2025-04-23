@@ -22,6 +22,8 @@
  <script src="script.js"></script>
 <link href="https://dl.dropbox.com/s/thpzqkqhf1pzqnx/game-icons.css" rel="stylesheet"/>
   
+
+  
   
 	<title>{SITENAME_TITLE}{PAGE_TITLE}</title>
 	<meta http-equiv="content-type" content="text/html; charset={S_CONTENT_ENCODING}"/>
@@ -741,7 +743,7 @@ p.copyright a { margin: 5px; position: relative; top: 3px; color: var(--n5); let
 .bf-norm [id*="bfnor1"], .bf-norm [id*="bfnor2"], .bf-norm [id*="bfnor3"], .bf-norm [id*="bfnor4"], .bf-norm [id*="bfnor5"] { width: 100%; max-height: 0; color: var(--title); position: relative; opacity: 0; transition: ease-in-out .8s; overflow: hidden; font: 11px var(--f-body); letter-spacing: 1px; text-align: justify;}
 #bfcon:checked ~ #bfnor1, #bfon:checked ~ #bfnor2, #bfoff:checked ~ #bfnor3,  #bfgraf:checked ~ #bfnor4, #bfchat:checked ~ #bfnor5{ z-index: 3 !important; opacity: 1; margin: 10px 0 10px 0; max-height: 1200vh; }
 #bfnor1 b, #bfnor2 b, #bfnor3 b, #bfnor4 b, #bfnor5 b { font: 2em var(--f5); font-weight: 800; margin: 6px 10px 0px 0px; color: var(--pr5); width: 40px; display: flex; align-items: center; padding: 10px; justify-content: center; float: left; background: var(--n3); border-radius: 7px; }
-.titledentro { margin: 10px; font-size: 1.5em; color: var(--pr5); background: var(--n3); padding: 10px; border-radius: 7px; letter-spacing: 1px; font-weight: 400; transition: all 500ms ease-in-out; min-width: 120px; width: 300px; text-align: center;}
+.titledentro { margin: 10px; font-size: 1.5em; color: var(--pr5); background: var(--n3); padding: 10px; border-radius: 7px; letter-spacing: 1px; font-weight: 400; transition: all 500ms ease-in-out; max-width: 500px; width: auto; text-align: center;}
 </style>  
 <style>
 .bfcrono br { display: none;}
