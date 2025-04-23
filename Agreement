@@ -1,0 +1,181 @@
+<!-- BEGIN switch_fb_explain -->
+<div class="panel">
+	<div class="inner">
+		<span class="corners-top"><span></span></span>
+		<img src="https://2img.net/i/fa/admin/icones/big_ico/warning.png" class="left" alt="" />
+		<div id="fb_explain">{switch_fb_explain.FB_EXPLAIN}</div>
+		<span class="corners-bottom"><span></span></span>
+	</div>
+</div>
+<!-- END switch_fb_explain -->
+<form method="GET" id="frmAgreement" action="{U_AGREE_OVER13}">
+<div id="register-bf" class="panel">
+  <div class="imgregister"></div>
+	<div class="inner">
+          <div class="titleregister">Blues <i class="solar-icons" stroke="1.5" icon-name="fire-1"></i> Flames
+<span>El equilibrio entre la luz y la oscuridad depende de un hilo. ¿De qué lado estás? Únete al foro y elige tu destino: lucha como exorcista para proteger el mundo de las sombras o abraza el poder demoníaco y desata el caos. Cada decisión deja una marca. ¿Serás salvación o condena?</span></div>
+          <span class="corners-top"><span></span></span>
+          <div class="rulesforo">
+            {AGREEMENT}
+            {MY_RULES}</div>
+		
+	<span class="corners-bottom"><span></span></span></div>
+  <div class="panel aceptnext" title="Aceptar y Seguir">
+	<div class="inner"><span class="corners-top"><span></span></span>
+		<p class="center">
+			<input type="submit" value="{AGREE_OVER_13}" class="button1 cgu-buttons" alt="Apcetar y Seguir"/>
+		</p>
+	<span class="corners-bottom"><span></span></span></div>
+</div>
+</div>
+<div align="center" style="width:100%;">
+ 
+			<div class="aceptrules" align="justify">
+                          <i class="fas fa-pen-nib"></i>
+                          <span>Firma el contrato y condena tu alma.</span>
+				<input type="hidden" name="step" value="2" />
+				<!-- BEGIN switch_fb_explain -->
+				<input type="hidden" name="uid" value="{switch_fb_explain.FB_UID}" />
+				<!-- END switch_fb_explain -->
+				<p>
+					<input type="checkbox" name="agreement" id="frmAgreeChkAgree" value="1" data-validation="required"/> <label for="frmAgreeChkAgree">{AGREE_CONDITIONS}</label> <br />
+				</p>
+                          <i class="solar-icons" stroke="1.5" icon-name="fire-2"></i>
+				<p>
+					<input type="checkbox" name="privacy" id="frmAgreeChkPrivacy" value="1" data-validation="required"/> <label for="frmAgreeChkPrivacy">{AGREE_PRIVACY}</label>
+				</p>
+			</div>
+		</div>
+</form>
+<style>#register-bf {
+    margin: 0;
+    background: var(--n2);
+    border-radius: 20px
+    border: 1px solid var(--n7);
+    display: flex;
+    height: 500px;
+    overflow: hidden;
+  position:relative;
+}
+.imgregister {
+    width: 300px;
+    background: var(--fd2);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: var(--pr6);
+    margin-left: -10px;
+    background-position: bottom;
+    height: 100%;
+}
+.imgregister:before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: var(--fd8);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#register-bf .inner {
+    width: 70%;
+    margin-left: 30px;
+}
+.titleregister {
+    margin: 2%;
+    padding: 20px;
+    font-size: 4rem;
+    font-family: var(--f5);
+    color: var(--pr5);
+    text-align: center;
+}
+.titleregister i {
+    color: var(--pr4);
+}
+.titleregister span {
+    display: block;
+    font-family: var(--f3);
+    font-size: 1rem;
+    text-align: justify;
+    color: var(--n6);
+}
+.rulesforo {
+    background: var(--n8);
+    box-sizing: border-box;
+    padding: 20px;
+    height: 270px;
+    overflow: auto;
+    font-size: 0.7rem;
+    font-family: var(--f3);
+    line-height: 0.8em;
+    color: var(--n6);
+    border: 15px solid var(--n2);
+    outline: 1px solid var(--pr5);
+}
+.aceptrules{
+      text-align: justify;
+    width: 100%;
+    display: flex;
+    gap: 50px;
+    justify-content: left;
+    background: var(--n1);
+    box-sizing: border-box;
+    padding: 20px;
+    align-items: center;
+    color: var(--n6);
+    font-family: var(--f3);
+    font-size: 0.8rem;}
+.aceptrules .fas {
+    padding: 20px;
+    background: var(--pr3);
+    transform: rotate(45deg);
+    border-radius: 10px;
+    font-size: 2rem;
+    color: var(--n5);
+}
+.aceptrules span {
+    padding: 10px;
+    background: var(--n2);
+    border: 10px solid var(--n1);
+    outline: 1px solid var(--pr3);
+    text-transform: uppercase;
+    font-size: 0.5rem;
+    letter-spacing: 2px;
+    color: var(--n4);
+}
+.aceptrules .solar-icons {
+    color: var(--pr4);
+  font-size:2rem;
+}
+#register-bf .inner {
+    width: 70%;
+    margin-left: 30px;
+    display: grid;
+}
+#register-bf .panel.aceptnext {
+    position: absolute;
+    right: 0;
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+    background: var(--pr5);
+    padding: 0 !important;
+    margin: 0;
+    top: 0;
+}
+#register-bf .panel.aceptnext input{
+      padding: 0 !important;
+    margin: 0;
+    position: absolute;
+    left: 5px;
+    display: block;
+    width: 70px !important;
+    height: 70px;
+    background: transparent;
+    border: 1px solid var(--n1);
+    border-radius: 10px;}
+#register-bf .panel.aceptnext .solar-icons {
+    font-size: 3.5rem;
+    color: var(--pr1);
+    margin-left: -32px;
+}
+</style>
