@@ -67,7 +67,7 @@
   </div>
   <!-- END tablefoot -->
   <!-- END catrow -->
-  <div class="divider-BF" style="transform: scaleY(-1);margin-top: -40px;"></div>
+  <div class="divider-BF" style="transform: scaleY(-1);margin-top: -2.6%;"></div>
   
   <!-- BEGIN switch_on_index -->
 <div class=" estsmover">
@@ -87,18 +87,18 @@
   .contenedor-categorias {
     margin: 1%;
     padding: 20px;
-    background: var(--n5);
+    background: var(--n8);
     border-radius: 20px;
     border: 1px solid var(--n7);
 }
 .divider-BF {
     background-image: var(--cb4);
-    height: 180px;
-    background-size: cover;
+    height: 100px;
+    background-size: contain;
     background-position: center;
-    margin-top: -3%;
-    margin-bottom: -2.7%;
+    background-repeat: no-repeat;
     filter: invert(1);
+    margin-bottom: -2%;
 }
   .categoria {
     background: var(--n9);
@@ -163,13 +163,20 @@
     font-size: 30px;
     font-family: var(--f5);
 }
-#c1 .part1-foro .cp {
-    display: block;
-    color: var(--pr4);
-    margin-top: 27px;
+#c1 .part1-foro .solar-icons,#c1 .part1-foro .fas {
+    display: inline-block;
+    color: var(--n5);
+    background: var(--pr3);
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: 1px solid var(--n5);
 }
 #c1 .part1-foro a {
-    color: var(--pr3);
+    color: var(--n6);
+    display: block;
+    height: 100%;
+    line-height: 1.5em;
 }
 #c1 .part2-foro {
     width: 40%;
@@ -218,10 +225,12 @@
     text-transform: uppercase;
     font-family: var(--f3);
     text-decoration: none;
-    color: var(--pr4);
-    font-size: 14px;
+    color: var(--n4);
+    font-size: 0.8rem;
     height: 30px;
     overflow: hidden;
+    width: 160px;
+    font-weight: bold;
 }
 #c1 .infopost {
     font-size: 10px;
@@ -291,15 +300,45 @@
     width: 5%;
     height: 90px;
     font-size: 12px;
+  display:grid;
 }
-.cajadirect .cp {
-    color: var(--pr3);
+.cajadirect .solar-icons {
+    color: var(--pr4);
 }
 .cajadirect a {
-    display: block;
+    color: var(--n6);
+    font-size: 0.8rem;
+    border-radius: inherit;
+    text-align: center;
+}
+
+#c2 #f2 .cajadirect a {
+  text-align:left;
+    display: inline-block;
     text-decoration: none;
     color: var(--n6);
     margin-top: 4px;
+    position: relative;
+    z-index: 1;
+    width: 45%;
+    padding: 5px;
+}
+#c2 #f3 .cajadirect, #c2 #f4 .cajadirect, #c2 #f5 .cajadirect {
+    display: flex;
+    align-items: center;
+    font-size: 0.5rem;
+    padding: 5px;
+    border: 1px solid var(--n5);
+    border-radius: 10px;
+}
+#c2 #f3 .cajadirect a ,#c2 #f4 .cajadirect a ,#c2 #f5 .cajadirect a {
+  width:5%;
+    margin-left: 10px;
+    margin-top: 0;
+    color: var(--pr4);
+}
+ #c2 #f3 .cajadirect .solar-icons, #c2 #f4 .cajadirect .solar-icons, #c2 #f5 .cajadirect .solar-icons {
+    margin-right: 10px;
 }
 #c1 .ImagenCategoria-Staff {
     background: var(--fd5);
@@ -309,513 +348,561 @@
     margin-top: -80px;
 }
   /*CATEGORIA 2*/
+#c2 .Categoria2 {
+    position: absolute;
+    width: 60%;
+    height: 95%;
+    background: var(--fd2);
+    background-size: contain;
+    top: 0;
+    left: 0;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+}
 #c2 #forosContainer_c2 {
-    max-height: 350px;
+    max-height: 500px;
   overflow:hidden;
 }
-#c2 #f2 {
+#c2 .contenedor-foros {
+    display: grid;
+    grid-template-areas:
+        "f2 f3"
+        "f2 f4"
+        "f2 f5";
+    grid-template-columns: 52% 48%;
+    grid-template-rows: repeat(4, 1fr);
+    width: 100%;
+}
+#c2 #f2:before {
+    content: '';
     width: 50%;
-    float: left;
-    background: var(--n2);
-    display: flex;
-    height: 350px;
-}
-#c2 #f2 .part1-foro {
-    font-family: var(--f3);
-    width: 75px;
-    word-wrap: break-word;
-    text-transform: uppercase;
-    background: var(--n9);
-    border-right: 1px solid var(--n5);
-}
-#c2 #f2 .part1-foro .cp {
-    display: block;
-    color: var(--pr4);
-    padding: 10px;
-    border-radius: 100px;
-    background: var(--n7);
-    width: 30px;
-    height: 30px;
-    border: 1px solid var(--n5);
-    margin-left: -20px;
-    font-size: 30px;
-    margin-top: 20px;
-    margin-bottom: 15px;
-}
-#c2 #f2 .part1-foro a {
-    display: block;
-    font-size: 10px;
-    width: 10px;
-    text-align: center;
-    margin-left: -5px;
-    line-height: 2em;
-    color: var(--pr3);
-}
-#c2 #f2 .part2-foro, #c2 #f2 .part3-foro {
-    width: 44%;
-}
-#c2 #f2 dd.lastpost {
-    width: 100%;
-    display: ruby;
-}
-#c2 #f2 span.lastpost-avatar {
-    width: 120px;
-    height: 120px;
-    overflow: hidden;
-    border: 1px solid var(--pr3);
-    padding: 0px;
-    margin-bottom: 5px;
-    margin-top: 30px;
-}
-    
-#c2 #f2 span.lastpost-avatar img {
-    border-radius: 0px;
-    width: 100%;
-    height: auto;
-    filter: grayscale(1);
-}
-#c2 #f2 .marcoforumS {
-    position: absolute;
-    width: 120px;
-    height: 120px;
-    background: var(--fd3);
+    height: 100%;
+    background: var(--fd8);
     background-size: contain;
-    z-index: 1;
-}
-#c2 #f2 .infopost {
-    font-size: 10px;
-    width: 100%;
-    text-align: center;
-    color: var(--n6);
-}
-#c2 #f2 a.temarecien {
-    font-family: var(--f5);
-    display: block;
-    width: 100%;
-    margin-top: 4px;
-    color: var(--n4);
-    font-size: 18px;
-    line-height: 1em;
-}
-#c2 #f2 span.color-groups {
-    float: none;
-    display: inline;
-    letter-spacing: 1px;
-    font-size: 8px;
-}
-#c2 #f2 .staticpost {
-    display: flex;
-    width: 100%;
-    position: relative;
-    top: 30px;
-    height: 50px;
-}
-#c2 #f2 .staticpost > dd {
-    width: 40%;
-    font-size: 12px;
-    margin: 10px;
-    padding: 0px;
-    display: block;
-    line-height: 3.6em;
-    color: var(--n4);
-}
-#c2 #f2 .staticpost dfn {
-    color: var(--pr4);
-    font-style: normal;
-    text-transform: uppercase;
-    font-size: 10px;
-    letter-spacing: 1px;
-}
-#c2 #f2 .part3-foro {
-    background: var(--fd2);
-    background-size: auto;
-    background-position: top;
-    height: 350px;
-    overflow: hidden;
-    border-left: 1px solid var(--n5);
+    position: absolute;
+    left: 0;
+    background-position: bottom;
+    background-repeat: no-repeat;
+      background-color: var(--pr2);
 }
 #c2 #f2 .DescripcionForumS {
-    padding: 10px;
-    background: var(--n4);
-    color: var(--n3);
-    font-size: 10px;
-    line-height: 1em;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 47%;
+    height: 170px;
+    box-sizing: border-box;
+    padding: 20px;
     text-align: justify;
-    position: relative;
-    top: 500px;
-    height: 150px;
-  transition:0.5s linear;
+    line-height: 1em;
+    font-family: var(--f4);
+    color: var(--n6);
+    background: var(--n2);
+    margin-right: 1.5%;
+    border-radius: 10px;
+    border: 1px solid var(--n5);
+    margin-bottom: 2%;
+    font-size: 0.7rem;
 }
-#c2 #f2:hover .DescripcionForumS{
-  top:180px;}
-#c2 #f2 .DescripcionForumS .fas {
-    float: left;
-    margin-top: -40px;
-    padding: 10px;
-    background: var(--pr3);
-    margin-left: 43%;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    color: var(--n4);
-}
-#c2 #f2 .cajadirect span {
-    display: block;
-    padding: 5px;
+#c2 #f2 .part1-foro {
+    font-size: 1.5rem;
     font-family: var(--f5);
-    text-align: right;
-    letter-spacing: 3px;
-    color: var(--pr5);
-    font-size: 14px;
-    border-top: 1px solid var(--n6);
-    margin-top: 10px;
+    box-sizing: border-box;
+    padding: 20px;
+    width: 50%;
+    position: absolute;
+    right: 0;
+    height: 160px;
+    display: grid;
+    overflow: hidden;
 }
-#c2 #f2 .cajadirect .cp {
-    float: left;
+#c2 #f2 a.titulo-foro .solar-icons {
+    display: block;
+    font-size: 4rem;
+    margin-bottom: 4%;
+    color: var(--pr1);
+}
+#c2 #f2 a.titulo-foro {
+    color: var(--n4);
+    letter-spacing: 4px;
+    padding: 10px;
+    background: var(--n1);
+    border-radius: 10px;
+    border: 1px solid var(--n5);
+}
+#c2 #f2 .part2-foro {
+    position: absolute;
+    right: 0;
+    margin-top: 140px;
+    overflow: hidden;
+    width: 50%;
+    height: 170px;
+    box-sizing: border-box;
+    padding: 10px;
+    display: grid;
+    align-items: center;
+}
+#c2 #f2 .part2-foro dl {
+    width: 100%;
+    font-size: 0.8rem;
+    line-height: 1em;
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box;
+}
+#c2 #f2 .part2-foro dd {
+    width: 100%;
+}
+#c2 #f2 .cajadirect {
+    font-size: 0.7rem;
+    margin-top: 3%;
+    box-sizing: border-box;
+    line-height: 1em;
 }
 #c2 #f2 .cajadirect a {
     display: inline-block;
+    text-decoration: none;
+    color: var(--n6);
+    margin-top: 4px;
+    position: relative;
+    z-index: 1;
     width: 45%;
     padding: 5px;
-    font-family: var(--f3);
-    color: var(--pr1);
 }
-#c2 #f2 .cajadirect a::first-letter {
+#c2 #f2 .cajadirect span {
+    font-size: 0.8rem;
+    display: block;
+    text-align: right;
+    font-family: var(--f5);
+    background: var(--n5);
+    padding: 10px;
+    border-radius: 10px;
+    letter-spacing: 3px;
+}
+#c2 #f2 .cajadirect span .solar-icons {
+    float: left;
+    color: var(--pr4);
+}
+#c2 #f2 .part2-foro .lastpost-avatar img {
+    display: none;
+}
+#c2 #f2 span.title {
+    padding: 10px;
+    display: block;
+    font-size: 0.6rem;
+    font-family: var(--f3);
+    color: var(--n4);
+    background: var(--n5);
+    border-radius: 5px;
+    width: 83%;
+    text-align: left;
+    border: 5px solid var(--n9);
+    outline: 1px solid var(--n5);
+}
+#c2 #f2 a.temarecien {
+    display: block;
+    font-size: var(--f2);
+    padding: 10px;
+    border-bottom: 1px solid var(--n7);
+    font-weight: bold;
+    color: var(--n6);
+}
+#c2 #f2 .staticpost {
+    display: flex;
+    padding: 0px 19px;
+    box-sizing: border-box;
+    gap: 5px;
+}
+#c2 #f2 .staticpost dd {
+    font-size: 0.6rem;
+    font-family: var(--f4);
+    text-transform: uppercase;
+    color: var(--n6);
+    font-weight: bold;
+    padding: 5px 10px;
+    background: var(--n1);
+    border-radius: 10px;
+    margin-top: 3%;
+}
+#c2 #f2 .infopost {
+    box-sizing: border-box;
+    font-size: 0.45rem !important;
+    display: flex;
+    padding: 10px;
+    color: var(--n6);
+    gap: 2px;
+    line-height: 1em;
+    font-family: var(--f3);
+    justify-content: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+  #c2 #f3, #c2 #f4, #c2 #f5 {
+    height: 167px;
+    overflow: hidden;
+    display: flex;
+    background: var(--n1);
+    align-items: center;
+    border-left: 1px solid var(--n5);
+      margin-bottom: -1px;
+  position:relative;
+}
+#c2 #f3 .part1-foro,#c2 #f4 .part1-foro,#c2 #f5 .part1-foro {
+    width: 25%;
+    border-right: 1px solid var(--n5);
+    height: 100%;
+    display: grid;
+    align-items: center;
+}
+#c2 #f3 .part2-foro,#c2 #f4 .part2-foro,#c2 #f5 .part2-foro {
+width: 25%;
+    height: 100%;
+    display: grid;
+    font-size: 0.8rem;
+    line-height: 1em;
+    box-sizing: border-box;
+    padding: 10px;
+    justify-content: center;
+}
+#c2 #f3 .lastpost-avatar,#c2 #f4 .lastpost-avatar,#c2 #f5 .lastpost-avatar {
+display: none;
+}
+#c2 #f3 a.temarecien,#c2 #f4 a.temarecien,#c2 #f5 a.temarecien {
+    margin-top: 10px;
+    display: block;
+    padding: 10px;
+    background: var(--n2);
+    border-radius: 10px;
+    width: 100%;
+    margin-left: -10px;
+    font-family: var(--f3);
+    font-weight: bold;
+  font-size:0.7rem;
+}
+#c2 #f4 .staticpost, #c2 #f3 .staticpost, #c2 #f5 .staticpost {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    font-size: 0.5rem;
+    width: 25%;
+}
+#c2 #f3 .staticpost dd,#c2 #f4 .staticpost dd,#c2 #f5 .staticpost dd {
+    width: 50%;
+    font-weight: bold;
+    margin-top: 10px;
+    color: var(--n6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#c2 #f3 .staticpost dfn,#c2 #f4 .staticpost dfn,#c2 #f5 .staticpost dfn {
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: 0.5rem;
+    margin-left: 5px;
     color: var(--pr3);
 }
-#c2 #f3, #c2 #f4, #c2 #f5 {
-    float: right;
-    width: 50%;
-    overflow: hidden;
-    height: calc(350px / 3);
-    display: flex;
-}
-#c2 #f3 .part1-foro, #c2 #f4 .part1-foro, #c2 #f5 .part1-foro {
-    width: 20%;
-    background: var(--n2);
-    word-wrap: break-word;
-    border: 1px solid var(--n5);
-    border-bottom: none;
-    font-family: var(--f5);
-    font-size: 12px;
-}
-#c2 #f3 .part1-foro .cp, #c2 #f4 .part1-foro .cp, #c2 #f5 .part1-foro .cp {
+#c2 #f5 .infopost,#c2 #f4 .infopost,#c2 #f3 .infopost {
+    font-size: 0.55rem !important;
     display: block;
-    font-size: 40px;
-    color: var(--pr4);
-    padding: 10px;
-    margin-top: 15px;
-}
-#c2 #f4 .part1-foro {
-    border-top: none;
-}
-#c2 #f3 .part2-foro, #c2 #f4 .part2-foro, #c2 #f5 .part2-foro{
-    width: 50%;
-}
-#c2 #f3 .part3-foro, #c2 #f4 .part3-foro, #c2 #f5 .part3-foro {
-    width: 30%;
-}
-#c2 #f3 .part2-foro dl, #c2 #f4 .part2-foro dl, #c2 #f5 .part2-foro dl {
-    display: flex;
-    font-size: 10px;
-}
-#c2 #f4 span.lastpost-avatar,#c2 #f3 span.lastpost-avatar ,#c2 #f5 span.lastpost-avatar  {
-    width: 80px;
-    height: 80px;
-    border: 1px solid var(--pr3);
-    margin: 10px;
-    padding: 0px;
-    overflow: hidden;
-}
-#c2 #f4 span.lastpost-avatar img,#c2 #f3 span.lastpost-avatar img,#c2 #f5 span.lastpost-avatar img{
-    width: 100%;
-    height: auto;
-  filter:grayscale(1);
-}
-#c2 #f2 dd.lastpost span.title {
-    display: block;
-    width: 100%;
-    margin-top: 20px;
-}
-#c2 #f4 span.title,#c2 #f3 span.title,#c2 #f5 span.title {
-    width: 50%;
-    font-size: 8px;
+    line-height: 1em;
+    text-align: left;
     color: var(--n6);
-    margin-top: 25px;
+    padding: 5px 0px;
 }
-#c2 #f4 a.temarecien,#c2 #f5 a.temarecien,#c2 #f3 a.temarecien {
-    font-size: 12px;
-    font-family: var(--f3);
-    text-transform: uppercase;
-    color: var(--pr4);
+#c2 #f3 dd.lastpost, #c2 #f4 dd.lastpost, #c2 #f5 dd.lastpost {
+    width: 100% !important;
+    font-size: 0.8rem !important;
+    height: 100%;
+    justify-content: center;
+    display: inline-grid;
+    text-align: center;
+}
+#c2 #f3 span.lastpost-avatar,#c2 #f4 span.lastpost-avatar,#c2 #f5 span.lastpost-avatar {
+height: 50px;
+    overflow: hidden;
+    display: grid;
+    justify-content: center;
+    width: 50px;
+    border-radius: 100px;
+    text-align: center;
+    margin-left: 30px;
+    border: 2px solid var(--n5);
+    outline: 10px solid var(--n9);
+    margin-top: 5px;
 }
 #c2 #f4 .marcoforumS,#c2 #f5 .marcoforumS,#c2 #f3 .marcoforumS {
-    width: 80px;
-    height: 80px;
     position: absolute;
-    background: var(--fd3);
-    background-size: contain;
+    top: 0;
+    background: var(--fd7);
+    background-size: cover;
+    height: 80px;
+    width: 80px;
     z-index: 1;
+    margin-top: 4px;
+    margin-left: -16px;
+    background-repeat: no-repeat;
+    background-position: center;
 }
-#c2 #f4 .staticpost ,#c2 #f3 .staticpost,#c2 #f5 .staticpost{
-    width: 10%;
-    font-size: 8px;
-    background: var(--n2);
-    padding: 10px;
-    margin: 5px;
-    border-radius: 10px;
-    border: 1px solid var(--n5);
-    text-align: center;
+#c2 #f3 .lastpost-avatar img, #c2 #f4 .lastpost-avatar img, #c2 #f5 .lastpost-avatar img {
+    width: 100px;
+    height: auto;
+    border-radius: 0px !important;
+    margin-top: -40px;
+    filter: grayscale(1);
 }
-#c2 #f4 .staticpost > dd,#c2 #f5 .staticpost > dd,#c2 #f3 .staticpost > dd {
-    width: 100%;
-    color: var(--n6);
-}
-#c2 #f4 .staticpost dfn,#c2 #f5 .staticpost dfn,#c2 #f3 .staticpost dfn {
-    width: 36px;
-    display: block;
-    font-style: normal;
-    color: var(--pr4);
-    text-transform: uppercase;
-    font-size: 7px;
-    margin-left: -5px;
-}
-#c2 #f4 .DescripcionForumS, #c2 #f3 .DescripcionForumS, #c2 #f5 .DescripcionForumS {
-    font-size: 9px;
+#c2 #f3 .DescripcionForumS, #c2 #f4 .DescripcionForumS, #c2 #f5 .DescripcionForumS {
+    height: 120px;
+    font-size: 0.7rem;
+    display: grid;
     line-height: 1em;
-    text-align: justify;
-    display: flex;
-    color: var(--n6);
-    padding: 5px;
-}
-#c2 #f4 dd.lastpost,#c2 #f3 dd.lastpost,#c2 #f5 dd.lastpost {
-    display: flex;
-    width: 70%;
-}
-#c2 #f4 .cajadirect, #c2 #f3 .cajadirect, #c2 #f5 .cajadirect {
     padding: 10px;
-    background: var(--n7);
-    margin-left: 10px;
-    border: 1px solid var(--n6);
+    align-items: center;
+    text-align: justify;
+    color: var(--n6);
+    border: 1px solid var(--n5);
+    margin: 10px;
+    overflow: hidden;
+    border-radius: 10px;
+    background: var(--n2);
+}
+#c2 #f3 .part3-foro,#c2 #f4 .part3-foro,#c2 #f5 .part3-foro {
+    width: 50%;
+  height:100%;
+}
+#c2 #f3 .part1-foro .solar-icons,#c2 #f4 .part1-foro .solar-icons,#c2 #f5 .part1-foro .solar-icons {
+    display: block;
+    font-size: 2rem;
+    margin-bottom: 15px;
+    background: var(--pr3);
+    color: var(--n5);
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid;
+    transform: rotate(45deg);
+    margin-top: 0px;
+    width: 2rem;
+}
+#c2 #f3 .part1-foro .titulo-foro, #c2 #f4 .part1-foro .titulo-foro, #c2 #f5 .part1-foro .titulo-foro {
+    line-height: 1em;
+    font-family: var(--f5);
+    text-transform: uppercase;
+    color: var(--n4);
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    height: 165px;
+}
+#c2 #f2 {
+    grid-area: f2;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+}
+#c2 #f3 {
+  grid-area: f3; /* Asigna el área f3 al elemento */
+}
+
+#c2 #f4 {
+  grid-area: f4; /* Asigna el área f4 al elemento */
+      border-top: 1px solid var(--n5);
+}
+
+#c2 #f5 {
+  grid-area: f5; /* Asigna el área f5 al elemento */
+   border-top: 1px solid var(--n5);
 }
   /*CATEGORIA 3*/
-#c4 .part1-foro {
-    width: 100%;
-    background: var(--n2);
-    text-align: left;
-    border-bottom: 1px solid var(--n5);
+div#forosContainer_c4 {
+  position:relative;
+    height: 500px;
 }
-#c4 a.titulo-foro {
-    color: var(--pr3);
-    text-decoration: none;
-    font-family: var(--f5);
-    font-size: 12px;
-    letter-spacing: 2px;
-    margin-left: 10px;
-    display: block;
-    padding: 10px;
-}
-#c4 .cp{
-      color: var(--pr4);
-    font-size: 15px;
-    margin-right: 10px;
-    margin-left: 10px;
+#c4 .foro {
+  position:Relative;
+    display: inline-grid;
+    width: calc(70% / 2);
+    box-sizing: border-box;
+    height: calc(450px / 2);
+    background: var(--n1);
     float: left;
-    position: relative;
-    top: -4px;
-  }
-#c4 #f6, #c4 #f7, #c4 #f8, #c4 #f9 {
-    display: inline-block;
-    width: 49.9%;
-    border-right: 1px solid var(--n5);
-    height: 200px;
-    border-bottom: 1px solid var(--n5);
-}
-#c4 #f8, #c4 #f9 {
-    border-bottom: none;
-}
-#c4 #f7, #c4 #f9 {
-    border-right: none;
-}
-#c4 #f7 a.titulo-foro,#c4 #f9 a.titulo-foro {
-    text-align: right;
-}
-#c4 #f7 .cp, #c4 #f9 .cp {
-    float: right;
-}
-#c4 #f6 .part2-foro, #c4 #f6 .part3-foro, #c4 #f8 .part2-foro, #c4 #f8 .part3-foro {
-    display: inline-block;
-    width: 50%;
-    float: right;
-}
-#c4 #f7 .part2-foro, #c4 #f7 .part3-foro, #c4 #f9 .part2-foro,#c4 #f9 .part3-foro {
-    display: inline-block;
-    width: 50%;
-    float: left;
-}
-#c4 .DescripcionForumS {
-    height: 150px;
-    display: block;
-    margin: 10px;
-    font-size: 11px;
-    line-height: 1em;
-    text-align: justify;
-    color: var(--n6);
-}
-#c4 .cajadirect {
-    display: flex;
-    position: relative;
-    top: 10px;
-    border-radius: 10px;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-left: 10px;
     border: 1px solid var(--n5);
-    padding: 10px;
+    overflow: hidden;
 }
-#c4 .cajadirect .cp {
-    font-size: 20px;
-    margin-top: 5px;
-    color: var(--pr3);
+#c4 .part1-foro {
+    padding: 20px;
+    text-align: left;
+    background: var(--n2);
+    font-size: 1rem;
 }
-#c4 .cajadirect a {
-    padding: 3px;
-    margin: 2px;
-    background: var(--n7);
-    border-radius: 100px;
-    width: 12px;
-    height: 12px;
-    text-align: center;
+#c4 .part1-foro a {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    font-size: 0.8rem;
+    font-family: var(--f5);
+    letter-spacing: 2px;
+    color: var(--n4);
 }
-.Categoria3 {
-    position: relative;
-    width: 397px;
-    height: 450px;
-    background: var(--fd6);
-    background-size: contain;
+#c4 .part1-foro .solar-icons {
+    width: 74px;
+    font-size: 2rem;
+    float: left;
+    background: var(--pr1);
+    color: var(--pr4);
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 46%;
+    clip-path: polygon(100% 0, 100% 80%, 50% 100%, 0 80%, 0 0);
+    display: grid;
     z-index: 1;
-    left: 140%;
-    top: -215px;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid var(--n5);
+}
+#c4 .part2-foro {
+    padding: 10px;
+    display: flex;
+    background: var(--n1);
+    width: 100%;
+    border-top: 1px solid var(--n5);
+    height: 40px;
+    overflow: hidden;
+}
+#c4 dl.icon {
+    width: 100%;
 }
 #c4 dd.lastpost {
-    width: 110px;
-    height: 110px;
-    padding: 10px;
+    width: 80% !important;
+    font-size: 0.8rem !important;
+    display: flex;
+    justify-content: center;
+    margin-left: 10px;
+}
+ #c4 span.title {
+    width: 80%;
+    display: flex;
+    gap: 10px;
+    font-size: 0.7rem !important;
+    align-items: center;
+    justify-content: center;
+    line-height: 1em;
+}
+#c4 span.title .temarecien {
+    padding: 5px;
+    background: var(--n8);
+    display: flex;
+    color: var(--pr4);
+    height: 25px;
+    width: 130px;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
     border-radius: 10px;
-    margin-top: 10px;
-    position: relative;
-    left: -60px;
-    z-index: 2;
-    font-size: 10px;
-    color: var(--n4);
-    background: var(--n7);
     border: 1px solid var(--n5);
 }
 #c4 .infopost {
-    font-size: 8px;
-    margin-top: 5px;
+    height: 25px;
+    font-size: 0.6rem;
+    color: var(--n6);
     text-align: left;
 }
-#c4 dd.posts, #c4 dd.topics, #c4 dd.views {
-    padding: 3px;
-    color: var(--n4);
-    font-size: 8px;
-    background: var(--n7);
-    width: 105px;
-    margin-bottom: 2px;
-    position: relative;
-}
-#c4 dfn {
-    font-style: normal;
-    text-transform: uppercase;
-    margin-left: 5px;
-    color: var(--pr4);
-    border-radius: 10px;
-}
-#c4 a.temarecien {
-    color: var(--pr4);
-    font-family: var(--f3);
-    text-transform: uppercase;
-    line-height: 1.2em;
-    display: block;
-    text-align: center;
-}
-#c4 span.color-groups {
-    float: none;
-    display: inline-block;
-    font-size: 8px;
-    text-transform: uppercase;
-    font-style: normal;
-}
-#c4 #f7 dd.lastpost, #c4 #f9 dd.lastpost {
-    left: 50px;
-}
-#c4 #f6 span.lastpost-avatar,#c4 #f7 span.lastpost-avatar,#c4 #f8 span.lastpost-avatar,#c4 #f9 span.lastpost-avatar {
-    position: absolute;
-    margin-top: -80px;
-    right: -90px;
-    z-index: 3;
-    width: 100px;
-    height: 100px;
-    border: 1px solid var(--pr3);
-    box-shadow: 0px 0px 20px var(--pr3);
-    border-radius: 100px;
-    overflow: hidden;
+#c4 span.lastpost-avatar {
+    margin: 0;
     padding: 0;
-  animation: float-categoria 3s ease-in-out infinite;
-    transition: box-shadow 0.3s ease;
-}
-#c4 #f7 span.lastpost-avatar {
-    right: 150px;
-    width: 50px;
-    height: 50px;
-    margin-top: -60px;
-}
-#c4 #f8 span.lastpost-avatar {
-    margin-top: -10px;
-    width: 70px;
-    height: 70px;
-    right: -50px;
-}
-#c4 #f9 span.lastpost-avatar {
-    right: 160px;
-    width: 60px;
-    height: 60px;
-    margin-top: -60px;
-}
-#c4 #f6 .marcoforumS {
+    overflow: hidden;
     position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 74px;
+    height: 150px;
+    background: var(--n5);
+    border-right: 1px solid var(--n5);
+}
+#c4 span.lastpost-avatar img {
     width: 100px;
-    background: var(--fd7);
-    height: 100px;
-    background-size: contain;
-    z-index: 1;
-}
-#c4 #f7 .marcoforumS {
-    position: absolute;
-    width: 50px;
-    background: var(--fd7);
-    height: 50px;
-    background-size: contain;
-    z-index: 1;
-}
-#c4 #f8 .marcoforumS {
-    position: absolute;
-    width: 70px;
-    background: var(--fd7);
-    height: 70px;
-    background-size: contain;
-    z-index: 1;
-}
-#c4 #f9 .marcoforumS {
-    position: absolute;
-    width: 60px;
-    background: var(--fd7);
-    height: 60px;
-    background-size: contain;
-    z-index: 1;
-}
-#c4 #f6 span.lastpost-avatar img,#c4 #f7 span.lastpost-avatar img ,#c4 #f8 span.lastpost-avatar img ,#c4 #f9 span.lastpost-avatar img  {
-    border-radius: 0;
-    width: 100%;
     height: auto;
     filter: grayscale(1);
+}
+#c4 .part3-foro {
+    font-size: 0.75rem;
+    line-height: 1em;
+    font-family: var(--f4);
+    width: 80%;
+    margin-left: 75px;
+    text-align: justify;
+    box-sizing: border-box;
+    padding: 10px 20px;
+    color: var(--n6);
+}
+#c4 .cajadirect {
+    background: var(--n9);
+    padding: 10px;
+    border-radius: 10px;
+    position: absolute;
+    border: 1px solid var(--n5);
+    width: 80%;
+    bottom: 0;
+    height: 25px;
+    margin-bottom: -2%;
+  opacity:0;
+  transition:0.3s linear;
+}
+#c4 .cajadirect .solar-icons {
+    font-size: 1rem;
+    color: var(--pr4);
+    margin-right: 10px;
+}
+#c4 .cajadirect a {
+    color: var(--n4);
+    margin-right: 10px;
+}
+#c4 .foro:hover .cajadirect{
+  opacity:1;}
+#forosContainer_c4:before {
+    content: '';
+    background: var(--fd6);
+    height: 500px;
+    width: 35%;
+    background-size: contain;
+    display: block;
+    position: absolute;
+    background-position: center;
+    background-repeat: no-repeat;
+    right: 0;
+    animation: float 2.5s infinite;
+  z-index:2;
+}
+#c4 .staticpost {
+    position: absolute;
+    bottom: 0;
+    display: grid;
+    left: 0;
+    font-size: 0.6rem;
+    width: 74px;
+    z-index: 1;
+}
+#c4 .staticpost dd {
+    width: 100%;
+    display: flex;
+    background: var(--pr1);
+    justify-content: center;
+    font-family: var(--f4);
+    font-size: 0.6rem;
+    color: var(--pr4);
+}
+#c4 .staticpost dfn {
+    font-style: normal;
+    margin-left: 10px;
+    color: var(--n5);
+    text-transform: uppercase;
 }
 /* Definición de la animación específica para .Categoria2 .marcoforum2 */
 @keyframes float-categoria {
@@ -828,25 +915,6 @@
     100% {
         transform: translateY(0px); /* Volver a la posición original */
     }
-}
-#c4 #f6 .staticpost, #c4 #f8 .staticpost {
-    font-size: 10px;
-    position: relative;
-    top: -60px;
-    left: 36px;
-    float: left;
-    width: 100%;
-    text-align: center;
-  z-index:2;
-}
-#c4 #f7 .staticpost, #c4 #f9 .staticpost {
-    font-size: 10px;
-    position: relative;
-    top: -60px;
-    left: 48px;
-    float: left;
-    width: 100%;
-    z-index: 2;
 }
   /*CATEGORIA NORTE*/
 #c3 #forosContainer_c3,#c5 #forosContainer_c5 {
@@ -879,7 +947,7 @@
     letter-spacing: 1px;
     text-transform: uppercase;
 }
-#c3 .tab.active .cp, #c5 .tab-c5.active .cp {
+#c3 .tab.active .solar-icons, #c5 .tab-c5.active .solar-icons{
     transform: rotate(24deg) !important;
     color: var(--pr3) !important;
     background: var(--n9) !important;
@@ -888,7 +956,7 @@
     margin-top: -5px !important;
 }
 
-#c3 .tab .cp, #c5 .tab-c5 .cp {
+#c3 .tab .solar-icons, #c5 .tab-c5 .solar-icons {
    transform: rotate(0deg) !important;
     float: left !important;
     font-size: 30px !important;
@@ -1005,17 +1073,22 @@
     background-position: center;
 }
   /*Foros Categorias norte & Sur*/
-  #c3 .foro, #c5 .foro {
+#c3 .foro, #c5 .foro {
     width: 50%;
     height: 310px;
     background: var(--n9);
     margin-bottom: 10px;
     position: relative;
-    left: -200px;
     top: 40px;
     border-radius: 10px;
     border: 1px solid var(--n5);
+    overflow: hidden;
+  opacity:0;
+  transition:0.5s linear;
 }
+#c3 .content:hover .foro, #c5 .content-c5:hover .foro{
+  opacity:1;
+  }
 #c3 .part1-foro, #c5 .part1-foro {
     padding: 20px;
     background: var(--n1);
@@ -1023,8 +1096,9 @@
     border-bottom: 1px solid var(--n5);
     border-radius: 10px;
     display: block;
-    height: 20px;
+    height: 60px;
     line-height: 2em;
+    box-sizing: border-box;
 }
 #c3 a.titulo-foro,#c5 a.titulo-foro {
     font-family: var(--f5);
@@ -1032,7 +1106,7 @@
     text-decoration: none;
     font-size: 25px;
 }
-#c3 .part1-foro .cp, #c5 .part1-foro .cp{    color: var(--pr3);
+#c3 .part1-foro .solar-icons, #c5 .part1-foro .solar-icons{    color: var(--pr3);
     font-size: 40px;
     float: left;
     padding: 10px;
@@ -1042,27 +1116,32 @@
 #c3 .part2-foro, #c5 .part2-foro {
     display: flex;
     width: 100%;
-    height: 100px;
-    position: relative;
-    top: 120px;
-    margin: 10px;
+    position: absolute;
     z-index: 1;
+    height: 80px;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+    background: var(--n1);
 }
-#c3 dl,#c5 dl  {display: flex;width:100%}
+#c3 dl,#c5 dl  {display: flex;width:100%;align-items: center;}
 #c3 dd.lastpost, #c5 dd.lastpost {
     display: flex;
-    width: 44%;
+    width: 100%;
     border-radius: 10px;
-    border: 1px solid var(--n5);
     height: 80px;
+    justify-content: center;
+    align-items: center;
 }
 #c3 .staticpost, #c5 .staticpost {
-    width: 50%;
+    width: 40%;
     border: 1px solid var(--n5);
     border-radius: 10px;
     display: flex;
-    height: 80px;
-    margin-left: 10px;
+    height: 60px;
+    justify-content: center;
+    margin-right: 10px;
+    align-items: center;
 }
 #c3 .staticpost dd, #c5 .staticpost dd {
     display: flex;
@@ -1070,17 +1149,19 @@
     background: var(--n9);
     height: 40%;
     margin: 10px;
-    font-size: 15px;
+    font-size: 0.8rem;
     width: 35%;
     border-radius: 10px;
     border: 1px solid var(--n5);
     font-family: var(--f5);
     color: var(--n6);
+    align-items: center;
+    justify-content: center;
 }
 #c3 .staticpost dfn,#c5 .staticpost dfn {
     font-style: normal;
     margin-left: 10px;
-    color: var(--pr3);
+    color: var(--pr4);
 }
 #c3 span.lastpost-avatar,#c5 span.lastpost-avatar {
     width: 70px;
@@ -1106,24 +1187,27 @@
     z-index: 1;
 }
 #c3 .part3-foro, #c5 .part3-foro {
+    margin-top: 20px;
     font-size: 12px;
     line-height: 1em;
     text-align: justify;
-    padding: 10px;
+    padding: 10px 20px;
     color: var(--n6);
     font-family: var(--f4);
     position: relative;
-    top: -110px;
+    height: 150px;
+    box-sizing: border-box;
 }
-#c3 .cajadirect,#c5 .cajadirect {
+#c3 .cajadirect, #c5 .cajadirect {
     display: flex;
     margin-top: 10px;
     padding: 10px;
     border: 1px solid var(--n5);
     border-radius: 10px;
+    align-items: center;
 }
-#c3 .cajadirect .cp,#c5 .cajadirect .cp {
-    font-size: 20px;
+#c3 .cajadirect .solar-icons, #c5 .cajadirect .solar-icons {
+    font-size: 1.2rem;
     background: var(--n5);
     padding: 10px;
     margin-left: -10px;
@@ -1133,19 +1217,39 @@
     font-size: 12px;
     margin-left: 10px;
 }
-#c3 span.title,#c5 span.title {
+#c3 span.title, #c5 span.title {
     font-size: 10px;
-    margin-left: 10px;
-    width: 50%;
+    width: 70%;
     text-align: center;
     color: var(--n4);
+    display: flex;
+    gap: 20px;
+    line-height: 1em;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
 }
-#c3 a.temarecien,#c5 a.temarecien  {
+#c3 a.temarecien, #c5 a.temarecien {
     color: var(--pr4);
-    font-family: var(--f3);
-    display: block;
-    margin-top: 10px;
-    font-size: 12px;
+    font-family: var(--f4);
+    display: flex;
+    font-size: 0.7rem;
+    padding: 10px;
+    font-weight: bold;
+    background: var(--n8);
+    border-radius: 10px;
+    border: 1px solid var(--n5);
+    height: 25px;
+    width: 80px;
+    align-items: center;
+    line-height: 0.8em;
+    overflow: hidden;
+    text-align: left;
+}
+#c3 .infopost, #c5 .infopost {
+    width: 40%;
+    font-size: 0.5rem;
+    padding: 5px;
 }
 #c3 span.color-groups,#c5 span.color-groups{
     float: none;
@@ -1236,7 +1340,7 @@
 #c6 a.titulo-foro {
     color: var(--pr5);
 }
-#c6 .part1-foro .cp {
+#c6 .part1-foro .solar-icons {
     float: left;
     font-size: 80px;
     transform: rotate(16deg);
