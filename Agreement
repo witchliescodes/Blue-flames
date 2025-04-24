@@ -162,17 +162,21 @@
     margin: 0;
     top: 0;
 }
-#register-bf .panel.aceptnext input{
-      padding: 0 !important;
+  
+#register-bf .panel.aceptnext input {
+    padding: 0 !important;
     margin: 0;
     position: absolute;
     left: 5px;
     display: block;
     width: 70px !important;
-    height: 70px;
+    height: 60px;
     background: transparent;
     border: 1px solid var(--n1);
-    border-radius: 10px;}
+    border-radius: 10px;
+    font-size: 9rem !important;
+    margin-top: -10px;
+}
 #register-bf .panel.aceptnext .solar-icons {
     font-size: 3.5rem;
     color: var(--pr1);
