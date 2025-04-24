@@ -182,4 +182,11 @@
     color: var(--pr1);
     margin-left: -32px;
 }
+  
+.panel.aceptnext i {
+    font-size: 3rem;
+    position: relative;
+    right: 17px;
+    top: 5px;
+}  
 </style>
