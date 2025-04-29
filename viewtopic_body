@@ -458,8 +458,8 @@ $(resize_images({ 'selector' : '.postbody .content', 'max_width' : {switch_image
 /*ZONA DEL POST */
 .bfpostito { display: grid; margin: 10px 0; height: auto; grid-template-columns: 37% 63%; align-items: start; border: 1px solid var(--n1); background: transparent; }
 /*POSTPROFILE*/
-.postprofile { width: 450px; grid-column: 1; grid-row: 1; height: revert-layer; border-right: 1px solid var(--n1); position: sticky; top: 80px; margin: 0; display: grid; grid-template-columns: 80% 20%; }
-.bfpperfil { width: 100%; display: flex; align-items: center; flex-flow: column; border-right: 1px solid var(--n1); z-index: 9999; }
+.postprofile { width: 450px; grid-column: 1; grid-row: 1; height: revert-layer; position: sticky; top: 80px; margin: 0; display: grid; grid-template-columns: 80% 20%; }
+.bfpperfil { width: 100%; display: flex; align-items: center; flex-flow: column; z-index: 9999; }
 .bfpava { width: 300px; height: 530px; background: var(--pr1); margin: 30px 0 30px 0; border-radius: 10px; }
 .bfpava:before { content: ' '; background-image: var(--fd8); width: 340px; height: 560px; display: block; margin: -17px 0 0 -20px; position: absolute; background-size: cover; z-index: 999999999; }
 .paviav { width: 300px; height: 530px; }
