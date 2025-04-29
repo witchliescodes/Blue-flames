@@ -179,6 +179,8 @@ La copia total o parcial de lo que en este foro se encuentra será considerado c
     background: var(--n5);
     display: grid;
     grid-template-columns: 30% 30% 40%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
         
     
@@ -313,6 +315,7 @@ color: var(--pr3);
     width: 100%;
     position: relative;
     z-index: 9;
+    margin: 0 0 0 -10px;
 }
     
 .bf-elit {
