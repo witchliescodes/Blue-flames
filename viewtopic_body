@@ -458,7 +458,7 @@ $(resize_images({ 'selector' : '.postbody .content', 'max_width' : {switch_image
 /*ZONA DEL POST */
 .bfpostito { display: grid; margin: 10px 0; height: auto; grid-template-columns: 37% 63%; align-items: start; border: 1px solid var(--n1); background: transparent; }
 /*POSTPROFILE*/
-.postprofile { width: 450px; grid-column: 1; grid-row: 1; height: revert-layer; position: sticky; top: 80px; margin: 0; display: grid; grid-template-columns: 80% 20%; }
+.postprofile { width: 450px; grid-column: 1; grid-row: 1; height: revert-layer; position: sticky; top: 90px; margin: 0; display: grid; grid-template-columns: 80% 20%; }
 .bfpperfil { width: 100%; display: flex; align-items: center; flex-flow: column; z-index: 9999; }
 .bfpava { width: 300px; height: 530px; background: var(--pr1); margin: 30px 0 30px 0; border-radius: 10px; }
 .bfpava:before { content: ' '; background-image: var(--fd8); width: 340px; height: 560px; display: block; margin: -17px 0 0 -20px; position: absolute; background-size: cover; z-index: 999999999; }
@@ -670,7 +670,7 @@ div.award { display: inline-block; position: relative; width: 50px; height: 50px
 .aprendiz .bfpinven div.bfpcampo.inventario .bfpconte img{ border: 4px solid var(--apren);}   
 /**CAMBIO DE LADO EN POST**/
 .row1 .bfpostito { display: grid; margin: 10px 0; height: auto; grid-template-columns: 63% 37%; align-items: start; border: 1px solid var(--n1); background: transparent; }
-.row1 .postprofile { width: 454px; grid-column: 2; grid-row: inherit; height: revert-layer; position: sticky; top: 80px; margin: 0; display: flex; flex-flow: row-reverse; }
+.row1 .postprofile { width: 454px; grid-column: 2; grid-row: inherit; height: revert-layer; position: sticky; top: 90px; margin: 0; display: flex; flex-flow: row-reverse; }
 .row1 .bfpperfil { width: 505px; display: flex; align-items: center; flex-flow: column; z-index: 9999; }
 .row1 .bfpli { display: flex; align-items: flex-start; justify-content: center; background: var(--n5); width: 126px;}
 .row1 .bfposti { grid-column: 1; grid-row: 1; text-align: justify; font: 400 1.1em var(--f4); line-height: 1.5em; color: var(--n4); height: -webkit-fill-available; display: flex; flex-flow: column; justify-content: space-between; border-left: 0px; border-right: 1px solid var(--n1);}
