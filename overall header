@@ -661,7 +661,7 @@
   });
 </script>                                                                                          
 <style>
-#Navup-BF { width: 100%; height: 80px; background: var(--n2); position: fixed; top: 0; left: 0; z-index: 9999999; display: flex; align-items: center; justify-content: center; flex-flow: column; border-bottom-left-radius: 13px; border-bottom-right-radius: 10px; }
+#Navup-BF { width: 100%; height: 90px; background: var(--n2); position: fixed; top: 0; left: 0; z-index: 9999999; display: flex; align-items: center; justify-content: center; flex-flow: column; border-bottom-left-radius: 13px; border-bottom-right-radius: 10px; }
 .Titulo-BF { font-family: var(--f5); font-size: 30px; color: var(--n4); line-height:1.8em; margin-left:10px; }
 .Titulo-BF a { color: var(--n4); margin: 0px 0 0px 10px; }
 .Titulo-BF .solar-icons { color: var(--pr4); } 
@@ -670,24 +670,13 @@
 .Navlinks .solar-icons,.Navlinks .fas { color: var(--n4); margin-right: 5px; background: var(--pr5); padding: 5px; border-radius: 5px; font-size: 0.8rem; transition:0.5s linear; }
 .Navlinks a:hover .solar-icons{ background: var(--pr3); }
 .navup-1 { width: 100%; height: 50px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid var(--n1); }
-.nav-down { width: 100%; height: 30px; background: var(--n3); position: relative; display: flex; justify-content: space-between; align-items: center; }
+.nav-down { width: 100%; height: -webkit-fill-available; background: var(--n3); position: relative; display: flex; justify-content: space-between; align-items: center; }
 .downn-img { mix-blend-mode: color-dodge; opacity: 0.6; }
 .left-nav { max-width: 600px; width: auto; z-index: 999; display: flex; align-items: center; justify-content: space-between; margin: 0 0 0 10px; }
-.left-nav a, .left-nav button {
-    font-size: 10px;
-    background: var(--n2);
-    padding: 5px;
-    border-radius: 7px;
-    color: var(--n6);
-    letter-spacing: 2px;
-    margin: 6px;
-    display: block;
-    align-items: center;
-    width: auto;
-}
+.left-nav a, .left-nav button { font-size: 12px; background: var(--n5); padding: 5px; border-radius: 7px; color: var(--n4); letter-spacing: 2px; margin: 5px; display: flex; align-items: center; justify-content: center; width: 15px; }
 #toggle-mode i, a.navbara.bf-noti i, .bf-bot i, .bf-top i { margin: 0 0 0 1px; }
-#toggle-mode{ border: none; padding: 5px; width: 10px; display: flex; align-items: center; justify-content: center; }
-#openModal { width: 20px; border: none; }
+#toggle-mode { border: none; padding: 5px; width: 15px; display: flex; align-items: center; justify-content: center;}
+#openModal { width: 25px; border: none; }
 .left-nav #openModal i { margin: 0 0 0 2px; }
 .right-nav { position: absolute; right: 0; z-index: 999; margin: 10px; font-size: 0; text-transform: uppercase; }
 .right-nav a{ font-size: 8px; background: var(--n2); padding: 5px; border-radius: 7px; color: var(--n6); letter-spacing: 2px; margin: 6px; }
