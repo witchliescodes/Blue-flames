@@ -346,86 +346,7 @@
    
 </div>
   </div>  
-  <div id="Cabecera-BF">
-    <center>
- <div id="gg" class="ggb bg-cover bg-cc">
-			
-				<!-- STAR ANIMATION -->
-				<div class="bg-animation">
-					<div id='stars'></div>
-					<div id='stars2'></div>
-					<div id='stars3'></div>
-					<div id='stars4'></div>
-				</div><!-- / STAR ANIMATION -->
-  </div>
-      </center>
-</div>
-  <div id="Tablon-BF">
-	        
-	<div class="HIS">
-		   
-	</div>
-	   
-	<div class="Contenedortablon-BF">
-		      
-		<div class="caja-button-BF">
-			           
-			<button onclick="prevSlide()" id="prev-slide-button">
-				  ❮  
-			</button>
-			        
-			<button onclick="nextSlide()" id="next-slide-button">
-				  ❯  
-			</button>
-			        
-			<div class="cajamusic-BF">
-				   
-			</div>
-			        
-			<div class="cajaredes">
-				   
-			</div>
-			      
-		</div>
-		      
-		<div class="slider">
-			        
-			<div class="slide">
-				   
-				<div class="Nov">
-					   
-				</div>
-				   
-			</div>
-			        
-			<div class="slide">
-				   
-				<div class="Staff-BF">
-					   
-				</div>
-				   
-			</div>
-			        
-			<div class="slide">
-				   
-				<div class="Eve-BF">
-					   
-				</div>
-				   
-			</div>
-			        
-			<div class="slide">
-				   
-				<div class="Busq-BF">
-					   
-				</div>
-				   
-			</div>
-			      
-		</div>
-		        
-	</div></div>
-<!-- BEGIN hitskin_preview -->
+ <!-- BEGIN hitskin_preview -->
 <div id="hitskin_preview" style="display: block;">
 	<h1><img src="https://2img.net/i/fa/hitskin/hitskin_logo.png" alt=""/> <em>Hit</em>skin.com</h1>
 	<div class="content">
@@ -514,9 +435,23 @@
 
 				<div id="page-header">
 					<div class="headerbar">
+                                            <div id="Cabecera-BF">
+    <center>
+ <div id="gg" class="ggb bg-cover bg-cc">
+			
+				<!-- STAR ANIMATION -->
+				<div class="bg-animation">
+					<div id='stars'></div>
+					<div id='stars2'></div>
+					<div id='stars3'></div>
+					<div id='stars4'></div>
+				</div><!-- / STAR ANIMATION -->
+  </div>
+      </center>
+</div>
 						<div class="inner"><span class="corners-top"><span></span></span>
 
-							<div id="logo-desc">
+							<div id="logo-desc" style="display:none;">
 								<a href="{U_INDEX}" id="logo"><img loading="lazy" src="{LOGO}" alt="{L_INDEX}"/></a>
 								<!-- BEGIN switch_h1 -->
 								<div id="site-title">{switch_h1.MAIN_SITENAME}</div>
@@ -529,26 +464,9 @@
 							<span class="corners-bottom"><span></span></span></div>
 					</div>
 
-					<div class="navbar">
+					<div class="navbar" style="display:none;">
 						<div class="inner"><span class="corners-top"><span></span></span>
 
-							<ul class="linklist navlinks{NAVBAR_BORDERLESS}">
-								<li>{GENERATED_NAV_BAR}</li>
-							</ul>
-
-							<!-- BEGIN switch_search_box -->
-							<div id="search-box">
-								<form method="get" action="{ACTION_SEARCH}" id="search">
-									<p class="nomargin"><input type="text" name="search_keywords" id="keywords"
-															   maxlength="128" class="inputbox search"
-															   value="{L_SEARCH}..."
-															   onclick="if (this.value == '{L_SEARCH}...') this.value = '';"
-															   onblur="if (this.value == '') this.value = '{L_SEARCH}...';"/>
-										{JS_SESSION_ID_INPUT}
-										<input class="button2" type="submit" value="{L_SEARCH}"/></p>
-								</form>
-							</div>
-							<!-- END switch_search_box -->
 
 							<span class="corners-bottom"><span></span></span></div>
 					</div>
@@ -706,12 +624,12 @@
 #Cabecera-BF {
     width: 100%;
     height: 100VH;
-    background-image: var(--cb1);
-    background-size: 100%;
+    background-image: var(--cb2);
+    background-size: 120%;
     margin-top: 70px;
     overflow: hidden;
-    background-position: center;
-    max-height: 1000px;
+    background-position: bottom;
+    background-repeat: no-repeat;
 }
 .bg-animation { position: relative!important; top: 0; width: 100%; z-index: 0; height: 100%; }
 /*NOTIFICACIONES*/
@@ -778,9 +696,17 @@ p.copyright a { margin: 5px; position: relative; top: 3px; color: var(--n5); let
 .conlab i, .conlab em { margin: 10px; font-size: 2em; color: var(--pr5); background: var(--n3); padding: 10px; border-radius: 7px; letter-spacing: 1px; font-weight: 400; transition: all 500ms ease-in-out; }
 .conlab em { padding: 10px 10px 0 10px; font: 400 2em var(--f5); }
 #bfnor1 br, #bfnor2 br, #bfnor3 br, #bfnor4 br, #bfnor5 br { display: block;}
-.bf-norm [id*="bfnor1"], .bf-norm [id*="bfnor2"], .bf-norm [id*="bfnor3"], .bf-norm [id*="bfnor4"], .bf-norm [id*="bfnor5"] { width: 100%; max-height: 0; color: var(--title); position: relative; opacity: 0; transition: ease-in-out .8s; overflow: hidden; font: 11px var(--f-body); letter-spacing: 1px; text-align: justify;}
-#bfcon:checked ~ #bfnor1, #bfon:checked ~ #bfnor2, #bfoff:checked ~ #bfnor3,  #bfgraf:checked ~ #bfnor4, #bfchat:checked ~ #bfnor5{ z-index: 3 !important; opacity: 1; margin: 10px 0 10px 0; max-height: 1200vh; }
-#bfnor1 b, #bfnor2 b, #bfnor3 b, #bfnor4 b, #bfnor5 b { font: 2em var(--f5); font-weight: 800; margin: 6px 10px 0px 0px; color: var(--pr5); width: 40px; display: flex; align-items: center; padding: 10px; justify-content: center; float: left; background: var(--n3); border-radius: 7px; }
+.bf-norm [id*="bfnor1"], .bf-norm [id*="bfnor2"], .bf-norm [id*="bfnor3"], .bf-norm [id*="bfnor4"], .bf-norm [id*="bfnor5"], 
+.bf-norm [id*="bfnor6"], .bf-norm [id*="bfnor7"], .bf-norm [id*="bfnor8"], .bf-norm [id*="bfnor9"], .bf-norm [id*="bfnor10"], 
+.bf-norm [id*="bfnor11"], .bf-norm [id*="bfnor12"], .bf-norm [id*="bfnor13"], .bf-norm [id*="bfnor14"], .bf-norm [id*="bfnor15"], 
+.bf-norm [id*="bfnor16"], .bf-norm [id*="bfnor17"], .bf-norm [id*="bfnor18"], .bf-norm [id*="bfnor19"], .bf-norm [id*="bfnor20"]{ width: 100%; max-height: 0; color: var(--title); position: relative; opacity: 0; transition: ease-in-out .8s; overflow: hidden; font: 11px var(--f-body); letter-spacing: 1px; text-align: justify;}
+#bfcon:checked ~ #bfnor1, #bfon:checked ~ #bfnor2, #bfoff:checked ~ #bfnor3,  #bfgraf:checked ~ #bfnor4, #bfchat:checked ~ #bfnor5, 
+#bfseis:checked ~ #bfnor6, #bfsiete:checked ~ #bfnor7, #bfocho:checked ~ #bfnor8, #bfnueve:checked ~ #bfnor9, #bfdiez:checked ~ #bfnor10,
+#bfonce:checked ~ #bfnor11, #bfdoce:checked ~ #bfnor12, #bftrece:checked ~ #bfnor13, #bfcatorce:checked ~ #bfnor14, #bfquince:checked ~ #bfnor15, 
+#bfdieciseis:checked ~ #bfnor16, #bfdiesiete:checked ~ #bfnor17, #bfdieocho:checked ~ #bfnor18, #bfdienueve:checked ~ #bfnor19, #bfvente:checked ~ #bfnor20 { z-index: 3 !important; opacity: 1; margin: 10px 0 10px 0; max-height: 1200vh; }
+#bfnor1 b, #bfnor2 b, #bfnor3 b, #bfnor4 b, #bfnor5 b, #bfnor6 b, #bfnor7 b, #bfnor8 b, #bfnor9 b, #bfnor10 b, 
+#bfnor11 b, #bfnor12 b, #bfnor13 b, #bfnor14 b, #bfnor15 b, #bfnor16 b, #bfnor17 b, #bfnor18 b, #bfnor19 b, 
+#bfnor20 b{ font: 2em var(--f5); font-weight: 800; margin: 6px 10px 0px 0px; color: var(--pr5); width: 40px; display: flex; align-items: center; padding: 10px; justify-content: center; float: left; background: var(--n3); border-radius: 7px; }
 .titledentro { margin: 10px; font-size: 1.5em; color: var(--pr5); background: var(--n3); padding: 10px; border-radius: 7px; letter-spacing: 1px; font-weight: 400; transition: all 500ms ease-in-out; min-width: 120px; width: 300px; text-align: center;}
 </style>  
 <style>
@@ -875,19 +801,111 @@ p.copyright a { margin: 5px; position: relative; top: 3px; color: var(--n5); let
 .labelcont  { width: -webkit-fill-available; }
 .bfrazis input { display: none;} .bfrazis [id*="assiah1"], .bfrazis [id*="amatsu"], .bfrazis [id*="gehenna"] { width: 100%; max-height: 0; color: var(--n4); position: relative; opacity: 0; transition: ease-in-out .8s; overflow: hidden; font: 11px var(--f-body); letter-spacing: 1px; text-align: justify;}
 #tbs:checked ~ #assiah1, #ama:checked ~ #amatsu, #gehhe:checked ~ #gehenna { z-index: 3 !important; opacity: 1; margin: 10px 0 10px 0; max-height: 10000vh; }
-.raz1 { display: flex; margin: 0 0 20px 0; }
-.humano { width: 600px; height: 500px; background: url('https://i.ibb.co/WpFc6yvX/3.png'); background-size: cover; }
-.ikiro { width: 600px; height: 500px; background: url('https://i.ibb.co/kbyn1bt/1.jpg'); background-size: cover; }
-.kitsune { width: 600px; height: 500px; background: url('https://i.ibb.co/21hJt5jc/2.png'); background-size: cover; }
-.therani { width: 600px; height: 500px; background: url('https://i.ibb.co/h1yHrqwk/4.png'); background-size: cover; }
-.kigen { width: 600px; height: 500px; background: url('https://i.ibb.co/vCWZTZF0/6.png'); background-size: cover; }
-.haten { width: 600px; height: 500px; background: url('https://i.ibb.co/s9Gtwz05/8.jpg'); background-size: cover; }
-.nephis { width: 600px; height: 500px; background: url('https://i.ibb.co/NgZPYV2n/9.jpg'); background-size: cover; }
-.opni { width: 600px; height: 500px; background: url('https://i.ibb.co/WNgSzKv9/7.png'); background-size: cover; }
-.jibaku { width: 600px; height: 500px; background: url('https://i.ibb.co/0yB0drb0/10.jpg'); background-size: cover; }
+.raz1 { display: flex; margin: 0 0 20px 0; height: 500px;}
+raz1 br {display:  none;}  
+.grupo {width: 600px; height: 500px;}
+.humano {
+  width: 600px;
+  height: 500px;
+  background: url('https://i.ibb.co/WpFc6yvX/3.png');
+  background-size: cover;
+}
+.ikiro {
+  width: 600px;
+  height: 500px;
+   background: url('https://i.ibb.co/kbyn1bt/1.jpg');
+    background-size: cover;
+}
+
+.kitsune {
+  width: 600px;
+  height: 500px;
+  background: url('https://i.ibb.co/21hJt5jc/2.png');
+  background-size: cover;
+}
+
+.tengu {
+  width: 600px;
+  height: 500px;
+  background: url('https://images2.imgbox.com/ec/7e/tq47WQTx_o.png');
+  background-size: cover;
+}
+
+.tanuki {
+   width: 600px;
+  height: 500px;
+  background: url('https://cdnb.artstation.com/p/assets/images/images/050/191/491/large/jem-flores-spirit-blossom-teemo-jemflores.jpg');
+  background-size: cover;
+}
+
+.mizuchi {
+   width: 600px;
+  height: 500px;
+  background: url('https://images2.imgbox.com/18/dd/FU0PDttz_o.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.yosei {
+   width: 600px;
+  height: 500px;
+  background: url('https://i.pinimg.com/736x/ec/73/0c/ec730c02c2d396e7563cc7c4b6fd79b1.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.bakeneko {
+   width: 600px;
+  height: 500px;
+  background: url('https://i.pinimg.com/736x/7a/91/7e/7a917ebf44a80f90ebe467e22c3e23a0.jpg');
+  background-size: cover;
+}
+
+.inugami {
+   width: 600px;
+  height: 500px;
+  background: url('https://i.pinimg.com/736x/72/75/b4/7275b410d0757dc50edd1121cf0a5b39.jpg');
+  background-size: cover;
+}
+
+.kigen {
+  width: 600px;
+  height: 500px;
+  background: url('https://i.ibb.co/vCWZTZF0/6.png');
+  background-size: cover;
+}
+
+.haten {
+  width: 600px;
+  height: 500px;
+  background: url('https://i.ibb.co/s9Gtwz05/8.jpg');
+  background-size: cover;
+}
+
+.nephis {
+  width: 600px;
+  height: 500px;
+  background: url('https://i.ibb.co/mFHn4fv6/9.jpg');
+  background-size: cover;
+}
+
+.opni {
+  width: 600px;
+  height: 500px;
+  background: url('https://i.ibb.co/WNgSzKv9/7.png');
+  background-size: cover;
+}
+
+.jibaku {
+  width: 600px;
+  height: 500px;
+  background: url('https://i.ibb.co/1tMGXnfH/5.png');
+  background-size: cover;
+}
 .hibrido { width: 600px; height: 500px; background: url('https://i.ibb.co/VpqCKPqt/hibrido.jpg'); background-size: cover; }
-.part1t { width: 500px; background: var(--n3); padding: 20px; }
+.part1t { width: 535px; background: var(--n3); padding: 20px; }
 .razquien { display: flex; align-items: center; justify-content: space-between; background: var(--n1); padding: 10px; margin: 0; border-radius: 7px; }
+.razquien br { display: none;}  
 .razquien b { font: 800 1.5em var(--f3); text-transform: uppercase; letter-spacing: 1px; }
 .razquien i { font-size: 2em; color: var(--pr5); filter: drop-shadow(0px 0px 3px black); position: relative; top: 5px; } .textraz br { display: block;} .textraz { font: 400 1em var(--f3); line-height: 1.5em; height: 375px; overflow: auto; padding: 0 10px 0 0; margin: 20px 0 0 0; }
 .tbsrazi1 { width: -webkit-fill-available; background: url('https://images2.imgbox.com/7e/0d/zrMl3LcZ_o.png'); display: block; height: 150px; background-size: cover; background-position: 0% 45%; cursor: pointer; display: flex; align-items: center; justify-content: space-between; margin: 0 0 20px 0; }
