@@ -22,6 +22,7 @@
   <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-bold-rounded/css/uicons-bold-rounded.css' /> 
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css' />
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-solid-straight/css/uicons-solid-straight.css' />
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-solid-rounded/css/uicons-solid-rounded.css' />
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-thin-chubby/css/uicons-thin-chubby.css' />  
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
  <script src="script.js"></script>
@@ -278,7 +279,9 @@
 </div>
       <a href="#" id="toggle-mode"><i class="solar-icons" stroke="1.5" icon-name="sun-2"></i></a>
       <button id="openModal"><i class="solar-icons" stroke="1.5" icon-name="settings-2" title="Cambio de cuenta y perfil"></i></button>
+  <a href="https://blueflames.foroactivo.com/h7-mapa-blue-flames-by-pumpkin" title="Mapa de Ryokuto"><i class="solar-icons" stroke="1.5" icon-name="compass"></i></a>
     <div class="adminnav">  </div>
+    
     </div>
     <div class="right-nav">
       <a class="nav" href="{U_INDEX}">Indice</a>
@@ -621,15 +624,15 @@
 .tabm h1 { font: 800 2.2em var(--f5); align-items: flex-start; justify-content: center; color: var(--texor); margin: 1px 0; letter-spacing: -1px; width: 340px; display: flex; }
 /*Card*/
 /*CABECERA*/ 
-#Cabecera-BF {
-    width: 100%;
+#page-header {
     height: 100VH;
     background-image: var(--cb2);
-    background-size: 120%;
     margin-top: 70px;
     overflow: hidden;
-    background-position: bottom;
+    background-position:center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 130%;
 }
 .bg-animation { position: relative!important; top: 0; width: 100%; z-index: 0; height: 100%; }
 /*NOTIFICACIONES*/
@@ -886,7 +889,7 @@ raz1 br {display:  none;}
 .nephis {
   width: 600px;
   height: 500px;
-  background: url('https://i.ibb.co/mFHn4fv6/9.jpg');
+  background: url('https://i.ibb.co/YBTqtQgP/nephilim.png');
   background-size: cover;
 }
 
