@@ -755,23 +755,23 @@ div#forosContainer_c4 {
     letter-spacing: 2px;
     color: var(--n4);
 }
+  
 #c4 .part1-foro .solar-icons {
     width: 74px;
-    font-size: 2rem;
+    font-size: 1.5rem;
     float: left;
-    background: var(--pr1);
-    color: var(--pr4);
+    background: transparent;
+    color: var(--pr3);
     position: absolute;
     left: 0;
     top: 0;
-    height: 46%;
-    clip-path: polygon(100% 0, 100% 80%, 50% 100%, 0 80%, 0 0);
+    height: -webkit-fill-available;
     display: grid;
     z-index: 1;
     align-items: center;
     justify-content: center;
-    border-right: 1px solid var(--n5);
 }
+  
 #c4 .part2-foro {
     padding: 10px;
     display: flex;
@@ -781,6 +781,7 @@ div#forosContainer_c4 {
     height: 40px;
     overflow: hidden;
 }
+  
 #c4 dl.icon {
     width: 100%;
 }
@@ -791,33 +792,48 @@ div#forosContainer_c4 {
     justify-content: center;
     margin-left: 10px;
 }
- #c4 span.title {
-    width: 80%;
+#c4 span.title {
+    width: 100%;
     display: flex;
-    gap: 10px;
-    font-size: 0.7rem !important;
+    font-size: 0.8em !important;
     align-items: center;
-    justify-content: center;
-    line-height: 1em;
+    justify-content: flex-start;
+    line-height: 1.5em;
+    margin: 0 0 0 33px;
 }
 #c4 span.title .temarecien {
-    padding: 5px;
+    padding: 8px;
     background: var(--n8);
-    display: flex;
     color: var(--pr4);
     height: 25px;
-    width: 130px;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    border-radius: 10px;
+    line-height: 25px;
+    text-align: center;
+    border-radius: 6px;
     border: 1px solid var(--n5);
+    display: inline-block;
+    max-width: 130px;
+    width: 130px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    vertical-align: bottom;
 }
 #c4 .infopost {
     height: 25px;
     font-size: 0.6rem;
     color: var(--n6);
-    text-align: left;
+    background: var(--n8);
+    margin: 0 0 0 10px;
+    width: 135px;
+    padding: 8px;
+    line-height: 1.3em;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    flex-flow: column-reverse;
+    border: 1px solid var(--n5);
 }
 #c4 span.lastpost-avatar {
     margin: 0;
@@ -827,24 +843,25 @@ div#forosContainer_c4 {
     left: 0;
     bottom: 0;
     width: 74px;
-    height: 150px;
-    background: var(--n5);
+    height: 167px;
+    background: transparent;
     border-right: 1px solid var(--n5);
 }
 #c4 span.lastpost-avatar img {
     width: 100px;
     height: auto;
-    filter: grayscale(1);
+    border-radius: 0px !important;
+    margin: 0px 0px 0 -9px;
 }
 #c4 .part3-foro {
-    font-size: 0.75rem;
+    font-size: 0.8em !important;
     line-height: 1em;
     font-family: var(--f4);
-    width: 80%;
-    margin-left: 75px;
+    width: 82%;
+    margin: 0px 0 0 75px;
     text-align: justify;
     box-sizing: border-box;
-    padding: 10px 20px;
+    padding: 15px;
     color: var(--n6);
 }
 #c4 .cajadirect {
@@ -887,26 +904,33 @@ div#forosContainer_c4 {
 }
 #c4 .staticpost {
     position: absolute;
-    bottom: 0;
-    display: grid;
+    bottom: -1px;
     left: 0;
     font-size: 0.6rem;
     width: 74px;
     z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-flow: column;
+    flex-direction: column-reverse;
 }
 #c4 .staticpost dd {
     width: 100%;
     display: flex;
-    background: var(--pr1);
+    background: var(--n2);
     justify-content: center;
     font-family: var(--f4);
     font-size: 0.6rem;
     color: var(--pr4);
+    letter-spacing: 1px;
+    border-top: 1px solid var(--n5);
+    border-right: 1px solid var(--n5);
 }
 #c4 .staticpost dfn {
     font-style: normal;
     margin-left: 10px;
-    color: var(--n5);
+    color: var(--n6);
     text-transform: uppercase;
 }
 /* Definición de la animación específica para .Categoria2 .marcoforum2 */
