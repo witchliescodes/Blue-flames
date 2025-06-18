@@ -85,11 +85,11 @@
 
 <style>
   .contenedor-categorias {
-    margin: 1%;
     padding: 20px;
     background: var(--n8);
     border-radius: 20px;
     border: 1px solid var(--n7);
+      width: 1200px;
 }
 .divider-BF {
     background-image: var(--cb4);
@@ -474,7 +474,7 @@
     display: block;
     text-align: right;
     font-family: var(--f5);
-    background: var(--n5);
+    background: var(--grad1);
     padding: 10px;
     border-radius: 10px;
     letter-spacing: 3px;
@@ -555,7 +555,7 @@
     align-items: center;
 }
 #c2 #f3 .part2-foro,#c2 #f4 .part2-foro,#c2 #f5 .part2-foro {
-width: 25%;
+width: 35%;
     height: 100%;
     display: grid;
     font-size: 0.8rem;
@@ -577,7 +577,9 @@ display: none;
     margin-left: -10px;
     font-family: var(--f3);
     font-weight: bold;
-  font-size:0.7rem;
+    font-size: 0.7rem;
+    line-height: 1;
+    text-align: left;
 }
 #c2 #f4 .staticpost, #c2 #f3 .staticpost, #c2 #f5 .staticpost {
     position: absolute;
@@ -627,7 +629,7 @@ height: 50px;
     width: 50px;
     border-radius: 100px;
     text-align: center;
-    margin-left: 30px;
+    margin-left: 62px;
     border: 2px solid var(--n5);
     outline: 10px solid var(--n9);
     margin-top: 5px;
@@ -668,14 +670,14 @@ height: 50px;
     background: var(--n2);
 }
 #c2 #f3 .part3-foro,#c2 #f4 .part3-foro,#c2 #f5 .part3-foro {
-    width: 50%;
+    width: 40%;
   height:100%;
 }
 #c2 #f3 .part1-foro .solar-icons,#c2 #f4 .part1-foro .solar-icons,#c2 #f5 .part1-foro .solar-icons {
     display: block;
     font-size: 2rem;
     margin-bottom: 15px;
-    background: var(--pr3);
+    background: var(--grad1);
     color: var(--n5);
     padding: 10px;
     border-radius: 10px;
@@ -738,9 +740,12 @@ div#forosContainer_c4 {
 #c4 .part1-foro {
     padding: 20px;
     text-align: left;
-    background: var(--n2);
+    position: relative;
     font-size: 1rem;
+    background-image: linear-gradient(90deg, var(--n3) 35.3%, var(--pr3) 100.3%);
+    z-index: 99999 !important;
 }
+  
 #c4 .part1-foro a {
     display: flex;
     width: 100%;
@@ -947,16 +952,15 @@ div#forosContainer_c4 {
     letter-spacing: 1px;
     text-transform: uppercase;
 }
-#c3 .tab.active .solar-icons, #c5 .tab-c5.active .solar-icons{
+#c3 .tab.active .solar-icons, #c5 .tab-c5.active .solar-icons,#c3 .tab.active .fas, #c5 .tab-c5.active .fas{
     transform: rotate(24deg) !important;
     color: var(--pr3) !important;
-    background: var(--n9) !important;
     padding: 10px !important;
     border-radius: 100px !important;
     margin-top: -5px !important;
 }
 
-#c3 .tab .solar-icons, #c5 .tab-c5 .solar-icons {
+#c3 .tab .solar-icons, #c5 .tab-c5 .solar-icons,#c3 .tab .fas, #c5 .tab-c5 .fas {
    transform: rotate(0deg) !important;
     float: left !important;
     font-size: 30px !important;
@@ -1030,6 +1034,11 @@ div#forosContainer_c4 {
     background-size: cover;
     background-position: center;
 }
+#c3 .content.content5 {
+    background: var(--fr5);
+    background-size: cover;
+    background-position: center;
+}
   /*FORO SUR*/
 #c5 #f13 .ImagenCat4,#c5 #f18 .ImagenCat4 ,#c5 #f23 .ImagenCat4 ,#c5 #f24 .ImagenCat4  {
     background: var(--img5);
@@ -1053,22 +1062,22 @@ div#forosContainer_c4 {
     background-size: cover;
 }
 #c5 .content-c5.content1 {
-    background: var(--fr5);
-    background-size: cover;
-    background-position: center;
-}
-#c5 .content-c5.content2 {
     background: var(--fr6);
     background-size: cover;
     background-position: center;
 }
-#c5 .content-c5.content3 {
+#c5 .content-c5.content2 {
     background: var(--fr7);
     background-size: cover;
     background-position: center;
 }
-#c5 .content-c5.content4 {
+#c5 .content-c5.content3 {
     background: var(--fr8);
+    background-size: cover;
+    background-position: center;
+}
+#c5 .content-c5.content4 {
+    background: var(--fr9);
     background-size: cover;
     background-position: center;
 }
@@ -1106,7 +1115,7 @@ div#forosContainer_c4 {
     text-decoration: none;
     font-size: 25px;
 }
-#c3 .part1-foro .solar-icons, #c5 .part1-foro .solar-icons{    color: var(--pr3);
+#c3 .part1-foro .solar-icons,#c3 .part1-foro .fas, #c5 .part1-foro .solar-icons, #c5 .part1-foro .fas{    color: var(--pr3);
     font-size: 40px;
     float: left;
     padding: 10px;
