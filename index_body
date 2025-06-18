@@ -86,7 +86,7 @@
       <div class="est-post">Sin respuestas</div>
       <div class="est-post">Cerrado</div>
     </div>
-        <img src="https://images2.imgbox.com/c1/43/sfQzMOck_o.png" />
+        <img src="https://i.ibb.co/23PnjBcN/Fondo-2.png" />
       </div>
   </div>
 </div>
@@ -153,9 +153,9 @@
     font-size: 12px;
     font-family: var(--f4);
     display: grid;
-    grid-template-columns: 54% 0% 46% 0%;
     grid-template-rows: 170px 153px 183px;
     justify-content: space-between;
+    width: 1300px;
 }
 .est-cont1 {
     grid-column: 1 / 3;
@@ -378,7 +378,8 @@
     width: 95%;
     height: 49%;
     overflow: auto;
-  background: transparent;
+    background: transparent;
+    text-align: justify;
 }  
   
 .estsmover {
@@ -414,7 +415,7 @@
     height: auto;
     writing-mode: vertical-lr;
     transform: rotate(360deg);
-    background: var(--pr1);
+    background: var(--pr3);
     padding: 10px;
     width: auto;
     border-radius: 30px;
@@ -444,7 +445,7 @@
 }
   
 .grupos a em {
-    background: var(--group);
+    background: transparent;
     width: 40px;
     height: 40px;
     display: flex;
@@ -479,7 +480,7 @@
     position: relative;
     top: 43px;
     transition: all 500ms;
-    mix-blend-mode: hue;
+    mix-blend-mode: multiply;
 }
   
 .gcont {
@@ -496,10 +497,11 @@
 .graprendiz  { background: var(--gapr);}
 .grakuhei { background: var(--gaku); }  
 .grusuarios {  background: var(--gus);} 
+.grciviles { background: var(--gcivil);}
   
 .grupos a:hover em {top: 0px;} 
 .grupos a:hover .gn { opacity: 1;}
-.grupos a:hover .cn { top: -75px;}
+.grupos a:hover .cn { top: -80px;}
 
 .grstaff em:after {
   content: ''; 
@@ -540,6 +542,14 @@
   width: 30px; 
   height: 30px;
   }  
+  
+.grciviles em:after {
+  content: ''; 
+  background-image: var(--icivil); 
+  background-size: cover; 
+  width: 30px; 
+  height: 30px;
+  }    
  
 .estad {
     display: flex;
@@ -552,7 +562,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: var(--pr1);
+    background: var(--pr3);
     width: 49%;
     height: 30px;
     border-radius: 7px;
