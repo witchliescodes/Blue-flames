@@ -554,12 +554,13 @@
     display: grid;
     align-items: center;
 }
-#c2 #f3 .part2-foro,#c2 #f4 .part2-foro,#c2 #f5 .part2-foro {
-width: 35%;
+#c2 #f3 .part2-foro, #c2 #f4 .part2-foro, #c2 #f5 .part2-foro {
+    width: 35%;
     height: 100%;
-    display: grid;
+    display: flex;
     font-size: 0.8rem;
     line-height: 1em;
+    align-items: center;
     box-sizing: border-box;
     padding: 10px;
     justify-content: center;
@@ -567,19 +568,22 @@ width: 35%;
 #c2 #f3 .lastpost-avatar,#c2 #f4 .lastpost-avatar,#c2 #f5 .lastpost-avatar {
 display: none;
 }
-#c2 #f3 a.temarecien,#c2 #f4 a.temarecien,#c2 #f5 a.temarecien {
-    margin-top: 10px;
+#c2 #f3 a.temarecien, #c2 #f4 a.temarecien, #c2 #f5 a.temarecien {
     display: block;
     padding: 10px;
     background: var(--n2);
     border-radius: 10px;
-    width: 100%;
-    margin-left: -10px;
+    width: 150px;
+    margin: 10px 0 5px 5px;
     font-family: var(--f3);
     font-weight: bold;
     font-size: 0.7rem;
     line-height: 1;
     text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    vertical-align: bottom;
 }
 #c2 #f4 .staticpost, #c2 #f3 .staticpost, #c2 #f5 .staticpost {
     position: absolute;
@@ -605,45 +609,49 @@ display: none;
     margin-left: 5px;
     color: var(--pr3);
 }
-#c2 #f5 .infopost,#c2 #f4 .infopost,#c2 #f3 .infopost {
-    font-size: 0.55rem !important;
-    display: block;
-    line-height: 1em;
-    text-align: left;
+#c2 #f5 .infopost, #c2 #f4 .infopost, #c2 #f3 .infopost {
+    font-size: 0.8em !important;
+    display: flex;
+    line-height: 0.9em;
     color: var(--n6);
-    padding: 5px 0px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    width: 150px;
+    margin: 0px 0 0px 5px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
 }
 #c2 #f3 dd.lastpost, #c2 #f4 dd.lastpost, #c2 #f5 dd.lastpost {
-    width: 100% !important;
+width: 100% !important;
     font-size: 0.8rem !important;
     height: 100%;
     justify-content: center;
     display: inline-grid;
-    text-align: center;
 }
-#c2 #f3 span.lastpost-avatar,#c2 #f4 span.lastpost-avatar,#c2 #f5 span.lastpost-avatar {
-height: 50px;
+#c2 #f3 span.lastpost-avatar, #c2 #f4 span.lastpost-avatar, #c2 #f5 span.lastpost-avatar {
+    height: 50px;
     overflow: hidden;
     display: grid;
     justify-content: center;
     width: 50px;
     border-radius: 100px;
     text-align: center;
-    margin-left: 62px;
     border: 2px solid var(--n5);
     outline: 10px solid var(--n9);
-    margin-top: 5px;
+    margin: 10px 0px 5px 60px;
 }
-#c2 #f4 .marcoforumS,#c2 #f5 .marcoforumS,#c2 #f3 .marcoforumS {
+#c2 #f4 .marcoforumS, #c2 #f5 .marcoforumS, #c2 #f3 .marcoforumS {
     position: absolute;
     top: 0;
     background: var(--fd7);
     background-size: cover;
-    height: 80px;
+    height: 75px;
     width: 80px;
     z-index: 1;
-    margin-top: 4px;
-    margin-left: -16px;
+    margin-top: 7px;
+    margin-left: -15px;
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -652,7 +660,6 @@ height: 50px;
     height: auto;
     border-radius: 0px !important;
     margin-top: -40px;
-    filter: grayscale(1);
 }
 #c2 #f3 .DescripcionForumS, #c2 #f4 .DescripcionForumS, #c2 #f5 .DescripcionForumS {
     height: 120px;
@@ -678,7 +685,7 @@ height: 50px;
     font-size: 2rem;
     margin-bottom: 15px;
     background: var(--grad1);
-    color: var(--n5);
+    color: var(--pr3);
     padding: 10px;
     border-radius: 10px;
     border: 1px solid;
