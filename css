@@ -7,8 +7,9 @@ body.js-enabled {
 #content-container div#main {
     margin-bottom: 50px;
     overflow: unset !important;
+    display: grid;
+    justify-content: center;
 }
-
 h1.page-title {
     font-family: var(--f5);
     font-weight: 400;
@@ -21,46 +22,48 @@ h1.page-title {
 }
 :root {
   /* Star */
-  --star: #fff;
+  --star:#08C2FF;
   /* Cabecera foro*/
   --cb1: url(https://i.ibb.co/QFgCn05/Cabecera-BF.png);
-  /*Cabecera tablon*/
-  --cb2:url(https://i.ibb.co/HK8KyFH/Tablon-Rojo.png);
-  --cb3:url(https://i.ibb.co/rybVpyM/Tablonrojo2.png);
+  --cb2: url(https://i.ibb.co/LdSQLgz9/cabeceranueva.png);
   /*Borde de categorias*/
   --cb4:url(https://i.ibb.co/JvSyR56/Divider-BF.png);
   /* Colores principales */
-  --pr1: #201f74;
-  --pr2: #121134;
-  --pr3: #fd1905;
-  --pr4: #08C2FF;
-  --pr5: #024CAA;
+  --pr1: #253867;
+  --pr2: #091845;
+  --pr3: #9d332a;
+  --pr4: #61ade1;
+  --pr5: #1b60c7;
   --pr7: #538347;
   /* Colores neutrales */
-  --n1: #202020;
-  --n2: #181818;
-  --n3: #1c1b1b;
-  --n4: #F1F1F1;
-  --n5: #000;
+  --n1: #212125;
+  --n2: #07070a;
+  --n3: #1f1f23;
+  --n4: #F5F5F5;
+  --n5: #04040b;
   --n6: #a7a7a7;
   --n7: #fff2;
   --n8:#0005;
-  --n9: #292929;
+  --n9: #080414;
+  /* Gracientes de color*/
+  --grad1: linear-gradient(90deg, var(--n3) 35.3%, var(--pr3) 100.3%);
   /*Transparencias*/
   --t1: #181818c7;
   --pr6: #1a194cbd;
   /*GRUPOS*/
-  --direc: #9636D6; 
-  --staff: #9636D6;
+  --direc: #1abc9c; 
+  --staff: #1abc9c;
   --exor: #1B9EDB; 
   --apren: #A2309E;
   --aku: #A11515;
+  --civil: #ff9626;
   --nuev: #858585; 
   /*TRANSPARENCIAS GRUPOS*/
-  --tdirect: #9636d67d;
+  --tdirect: #1abc9c94;
   --texor: #0a405896;
   --taku: #4a0b0bbd;
   --tapren: #441443a8;
+  --tcivil: #ff962663;
   /* Fonts */
   --f1: 'Yuji Boku';
   --f2: 'Cherry Bomb One';
@@ -70,9 +73,9 @@ h1.page-title {
   /*Fondo categorias*/
     --fd1:url(https://i.ibb.co/Fg2VzgH/backgroundblue.png);
     /*CATEGORIAS*/
-  --fd2:url(https://i.ibb.co/2hwwSP3/fd2.png);
+  --fd2:url(https://i.ibb.co/mVGM35rp/Fondo-1.png);
   --fd5:url(https://i.ibb.co/L8dn75m/Categoria-Staff.png);
-  --fd6:url(https://i.ibb.co/NZbMS3S/categoria3.png);
+  --fd6:url(https://i.ibb.co/ycWyX3Fn/Fn3.png);
   /*Decoración de flores y marcos*/
   --fd3:url(https://i.ibb.co/GkZfWCp/frame.png);
   --fd7:url(https://i.ibb.co/34wpQcQ/flower.png);
@@ -85,36 +88,31 @@ h1.page-title {
   --fd10:url(https://i.ibb.co/dJPjmrF9/floral.png);
   /*FOROS TABS NORTE*/
   --fr1:url(https://i.ibb.co/cBVs68k/puerto.png);
-  --img1:url();
   --fr2:url(https://i.ibb.co/cK2JCfWy/capital.png);
-  --img2:url();
   --fr3:url(https://i.ibb.co/svRqVNsg/academia.png);
-  --img3:url();
-  --fr4:url(https://cdnb.artstation.com/p/assets/images/images/070/145/677/large/angel-angelov-sewercity.jpg?1701861094);
-  --img4:url();
+  --fr4:url(https://game.gtimg.cn/images/yxzj/zlkdatasys/images/image/20231228/17037595201112.jpg);
+  --fr5:url(https://i.ibb.co/Ng3D03TN/wqodn59alwk91.jpg);
   /*FOROS TABS SUR*/
-  --fr5:url(https://game.gtimg.cn/images/yxzj/zlkdatasys/images/image/20240103/17042524251926.jpg);
-  --img5:url();
   --fr6:url(https://game.gtimg.cn/images/yxzj/zlkdatasys/images/image/20231228/17037600428268.jpg);
-  --img6:url();
-  --fr7:url(https://game.gtimg.cn/images/yxzj/zlkdatasys/images/image/20231228/17037595201112.jpg);
-  --img7:url();
-  --fr8:url(https://cdna.artstation.com/p/assets/images/images/046/457/346/large/pengzhen-zhang-002.jpg?1645154965);
-  --img8:url();
+  --fr7:url(https://cdnb.artstation.com/p/assets/images/images/062/737/065/large/ricky-ho-aoc-biome-volcano-transition-concept02-v01-rickyho.jpg?1683822075);
+  --fr8:url(https://i.pinimg.com/1200x/60/cf/10/60cf1087ba91d77a77d236ed022e7d06.jpg);
+ --fr9:url(https://cdna.artstation.com/p/assets/images/images/046/457/346/large/pengzhen-zhang-002.jpg?1645154965);
   /*Fondos estadisticas y afiliaciones*/
   --estf: url(https://images2.imgbox.com/3c/62/FnAbiOe7_o.png);
   /*Imagenes grupos*/
-  --gsta: url('https://images2.imgbox.com/91/ff/jdHi529F_o.png');
-  --gext: url('https://images2.imgbox.com/b8/1f/afEwq8En_o.png');
-  --gapr: url('https://images2.imgbox.com/73/af/M02LAQMq_o.png'); 
-  --gaku: url('https://images2.imgbox.com/7a/28/6LKLVCJc_o.png');
-  --gus: url('https://images2.imgbox.com/4e/8c/sms1HL5J_o.png');
+  --gsta: url('https://images2.imgbox.com/93/d6/QPWG0CNi_o.png');
+  --gext: url('https://images2.imgbox.com/1d/86/k9BW1uES_o.png');
+  --gapr: url('https://images2.imgbox.com/9e/7c/NiR5ORiT_o.png'); 
+  --gaku: url('https://images2.imgbox.com/63/e6/hrl4ehVw_o.png');
+  --gus: url('https://images2.imgbox.com/76/eb/PkLUSAO9_o.png');
+  --gcivil: url('https://images2.imgbox.com/37/28/7sZdFvfg_o.png');
   /*Iconos de grupos*/
-  --istaf: url('https://images2.imgbox.com/4f/8a/2Pk7H01D_o.png');
-  --iexor: url('https://images2.imgbox.com/d9/b7/H2AGo2Ef_o.png');
-  --iaku: url('https://images2.imgbox.com/03/6b/SmITBaB0_o.png');
-  --iapre: url('https://images2.imgbox.com/b3/c1/yrTJdk4a_o.png');
-  --ius: url('https://images2.imgbox.com/75/1e/ncbS4Lgn_o.png');
+  --istaf: url('https://images2.imgbox.com/18/ff/AKHq4zZv_o.png');
+  --iexor: url('https://images2.imgbox.com/98/d5/iDs4tD0G_o.png');
+  --iaku: url('https://images2.imgbox.com/50/77/2Kx7jjlz_o.png');
+  --iapre: url('https://images2.imgbox.com/e8/d5/tMpzwNux_o.png');
+  --ius: url('https://images2.imgbox.com/e2/15/HaY7clrS_o.png');
+  --icivil: url('https://images2.imgbox.com/74/ba/BMzXfFIB_o.png');
   /*avisos de post*/
   --cerado: url('https://i.ibb.co/S7nFGXM/cerrado.png');
   --nuevo: url('https://i.ibb.co/WpnNZH8/MSJ-nuevo.png');
@@ -123,15 +121,17 @@ h1.page-title {
   /*FONDO POSTS*/
   --fpg: url('https://images2.imgbox.com/ef/1a/exTuDHmO_o.png');
   /*Imagenes de flores por grupo en posts*/
-  --pstaff: url('https://images2.imgbox.com/85/da/kmIkh9nn_o.png');
+  --pstaff: url('https://images2.imgbox.com/91/19/sHgIFt4A_o.png');
   --pexors: url('https://images2.imgbox.com/9f/eb/l5eH5Lif_o.png');
   --papren: url('https://images2.imgbox.com/97/1d/JdHyhqml_o.png');
   --pakuhe: url('https://images2.imgbox.com/06/82/hOkXH1zT_o.png');
+  --pcivil: url('https://images2.imgbox.com/79/ef/e1WGP7aZ_o.png');
   /*Header por grupo en post*/
-  --cstaff: url('https://images2.imgbox.com/2d/30/KqJJFIjX_o.png');
+  --cstaff: url('https://images2.imgbox.com/2f/77/V9DFn2Zh_o.png');
   --cexo: url('https://images2.imgbox.com/e9/43/RguQmb7w_o.png');
   --caku: url('https://images2.imgbox.com/ff/af/xRkdrhnU_o.png');
   --capre: url('https://images2.imgbox.com/57/48/xNP4TJGt_o.png');
+  --ccivil: url('https://images2.imgbox.com/f7/de/qBLeeQCC_o.png');
   /*Root Switcheroo*/
   --color-text: rgba(255, 255, 255, 0.87);
   --color-bg: #17141b;
@@ -151,8 +151,8 @@ h1.page-title {
 }
 
 *::selection{
- background: var(--pr6);
- color: var(--n4);
+ background: var(--pr5);
+ color: white;
 }
 
 a { color: var(--pr5); text-decoration: none; letter-spacing: 1px; transition: all 600ms;  overflow: hidden;     text-overflow: ellipsis; }
@@ -183,21 +183,37 @@ background-attachment: fixed;
     background-size: cover;
     background-position-y:-300px;
   /*Responsive texto*/
-  font-size: clamp(11px, 2vw, 14px);
+  font-size: clamp(14px, 2vw, 16px);
   color: var(--n4);
 
 }
 #wrap {
-  background:transparent; 
-  padding:0px;
-  margin:0px;
+    background: transparent;
+    margin: 0px;
+    width: 100%;
+    padding: 0px;
+}
+div#page-header {
+    margin: 0px !important;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.headerbar {
+    margin: 0px !important;
+    padding: 0px !important;
+    width: 100%;
+}
+.conteneur_container_IE {
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 #wrap #main {
     padding: 10px;
-    margin: 50px;
     border-radius: 20px;
 }
-#page-header,#fa_toolbar,.Replis-BF .h3,div#left{
+#fa_toolbar,.Replis-BF .h3,div#left{
     display: none;
 }.Navlinks a.navbara{position:relative;}
 span.new-message, span.toread-message {
@@ -436,8 +452,60 @@ dl.codebox code {
 }
 .colorpicker { z-index: 3; }
 
+/* forebg */
 
-/* Cuadro de respuesta en Previsualización*/
+.forabg {
+    margin-bottom: 4px;
+    clear: both;
+    background-color: var(--n2);
+    background-image: url(https://2img.net/i/fa/empty.gif);
+    background-repeat: repeat-x;
+    background-position: 0 0;
+    border: 2px solid #;
+    padding: 0 5px;
+}
+
+/* Estilo de tabla - Mephis*/
+.tabla-elementos {
+  width: 100%;
+  max-width: 800px;
+  margin: 30px auto;
+  border-collapse: separate;
+  border-spacing: 10px;
+  font-family: 'Lota', sans-serif;
+  font-size: 13px;
+  background-color: var(--n2);
+  border: 2px solid var(--n3);
+  border-radius: 12px;
+  color: var(--n4);
+  overflow: hidden;
+}
+.tabla-elementos th {
+  background-color: #006688;
+  color: var(--n4);
+  padding: 10px;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 10px 10px 0 0;
+}
+.tabla-elementos td {
+  background-color: var(--n3);
+  padding: 10px;
+  vertical-align: top;
+  border-radius: 8px;
+}
+
+
+
+/* Si estás en foros activos como Foroactivo, puedes agregar esta media query para más seguridad */
+@media screen and (max-width: 768px) {
+  .tabla-elementos {
+    font-size: 12px;
+    overflow-x: auto;
+    display: block;
+  }
+}
+
 
 
 /**TEXT AREA DE LOS POSTS**/
@@ -617,9 +685,9 @@ input.post {
     color: var(--n4);
     min-height: 3em;
     overflow: hidden;
-    line-height: 1.4em;
+    line-height: 1.5em;
     font-family: var(--f3);
-    font-size: 1em;
+    font-size: 1.5em;
     width: -webkit-fill-available;
 }
 
@@ -1336,3 +1404,41 @@ body #simple-wrap {
     display: flex!important;
     flex-wrap: wrap!important;
 }
+dl.codebox.spoiler img {
+    max-width: 100%;
+}
+
+/*TABLAS DEL FORO*/
+
+.ptextan table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10px 0;
+    background-color: var(--n2);
+}
+
+.ptextan table th, .ptextan table td {
+    border: 1px solid var(--n1);
+    padding: 8px;
+    text-align: center;
+    font-size: 0.7em;
+    font-family: var(--f3);
+}
+
+.ptextan table th[colspan="2"] {
+    background-color: var(--pr5);
+    font-size: 1em;
+    font-family: var(--f3);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.ptextan table th {
+    background-color: var(--n1);
+    font-size: 0.8em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: var(--f4);
+}
+
+.bfnor3 br { display: block!important;}
