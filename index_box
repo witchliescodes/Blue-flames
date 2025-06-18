@@ -350,8 +350,8 @@
   /*CATEGORIA 2*/
 #c2 .Categoria2 {
     position: absolute;
-    width: 60%;
-    height: 95%;
+    width: 63%;
+    height: 100%;
     background: var(--fd2);
     background-size: contain;
     top: 0;
@@ -731,16 +731,17 @@ div#forosContainer_c4 {
     height: 500px;
 }
 #c4 .foro {
-  position:Relative;
+    position: Relative;
     display: inline-grid;
     width: calc(70% / 2);
     box-sizing: border-box;
     height: calc(450px / 2);
     background: var(--n1);
     float: left;
-    border-radius: 20px;
-    margin-top: 10px;
-    margin-left: 10px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    margin-top: 16px;
+    margin-left: 15px;
     border: 1px solid var(--n5);
     overflow: hidden;
 }
