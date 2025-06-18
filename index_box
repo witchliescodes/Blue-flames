@@ -900,7 +900,7 @@ div#forosContainer_c4 {
     background-repeat: no-repeat;
     right: 0;
     animation: float 2.5s infinite;
-  z-index:2;
+    z-index: 999999 !important;
 }
 #c4 .staticpost {
     position: absolute;
