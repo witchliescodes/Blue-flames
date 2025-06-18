@@ -900,7 +900,7 @@ div#forosContainer_c4 {
     content: '';
     background: var(--fd6);
     height: 500px;
-    width: 35%;
+    width: 30%;
     background-size: contain;
     display: block;
     position: absolute;
