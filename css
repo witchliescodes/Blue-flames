@@ -21,61 +21,56 @@ h1.page-title {
     text-align: center;
 }
 :root {
-  /* Star */
-  --star:#08C2FF;
-  /* Cabecera foro*/
-  --cb1: url(https://i.ibb.co/QFgCn05/Cabecera-BF.png);
-  --cb2: url(https://i.ibb.co/LdSQLgz9/cabeceranueva.png);
-  /*Borde de categorias*/
-  --cb4:url(https://i.ibb.co/JvSyR56/Divider-BF.png);
-  /* Colores principales */
-  --pr1: #253867;
-  --pr2: #091845;
-  --pr3: #9d332a;
-  --pr4: #61ade1;
-  --pr5: #1b60c7;
-  --pr7: #538347;
-  /* Colores neutrales */
-  --n1: #212125;
-  --n2: #07070a;
-  --n3: #1f1f23;
-  --n4: #F5F5F5;
-  --n5: #04040b;
-  --n6: #a7a7a7;
-  --n7: #fff2;
-  --n8:#0005;
-  --n9: #080414;
-  /* Gracientes de color*/
-  --grad1: linear-gradient(90deg, var(--n3) 35.3%, var(--pr3) 100.3%);
-  /*Transparencias*/
-  --t1: #181818c7;
-  --pr6: #1a194cbd;
-  /*GRUPOS*/
-  --direc: #1abc9c; 
-  --staff: #1abc9c;
-  --exor: #1B9EDB; 
-  --apren: #A2309E;
-  --aku: #A11515;
-  --civil: #ff9626;
-  --nuev: #858585; 
-  /*TRANSPARENCIAS GRUPOS*/
-  --tdirect: #1abc9c94;
-  --texor: #0a405896;
-  --taku: #4a0b0bbd;
-  --tapren: #441443a8;
-  --tcivil: #ff962663;
-  /* Fonts */
-  --f1: 'Yuji Boku';
-  --f2: 'Cherry Bomb One';
-  --f3: 'Arial', bold;
-  --f4: 'calibri';
-  --f5: 'Rosie Brown';
+    --star: #f2f1ed;
+    --cb2: url(https://images2.imgbox.com/b7/7f/cv5IhBeP_o.png);
+    --cb4: url(https://images2.imgbox.com/07/15/tvIYDIZv_o.png);
+    --pr1: #781f37;
+    --pr2: #763f4a;
+    --pr3: #79565d;
+    --pr4: #f2f1ed;
+    --pr5: #7b3548;
+    --pr7: #538347;
+    --pr8: #bcbda5;
+    --n1: #060102;
+    --n2: #1d060a;
+    --n3: #3d0812;
+    --n4: #f2f1ed;
+    --n5: #1d060a;
+    --n6: #a7a7a7;
+    --n7: #fff2;
+    --n8: #0005;
+    --n9: #1d060a;
+    --grad1: linear-gradient(90deg, var(--grd1) 35.3%, var(--grd2) 100.3%);
+    --grd1: #1d060a;
+    --grd2: #781f37;
+    --grad3: linear-gradient(90deg, var(--grd4) 35.3%, var(--grd5) 100.3%);
+    --grd4: #3e7eae;
+    --grd5: #54c5a2;
+    --t1: #181818c7;
+    --pr6: #763f4a63;
+    --direc: #1abc9c;
+    --staff: #1abc9c;
+    --exor: #1B9EDB;
+    --apren: #A2309E;
+    --aku: #A11515;
+    --civil: #ff9626;
+    --nuev: #858585;
+    --tdirect: #1abc9c94;
+    --texor: #0a405896;
+    --taku: #4a0b0bbd;
+    --tapren: #441443a8;
+    --tcivil: #ff962663;
+    --f1: 'Yuji Boku';
+    --f2: 'Cherry Bomb One';
+    --f3: 'Arial', bold;
+    --f4: 'Times';
+    --f5: 'The Centurion';
   /*Fondo categorias*/
-    --fd1:url(https://i.ibb.co/Fg2VzgH/backgroundblue.png);
+    --fd1:url(https://images2.imgbox.com/77/19/9H3bCz9Y_o.png);
     /*CATEGORIAS*/
-  --fd2:url(https://i.ibb.co/mVGM35rp/Fondo-1.png);
+  --fd2:url(https://i.ibb.co/ycWyX3Fn/Fn3.png);
   --fd5:url(https://i.ibb.co/L8dn75m/Categoria-Staff.png);
-  --fd6:url(https://i.ibb.co/ycWyX3Fn/Fn3.png);
+  --fd6:url(https://i.ibb.co/Gvp4bZg8/Fondo-2.png);
   /*Decoración de flores y marcos*/
   --fd3:url(https://i.ibb.co/GkZfWCp/frame.png);
   --fd7:url(https://i.ibb.co/34wpQcQ/flower.png);
@@ -160,7 +155,26 @@ a { color: var(--pr5); text-decoration: none; letter-spacing: 1px; transition: a
 a:hover { leter-spaccing: 2px; text-decoration: none; color: var(--pr4);}
 
 /*FONTS*/
-@font-face { font-family: 'Rosie Brown'; font-style: normal; src: url('https://dl.dropbox.com/scl/fi/fn60t5ww5364b5fa4g29l/Rosie-Brown-Serif-Demo.otf?rlkey=osjayjivgrimei8hyjfrkiu6p&st=iqctfxvd&dl=0'); format('truetype'); }
+@font-face {
+    font-family: 'Gothicha';
+    font-style: normal; 
+    src: url('https://dl.dropbox.com/scl/fi/7u25ok8hr1hvfc59i9wlq/Gothicha.ttf?rlkey=kv9j53efyjn8apbyig85zg1tw&st=ncp1kwxz&dl=0') 
+    format('truetype');
+}
+
+@font-face {
+    font-family: 'Gothic War';
+    font-style: normal; 
+    src: url('https://dl.dropbox.com/scl/fi/1sj1iostylwvt7tys9a5t/Gothic-War.otf?rlkey=xwdzwohhdqptbqbyd3wvh4e7d&st=oqfhunr7&dl=0') 
+    format('truetype');
+}
+
+
+@font-face { 
+    font-family: 'The Centurion'; 
+    font-style: normal; 
+    src: url('https://dl.dropbox.com/scl/fi/oxo3uaf3rblvbn1r76915/The-Centurion.otf?rlkey=2cz3r50e9nowec3c21opqcj94&st=aadzwpe2&dl=0')
+    format('truetype'); }
 
 /*GENERAL*/
 ::-webkit-scrollbar {
@@ -175,17 +189,16 @@ a:hover { leter-spaccing: 2px; text-decoration: none; color: var(--pr4);}
     border: 4px solid var(--n1);
     border-radius:10px;
 }
-body{
-margin:0;
-padding:0;
-background-image:var(--fd1);
-background-attachment: fixed;
+body {
+    margin: 0;
+    padding: 0;
+    background-image: none;
+    background-color: var(--n1);
+    background-attachment: fixed;
     background-size: cover;
-    background-position-y:-300px;
-  /*Responsive texto*/
-  font-size: clamp(14px, 2vw, 16px);
-  color: var(--n4);
-
+    background-position-y: -300px;
+    font-size: clamp(14px, 2vw, 16px);
+    color: var(--n4);
 }
 #wrap {
     background: transparent;
@@ -234,28 +247,36 @@ span.new-message, span.toread-message {
 }
 
 /*CODEBOX*/
-dl.codebox br { display: block;}
-dl.codebox {
-    background-color: var(--n2);
-    border: none;
-    font-size: 1em;
-    border-radius: 5px;
-    padding: 10px;
-    display: flex;
-    flex-flow: column;
-    margin: 0 0 20px 0;
+
+.color-selector {
+  color: #69c; /* azul selector */
 }
 
-dl.codebox dt {
-    text-transform: uppercase;
-    border-bottom: 1px solid var(--n1);
-    margin-bottom: 3px;
-    font-size: .8em;
-    font-weight: 700;
-    display: block;
+.color-propiedad {
+  color: #9fe; /* celeste propiedad */
+}
+
+.color-valor {
+  color: #bfa; /* verde valor */
+}
+
+
+dl.codebox {
+  background-color: var(--n1); 
+  border: 1px solid var(--pr4); 
+  border-radius: 10px;
+  padding: 18px;
+  margin: 30px 0;
+  font-family: 'Lato', monospace;
+  font-size: 14px;
+  color: var(--n4); 
+  white-space: pre-wrap;
+  word-break: break-word;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.4);
 }
 
 dl.codebox code {
+
     overflow: auto;
     display: block;
     height: auto;
@@ -264,12 +285,49 @@ dl.codebox code {
     padding-top: 5px;
     font: .9em calibri;
     line-height: 1.3em;
-    color: var(--n6);
+    color: #dad9de;
     margin: 2px 0;
+    font-size: 15px;
 }
 
+dl.codebox {
+  position: relative;
+  padding-top: 60px; /* espacio para que el dt flote arriba */
+}
+
+dl.codebox dt {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: calc(100% - 0px);
+  padding: 12px 16px;
+  background: linear-gradient(to right, #1c3c7a, #376fbd);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  box-sizing: border-box;
+  text-align: left;
+  font-weight: bold;
+  z-index: 2;
+  border-bottom: none;
+  border-collapse: collapse;
+}
+
+
+
+
+.codebox strong {
+  display: block;
+  margin-bottom: 10px;
+  font-family:  serif;
+  color: var(--pr4);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 16px;
+}
+    
 .copyButton {
-    background: var(--n1);
+    background: #1a1a20;
     border: none;
     color: var(--pr5);
     padding: 7px;
@@ -277,7 +335,7 @@ dl.codebox code {
     align-self: end;
     margin: 10px 0 0 0;
     text-transform: uppercase;
-    font: 400 0.6em var(--f4);
+    font: 400 16px var(--f4);
 }
 
 
@@ -466,34 +524,39 @@ dl.codebox code {
 }
 
 /* Estilo de tabla - Mephis*/
-.tabla-elementos {
+.tabla-hell {
   width: 100%;
-  max-width: 800px;
-  margin: 30px auto;
-  border-collapse: separate;
-  border-spacing: 10px;
-  font-family: 'Lota', sans-serif;
-  font-size: 13px;
-  background-color: var(--n2);
-  border: 2px solid var(--n3);
-  border-radius: 12px;
+  max-width: 780px;
+  margin: 0px auto;
+  border-collapse: collapse;
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
   color: var(--n4);
+  background-color: var(--n1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border: 1px solid var(--pr4);
+  border-radius: 12px;
   overflow: hidden;
 }
-.tabla-elementos th {
-  background-color: #006688;
+
+.tabla-hell th {
+  background: var(--pr1);
   color: var(--n4);
-  padding: 10px;
-  font-weight: bold;
+  padding: 12px 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
   text-align: center;
-  border-radius: 10px 10px 0 0;
 }
-.tabla-elementos td {
-  background-color: var(--n3);
-  padding: 10px;
+
+.tabla-hell td {
+  padding: 12px 14px;
+  background-color: var(--n2);
+  border-bottom: 1px solid #39383896;
   vertical-align: top;
-  border-radius: 8px;
+  line-height: 1.6;
 }
+
 
 
 
@@ -1410,6 +1473,7 @@ dl.codebox.spoiler img {
 
 /*TABLAS DEL FORO*/
 
+
 .ptextan table {
     width: 100%;
     border-collapse: collapse;
@@ -1442,3 +1506,142 @@ dl.codebox.spoiler img {
 }
 
 .bfnor3 br { display: block!important;}
+
+
+/* Tablilla staff hecha por Mephis */
+
+.Mephistaff-cuadro {
+  border: 1px solid #25386700;
+  background-color: #00000000;
+  padding: 0px;
+  border-radius: 14px;
+  max-width: 800px;
+  margin: -37px auto;
+  box-sizing: border-box;
+}
+
+.Mephistaff-plantilla {
+  font-family: 'Playfair Display', serif;
+  color: var(--n4);
+  max-width: 800px;
+  margin: 60px auto 40px;
+  padding: 30px 25px;
+  background-color: transparent;
+}
+
+.Mephistaff-titulo {
+  text-align: center;
+  font-size: 2.4em;
+  font-weight: bold;
+background-color: rgba(0, 0, 0, 0.4);
+  padding: 8px 20px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.Mephistaff-info {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.Mephistaff-tag, .Mephistaff-fecha {
+  background: var(--pr1);
+  border: 1px solid #1a2236;
+  padding: 6px 14px;
+  border-radius: 6px;
+  color: var(--n4);
+  font-weight: bold;
+  font-size: 0.9em;
+  position: relative;
+  bottom: 40px;
+}
+
+.Mephistaff-subtitulo {
+  background: linear-gradient(to right, var(--pr1), var(--n5));
+  border-left: 4px solid var(--pr1);
+  color: var(--n4);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 1.2em;
+  padding-left: 12px;
+  margin: 40px 0 10px;
+  font-family: var(--f5);
+}
+
+.Mephistaff-header-img {
+  position: relative;
+  top: 40px;
+  border-radius: 16px;
+  overflow: hidden;
+  margin-bottom: 25px;
+  height: 180px;
+  background-color: var(--n5);
+}
+
+.Mephistaff-header-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.25;
+  filter: grayscale(50%);
+}
+
+.Mephistaff-header-img::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #00000075;
+  pointer-events: none;
+}
+
+.Mephistaff-header-img .Mephistaff-titulo {
+  font-family: var(--f5);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2.4em;
+  font-weight: bold;
+ background: linear-gradient(var(--n9), var(--pr4));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    z-index: 1;
+  margin: 0;
+  text-align: center;
+}
+
+.Mephistaff-sello-final {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 60px;
+  gap: 12px;
+}
+
+.Mephistaff-linea-sello {
+  width: 6px;
+  height: 100px;
+  background: var(--grad1);
+  border-radius: 3px;
+background: linear-gradient(var(--pr4), var(--pr3));
+    border-radius: 3px;
+    mask-image: linear-gradient(to bottom, black 0%, transparent 100%);
+}
+
+.Mephistaff-icono-fuego {
+  font-size: 1.8em;
+  color: var(--pr1);
+}
+
+.Mephistaff-sello-final i.ra {
+  font-size: 2.4em;
+  background: var(--pr3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+}
