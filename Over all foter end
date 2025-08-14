@@ -132,20 +132,21 @@
 .adminpa {
     display: flex;
     align-items: center;
-    width: 70px;
     justify-content: center;
 }  
   
 .adminpa a { font-size: 0px;}  
   
 .adminpa a:before {
-    font-size: 9px;
-    color: var(--n6);
-  font-family: 'Font Awesome 6 Free';
-  font-weight: 900;
-  -webkit-font-smoothing: antialiased;
-  content: '\f6e2';
-  } 
+    font-size: 11px;
+    color: var(--n4);
+    font-family: 'Font Awesome 5 free';
+    font-weight: 900;
+    -webkit-font-smoothing: antialiased;
+    content: '\f521';
+    position: relative;
+    left: 15px;
+}
   
   
 </style>  
